@@ -180,15 +180,6 @@ function Footer() {
                     className="text-gray-700 transition hover:text-platinum-800"
                     href="#"
                   >
-                    DNA sequencing
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-platinum-800"
-                    href="#"
-                  >
                     Whole genome sequencing
                   </a>
                 </li>
@@ -199,6 +190,22 @@ function Footer() {
                     href="#"
                   >
                     Whole exome sequencing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    Targeted sequencing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    metagenomic sequencing
                   </a>
                 </li>
               </ul>
@@ -215,7 +222,7 @@ function Footer() {
                     className="text-gray-700 transition hover:text-platinum-800"
                     href="#"
                   >
-                    Oncologyatena
+                    Oncology
                   </a>
                 </li>
 
@@ -224,7 +231,7 @@ function Footer() {
                     className="text-gray-700 transition hover:text-platinum-800"
                     href="#"
                   >
-                    Genetic disorders
+                    Neurology
                   </a>
                 </li>
                 <li>
@@ -232,7 +239,39 @@ function Footer() {
                     className="text-gray-700 transition hover:text-platinum-800"
                     href="#"
                   >
-                    Cardiovascular
+                    Cardiology
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    Heredity screening
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    Prenatal screening
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    Reproductive health
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href="#"
+                  >
+                    Pharmacogenomics
                   </a>
                 </li>
                 <li>

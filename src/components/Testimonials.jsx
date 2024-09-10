@@ -31,7 +31,7 @@ function Testimonials() {
             </p>
           </blockquote>
         </div>
-        <h2 className="text-center text-crimson-500 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        {/*  <h2 className="text-center text-crimson-500 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Read trusted reviews from our customers
         </h2>
 
@@ -220,14 +220,14 @@ function Testimonials() {
                   Paul Starr
                 </p>
               </div>
-            </div>
+            </div> 
 
             <p className="mt-4 text-gray-700">
               Atena is at the forefront of genetic research, which is growing
               and will advance quickly.
             </p>
           </blockquote>
-        </div>
+        </div>*/}
       </div>
     </section>
   );

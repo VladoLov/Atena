@@ -40,16 +40,21 @@ function Header() {
             <DropdownMenuSeparator />
 
             <DropdownMenuLabel>Services</DropdownMenuLabel>
-            <DropdownMenuItem>DNA sequencing</DropdownMenuItem>
             <DropdownMenuItem>Whole genome sequencing</DropdownMenuItem>
             <DropdownMenuItem>Whole exome sequencing</DropdownMenuItem>
+            <DropdownMenuItem>Targeted sequencing</DropdownMenuItem>
+            <DropdownMenuItem>Metagenomic sequencing</DropdownMenuItem>
 
             <DropdownMenuSeparator />
 
             <DropdownMenuLabel>Other Links</DropdownMenuLabel>
-            <DropdownMenuItem>Oncologyatena</DropdownMenuItem>
-            <DropdownMenuItem>Genetic disorders</DropdownMenuItem>
-            <DropdownMenuItem>Cardiovascular</DropdownMenuItem>
+            <DropdownMenuItem>Oncology</DropdownMenuItem>
+            <DropdownMenuItem>Neurology </DropdownMenuItem>
+            <DropdownMenuItem>Cardiology</DropdownMenuItem>
+            <DropdownMenuItem>Heredity screening</DropdownMenuItem>
+            <DropdownMenuItem>Prenatal screening </DropdownMenuItem>
+            <DropdownMenuItem>Reproductive health</DropdownMenuItem>
+            <DropdownMenuItem>Pharmacogenomics</DropdownMenuItem>
             <DropdownMenuItem>Infectious diseases</DropdownMenuItem>
             <DropdownMenuSeparator />
             <Button className="bg-crimson-400 text-black">My Project</Button>
@@ -82,7 +87,7 @@ function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem className="relative">
               <NavigationMenuTrigger className="flex justify-between items-center  bg-crimson-400 hover:bg-crimson-500">
-                ResourcesAbout Us
+                Resources
               </NavigationMenuTrigger>
               <NavigationMenuContent className="absolute z-30">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px]">
@@ -97,6 +102,17 @@ function Header() {
                   </li>
                 </ul>
               </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <a className="flex justify-center items-center">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-white text-black flex items-center justify-between"
+                >
+                  My Project
+                </Button>
+              </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -115,18 +131,21 @@ function Header() {
               <NavigationMenuContent className="absolute z-20">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px] hover:text-primary-800 z-10">
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
-                    <NavigationMenuLink className="">
-                      DNA sequencing
+                    <NavigationMenuLink>
+                      Whole genome sequencing
                     </NavigationMenuLink>
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>
-                      The whole genome sequencing
+                      Whole exome sequencing
                     </NavigationMenuLink>
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
+                    <NavigationMenuLink>Targeted sequencing</NavigationMenuLink>
+                  </li>
+                  <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>
-                      The whole exome sequencing
+                      Metagenomic sequencing 
                     </NavigationMenuLink>
                   </li>
                 </ul>
@@ -134,16 +153,23 @@ function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem className="flex flex-row  gap-5 border-spacing-1 rounded-lg z-0 relative">
               <NavigationMenuLink className="flex justify-between items-center hover:text-crimson-500">
-                Oncologyatena
+                Oncology
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Genetic disorders
+                Neurology
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Cardiovascular
+                Cardiology
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Prental and reproductive health
+                Heredity screening
+              </NavigationMenuLink>
+
+              <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
+                Prenatal screening
+              </NavigationMenuLink>
+              <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
+                Prenatal screening
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
                 Pharmacogenomics
@@ -151,11 +177,6 @@ function Header() {
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
                 Infectious diseases
               </NavigationMenuLink>
-              <a className="flex justify-center items-center">
-                <Button className="bg-crimson-400 text-black flex items-center justify-between">
-                  My Project
-                </Button>
-              </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
