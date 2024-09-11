@@ -42,7 +42,9 @@ function Header() {
 
             <DropdownMenuSeparator />
 
-            <DropdownMenuLabel>Services</DropdownMenuLabel>
+            <DropdownMenuLabel>
+              <Link href="/services">Services</Link>
+            </DropdownMenuLabel>
             <DropdownMenuItem>Whole genome sequencing</DropdownMenuItem>
             <DropdownMenuItem>Whole exome sequencing</DropdownMenuItem>
             <DropdownMenuItem>Targeted sequencing</DropdownMenuItem>
@@ -129,13 +131,15 @@ function Header() {
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
               <NavigationMenuTrigger className="flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
-                Services
+                <Link href="/services">Services</Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent className="absolute z-20">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px] hover:text-primary-800 z-10">
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>
-                      Whole genome sequencing
+                      <Link href="/services/whole-genome-sequencing">
+                        Whole genome sequencing
+                      </Link>
                     </NavigationMenuLink>
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">

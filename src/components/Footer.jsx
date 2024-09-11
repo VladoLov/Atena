@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -170,18 +171,21 @@ function Footer() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium  text-crimson-500 hover:text-crimson-600">
+              <Link
+                href="/services"
+                className="text-lg font-medium  text-crimson-500 hover:text-crimson-600"
+              >
                 Services
-              </p>
+              </Link>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     className="text-gray-700 transition hover:text-platinum-800"
-                    href="#"
+                    href="/services/whole-genome-sequencing"
                   >
                     Whole genome sequencing
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -205,7 +209,7 @@ function Footer() {
                     className="text-gray-700 transition hover:text-platinum-800"
                     href="#"
                   >
-                    metagenomic sequencing
+                    Metagenomic sequencing
                   </a>
                 </li>
               </ul>

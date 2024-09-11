@@ -84,7 +84,6 @@ export default function Component() {
                           alt="Dna image"
                           width={300}
                           height={500}
-                          objectFit="cover"
                           style={{
                             width: "100%vh",
                             height: "auto",
