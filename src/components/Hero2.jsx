@@ -65,7 +65,10 @@ export default function Component() {
               <CarouselContent>
                 <CarouselItem>
                   <div className="p-4 bg-muted rounded-md">
-                    <div className="flex flex-col items-center gap-4">
+                    <Link
+                      href="/oncology"
+                      className="flex flex-col items-center gap-4"
+                    >
                       <div className="flex items-center gap-4">
                         <RadiationIcon className="w-12 h-12" />
                         <div>
@@ -88,7 +91,7 @@ export default function Component() {
                           }}
                         />
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </CarouselItem>
                 <CarouselItem>

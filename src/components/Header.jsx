@@ -20,6 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -32,7 +33,9 @@ function Header() {
             <GiHamburgerMenu />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-white">
-            <DropdownMenuLabel>About Us</DropdownMenuLabel>
+            <DropdownMenuLabel>
+              <Link href="/about">About Us</Link>
+            </DropdownMenuLabel>
             <DropdownMenuItem>The Company</DropdownMenuItem>
             <DropdownMenuItem>Mission</DropdownMenuItem>
             <DropdownMenuItem>The Founders</DropdownMenuItem>
@@ -67,7 +70,7 @@ function Header() {
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
               <NavigationMenuTrigger className="flex justify-between items-center bg-crimson-400 hover:bg-crimson-500">
-                About Us
+                <Link href="/about">About Us</Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent className="absolute z-20 ">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px] hover:text-primary-800 ">
@@ -118,10 +121,10 @@ function Header() {
         </NavigationMenu>
       </div>
       <div className="bg-platinum-50 w-full justify-between px-20 relative z-0 hidden lg:flex flex-row items-center">
-        <div>
-          <Image src="/atena.png" width={130} height={30} alt="Atena logo" />
-          <h3 className="font-bold none">Advanced genome testing services</h3>
-        </div>
+        <Link href="/" className="flex items-center flex-col">
+          <Image src="/GetImage.png" width={130} height={15} alt="Atena logo" />
+          <h5 className="text-sm">Advanced genome testing services</h5>
+        </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
