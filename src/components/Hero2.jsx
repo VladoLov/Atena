@@ -31,26 +31,6 @@ export default function Component() {
                 of specialties.
               </p>
             </div>
-            {/*             <div className="w-full max-w-sm space-y-2">
-              <form className="flex gap-2">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="max-w-lg flex-1"
-                />
-                <Button type="submit">Sign Up</Button>
-              </form>
-              <p className="text-xs text-muted-foreground">
-                Sign up to get notified when we launch.{" "}
-                <Link
-                  href="#"
-                  className="underline underline-offset-2"
-                  prefetch={false}
-                >
-                  Terms &amp; Conditions
-                </Link>
-              </p>
-            </div> */}
           </div>
           <div className="flex flex-col gap-4 px-6 ">
             <Carousel

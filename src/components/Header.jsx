@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import logo from "@/app/assets/atena.png";
+
 import { Button } from "./ui/button";
 import Image from "next/image";
 import {
@@ -22,12 +22,16 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 
+// import i18n from "./../utils/i18n";
+
 function Header() {
   return (
     <>
       {/* Dropdown Menu for small screens */}
-      <div className="bg-crimson-400 w-full flex justify-between px-4 py-2 lg:hidden">
-        <Image src="/atena.png" width={130} height={30} alt="Atena logo" />
+      <div className="bg-crimson-400 w-full flex justify-between px-4 py-1 lg:hidden">
+        <Link href="/">
+          <Image src="/GetImage.png" width={130} height={20} alt="Atena logo" />
+        </Link>
         <DropdownMenu>
           <DropdownMenuTrigger className="bg-crimson-400 text-white px-4 py-2 rounded-md">
             <GiHamburgerMenu />
@@ -67,7 +71,7 @@ function Header() {
         </DropdownMenu>
       </div>
 
-      <div className="bg-crimson-400 md:w-full  md:justify-end px-20 md:py-0 hidden lg:flex md:flex-col lg:justify-end xl:justify-end items-end">
+      <div className="bg-crimson-400 md:w-full z-3 md:justify-end px-20 md:py-0 hidden lg:flex md:flex-col lg:justify-end xl:justify-end items-end">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
@@ -123,9 +127,11 @@ function Header() {
         </NavigationMenu>
       </div>
       <div className="bg-platinum-50 w-full justify-between px-20 relative z-0 hidden lg:flex flex-row items-center">
-        <Link href="/" className="flex items-center flex-col">
+        <Link href="/" className="flex items-end gap-4 flex-row">
           <Image src="/GetImage.png" width={130} height={15} alt="Atena logo" />
-          <h5 className="text-sm">Advanced genome testing services</h5>
+          <h3 className="text-lg font-semibold">
+            Advanced genome testing services
+          </h3>
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
@@ -133,7 +139,7 @@ function Header() {
               <NavigationMenuTrigger className="flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
                 <Link href="/services">Services</Link>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="absolute z-20">
+              <NavigationMenuContent className="absolute z-60">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px] hover:text-primary-800 z-10">
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>
