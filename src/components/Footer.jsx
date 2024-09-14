@@ -189,12 +189,12 @@ function Footer() {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-700 transition hover:text-platinum-800"
-                    href="#"
+                    href="/services/whole-exome-sequencing"
                   >
                     Whole exome sequencing
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
