@@ -30,7 +30,7 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <div className="embla bg-crimson-50">
+    <div className="embla bg-crimson-50 z-[-2]">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container flex flex-row">
           {slides.map((imageSrc, index) => (

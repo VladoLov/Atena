@@ -182,7 +182,7 @@ function Header() {
                 Prenatal screening
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Prenatal screening
+                Reproductive health
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
                 Pharmacogenomics
