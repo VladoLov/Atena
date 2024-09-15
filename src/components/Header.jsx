@@ -154,7 +154,11 @@ function Header() {
                     </NavigationMenuLink>
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
-                    <NavigationMenuLink>Targeted sequencing</NavigationMenuLink>
+                    <NavigationMenuLink>
+                      <Link href="services/targeting-sequencing">
+                        Targeted sequencing
+                      </Link>
+                    </NavigationMenuLink>
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>

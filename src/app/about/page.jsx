@@ -5,7 +5,7 @@ function page() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-start">
       <Header />
-      <h1>ABout US</h1>
+      <h1>About US</h1>
       <Footer />
     </div>
   );
