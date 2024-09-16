@@ -60,6 +60,16 @@ module.exports = {
           5: "hsl(var(--chart-5, 0, 0%, 50%))",
         },
       },
+      keyframes: {
+        rotateScale: {
+          "0%": { transform: "rotate(0deg) scale(1)" },
+          "50%": { transform: "rotate(180deg) scale(1)" },
+          "100%": { transform: "rotate(360deg) scale(1)" },
+        },
+      },
+      animation: {
+        rotateScale: "rotateScale 3s infinite linear infinite",
+      },
     },
     colors: {
       transparent: "transparent",

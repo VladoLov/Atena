@@ -2,8 +2,8 @@ import { Button } from "./ui/button";
 
 function Testimonials() {
   return (
-    <section className="bg-crimson-50 w-full max-w-screen-xl flex justify-center items-center">
-      <div className="w-full max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <section className="bg-crimson-50 w-full  flex justify-center items-center">
+      <div className=" max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex justify-center pb-10">
           <blockquote className="w-full lg:w-auto rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
             <div className="flex items-center justify-center gap-4">

@@ -136,7 +136,7 @@ function Header() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
-              <NavigationMenuTrigger className="flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
+              <NavigationMenuTrigger className="hover:text-crimson-500 flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
                 <Link href="/services">Services</Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent className="absolute z-60">
@@ -162,7 +162,9 @@ function Header() {
                   </li>
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>
-                      Metagenomic sequencing 
+                      <Link href="/services/metagenomic-sequencing">
+                        Metagenomic sequencing
+                      </Link>
                     </NavigationMenuLink>
                   </li>
                 </ul>
