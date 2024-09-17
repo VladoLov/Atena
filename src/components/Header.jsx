@@ -57,14 +57,30 @@ function Header() {
             <DropdownMenuSeparator />
 
             <DropdownMenuLabel>Other Links</DropdownMenuLabel>
-            <DropdownMenuItem>Oncology</DropdownMenuItem>
-            <DropdownMenuItem>Neurology </DropdownMenuItem>
-            <DropdownMenuItem>Cardiology</DropdownMenuItem>
-            <DropdownMenuItem>Heredity screening</DropdownMenuItem>
-            <DropdownMenuItem>Prenatal screening </DropdownMenuItem>
-            <DropdownMenuItem>Reproductive health</DropdownMenuItem>
-            <DropdownMenuItem>Pharmacogenomics</DropdownMenuItem>
-            <DropdownMenuItem>Infectious diseases</DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/oncology">Oncology</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/neurology">Neurology</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/cardiology">Cardiology</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="heredity-screening">Heredity screening</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="prenatal-screening">Prenatal screening</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="reproductive-health">Reproductive health</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="pharamacogenomics">Pharmacogenomics</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="infectious-diseases">Infectious diseases</Link>
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
             <Button className="bg-crimson-400 text-black">My Project</Button>
           </DropdownMenuContent>
@@ -172,29 +188,29 @@ function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem className="flex flex-row  gap-5 border-spacing-1 rounded-lg z-0 relative">
               <NavigationMenuLink className="flex justify-between items-center hover:text-crimson-500">
-                Oncology
+                <Link href="/oncology">Oncology</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Neurology
+                <Link href="/neurology">Neurology</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Cardiology
+                <Link href="/cardiology">Cardiology</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Heredity screening
+                <Link href="heredity-screening">Heredity screening</Link>
               </NavigationMenuLink>
 
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Prenatal screening
+                <Link href="prenatal-screening">Prenatal screening</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Reproductive health
+                <Link href="reproductive-health">Reproductive health</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Pharmacogenomics
+                <Link href="pharamacogenomics">Pharmacogenomics</Link>
               </NavigationMenuLink>
               <NavigationMenuLink className="flex justify-between items-center  hover:text-crimson-500">
-                Infectious diseases
+                <Link href="/infectious-diseases">Infectious diseases</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
