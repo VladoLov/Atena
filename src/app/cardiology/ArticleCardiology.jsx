@@ -13,32 +13,39 @@ export default function ArticleCardiology() {
   const services = [
     {
       title: "Diagnostic Cardiology",
-      icon: <Stethoscope className="h-6 w-6" />,
+      icon: <Stethoscope className="h-6 w-6 text-crimson-500" />,
       description:
         "Comprehensive heart health evaluations using state-of-the-art diagnostic tools.",
     },
     {
       title: "Interventional Cardiology",
-      icon: <Heart className="h-6 w-6" />,
+      icon: <Heart className="h-6 w-6 text-crimson-500" />,
       description:
         "Minimally invasive procedures to treat heart conditions and improve cardiovascular health.",
     },
     {
       title: "Electrophysiology",
-      icon: <Activity className="h-6 w-6" />,
+      icon: <Activity className="h-6 w-6 text-crimson-500" />,
       description:
         "Specialized care for heart rhythm disorders and electrical system abnormalities.",
     },
     {
       title: "Cardiac Rehabilitation",
-      icon: <Users className="h-6 w-6" />,
+      icon: <Users className="h-6 w-6 text-crimson-500" />,
       description:
         "Personalized programs to help patients recover from heart procedures and improve overall heart health.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-platinum-50 to-white">
+      <Image
+        src="/Cardiology.jpeg"
+        alt="Cardiology"
+        width={1920}
+        height={1080}
+        className="w-full max-w-screen object-cover h-[45vh]"
+      />
       <section className="py-12 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl font-bold text-blue-900 mb-4">
           Advanced Cardiology Care
@@ -60,7 +67,7 @@ export default function ArticleCardiology() {
                 key={index}
                 className={`cursor-pointer transition-all duration-300 ${
                   activeCard === index
-                    ? "ring-2 ring-blue-500 shadow-lg"
+                    ? "ring-2 ring-crimson-400 shadow-lg"
                     : "hover:shadow-md"
                 }`}
                 onClick={() => setActiveCard(index)}
@@ -80,7 +87,7 @@ export default function ArticleCardiology() {
         </div>
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-platinum-700 text-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8 text-center">
             Our Impact
@@ -138,7 +145,7 @@ export default function ArticleCardiology() {
           </p>
           <Button
             size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white"
+            className="bg-gradient-to-r from-crimson-400 to-crimson-600 hover:from-crimson-500 hover:to-crimson-700 text-black"
           >
             Book an Appointment
           </Button>

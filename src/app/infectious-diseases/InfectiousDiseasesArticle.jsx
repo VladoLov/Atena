@@ -12,6 +12,7 @@ import {
   Users,
   TriangleAlert,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function InfectiousDiseases() {
   const [activeSection, setActiveSection] = useState("overview");
@@ -35,7 +36,7 @@ export default function InfectiousDiseases() {
     {
       name: "HIV/AIDS",
       icon: <Shield className="w-6 h-6" />,
-      color: "bg-purple-500",
+      color: "fill-crimson-500",
     },
   ];
 
@@ -69,7 +70,7 @@ export default function InfectiousDiseases() {
     switch (activeSection) {
       case "overview":
         return (
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             <p className="text-lg text-gray-700">
               Infectious diseases are disorders caused by organisms such as
               bacteria, viruses, fungi or parasites. Many organisms live in and
@@ -91,7 +92,7 @@ export default function InfectiousDiseases() {
               <Card key={disease.name} className="overflow-hidden">
                 <CardContent className="p-6 flex items-center space-x-4">
                   <div
-                    className={`w-12 h-12 rounded-full ${disease.color} flex items-center justify-center flex-shrink-0`}
+                    className={`w-12 h-12 rounded-full ${disease.color} flex items-center justify-center flex-shrink-0 text-crimson-500`}
                   >
                     {disease.icon}
                   </div>
@@ -113,7 +114,7 @@ export default function InfectiousDiseases() {
           <div className="space-y-6">
             {preventionMethods.map((method) => (
               <div key={method.name} className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 text-crimson-500">
                   {method.icon}
                 </div>
                 <div>
@@ -132,8 +133,15 @@ export default function InfectiousDiseases() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      <Image
+        src="/infectious-diseases.jpeg"
+        alt="Reproductive Health Illustration"
+        width={1920}
+        height={1080}
+        className="w-full max-w-screen object-cover h-[45vh]"
+      />
+      <div className="max-w-7xl mx-auto  py-12 px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-green-900 mb-4 text-center">
           Infectious Diseases Center
         </h1>

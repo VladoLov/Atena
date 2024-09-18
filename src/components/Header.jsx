@@ -152,10 +152,10 @@ function Header() {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className="relative">
-              <NavigationMenuTrigger className="hover:text-crimson-500 flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
+              <NavigationMenuTrigger className="hover:text-crimson-500  flex justify-between text-popover-foreground font-normal text-md  text-items-center gap-3 bg-platinum-50">
                 <Link href="/services">Services</Link>
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="absolute z-60">
+              <NavigationMenuContent className="absolute z-100">
                 <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[300px] hover:text-primary-800 z-10">
                   <li className="hover:text-primary-800 hover:bg-crimson-500 w-full rounded-sm">
                     <NavigationMenuLink>

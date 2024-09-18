@@ -5,7 +5,7 @@ export default function ArticlePrenatalScreening() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Image
-        src="/placeholder.svg"
+        src="/2400-pregnant-woman.jpg"
         alt="Prenatal Screening Illustration"
         width={1920}
         height={1080}
@@ -34,19 +34,19 @@ export default function ArticlePrenatalScreening() {
             </h2>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-center">
-                <CheckCircle className="text-green-500 mr-2" size={20} />
+                <CheckCircle className="text-crimson-500 mr-2 " size={20} />
                 Non-invasive prenatal testing (NIPT)
               </li>
               <li className="flex items-center">
-                <CheckCircle className="text-green-500 mr-2" size={20} />
+                <CheckCircle className="text-crimson-500 mr-2 " size={20} />
                 First trimester combined screening
               </li>
               <li className="flex items-center">
-                <CheckCircle className="text-green-500 mr-2" size={20} />
+                <CheckCircle className="text-crimson-500 mr-2" size={20} />
                 Second trimester maternal serum screening
               </li>
               <li className="flex items-center">
-                <CheckCircle className="text-green-500 mr-2" size={20} />
+                <CheckCircle className="text-crimson-500 mr-2" size={20} />
                 Ultrasound scans
               </li>
             </ul>
@@ -57,15 +57,15 @@ export default function ArticlePrenatalScreening() {
             </h2>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-center">
-                <Calendar className="text-indigo-600 mr-2" size={20} />
+                <Calendar className="text-crimson-500 mr-2" size={20} />
                 <span>First trimester: 11-13 weeks</span>
               </div>
               <div className="flex items-center">
-                <Calendar className="text-indigo-600 mr-2" size={20} />
+                <Calendar className="text-crimson-500 mr-2" size={20} />
                 <span>Second trimester: 15-20 weeks</span>
               </div>
               <div className="flex items-center">
-                <Clock className="text-indigo-600 mr-2" size={20} />
+                <Clock className="text-crimson-500 mr-2" size={20} />
                 <span>NIPT can be done as early as 10 weeks</span>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function ArticlePrenatalScreening() {
           <div className="grid md:grid-cols-2 gap-4 text-gray-700">
             <div className="flex items-start">
               <AlertTriangle
-                className="text-yellow-500 mr-2 mt-1 flex-shrink-0"
+                className="text-crimson-500 mr-2 mt-1 flex-shrink-0"
                 size={20}
               />
               <p>
@@ -88,14 +88,14 @@ export default function ArticlePrenatalScreening() {
             </div>
             <div className="flex items-start">
               <AlertTriangle
-                className="text-yellow-500 mr-2 mt-1 flex-shrink-0"
+                className="text-crimson-500 mr-2 mt-1 flex-shrink-0"
                 size={20}
               />
               <p>False positives and false negatives can occur.</p>
             </div>
             <div className="flex items-start">
               <AlertTriangle
-                className="text-yellow-500 mr-2 mt-1 flex-shrink-0"
+                className="text-crimson-500 mr-2 mt-1 flex-shrink-0"
                 size={20}
               />
               <p>
@@ -105,7 +105,7 @@ export default function ArticlePrenatalScreening() {
             </div>
             <div className="flex items-start">
               <AlertTriangle
-                className="text-yellow-500 mr-2 mt-1 flex-shrink-0"
+                className="text-crimson-500 mr-2 mt-1 flex-shrink-0"
                 size={20}
               />
               <p>

@@ -32,9 +32,9 @@ export default function ArticleHeredityScreening() {
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
         {/* Hero Section */}
-        <section className="min-w-max relative h-[300px] md:h-[400px] lg:h-[500px]">
+        <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/placeholder.svg?height=500&width=1000"
+            src="/2400-dna-molecule-spiral-structure-model.jpg?height=500&width=1000"
             alt="DNA double helix"
             layout="fill"
             objectFit="cover"

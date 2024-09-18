@@ -5,11 +5,11 @@ export default function ArticlePharamacogenomics() {
   return (
     <div className="flex flex-col min-h-screen">
       <Image
-        src="/placeholder.svg"
+        src="/Pharmacogenomics.jpeg"
         alt="Pharmacogenomics illustration"
         width={1920}
         height={1080}
-        className="w-full max-w-screen object-cover h-[40vh]"
+        className="w-full max-w-screen object-cover h-[45vh]"
       />
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6 text-center">

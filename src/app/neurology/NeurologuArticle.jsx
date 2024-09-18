@@ -13,6 +13,7 @@ import {
   Stethoscope,
   Activity,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function NeurologuArticle() {
   const [activeCondition, setActiveCondition] = useState(null);
@@ -21,22 +22,22 @@ export default function NeurologuArticle() {
     {
       name: "Epilepsy",
       icon: <Zap className="w-6 h-6" />,
-      color: "bg-yellow-500",
+      color: "text-crimson-500",
     },
     {
       name: "Stroke",
       icon: <Brain className="w-6 h-6" />,
-      color: "bg-red-500",
+      color: "text-crimson-500",
     },
     {
       name: "Migraine",
       icon: <EyeOff className="w-6 h-6" />,
-      color: "bg-purple-500",
+      color: "text-crimson-500",
     },
     {
       name: "Parkinson's",
       icon: <Activity className="w-6 h-6" />,
-      color: "bg-green-500",
+      color: "text-crimson-500",
     },
   ];
 
@@ -45,25 +46,32 @@ export default function NeurologuArticle() {
       name: "Diagnostic Services",
       description:
         "State-of-the-art neurological testing including EEG, MRI, and CT scans.",
-      icon: <Stethoscope className="w-6 h-6" />,
+      icon: <Stethoscope className="w-6 h-6 text-crimson-500" />,
     },
     {
       name: "Treatment Programs",
       description:
         "Personalized treatment plans for a wide range of neurological conditions.",
-      icon: <HeartPulse className="w-6 h-6" />,
+      icon: <HeartPulse className="w-6 h-6 text-crimson-500" />,
     },
     {
       name: "Rehabilitation",
       description:
         "Comprehensive rehabilitation services to help patients regain function and independence.",
-      icon: <Activity className="w-6 h-6" />,
+      icon: <Activity className="w-6 h-6 text-crimson-500" />,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-platinum-50 to-white ">
+      <Image
+        src="/2400-ai-generated-medical-high-quality-background.jpg"
+        alt="Neurology article"
+        width={1920}
+        height={1080}
+        className="w-full max-w-screen object-cover h-[45vh]"
+      />
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-purple-900 mb-4 text-center">
           Advanced Neurology Care
         </h1>
@@ -86,7 +94,7 @@ export default function NeurologuArticle() {
                   key={condition.name}
                   className={`cursor-pointer transition-all duration-300 ${
                     activeCondition === condition.name
-                      ? "ring-2 ring-purple-500 shadow-lg"
+                      ? "ring-2 ring-crimson-400 shadow-lg"
                       : "hover:shadow-md"
                   }`}
                   onClick={() => setActiveCondition(condition.name)}
@@ -112,7 +120,7 @@ export default function NeurologuArticle() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-purple-100 p-6 rounded-lg"
+                  className="bg-crimson-50 p-6 rounded-lg"
                 >
                   <h3 className="text-xl font-semibold text-purple-900 mb-2">
                     {activeCondition}

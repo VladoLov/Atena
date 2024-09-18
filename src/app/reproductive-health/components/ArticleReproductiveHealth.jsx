@@ -5,7 +5,7 @@ export default function ArticleReproductiveHealth() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
       <Image
-        src="/placeholder.svg"
+        src="/Reproductive-Health.jpeg"
         alt="Reproductive Health Illustration"
         width={1920}
         height={1080}
@@ -59,7 +59,10 @@ export default function ArticleReproductiveHealth() {
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <div className="flex items-center mb-4">
-                <item.icon className="text-purple-600 mr-3" size={24} />
+                <item.icon
+                  className="text-purple-600 mr-3 text-crimson-500"
+                  size={24}
+                />
                 <h2 className="text-xl font-semibold text-purple-800">
                   {item.title}
                 </h2>

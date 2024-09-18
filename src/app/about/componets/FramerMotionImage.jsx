@@ -8,7 +8,7 @@ import FramerMainSection from "./FramerMainSection";
 
 export default function FramerMotionImage() {
   return (
-    <div className="w-full min-h-screen bg-gray-100">
+    <div className="w-full min-h-screen bg-gray-100 z-[-1]">
       <header className="relative w-full h-[50vh] overflow-hidden ">
         <motion.div
           initial={{ opacity: 0, scale: 1.1 }}
