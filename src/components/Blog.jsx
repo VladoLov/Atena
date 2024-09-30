@@ -1,12 +1,23 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 
+import Image from "next/image";
+
 function Blog() {
   return (
     <section className="bg-platinum-50 w-full">
       <div className="min-w-screen px-4 py-8 sm:px-6  sm:py-12 lg:px-8  lg:py-16 ">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/genome_team.svg"
+                alt="genome team"
+                width={600}
+                height={500}
+                cover
+              />
+            </div>
             <h2 className="text-3xl font-bold sm:text-4xl text-crimson-500">
               Benefits of working with ATENA
             </h2>
@@ -30,10 +41,10 @@ function Blog() {
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
             <a
-              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring-crimson-300"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-gray-50 p-3 text-crimson-500 ">
                 <svg
                   className="size-6"
                   fill="none"
@@ -64,10 +75,10 @@ function Blog() {
             </a>
 
             <a
-              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring-crimson-300"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-gray-50 p-3  text-crimson-500">
                 <svg
                   className="size-6"
                   fill="none"
@@ -99,10 +110,10 @@ function Blog() {
             </a>
 
             <a
-              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring-crimson-300"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-gray-50 p-3  text-crimson-500">
                 <svg
                   className="size-6"
                   fill="none"
@@ -133,10 +144,10 @@ function Blog() {
             </a>
 
             <a
-              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring"
+              className="block rounded-xl border border-crimson-200 p-4 shadow-sm hover:border-crimson-300 hover:ring-1 hover:ring-crimson-200 focus:outline-none focus:ring-crimson-300"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-gray-50 p-3  text-crimson-500">
                 <svg
                   className="size-6"
                   fill="none"
