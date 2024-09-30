@@ -9,11 +9,11 @@ export default function ArticleOncology() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
             <Image
-              src="/oncology.jpeg?height=400&width=600"
+              src="/oncology-jo-mcnamara-.jpg"
               alt="Oncology research"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg "
             />
           </div>
           <div className="mt-10 lg:mt-0">
