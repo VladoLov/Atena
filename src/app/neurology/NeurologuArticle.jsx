@@ -65,7 +65,7 @@ export default function NeurologuArticle() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-platinum-50 to-white ">
       <Image
-        src="/2400-ai-generated-medical-high-quality-background.jpg"
+        src="/neurology.jpeg"
         alt="Neurology article"
         width={1920}
         height={1080}

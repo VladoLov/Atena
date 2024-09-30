@@ -4,24 +4,23 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import slika from "../../../public/AdobeStock_283286794.jpeg";
 
 const slides = [
   {
     image: "/AdobeStock_283286794.jpeg",
-    title: "Discover Nature",
+    title: "Unlock the Secrets of Your DNA with Advanced Genome Testing",
   },
   {
     image: "/d-koi-COFXWa6LJdw-unsplash.jpg",
-    title: "Explore Cities",
+    title: "Personalized Genome Analysis for a Healthier Future",
   },
   {
     image: "/AdobeStock_169041837.jpeg",
-    title: "Experience Culture",
+    title: "Discover Your Genetic Blueprint with Cutting-Edge Genome Testing",
   },
   {
-    image: "/AdobeStock_284499339.jpeg",
-    title: "Embrace Adventure",
+    image: "/Genome-testing-2.jpeg",
+    title: "Precision Genome Testing for Insights That Matter",
   },
 ];
 
@@ -45,7 +44,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative w-full h-[50vh] group">
+    <div className="relative w-full h-[60vh] group">
       <div className="w-full h-full relative">
         <Image
           src={slides[currentIndex].image}

@@ -40,7 +40,7 @@ export default function ArticleCardiology() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-platinum-50 to-white">
       <Image
-        src="/Cardiology.jpeg"
+        src="/cardiolog-3.jpeg"
         alt="Cardiology"
         width={1920}
         height={1080}

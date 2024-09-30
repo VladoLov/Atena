@@ -38,7 +38,6 @@ function ArticleWholeGenomeSequencing() {
               Whole Genome Sequencing (WGS)
             </h2>
             <p className="mt-4 text-gray-600 md:text-lg">
-              {" "}
               Whole Genome Sequencing (WGS) is a laboratory process that
               involves determining the complete DNA sequence of an
               organism&apos;s genome at a single time. This includes sequencing

@@ -11,8 +11,8 @@ export default function ArticlePharamacogenomics() {
         height={1080}
         className="w-full max-w-screen object-cover h-[45vh]"
       />
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-6 text-center">
+      <main className="flex-grow container mx-auto px-6 py-8">
+        <h1 className="text-2xl lg:4xl font-bold mb-6 text-center px-2">
           Pharmacogenomics: Tailoring Medicine to Your Genes
         </h1>
         <div className="grid md:grid-cols-2 gap-8">
@@ -35,14 +35,14 @@ export default function ArticlePharamacogenomics() {
               <li>Personalized treatment plans</li>
             </ul>
           </section>
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold">How Does It Work?</h2>
-            <p>
+          <section className="space-y-4 ">
+            <h2 className="text-2xl font-semibold px-2">How Does It Work?</h2>
+            <p className="px-2">
               Pharmacogenomic tests analyze specific genes to predict how
               you&apos;ll respond to certain medications. These tests can help
               healthcare providers:
             </p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-outside space-y-2 px-4">
               <li>Choose the most effective medication for you</li>
               <li>Avoid medications that might cause side effects</li>
               <li>Adjust dosages based on your genetic profile</li>

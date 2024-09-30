@@ -1,13 +1,14 @@
 import Header from "@/components/Header";
 import ArticleMetagenomicSequencing from "../compoents/ArticleMetagenomicSequencing";
-import Footer from "@/components/Footer";
+
+import Footer2 from "@/components/Footer2";
 
 function page() {
   return (
     <div>
       <Header />
       <ArticleMetagenomicSequencing />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

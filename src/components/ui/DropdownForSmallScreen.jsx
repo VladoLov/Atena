@@ -51,11 +51,13 @@ const DropdownForSmallScreen = () => {
           <GiHamburgerMenu />
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className="bg-white max-h-[80vh] overflow-y-auto">
+        <DropdownMenuContent className="bg-white max-h-[80vh] min-w-96 overflow-y-auto text-center">
           <DropdownMenuLabel>
             <Link href="/about">About Us</Link>
           </DropdownMenuLabel>
-          <DropdownMenuItem>The Company</DropdownMenuItem>
+          <DropdownMenuItem className="items-center justify-center">
+            The Company
+          </DropdownMenuItem>
           <DropdownMenuItem>Mission</DropdownMenuItem>
           <DropdownMenuItem>The Founders</DropdownMenuItem>
 
@@ -73,7 +75,7 @@ const DropdownForSmallScreen = () => {
 
           <DropdownMenuLabel
             onClick={toggleOtherLinks}
-            className="cursor-pointer flex items-center justify-between"
+            className="cursor-pointer flex items-center justify-center gap-2"
           >
             Other Links
             {isOtherLinksExpanded ? (

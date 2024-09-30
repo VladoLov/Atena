@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import ArticlePharamacogenomics from "./components/ArticlePharamacogenomics";
-import Footer from "@/components/Footer";
+import Footer2 from "@/components/Footer2";
 
 function page() {
   return (
     <div>
       <Header />
       <ArticlePharamacogenomics />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

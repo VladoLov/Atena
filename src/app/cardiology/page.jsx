@@ -1,14 +1,14 @@
 import Header from "@/components/Header";
 
-import Footer from "@/components/Footer";
 import ArticleCardiology from "./ArticleCardiology";
+import Footer2 from "@/components/Footer2";
 
 function page() {
   return (
     <div>
       <Header />
       <ArticleCardiology />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

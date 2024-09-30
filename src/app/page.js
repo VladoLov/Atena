@@ -2,6 +2,7 @@ import Blog from "@/components/Blog";
 import EmblaCarousel from "@/components/component/EmblaCarousel";
 import ImageSlider from "@/components/component/Slider_adepted_to_next";
 import Footer from "@/components/Footer";
+import Footer2 from "@/components/Footer2";
 import Header from "@/components/Header";
 
 import Testimonials from "@/components/Testimonials";
@@ -16,7 +17,8 @@ export default function Home() {
       <ImageSlider />
       <Blog />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2 />
     </main>
   );
 }

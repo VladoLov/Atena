@@ -27,8 +27,8 @@ export default function WholeGenomeSequencingArticle() {
       </div>
 
       <main className="container mx-auto px-6 py-8">
-        <section className=" rounded-lg shadow-md p-6 mb-8 bg-crimson-50">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <section className=" rounded-lg shadow-md p-6 mb-8 bg-crimson-50 max-w-screen-lg mx-auto">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
             What is Whole Genome Sequencing?
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -40,31 +40,26 @@ export default function WholeGenomeSequencingArticle() {
           </p>
         </section>
 
-        <section className="bg-platinum-50 rounded-lg shadow-md p-6 mb-8">
-          <div className="flex flex-row">
-            <div className="basis-1/2">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                The Benefits of Whole Genome Sequencing
-              </h2>
-              <ul className="list-disc list-inside text-gray-600 leading-relaxed mb-4">
-                <li>Complete view of the genome</li>
-                <li>Identifies genetic variants associated with diseases</li>
-                <li>Helps in personalizing medicine and treatment</li>
-                <li>Understanding evolutionary biology</li>
-              </ul>
-            </div>
-            <div className="basis-1/2">
-              <Animations />
-            </div>
+        <section className="bg-platinum-50 rounded-lg shadow-md p-6 mb-8 max-w-screen-lg mx-auto">
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+              The Benefits of Whole Genome Sequencing
+            </h2>
+            <ul className="list-disc list-outside text-gray-600 leading-relaxed px-4 mb-4">
+              <li>Complete view of the genome</li>
+              <li>Identifies genetic variants associated with diseases</li>
+              <li>Helps in personalizing medicine and treatment</li>
+              <li>Understanding evolutionary biology</li>
+            </ul>
           </div>
         </section>
 
-        <section className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <section className="bg-white rounded-lg shadow-md p-6  max-w-screen-lg mx-auto">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
             Applications of Whole Genome Sequencing
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+            <div className="bg-gray-50 py-4 rounded-lg shadow-sm">
               <h3 className="text-xl font-medium text-gray-700">
                 Medical Research
               </h3>
@@ -73,7 +68,7 @@ export default function WholeGenomeSequencingArticle() {
                 basis of diseases and to develop personalized treatments.
               </p>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
+            <div className="bg-gray-50 py-4 rounded-lg shadow-sm">
               <h3 className="text-xl font-medium text-gray-700">
                 Agriculture and Evolution
               </h3>
@@ -85,12 +80,6 @@ export default function WholeGenomeSequencingArticle() {
           </div>
         </section>
       </main>
-
-      <footer className="bg-gray-800 py-6 mt-8">
-        <div className="container mx-auto text-center text-white">
-          <p>&copy; 2024 Genome Insights. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import NeurologuArticle from "./NeurologuArticle";
-import Footer from "@/components/Footer";
+import Footer2 from "@/components/Footer2";
 
 function page() {
   return (
     <div>
       <Header />
       <NeurologuArticle />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }
