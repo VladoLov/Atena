@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
+import DropdownForSmallScreen from "./ui/DropdownForSmallScreen";
 
 // import i18n from "./../utils/i18n";
 
@@ -28,7 +29,7 @@ function Header() {
   return (
     <>
       {/* Dropdown Menu for small screens */}
-      <div className="bg-crimson-400 w-full flex justify-between px-4 py-1 lg:hidden">
+      {/* <div className="bg-crimson-400 w-full flex justify-between px-4 py-1 lg:hidden">
         <Link href="/">
           <Image src="/GetImage.png" width={130} height={20} alt="Atena logo" />
         </Link>
@@ -85,7 +86,8 @@ function Header() {
             <Button className="bg-crimson-400 text-black">My Project</Button>
           </DropdownMenuContent>
         </DropdownMenu>
-      </div>
+      </div> */}
+      <DropdownForSmallScreen />
 
       <div className="bg-crimson-400 md:w-full z-3 md:justify-end px-20 md:py-0 hidden lg:flex md:flex-col lg:justify-end xl:justify-end items-end">
         <NavigationMenu>
