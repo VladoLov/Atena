@@ -28,7 +28,7 @@ export default function ArticlePharamacogenomics() {
               tailored to a person&apos;s genetic makeup.
             </p>
             <h3 className="text-xl font-semibold">Key Benefits:</h3>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-outside space-y-2 px-4">
               <li>Improved drug efficacy</li>
               <li>Reduced adverse drug reactions</li>
               <li>Optimized drug dosages</li>
@@ -36,26 +36,26 @@ export default function ArticlePharamacogenomics() {
             </ul>
           </section>
           <section className="space-y-4 ">
-            <h2 className="text-2xl font-semibold px-2">How Does It Work?</h2>
-            <p className="px-2">
+            <h2 className="text-2xl font-semibold ">How Does It Work?</h2>
+            <p className="">
               Pharmacogenomic tests analyze specific genes to predict how
               you&apos;ll respond to certain medications. These tests can help
               healthcare providers:
             </p>
-            <ul className="list-disc list-outside space-y-2 px-4">
+            <ul className="list-disc list-outside space-y-2 px-3">
               <li>Choose the most effective medication for you</li>
               <li>Avoid medications that might cause side effects</li>
               <li>Adjust dosages based on your genetic profile</li>
               <li>Reduce trial-and-error in prescribing</li>
             </ul>
-            <div className="mt-6">
+            {/*          <div className="mt-6">
               <Link
                 href="#learn-more"
                 className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
               >
                 Learn More
               </Link>
-            </div>
+            </div> */}
           </section>
         </div>
       </main>

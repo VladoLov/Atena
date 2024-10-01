@@ -67,7 +67,7 @@ export default function ArticleHeredityScreening() {
                 <h3 className="text-2xl font-semibold mb-4">
                   Why is it Important?
                 </h3>
-                <ul className="list-disc list-inside text-muted-foreground">
+                <ul className="list-disc list-outside text-muted-foreground mr-2 ml-4">
                   <li>Early detection of genetic risks</li>
                   <li>Personalized prevention strategies</li>
                   <li>Informed family planning decisions</li>

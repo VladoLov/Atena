@@ -71,7 +71,7 @@ export default function ArticleReproductiveHealth() {
             </div>
           ))}
         </div>
-        <section className="mt-12 bg-white p-8 rounded-lg shadow-md">
+        <section className="mt-12 bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6 text-center text-purple-800">
             Why Reproductive Health Matters
           </h2>
@@ -80,7 +80,7 @@ export default function ArticleReproductiveHealth() {
               <h3 className="text-lg font-semibold text-purple-700">
                 For Individuals
               </h3>
-              <ul className="list-disc list-inside text-gray-600 space-y-1">
+              <ul className="list-disc list-outside text-gray-600 space-y-1 pl-3">
                 <li>Empowers informed decision-making</li>
                 <li>Promotes overall health and well-being</li>
                 <li>Supports personal autonomy</li>
@@ -90,7 +90,7 @@ export default function ArticleReproductiveHealth() {
               <h3 className="text-lg font-semibold text-purple-700">
                 For Communities
               </h3>
-              <ul className="list-disc list-inside text-gray-600 space-y-1">
+              <ul className="list-disc list-outside text-gray-600 space-y-1 pl-3">
                 <li>Contributes to gender equality</li>
                 <li>Improves public health outcomes</li>
                 <li>Supports sustainable development</li>

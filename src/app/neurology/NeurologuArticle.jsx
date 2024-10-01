@@ -81,7 +81,7 @@ export default function NeurologuArticle() {
         </p>
 
         <Tabs defaultValue="conditions" className="mb-12">
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid min-w-fit grid-cols-2 gap-2">
             <TabsTrigger value="conditions">
               Neurological Conditions
             </TabsTrigger>

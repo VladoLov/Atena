@@ -25,6 +25,24 @@ const DropdownForSmallScreen = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const servicesLinks = [
+    {
+      href: "/services/whole-genome-sequencing",
+      label: "Whole Genome Sequencing",
+    },
+    {
+      href: "/services/whole-exome-sequencing",
+      label: "Whole Exome Sequencing",
+    },
+    {
+      href: "/services/targeting-sequencing",
+      label: "Targeting Sequencing",
+    },
+    {
+      href: "/services/metagenomic-sequencing",
+      label: "Metagenomic Sequencing",
+    },
+  ];
 
   const otherLinks = [
     { href: "/oncology", label: "Oncology" },
@@ -66,10 +84,11 @@ const DropdownForSmallScreen = () => {
           <DropdownMenuLabel>
             <Link href="/services">Services</Link>
           </DropdownMenuLabel>
-          <DropdownMenuItem>Whole genome sequencing</DropdownMenuItem>
-          <DropdownMenuItem>Whole exome sequencing</DropdownMenuItem>
-          <DropdownMenuItem>Targeted sequencing</DropdownMenuItem>
-          <DropdownMenuItem>Metagenomic sequencing</DropdownMenuItem>
+          {servicesLinks.map((link) => (
+            <DropdownMenuItem key={link.href}>
+              <Link href={link.href}>{link.label}</Link>
+            </DropdownMenuItem>
+          ))}
 
           <DropdownMenuSeparator />
 
@@ -96,7 +115,7 @@ const DropdownForSmallScreen = () => {
           )}
 
           <DropdownMenuSeparator />
-          <Button className="bg-crimson-400 text-black w-full">
+          <Button className="bg-crimson-400 text-black w-9/12 ">
             My Project
           </Button>
         </DropdownMenuContent>
