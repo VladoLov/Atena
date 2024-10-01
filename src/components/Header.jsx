@@ -74,6 +74,17 @@ function Header() {
                 </Button>
               </a>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/test">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-white text-black flex items-center justify-between"
+                >
+                  Test
+                </Button>
+              </Link>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
