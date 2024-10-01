@@ -1,27 +1,17 @@
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
 import { Button } from "./ui/button";
-import Image from "next/image";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
+import Image from "next/image";
 import DropdownForSmallScreen from "./ui/DropdownForSmallScreen";
+import SecondNav from "./SecondNav";
 
 // import i18n from "./../utils/i18n";
 
@@ -144,7 +134,8 @@ function Header() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="bg-platinum-50 w-full justify-between px-20 relative z-0 hidden lg:flex flex-row items-center">
+      <SecondNav />
+      {/* <div className="bg-platinum-50 w-full justify-between px-20 relative z-0 hidden lg:flex flex-row items-center">
         <Link href="/" className="flex items-end gap-4 flex-row">
           <Image src="/GetImage.png" width={130} height={15} alt="Atena logo" />
           <h3 className="text-lg font-semibold">
@@ -217,7 +208,7 @@ function Header() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -42,12 +42,13 @@ export default function Footer2() {
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="flex flex-col items-center lg:items-start">
-            <div className="flex justify-center text-teal-600 sm:justify-start">
+            <div className="flex justify-center text-teal-600 sm:justify-start ">
               <Image
                 src="/GetImage.png"
-                width="200"
-                height="200"
+                width={100}
+                height={100}
                 alt="Atena logo"
+                priority
               />
             </div>
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">

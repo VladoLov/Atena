@@ -13,7 +13,7 @@ export default function FramerMotionImage() {
         <motion.div
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="w-full h-full bg-black bg-opacity-50 "
         >
           <Image
@@ -26,14 +26,14 @@ export default function FramerMotionImage() {
             priority
           />
         </motion.div>
-        <motion.div
+        {/*   <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
           className="absolute inset-0 flex items-center justify-center"
         >
           <HeaderInFaramer />
-        </motion.div>
+        </motion.div> */}
       </header>
       <FramerMainSection />
     </div>
