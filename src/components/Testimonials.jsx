@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Testimonials() {
   return (
-    <section className="bg-crimson-50 w-full  flex justify-center items-center">
+    <section className="bg-#4a4a4a w-full  flex justify-center items-center">
       <div className=" max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex justify-center pb-10">
           <blockquote className="w-full lg:w-auto rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
