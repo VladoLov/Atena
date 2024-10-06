@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { firstHeader, services } from "@/lib/url";
 
 function FooterSection({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,13 +41,13 @@ export default function Footer2() {
   return (
     <footer className="bg-platinum-50 w-full">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="flex flex-col items-center lg:items-start">
             <div className="flex justify-center text-teal-600 sm:justify-start ">
               <Image
-                src="/GetImage.png"
-                width={100}
-                height={100}
+                src="/Atena-logo.png"
+                width={250}
+                height={250}
                 alt="Atena logo"
                 priority
               />
@@ -122,76 +123,62 @@ export default function Footer2() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-            <FooterSection title="About Us">
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  The Company
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Mission
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  The Founders
-                </a>
-              </li>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-5">
+            <FooterSection title="Information">
+              {firstHeader.map((service) => (
+                <li key={service.href}>
+                  <Link
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href={service.href}
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </FooterSection>
+            <FooterSection title="Oncology Services">
+              {services[0].items.map((service) => (
+                <li key={service.href}>
+                  <Link
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href={service.href}
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </FooterSection>
 
-            <FooterSection title="Services">
-              <li>
-                <Link
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="/services/whole-genome-sequencing"
-                >
-                  Whole genome sequencing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="/services/whole-exome-sequencing"
-                >
-                  Whole exome sequencing
-                </Link>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Targeted sequencing
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Metagenomic sequencing
-                </a>
-              </li>
+            <FooterSection title="Genopathy Services">
+              {services[1].items.map((service) => (
+                <li key={service.href}>
+                  <Link
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href={service.href}
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </FooterSection>
 
-            <FooterSection title="Other Links">
-              <li>
+            <FooterSection title="Other Services">
+              {services.slice(2).map((service) => (
+                <li key={service.href}>
+                  <Link
+                    className="text-gray-700 transition hover:text-platinum-800"
+                    href={service.href}
+                  >
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+              {/*      <li>
                 <a
                   className="text-gray-700 transition hover:text-platinum-800"
                   href="#"
                 >
-                  Oncology
+                  Cardiopathy
                 </a>
               </li>
               <li>
@@ -249,7 +236,7 @@ export default function Footer2() {
                 >
                   Infectious diseases
                 </a>
-              </li>
+              </li> */}
             </FooterSection>
 
             <FooterSection title="Contact Us">
@@ -273,7 +260,7 @@ export default function Footer2() {
                     />
                   </svg>
                   <span className="flex-1 text-gray-700 hover:text-platinum-800">
-                    john@doe.com
+                    info@atenagenomics.com
                   </span>
                 </a>
               </li>
@@ -297,7 +284,7 @@ export default function Footer2() {
                     />
                   </svg>
                   <span className="flex-1 text-gray-700 hover:text-platinum-800">
-                    0123456789
+                    +387 **-***-***
                   </span>
                 </a>
               </li>
@@ -322,7 +309,7 @@ export default function Footer2() {
                   />
                 </svg>
                 <address className="-mt-0.5 flex-1 not-italic text-gray-700 hover:text-platinum-800">
-                  213 Lane, London, United Kingdom
+                  Mostar
                 </address>
               </li>
             </FooterSection>

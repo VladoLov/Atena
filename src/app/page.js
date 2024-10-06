@@ -6,16 +6,19 @@ import ServicesComponent from "@/components/ServicesComponent";
 
 import Testimonials from "@/components/Testimonials";
 import dynamic from "next/dynamic";
+import Slider from "../components/Slider";
+import ManualHeader from "@/components/component/ManualHeader";
 
-const SliderComp = dynamic(() => import("../components/Slider"), {
+/* const SliderComp = dynamic(() => import("../components/Slider"), {
   ssr: false,
-});
+}); */
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start">
-      <Header />
-      <SliderComp />
+      <ManualHeader />
+      <Slider />
+      {/*  <SliderComp /> */}
       <Blog />
       <ServicesComponent />
       <Testimonials />

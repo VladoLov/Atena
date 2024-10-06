@@ -19,7 +19,7 @@ function AboutProjects() {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto lg:mt-48">
       <h2 className="text-3xl font-bold text-center mt-12 mb-8">
         About My Projects
       </h2>

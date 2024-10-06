@@ -20,7 +20,7 @@ function FinalNavbar() {
   };
 
   return (
-    <nav className="flex list-none items-center justify-start">
+    <nav className="flex list-none items-center justify-start z-30">
       <ul className="flex space-x-4 items-center rounded-lg mx-2">
         {firstHeader.map((navItem, index) => (
           <li className="relative group z-20" key={index}>
