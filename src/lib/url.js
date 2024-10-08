@@ -149,7 +149,7 @@ export const firstHeader = [
 export const teamMembers = [
   {
     id: "1",
-    name: "Marija Vujadinovic",
+    name: "Marija Vujadinović",
     role: "Physicist",
     bio: "Discovered the laws of motion and universal gravitation.",
     imageUrl: "/profile.svg",

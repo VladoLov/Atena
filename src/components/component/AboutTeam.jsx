@@ -11,12 +11,12 @@ function AboutTeam() {
             key={member.id}
             className="bg-gray-100 rounded-lg overflow-hidden shadow-md"
           >
-            <div className="relative h-64">
+            <div className="relative h-64 rounded-full">
               <Image
                 src={member.imageUrl}
                 alt={member.name}
                 fill
-                className="object-cover"
+                className="object-cover rounded-full"
               />
             </div>
             <div className="p-6">

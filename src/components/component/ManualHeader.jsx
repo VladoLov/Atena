@@ -29,13 +29,13 @@ function ManualHeader() {
         </div>
         <nav className="hidden lg:flex flex-row space-x-4 items-center z-29">
           <FinalNavbar />
-          <SearchBar />
-          {/* <Testingcss /> */}
           <div>
+            {/* <Testingcss /> */}
             <Button className="bg-crimson-500 text-black font-semibold text-sm hover:bg-crimson-600">
               My Account
             </Button>
           </div>
+          <SearchBar />
         </nav>
       </nav>
     </header>
