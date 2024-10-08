@@ -1,6 +1,7 @@
 import AboutProjects from "@/components/component/AboutProjects";
 
 import HoverNavigationMenu from "@/components/component/ManualHeader";
+import CircularCards from "@/components/component/ProjectsMain";
 
 import SubHeader from "@/components/component/SubHeader";
 
@@ -20,6 +21,7 @@ export default function page() {
         <DnaComponent />
         <SubHeader />
         <AboutProjects />
+        <CircularCards />
       </div>
       <Footer2 />
     </div>
