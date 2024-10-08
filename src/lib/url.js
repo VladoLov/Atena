@@ -145,3 +145,27 @@ export const firstHeader = [
   },
   { title: "Contact", href: "/contact" },
 ];
+
+export const teamMembers = [
+  {
+    id: "1",
+    name: "Marija Vujadinovic",
+    role: "Physicist",
+    bio: "Discovered the laws of motion and universal gravitation.",
+    imageUrl: "/profile.svg",
+  },
+  {
+    id: "2",
+    name: "Irena Lovric Zovko",
+    role: "Primatologist",
+    bio: "Renowned for her groundbreaking work with chimpanzees.",
+    imageUrl: "/profile.svg",
+  },
+  {
+    id: "3",
+    name: "Jasmina Demirovic Mustafic",
+    role: "Chemist and Physicist",
+    bio: "Pioneering researcher of radioactivity, discovered polonium and radium.",
+    imageUrl: "/profile.svg",
+  },
+];

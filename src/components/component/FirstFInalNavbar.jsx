@@ -41,7 +41,7 @@ function FinalNavbar() {
 
               {/* Dropdown for Services */}
               <ul
-                className="absolute left-0 hidden mt-[1px] w-48 bg-crimson-400 shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
+                className="absolute left-0 hidden mt-[1px] w-48 bg-crimson-500 shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -52,7 +52,7 @@ function FinalNavbar() {
                       {subItem.href && (
                         <Link
                           href={subItem.href}
-                          className="block px-4 py-2 text-black hover:bg-crimson-500 hover:rounded hover:ring-1 hover:ring-black transition-colors duration-300 ease-in-out"
+                          className="block px-4 py-2 text-black hover:bg-crimson-600 hover:rounded hover:ring-1 hover:ring-black transition-colors duration-300 ease-in-out"
                           onMouseEnter={() => handleMouseEnter(index)}
                         >
                           {subItem.title}
@@ -62,7 +62,7 @@ function FinalNavbar() {
                       {/* Submenu */}
                       {subItem.items && openSubMenuIndex === subIndex && (
                         <ul
-                          className="absolute left-full top-0 mt-full ml-[1px] w-48 bg-crimson-400 shadow-lg transition-all duration-300 ease-in-out transform opacity-100"
+                          className="absolute left-full top-0 mt-full ml-[1px] w-48 bg-crimson-500 shadow-lg transition-all duration-300 ease-in-out transform opacity-100"
                           onMouseEnter={() => setOpenSubMenuIndex(subIndex)}
                           onMouseLeave={() => setOpenSubMenuIndex(null)}
                         >
@@ -72,7 +72,7 @@ function FinalNavbar() {
                               {item.href && (
                                 <Link
                                   href={item.href}
-                                  className="block px-4 py-2 text-black hover:bg-crimson-500 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
+                                  className="block px-4 py-2 text-black hover:bg-crimson-600 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
                                 >
                                   {item.title}
                                 </Link>

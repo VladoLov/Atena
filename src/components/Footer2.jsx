@@ -12,7 +12,7 @@ function FooterSection({ title, children }) {
   return (
     <div className="text-center sm:text-left">
       <button
-        className="flex items-center justify-center w-full text-lg font-medium text-crimson-500 hover:text-crimson-600 lg:hidden"
+        className="flex items-center justify-center w-full text-lg font-medium text-crimson-600 hover:text-crimson-700 lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
@@ -22,7 +22,7 @@ function FooterSection({ title, children }) {
         </span>
       </button>
 
-      <p className="hidden lg:block text-lg font-medium text-crimson-500 hover:text-crimson-600">
+      <p className="hidden lg:block text-lg font-medium text-crimson-500 hover:text-crimson-700">
         {title}
       </p>
 
@@ -56,6 +56,83 @@ export default function Footer2() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
+            <div className="flex flex-col gap-1.5 text-center sm:text-left mt-6">
+              <p className="text-lg font-medium">Contact Us</p>
+              <ul className=" mt-2 space-y-4 text-sm lg:block lg:mt-4">
+                <li>
+                  <Link
+                    className="flex items-center justify-start gap-1.5 lg:justify-start"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="size-5 shrink-0  text-crimson-600 hover:scale-110 hover:text-crimson-700"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span className="flex pl-1 text-gray-700 hover:text-platinum-800">
+                      info@atenagenomics.com
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    className="flex justify-start  gap-1.5 lg:justify-start"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="size-5 shrink-0  text-crimson-600 hover:scale-110 hover:text-crimson-700"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <span className="flex pl-1 text-gray-700 hover:text-platinum-800">
+                      +387 **-***-***
+                    </span>
+                  </a>
+                </li>
+                <li className="flex justify-start  gap-1.5 lg:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="size-5 shrink-0  text-crimson-600 hover:scale-110 hover:text-crimson-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <address className="-mt-0.5 pl-1 not-italic text-gray-700 hover:text-platinum-800">
+                    Mostar
+                  </address>
+                </li>
+              </ul>
+            </div>
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
@@ -63,11 +140,11 @@ export default function Footer2() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-crimson-500"
+                  className="text-teal-700 transition hover:text-crimson-700"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
-                    className="size-6"
+                    className="size-6 text-crimson-600 hover:scale-110 hover:text-crimson-700 "
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -85,11 +162,11 @@ export default function Footer2() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-crimson-500"
+                  className="text-teal-700 transition hover:text-crimson-700"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
-                    className="size-6"
+                    className="size-6  text-crimson-600 hover:scale-110 hover:text-crimson-700"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -107,11 +184,11 @@ export default function Footer2() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-700 transition hover:text-crimson-500"
+                  className="text-teal-700 transition hover:text-crimson-700"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
-                    className="size-6"
+                    className="size-6  text-crimson-600 hover:scale-110 hover:text-crimson-700"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -123,7 +200,7 @@ export default function Footer2() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             <FooterSection title="Information">
               {firstHeader.map((service) => (
                 <li key={service.href}>
@@ -173,145 +250,6 @@ export default function Footer2() {
                   </Link>
                 </li>
               ))}
-              {/*      <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Cardiopathy
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Neurology
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Cardiology
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Heredity screening
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Prenatal screening
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Reproductive health
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Pharmacogenomics
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-platinum-800"
-                  href="#"
-                >
-                  Infectious diseases
-                </a>
-              </li> */}
-            </FooterSection>
-
-            <FooterSection title="Contact Us">
-              <li>
-                <a
-                  className="flex items-center justify-center gap-1.5 lg:justify-start"
-                  href="#"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-5 shrink-0 text-gray-900"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <span className="flex-1 text-gray-700 hover:text-platinum-800">
-                    info@atenagenomics.com
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="flex items-center justify-center gap-1.5 lg:justify-start"
-                  href="#"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-5 shrink-0 text-gray-900"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  <span className="flex-1 text-gray-700 hover:text-platinum-800">
-                    +387 **-***-***
-                  </span>
-                </a>
-              </li>
-              <li className="flex items-start justify-center gap-1.5 lg:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 shrink-0 text-gray-900"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <address className="-mt-0.5 flex-1 not-italic text-gray-700 hover:text-platinum-800">
-                  Mostar
-                </address>
-              </li>
             </FooterSection>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function FramerMainSection() {
+function AboutTextSection() {
   return (
     <main className="container mx-auto px-4 py-8">
       <section className="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -11,16 +11,16 @@ function FramerMainSection() {
           neque eu tellus rhoncus ut eleifend nibh porttitor.
         </p>
       </section>
-      <section className="bg-white rounded-lg shadow-md p-6">
+      {/*    <section className="bg-white rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-semibold mb-4">Our Services</h2>
         <ul className="list-disc list-inside text-gray-600">
           <li>The Company</li>
           <li>Mission</li>
           <li>The Founders</li>
         </ul>
-      </section>
+      </section> */}
     </main>
   );
 }
 
-export default FramerMainSection;
+export default AboutTextSection;

@@ -4,11 +4,11 @@ import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import HeaderInFaramer from "./HeaderInFaramer";
-import FramerMainSection from "./FramerMainSection";
+import FramerMainSection from "./AboutTextSection";
 
 export default function FramerMotionImage() {
   return (
-    <div className="w-full min-h-screen bg-gray-100 z-[-1]">
+    <div className="w-full max-h-[50vh] bg-gray-100 z-[-1]">
       <header className="relative w-full h-[50vh] overflow-hidden ">
         <motion.div
           initial={{ opacity: 0, scale: 1.1 }}
@@ -35,7 +35,6 @@ export default function FramerMotionImage() {
           <HeaderInFaramer />
         </motion.div> */}
       </header>
-      <FramerMainSection />
     </div>
   );
 }
