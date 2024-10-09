@@ -145,10 +145,10 @@ export default function ResponsiveCircularCards() {
   }, []);
 
   const calculatePosition = (index, totalCards) => {
-    const radius = 400; // Increased radius to accommodate larger cards
+    const radius = 380; // Increased radius to accommodate larger cards
     const angle = (index * 2 * Math.PI) / totalCards;
-    const centerX = 550; // Adjusted center X to accommodate larger radius
-    const centerY = 450; // Adjusted center Y to accommodate larger radius
+    const centerX = 580; // Adjusted center X to accommodate larger radius
+    const centerY = 400; // Adjusted center Y to accommodate larger radius
 
     return {
       left: `${centerX + radius * Math.cos(angle)}px`,
@@ -174,7 +174,7 @@ export default function ResponsiveCircularCards() {
               />
             </div>
           ))}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[220px]">
+          <div className="absolute top-1/2 left-[52%] transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[220px]">
             <Card className="w-full h-full flex items-center justify-center">
               <CardContent>
                 <h2 className="text-xl font-bold text-center">Services</h2>

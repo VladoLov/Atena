@@ -25,7 +25,7 @@ export default function FlipCard({
 
   return (
     <div
-      className={cn("group h-56 w-80 [perspective:1000px]", className)}
+      className={cn("group h-48 w-72 [perspective:1000px]", className)}
       {...props}
     >
       <div
