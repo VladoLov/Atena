@@ -64,6 +64,12 @@ module.exports = {
         },
       },
       keyframes: {
+        "pop-blob": {
+          "0%": { transform: "scale(1)" },
+          "33%": { transform: "scale(1.2)" },
+          "66%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },
+        },
         rotateScale: {
           "0%": {
             transform: "rotate(0deg) scale(1)",
@@ -114,6 +120,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pop-blob": "pop-blob 5s infinite",
       },
     },
     colors: {
@@ -145,6 +152,10 @@ module.exports = {
         700: "#757777",
         800: "#5d5f5f",
         900: "#464848",
+      },
+      filter: {
+        "blur-20": "blur(20px)",
+        "blur-25": "blur(25px)",
       },
       background: "hsl(var(--background, 30.1, 100%, 50%))",
       foreground: "hsl(var(--foreground))",
