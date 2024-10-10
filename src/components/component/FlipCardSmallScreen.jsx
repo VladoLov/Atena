@@ -8,15 +8,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export const FlipCardSmallScreen = ({
   image,
   title,
   description,
   subtitle,
+  href,
 }) => {
   return (
-    <Card className="h-full flex flex-col">
+    <Card className="h-full flex flex-col h-68">
       <CardHeader>
         <div className="relative w-full h-40">
           <Image
@@ -27,14 +29,16 @@ export const FlipCardSmallScreen = ({
             className="rounded-t-lg"
           />
         </div>
-        <CardTitle className="mt-2">{title}</CardTitle>
+        <CardTitle className="mt-2 ">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground">{subtitle}</p>
+        {/* <p className="text-sm text-muted-foreground">{subtitle}</p> */}
         <p className="mt-2">{description}</p>
       </CardContent>
       <CardFooter className="mt-auto">
-        <Button className="w-full">Learn More</Button>
+        <Button className="w-full bg-gradient-to-tr text-black from-crimson-500 to-crimson-600">
+          <Link href={href}>Learn More</Link>
+        </Button>
       </CardFooter>
     </Card>
   );

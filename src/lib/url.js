@@ -156,16 +156,69 @@ export const teamMembers = [
   },
   {
     id: "2",
-    name: "Irena Lovric Zovko",
+    name: "Irena Lovrić Zovko",
     role: "Primatologist",
     bio: "Renowned for her groundbreaking work with chimpanzees.",
     imageUrl: "/profile.svg",
   },
   {
     id: "3",
-    name: "Jasmina Demirovic Mustafic",
+    name: "Jasmina Demirović Mustafić",
     role: "Chemist and Physicist",
     bio: "Pioneering researcher of radioactivity, discovered polonium and radium.",
     imageUrl: "/profile.svg",
   },
+];
+
+export const flipCardData = [
+  {
+    image: "/Oncology.png",
+    title: "Oncology",
+    description: "Identifies genetic mutations and driving tumor growth.",
+    subtitle: "Oncology NGS",
+    href: "/oncology",
+  },
+  {
+    image: "/Genome-testing-2.jpeg",
+    title: "Genopathy",
+    description: "Involves genetic disorders affecting the body's functions.",
+    subtitle: "Genopathy ",
+    href: "/oncology",
+  },
+  {
+    image: "/cardiolog-3.jpeg",
+    title: "Cardiopathy",
+    description: "Refers to diseases affecting the heart's function.",
+    subtitle: "Cardiopathy",
+    href: "/oncology",
+  },
+  {
+    image: "/2400-pregnant-woman.jpg",
+    title: "Perinatal",
+    description: "Refers to the time around birth, including pregnancy.",
+    subtitle: "Perinatal",
+    href: "/oncology",
+  },
+  {
+    image: "/Pharmacogenomics.jpeg",
+    title: "Pharmacogenetics",
+    description: "Studies how genes affect individual drug responses.",
+    subtitle: "Pharmacogenetics",
+    href: "/oncology",
+  },
+  {
+    image: "/genome-research-lab-tests.jpg",
+    title: "Pathogenomics",
+    description: "Studies the genetic makeup of disease-causing organisms.",
+    subtitle: "Pathogenomics",
+    href: "/oncology",
+  },
+  {
+    image: "/2400-dna-molecule-spiral-structure-model.jpg",
+    title: "Hereditary screening",
+    description: "Identifies genetic conditions passed through family lines.",
+    subtitle: "Hereditary screening",
+    href: "/oncology",
+  },
+  // Add as many cards as needed
 ];

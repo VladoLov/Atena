@@ -20,7 +20,8 @@ export default function page() {
 
         <DnaComponent />
         <SubHeader />
-        <AboutProjects />
+      </div>
+      <div className="w-full from-crimson-200 to-transparent bg-gradient-radial">
         <CircularCards />
       </div>
       <Footer2 />

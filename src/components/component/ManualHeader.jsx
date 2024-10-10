@@ -20,7 +20,7 @@ function ManualHeader() {
         <div className="flex justify-center items-center pl-2 sm:pl-4 md:pl-8 lg:pl-12">
           <Link href="/">
             <Image
-              src="/Atena-logo.png"
+              src="/AtenaGenomicsLogo.png"
               alt="Atena logo"
               width={150}
               height={150}

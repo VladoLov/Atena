@@ -22,7 +22,7 @@ function FooterSection({ title, children }) {
         </span>
       </button>
 
-      <p className="hidden lg:block text-lg font-medium text-crimson-500 hover:text-crimson-700">
+      <p className="hidden lg:block text-lg font-medium text-crimson-600 hover:text-crimson-700">
         {title}
       </p>
 
@@ -43,16 +43,16 @@ export default function Footer2() {
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="flex flex-col items-center lg:items-start">
-            <div className="flex justify-center text-teal-600 sm:justify-start ">
+            <div className="flex justify-center text-crimson-600 sm:justify-start ">
               <Image
-                src="/Atena-logo.png"
+                src="/AtenaGenomicsLogo.png"
                 width={250}
                 height={250}
                 alt="Atena logo"
                 priority
               />
             </div>
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+            <p className="mt-6 max-w-md text-center leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -213,7 +213,7 @@ export default function Footer2() {
                 </li>
               ))}
             </FooterSection>
-            <FooterSection title="Oncology Services">
+            <FooterSection title="Oncology">
               {services[0].items.map((service) => (
                 <li key={service.href}>
                   <Link
@@ -226,7 +226,7 @@ export default function Footer2() {
               ))}
             </FooterSection>
 
-            <FooterSection title="Genopathy Services">
+            <FooterSection title="Genopathy">
               {services[1].items.map((service) => (
                 <li key={service.href}>
                   <Link

@@ -1,12 +1,14 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function FlipCard({
   image,
   title,
   description,
   subtitle,
+  href,
   rotate = "y",
   className,
   ...props
@@ -43,7 +45,7 @@ export default function FlipCard({
             width={200}
             className="h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40"
           />
-          <div className="absolute bottom-4 left-4 text-xl font-bold text-black">
+          <div className="bg-black/80 p-2 rounded-md absolute bottom-4 left-4 text-xl font-bold text-white">
             {title}
           </div>
         </div>
@@ -51,18 +53,20 @@ export default function FlipCard({
         {/* Back */}
         <div
           className={cn(
-            "absolute h-full w-full rounded-2xl bg-black/80 p-4 text-slate-200 [backface-visibility:hidden]",
+            "absolute h-full w-full rounded-2xl bg-black/80 p-4 text-platinum-200 [backface-visibility:hidden]",
             self[1]
           )}
         >
           <div className="flex min-h-full flex-col gap-2 justify-between">
             <div>
               <h1 className="text-xl font-bold text-white">{subtitle}</h1>
-              <p className="mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100">
+              <p className="mt-1 border-t border-t-platinum-200 py-4 text-base font-medium leading-normal text-platinum-100">
                 {description}
               </p>
             </div>
-            <Button>Learn more</Button>
+            <Button>
+              <Link href={href}>Learn more</Link>
+            </Button>
           </div>
         </div>
       </div>

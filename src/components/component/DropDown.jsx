@@ -25,7 +25,12 @@ const DropDown = () => {
   return (
     <div className="bg-white w-full flex justify-between px-4 py-1 lg:hidden shadow-md mb-1">
       <Link href="/">
-        <Image src="/Atena-logo.png" width={130} height={20} alt="Atena logo" />
+        <Image
+          src="/AtenaGenomicsLogo.png"
+          width={130}
+          height={20}
+          alt="Atena logo"
+        />
       </Link>
 
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
