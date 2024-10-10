@@ -24,7 +24,7 @@ export const DnaComponent = () => {
             Advance <span className="text-crimson-500">Genome</span> Testing
             Services
           </h1>
-          <p className="text-lg text-platinum-600">
+          <p className="text-lg text-platinum-900">
             Explore your genetic heritage{" "}
           </p>
           <Button className="w-fit text-black font-semibold bg-gradient-to-tr from-crimson-500 to-crimson-600 hover:bg-gradient-to-tr hover:from-crimson-600 hover:to-crimson-700">
