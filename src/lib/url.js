@@ -222,3 +222,219 @@ export const flipCardData = [
   },
   // Add as many cards as needed
 ];
+
+export const faqData = [
+  {
+    question: "Which services do you offer?",
+    answer: (
+      <>
+        ATENA Genomics offers Next Generation Sequencing (NGS) services
+        including DNA extraction from different source samples (see our{" "}
+        <strong>Sample Submission Guide</strong>), sample QC, NGS sequencing,
+        data QC, and reporting. Please see our services or reach out to our team
+        for further details at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    question: "What competencies and accreditation can you offer?",
+    answer:
+      "ATENA Genomics collaborates with ISO15189 and ISO/IEC17025 accredited laboratories for NGS diagnostic activities.",
+  },
+  {
+    question: "What is the price of your services?",
+    answer:
+      "Each project is unique, and prices depend on the type of sequencing technology, turnaround time, sample type, number of samples, and the scope of the project. We work with multiple accredited laboratories to ensure accurate results, fast turnaround time, and competitive pricing.",
+  },
+  {
+    question: "Are the Terms and Conditions available online?",
+    answer: (
+      <>
+        Yes. Please read our <strong>Terms and Conditions</strong>.
+      </>
+    ),
+  },
+  {
+    question: "Do I need a quote for the services?",
+    answer: (
+      <>
+        Yes. Each sequencing project is customized to meet your specific
+        requirements. Our team will work closely with you to thoroughly discuss
+        your project details and provide a personalized quote. To request a
+        quote, use the <strong>Sample Submission form</strong> or reach out to
+        the team for any questions you may have at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    question: "How should I prepare my samples?",
+    answer: (
+      <>
+        The <strong>Sample Submission form</strong> is mandatory for each
+        project please consult our <strong>Sample Submission Guide</strong> or
+        reach out to the team for any questions you may have at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    question: "What type of samples do you accept?",
+    answer: (
+      <>
+        Comprehensive NGS services are available for non-hazardous human and
+        microorganism samples. Please consult our{" "}
+        <strong>Sample Submission Guide</strong> or reach out to our team for
+        further details at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>{" "}
+        to ensure your submitted sample meets the requirements.
+      </>
+    ),
+  },
+  {
+    question: "What is the turnaround time for your NGS services?",
+    answer: (
+      <>
+        Timelines for the delivery of the project can vary. Our services include
+        sample QC, library preparation, hybridization, sequencing, data QC and
+        reporting. Each project is unique, and we always strive to deliver the
+        expected results within the agreed timeline. Please contact our team via{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>{" "}
+        to learn more about project specific timelines.
+      </>
+    ),
+  },
+  {
+    question: "What are the factors that can impact the quality of my data?",
+    answer: (
+      <>
+        There are several factors which can impact the quality of your NGS data
+        these include the quality of the samples and the extracted genomic
+        material, shipping and storage conditions, sequencing depth, read length
+        and number of replicates. Our team may advice you on the optimal
+        conditions to enable data and reports with the highest quality please
+        reach out to our team at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    question: "What happens when sequencing of my samples fails?",
+    answer: (
+      <>
+        Several factors can lead to NGS sequencing failure, such as sample
+        quality issues, shipment or storage problems, instrument malfunctions,
+        and technical errors. To reduce the risk of these failures, only samples
+        that meet the strict criteria outlined in our{" "}
+        <strong>Sample Submission Guide</strong> are accepted. We ensure
+        reliable delivery by partnering with professional logistics providers
+        and utilizing a traceable cold chain for safe shipment. DNA extraction
+        and NGS analysis are conducted in an accredited laboratory, with quality
+        control (QC) checks performed after every critical stage of the project.
+      </>
+    ),
+  },
+  {
+    question: "How does ATENA Genomics deliver the data?",
+    answer: (
+      <>
+        The requestor will be able to generate a <strong>My Account</strong> at
+        ATENA Genomics with personal login and password when submitting a sample
+        request. In <strong>My Account</strong> access to your sequencing data
+        report including the quality control (QC) checks will be available upon
+        completion. If you are interested to download the raw data (FASTQ files)
+        and analyzed, assembled data (VCF files) or require an alternative data
+        delivery option please reach out to our team at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    question: "Is there a way to monitor the progress of my project?",
+    answer: (
+      <>
+        The team is working to enable this functionality in the future which
+        will be available via <strong>My Account</strong>. Here the progress of
+        the sample sequencing will be able to be tracked in time.
+      </>
+    ),
+  },
+  {
+    question: "How long do you store my data?",
+    answer: (
+      <>
+        Your NGS data is stored for as long as it is necessary for the purposes
+        for which it was collected free of charge. Once the data is no longer
+        needed, it will be either deleted or anonymized. Requests for longer
+        storage can be submitted to our team at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>{" "}
+        at additional costs.
+      </>
+    ),
+  },
+  {
+    question: "How long do you store the samples?",
+    answer: (
+      <>
+        When submitting a sample testing request via the{" "}
+        <strong>Sample Submission form</strong>, you can choose whether you
+        would like to have your samples returned. If not, we will securely store
+        them for at least one year after your project is completed. Requests for
+        sample return shipments can be sent to our team at{" "}
+        <a
+          href="mailto:info@atenagenomics.com"
+          className="text-blue-500 underline"
+        >
+          info@atenagenomics.com
+        </a>
+        .
+      </>
+    ),
+  },
+];

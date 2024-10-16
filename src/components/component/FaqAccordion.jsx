@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { faqData } from "@/lib/url";
 
 function FaqAccordion() {
   return (
@@ -12,7 +13,7 @@ function FaqAccordion() {
         List of frequently asked questions
       </h4>
       <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1">
+        {/* <AccordionItem value="item-1">
           <AccordionTrigger className="font-semibold">
             How do I request testing at ATENA?
           </AccordionTrigger>
@@ -31,7 +32,15 @@ function FaqAccordion() {
             Orders or Service Level Agreements (SLA) for enhanced efficiency and
             cost-effectiveness.
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem> */}
+        {faqData.map((item, index) => (
+          <AccordionItem value={`item-${index + 1}`} key={index}>
+            <AccordionTrigger>{item.question}</AccordionTrigger>
+            <AccordionContent className="text-platinum-900">
+              {item.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
       </Accordion>
     </div>
   );
