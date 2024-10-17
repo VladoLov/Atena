@@ -121,15 +121,42 @@ module.exports = {
             transform: "rotate(360deg)",
           },
         },
+        moveY: {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(-10px)" /* Move the icon up */,
+          },
+          end: {
+            transform: "translateY(0)" /* Return to the original position */,
+          },
+        },
+        rotate3dX: {
+          from: { transform: "rotateZ(0deg)" },
+          to: { transform: "rotateZ(360deg)" },
+        },
+        rotate3dY: {
+          from: { transform: "rotateY(0deg)" },
+          to: { transform: "rotateY(360deg)" },
+        },
+        rotate3dX: {
+          from: { transform: "rotateX(0deg)" },
+          to: { transform: "rotateX(360deg)" },
+        },
       },
       animation: {
-        rotateScale: "rotateScale 3s infinite linear infinite",
+        "rotate-scale": "rotateScale 3s infinite linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pop-blob": "pop-blob 5s infinite",
-        "animate-spin": "spin 1s linear infinite",
+        spin: "spin 1s linear infinite",
+        icon: "moveY 2s infinite",
+        "rotate-z": "rotate3dZ 2s linear infinite",
+        "rotate-y": "rotate3dY 2s linear infinite",
+        "rotate-x": "rotate3dX 4s linear infinite",
       },
     },
     colors: {
