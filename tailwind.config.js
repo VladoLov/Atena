@@ -113,6 +113,14 @@ module.exports = {
             height: "0",
           },
         },
+        spin: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         rotateScale: "rotateScale 3s infinite linear infinite",
@@ -121,6 +129,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pop-blob": "pop-blob 5s infinite",
+        "animate-spin": "spin 1s linear infinite",
       },
     },
     colors: {

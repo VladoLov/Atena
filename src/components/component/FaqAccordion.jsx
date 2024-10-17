@@ -35,7 +35,9 @@ function FaqAccordion() {
         </AccordionItem> */}
         {faqData.map((item, index) => (
           <AccordionItem value={`item-${index + 1}`} key={index}>
-            <AccordionTrigger>{item.question}</AccordionTrigger>
+            <AccordionTrigger className="text-left">
+              {item.question}
+            </AccordionTrigger>
             <AccordionContent className="text-platinum-900">
               {item.answer}
             </AccordionContent>

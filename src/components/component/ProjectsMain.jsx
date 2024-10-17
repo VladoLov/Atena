@@ -59,7 +59,7 @@ export default function ResponsiveCircularCards() {
           </div>
         ))}
         <div className="absolute top-1/2 left-[54%] transform -translate-x-1/2 -translate-y-1/2 w-[288px] h-[192px] ">
-          <Card className="w-full h-full flex items-center justify-center bg-gradient-radial from-crimson-300 to-crimson-500 ring-0 border-crimson-500">
+          <Card className="w-full h-full flex items-center justify-center bg-gradient-radial from-platinum-50 to-platinum-50 ring-0 border-platinum-50">
             <CardContent className="flex flex-col space-y-2 justify-center items-center pt-4">
               <MdOutlineMiscellaneousServices className=" w-10 h-10" />
               <h2 className="text-2xl font-bold text-center">Services</h2>

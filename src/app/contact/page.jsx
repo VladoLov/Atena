@@ -1,13 +1,14 @@
-import Header from "@/components/Header";
-import Services from "./compoents/Services";
-import Footer2 from "@/components/Footer2";
 import ManualHeader from "@/components/component/ManualHeader";
+import ContactForm from "@/components/ContatForm";
+import Footer2 from "@/components/Footer2";
 
 function page() {
   return (
     <div>
       <ManualHeader />
-      <Services />
+      <div className="max-w-screen-md mx-auto py-8">
+        <ContactForm />
+      </div>
       <Footer2 />
     </div>
   );

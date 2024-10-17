@@ -218,7 +218,7 @@ export const flipCardData = [
     title: "Hereditary screening",
     description: "Identifies genetic conditions passed through family lines.",
     subtitle: "Hereditary screening",
-    href: "/oncology",
+    href: "/services/hereditary-screening",
   },
   // Add as many cards as needed
 ];

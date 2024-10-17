@@ -1,12 +1,11 @@
-import Header from "@/components/Header";
-
 import ArticleCardiology from "./ArticleCardiology";
 import Footer2 from "@/components/Footer2";
+import ManualHeader from "@/components/component/ManualHeader";
 
 function page() {
   return (
     <div>
-      <Header />
+      <ManualHeader />
       <ArticleCardiology />
       <Footer2 />
     </div>

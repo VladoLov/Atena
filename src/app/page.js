@@ -1,28 +1,33 @@
-import Blog from "@/components/Blog";
+import AboutProjects from "@/components/component/AboutProjects";
 
+import HoverNavigationMenu from "@/components/component/ManualHeader";
+import CircularCards from "@/components/component/ProjectsMain";
+
+import SubHeader from "@/components/component/SubHeader";
+
+import { DnaComponent } from "@/components/DnaComponent";
 import Footer2 from "@/components/Footer2";
-import Header from "@/components/Header";
-import ServicesComponent from "@/components/ServicesComponent";
 
-import Testimonials from "@/components/Testimonials";
-import dynamic from "next/dynamic";
-import Slider from "../components/Slider";
-import ManualHeader from "@/components/component/ManualHeader";
+import React from "react";
 
-/* const SliderComp = dynamic(() => import("../components/Slider"), {
-  ssr: false,
-}); */
-
-export default function Home() {
+export const metadata = {
+  title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
+};
+export default function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start">
-      <ManualHeader />
-      <Slider />
-      {/*  <SliderComp /> */}
-      <Blog />
-      <ServicesComponent />
-      <Testimonials />
+    <div>
+      <HoverNavigationMenu />
+
+      <div>
+        {/* <ManualHeader2 /> */}
+
+        <DnaComponent />
+        <SubHeader />
+      </div>
+      <div className="w-full from-blue-100 to-transparent bg-gradient-radial">
+        <CircularCards />
+      </div>
       <Footer2 />
-    </main>
+    </div>
   );
 }

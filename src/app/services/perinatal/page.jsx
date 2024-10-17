@@ -1,11 +1,11 @@
-import Header from "@/components/Header";
 import ArticlePrenatalScreening from "./components/ArticlePrenatalScreening";
 import Footer2 from "@/components/Footer2";
+import ManualHeader from "@/components/component/ManualHeader";
 
 function page() {
   return (
     <div>
-      <Header />
+      <ManualHeader />
       <ArticlePrenatalScreening />
       <Footer2 />
     </div>
