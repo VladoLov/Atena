@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  imageUrl: string;
-  bio: string;
-  education: string;
-  experience: string;
-}
-
-const teamMembers: TeamMember[] = [
+const teamMembers = [
   {
     id: 1,
     name: "John Doe",
@@ -30,7 +20,7 @@ export default function ExpandableTeamCard() {
   const [expandedMember, setExpandedMember] =
     (useState < number) | (null > null);
 
-  const toggleExpand = (id: number) => {
+  const toggleExpand = (id) => {
     setExpandedMember(expandedMember === id ? null : id);
   };
 
