@@ -62,7 +62,10 @@ export default function ResponsiveCircularCards() {
         <div className="absolute top-1/2 left-[54%] transform -translate-x-1/2 -translate-y-1/2 w-[288px] h-[192px] ">
           <Card className="w-full h-full flex items-center justify-center bg-gradient-radial from-white to-white ring-0 border-none rounded-lg shadow-none">
             <CardContent className="flex flex-col space-y-2 justify-center items-center pt-4">
-              <Dna className="animate-rotate-x w-10 h-10" viewBox="0 0 24 24" />
+              <Dna
+                className="animate-rotate-x w-10 h-10 text-crimson-500"
+                viewBox="0 0 24 24"
+              />
               <h2 className="text-2xl font-bold text-center">Services</h2>
             </CardContent>
           </Card>

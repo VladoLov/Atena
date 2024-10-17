@@ -12,7 +12,7 @@ function FooterSection({ title, children }) {
   return (
     <div className="text-center sm:text-left">
       <button
-        className="flex items-center justify-center w-full text-lg font-medium text-crimson-600 hover:text-crimson-700 lg:hidden"
+        className="flex items-center justify-center w-full text-base font-medium text-platinum-900 hover:text-platinum-950 lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
@@ -22,7 +22,7 @@ function FooterSection({ title, children }) {
         </span>
       </button>
 
-      <p className="hidden lg:block text-lg font-medium text-crimson-600 hover:text-crimson-700">
+      <p className="hidden lg:block text-lg font-medium text-platinum-900 hover:text-platinum-950">
         {title}
       </p>
 
@@ -57,12 +57,14 @@ export default function Footer2() {
               consequuntur amet culpa cum itaque neque.
             </p>
             <div className="flex flex-col gap-1.5 text-center sm:text-left mt-6">
-              <p className="text-lg font-medium">Contact Us</p>
+              <p className="text-lg font-medium text-platinum-900">
+                Contact Us
+              </p>
               <ul className=" mt-2 space-y-4 text-sm lg:block lg:mt-4">
                 <li>
                   <Link
                     className="flex items-center justify-start gap-1.5 lg:justify-start"
-                    href="#"
+                    href="/contact"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +80,7 @@ export default function Footer2() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    <span className="flex pl-1 text-gray-700 hover:text-platinum-800">
+                    <span className="flex pl-1 text-platinum-800 hover:text-platinum-900">
                       info@atenagenomics.com
                     </span>
                   </Link>
@@ -102,7 +104,7 @@ export default function Footer2() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span className="flex pl-1 text-gray-700 hover:text-platinum-800">
+                    <span className="flex pl-1 text-platinum-800 hover:text-platinum-900">
                       +387 **-***-***
                     </span>
                   </a>
@@ -127,7 +129,7 @@ export default function Footer2() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <address className="-mt-0.5 pl-1 not-italic text-gray-700 hover:text-platinum-800">
+                  <address className="-mt-0.5 pl-1 not-italic text-platinum-800 hover:text-platinum-900">
                     Mostar
                   </address>
                 </li>
@@ -205,7 +207,7 @@ export default function Footer2() {
               {firstHeader.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-gray-700 transition hover:text-platinum-800"
+                    className="text-platinum-700 transition hover:text-platinum-800"
                     href={service.href}
                   >
                     {service.title}
@@ -217,7 +219,7 @@ export default function Footer2() {
               {services[0].items.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-gray-700 transition hover:text-platinum-800"
+                    className="text-platinum-700 transition hover:text-platinum-800"
                     href={service.href}
                   >
                     {service.title}
@@ -230,7 +232,7 @@ export default function Footer2() {
               {services[1].items.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-gray-700 transition hover:text-platinum-800"
+                    className="text-platinum-700 transition hover:text-platinum-800"
                     href={service.href}
                   >
                     {service.title}
@@ -243,7 +245,7 @@ export default function Footer2() {
               {services.slice(2).map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-gray-700 transition hover:text-platinum-800"
+                    className="text-platinum-700 transition hover:text-platinum-800"
                     href={service.href}
                   >
                     {service.title}
@@ -254,25 +256,27 @@ export default function Footer2() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-6">
+        <div className="mt-12 border-t border-platinum-100 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-gray-500">
-              <span className="block sm:inline">All rights reserved.</span>
-              <a
-                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                href="#"
+            <p className="text-sm text-platinum-500">
+              <span className="block sm:inline">All rights reserved. </span>
+              <Link
+                href="/docs/Terms_and_Conditions.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-crimson-600 underline transition hover:text-crimson-600/75"
               >
                 Terms & Conditions
-              </a>
-              <span>&middot;</span>
-              <a
-                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                href="#"
+              </Link>
+              <span> &middot; </span>
+              <Link
+                className="inline-block text-crimson-600 underline transition hover:text-crimson-600/75"
+                href="/resources/policies"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </p>
-            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+            <p className="mt-4 text-sm text-platinum-500 sm:order-first sm:mt-0">
               &copy; {new Date().getFullYear()} ATENA
             </p>
           </div>
