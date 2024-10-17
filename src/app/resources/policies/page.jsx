@@ -11,8 +11,13 @@ function page() {
           {" "}
           Privacy policies
         </h2>
-        {polices.map((police, index) => (
-          <h6 key={police.index}>{police.privacyStatement}</h6>
+        {polices.map((police) => (
+          <div key={police.name}>
+            <h3 className="text-xl md:text-1xl lg:text-3xl font-semibold pt-12 pb-6">
+              {police.name}
+            </h3>
+            <p>{police.description}</p>
+          </div>
         ))}
       </div>
       <Footer2 />

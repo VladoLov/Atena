@@ -441,11 +441,12 @@ export const faqData = [
 
 export const polices = [
   {
-    privacyStatement: (
+    name: "Privacy Statement",
+    description: (
       <>
         <p>
-          We are committed to ensuring the privacy and security of genetic and
-          patient data in compliance with the EU General Data Protection
+          We are committed to ensure the privacy and security of genetic and
+          patient data is in compliance with the EU General Data Protection
           Regulation (GDPR) and our internal Data Security Policy. Our data
           handling processes adhere to the highest standards of confidentiality
           and security, ensuring that all personal data, including genetic
@@ -454,57 +455,70 @@ export const polices = [
         </p>
         <br />
         <p>
-          Our Data Security Policy is integrated into the company&apos;s
-          comprehensive quality management system, ensuring continuous
-          compliance with relevant legal and regulatory requirements. This
-          policy is aligned with the International standards ISO/IEC 17025 and
-          ISO 15189, which set the global benchmarks for laboratory testing and
-          medical laboratory quality. These certifications demonstrate our
-          commitment to maintaining stringent data protection practices,
-          ensuring the accuracy, integrity, and confidentiality of genetic and
-          patient information.
+          Our Data Security Policy is integrated into the company&apos;s quality
+          system, ensuring continuous compliance with relevant legal and
+          regulatory requirements. This policy is aligned with the International
+          standards ISO/IEC 17025 and ISO 15189, which set the global benchmarks
+          for laboratory testing and medical laboratory quality to maintain
+          stringent data protection practices, accuracy, integrity, and
+          confidentiality of genetic and patient information.
         </p>
         <br />
         <p>
-          We ensure that all genetic data is securely stored, with restricted
-          access only to authorized personnel. Additionally, data is encrypted
-          both at rest and during transmission to prevent unauthorized access.
-          Any third parties involved in data processing are carefully vetted and
-          required to comply with GDPR and our strict data security protocols.
+          We ensure that all genetic data is securely stored and encrypted, with
+          restricted access only to authorized personnel. Outsourcing or
+          collaboration is performed only with third parties which are compliant
+          to GDPR and our strict data security protocols. If you have any
+          questions or require more information about how we handle your data,
+          please contact our team at{" "}
+          <a
+            href="mailto:info@atenagenomics.com"
+            className="text-crimson-900 underline"
+          >
+            info@atenagenomics.com
+          </a>
+          .
         </p>
-        <br />
-        <p>
-          Our processes are designed to protect your privacy while delivering
-          precise and reliable results, safeguarding your trust in our services.
-          If you have any questions or require more information about how we
-          handle your data, please contact our data protection officer.
-        </p>
-        <br />
-        <p>
-          We are committed to ensuring the privacy and security of genetic and
-          patient data, fully complying with the EU General Data Protection
-          Regulation (GDPR) and our internal Data Security Policy. Our secure
-          data handling practices ensure that personal and genetic information
-          is processed lawfully, transparently, and confidentially. Our Data
-          Security Policy is embedded in our quality management system, aligning
-          with international standards such as ISO/IEC 17025 and ISO 15189.
-          These certifications guarantee that we meet the highest standards for
-          laboratory testing and medical laboratory quality, ensuring the
-          protection, integrity, and confidentiality of all genetic and patient
-          data.
-        </p>
-        <br />
-        <p>
-          We use advanced encryption to safeguard genetic data both during
-          storage and transmission, with access restricted to authorized
-          personnel. Additionally, any third-party data processors comply with
-          GDPR regulations and our stringent security protocols. By maintaining
-          these high standards, we deliver reliable, secure genetic testing
-          services, protecting your privacy and ensuring compliance with
-          international data protection laws. For more information on how we
-          handle your genetic and patient data, please contact our data
-          protection officer.
-        </p>
+      </>
+    ),
+  },
+  {
+    name: "Sample policy",
+    description: (
+      <>
+        Our NGS sample data policy complies with all European guidelines on
+        genetic data and patient material, including the GDPR (Regulation (EU)
+        2016/679) and the EU Directive 2004/23/EC on the handling of patient
+        material. We ensure patient privacy, secure data processing, and strict
+        adherence to ethical standards in genetic research. All personal data is
+        anonymized, and access is limited to authorized personnel. Our
+        procedures guarantee transparency, informed consent, and compliance with
+        regulatory frameworks, safeguarding individual rights and
+        confidentiality at every step.
+      </>
+    ),
+  },
+  {
+    name: "Complaint policy ",
+    description: (
+      <>
+        Our complaint policy for NGS testing on patient material is designed to
+        comply with all relevant EU regulations GDPR (Regulation (EU) 2016/679).
+        We take patient privacy, data security, and quality control seriously,
+        addressing concerns promptly and transparently. Complaints can be
+        submitted through a clear process, with investigations conducted under
+        strict confidentiality. Our policy ensures compliance with EU
+        guidelines, patient rights, and ethical standards, guaranteeing a
+        thorough response and resolution while maintaining the integrity and
+        safety of genetic data and testing processes. Feedback and/or any
+        complaint you may have can be directed to{" "}
+        <a
+          href="mailto:fc@atenagenomics.com"
+          className="text-crimson-900 underline"
+        >
+          fc@atenagenomics.com
+        </a>
+        .
       </>
     ),
   },
