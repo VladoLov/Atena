@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Testingcss from "./Testingcss";
+
 import FinalNavbar from "./FinalNavbar";
 import SearchBar from "./SearchBar";
 import FirstFinalNavbar from "./FirstFInalNavbar";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import DropdownForSmallScreen from "../ui/DropdownForSmallScreen";
+
 import DropDown from "./DropDown";
 
 function ManualHeader() {

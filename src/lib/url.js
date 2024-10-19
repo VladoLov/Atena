@@ -4,12 +4,24 @@ export const services = [
     href: "/services/oncology",
     items: [
       {
-        title: "Onco Gene Panel",
-        href: "/services/onco-panel",
+        title: "Tumor Profiling NGS",
+        href: "/services/oncology/tumor-profiling-ngs",
       },
       {
-        title: "Cancer-Specific Gene Panel",
-        href: "cancer-specific-gene",
+        title: "Hematological Malignancies NGS",
+        href: "/services/oncology/hematological-malignancies-ngs",
+      },
+      {
+        title: "Liquid Biopsies NGS",
+        href: "/services/oncology/liquid-biopsies-ngs",
+      },
+      {
+        title: "hereditary-cancer-screening",
+        href: "/services/oncology/hereditary-cancer-screening",
+      },
+      {
+        title: "Cancer Drug Resistance Monitoring",
+        href: "/services/oncology/cancer-drug-resistance-monitoring",
       },
     ],
   },

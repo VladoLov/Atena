@@ -1,17 +1,36 @@
 "use client";
 
-import { ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
-import { useState } from "react";
+import {
+  ChevronDown,
+  ChevronRight,
+  ChevronUp,
+  ChevronLeft,
+} from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import { services } from "@/lib/url"; // Assuming you have the services structure here
 import Link from "next/link";
 
 function FinalNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null); // Track the open submenu
+  const [flippedSubmenus, setFlippedSubmenus] = useState({}); // Track flipped state for each submenu
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index, event) => {
     setIsOpen(true);
     setOpenSubMenuIndex(index); // Open the specific submenu of the hovered service
+
+    // Calculate if there is enough space on the right for this submenu
+    const target = event.currentTarget;
+    const submenuRect = target.getBoundingClientRect();
+    const windowWidth = window.innerWidth;
+
+    // If the submenu would overflow the right edge of the window, flip it to the left
+    if (submenuRect.right + 300 > windowWidth) {
+      // 300 is an estimate of submenu width. Adjust as needed.
+      setFlippedSubmenus((prev) => ({ ...prev, [index]: true }));
+    } else {
+      setFlippedSubmenus((prev) => ({ ...prev, [index]: false }));
+    }
   };
 
   const handleMouseLeave = () => {
@@ -42,7 +61,7 @@ function FinalNavbar() {
 
             {/* Dropdown for Services */}
             <ul
-              className="absolute left-0 hidden mt-[1px] w-48 bg-white shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
+              className="absolute left-0 hidden mt-[1px] w-52 bg-white shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={handleMouseLeave}
             >
@@ -51,12 +70,16 @@ function FinalNavbar() {
                   <Link
                     href={service.href}
                     className="block px-4 py-2 text-platinum-700 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black transition-colors duration-300 ease-in-out"
-                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseEnter={(event) => handleMouseEnter(index, event)}
                   >
                     {service.title}
                     {service.items &&
                       (openSubMenuIndex === index ? (
-                        <ChevronRight className="ml-1 inline-block" />
+                        flippedSubmenus[index] ? (
+                          <ChevronLeft className="ml-1 inline-block" />
+                        ) : (
+                          <ChevronRight className="ml-1 inline-block" />
+                        )
                       ) : (
                         <ChevronDown className="ml-1 inline-block" />
                       ))}
@@ -65,7 +88,11 @@ function FinalNavbar() {
                   {/* Submenu */}
                   {service.items && openSubMenuIndex === index && (
                     <ul
-                      className="absolute left-full top-0 mt-full ml-[1px] w-48 bg-white shadow-lg transition-all duration-300 ease-in-out transform opacity-100"
+                      className={`absolute top-0 mt-full w-52 bg-white shadow-lg transition-all duration-300 ease-in-out transform opacity-100 ${
+                        flippedSubmenus[index]
+                          ? "right-full -ml-[1px]"
+                          : "left-full"
+                      }`}
                       onMouseEnter={() => setOpenSubMenuIndex(index)}
                       onMouseLeave={() => setOpenSubMenuIndex(null)}
                     >
