@@ -8,7 +8,7 @@ import { FlipCardSmallScreen } from "./FlipCardSmallScreen"; */
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import FlipCard from "./MainCard";
+import FlipCard from "./FlipCard";
 import { useState, useEffect } from "react";
 import { FlipCardSmallScreen } from "./FlipCardSmallScreen";
 import { flipCardData } from "@/lib/url";

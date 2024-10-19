@@ -1,7 +1,7 @@
 import AboutProjects from "@/components/component/AboutProjects";
 
 import HoverNavigationMenu from "@/components/component/ManualHeader";
-import CircularCards from "@/components/component/ProjectsMain";
+import CircularCards from "@/components/component/CircularCards";
 
 import SubHeader from "@/components/component/SubHeader";
 
