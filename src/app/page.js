@@ -10,6 +10,7 @@ import Footer2 from "@/components/Footer2";
 
 import React from "react";
 import GridCards from "@/components/component/GridCards";
+import ContactForm from "@/components/ContatForm";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -28,6 +29,7 @@ export default function page() {
       <div className="w-full from-blue-100 to-transparent bg-gradient-radial">
         {/*  <CircularCards /> */}
         <GridCards />
+        <ContactForm />
       </div>
       <Footer2 />
     </div>

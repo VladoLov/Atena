@@ -48,7 +48,7 @@ export default function FlipCard({
           {/*  <div className="bg-black/80 p-2 rounded-md absolute bottom-4 left-4 text-xl font-bold text-white overflow-hidden">
             {title}
           </div> */}
-          <div className=" p-2 rounded-md flex items-center justify-center  text-xl font-bold text-black overflow-hidden">
+          <div className=" p-2 rounded-md flex items-center justify-center  text-3xl font-bold text-black overflow-hidden">
             {title}
           </div>
         </div>
@@ -56,21 +56,21 @@ export default function FlipCard({
         {/* Back */}
         <div
           className={cn(
-            "absolute h-full w-full rounded-[30px] bg-black/80 p-4 text-platinum-200 [backface-visibility:hidden] overflow-hidden",
+            "absolute h-full w-full rounded-[30px] bg-white/80 p-4 text-black [backface-visibility:hidden] overflow-hidden",
             self[1]
           )}
         >
-          <div className="flex min-h-full flex-col gap-2 justify-between">
+          <div className="flex min-h-full flex-col  justify-between">
             <div>
-              <h1 className="text-xl font-bold text-white">{subtitle}</h1>
-              <p className="mt-1 border-t border-t-platinum-200 py-4 text-sm font-medium leading-normal text-platinum-100">
+              <h1 className="text-xl font-bold text-black">{subtitle}</h1>
+              <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-black-100">
                 {description}
               </p>
             </div>
-            <Button className="w-full">
+            <Button className="w-full bg-crimson-400">
               <Link
                 href={href}
-                className="w-full h-full items-center justify-center"
+                className="w-full h-full flex items-center justify-center text-black font-semibold text-lg tracking-wider"
               >
                 Learn more
               </Link>

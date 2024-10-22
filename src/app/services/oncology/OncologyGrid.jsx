@@ -42,21 +42,19 @@ export default function OncologyGrid() {
     <div className="container mx-auto px-4 py-8">
       <div className="grid gap-8">
         <div className="grid grid-cols-1">
-          <h3 className="text-2xl font-semibold pb-4  px-2 sm:p-0 sm:text-center">
+          <h3 className="text-2xl font-semibold pb-4  px-2 sm:px-0 sm:text-center">
             Next-Generation Sequencing (NGS) in Oncology - Revolutionizing
             Cancer Treatment
           </h3>
           <p className="mb-4 lg:text-xl px-2 sm:none">
-            Next-Generation Sequencing (NGS) in Oncology - Revolutionizing
-            Cancer Treatment NGS is transforming oncology by offering a deeper
-            understanding of cancer at the genetic level. With NGS, specific
-            mutations can be identified which drive cancer growth, allowing for
-            targeted treatments that are potentially more effective and less
-            invasive. Choosing NGS means giving patients the best chance for
-            success with precision medicine that’s tailored to their unique
-            genetic profile. Empower your oncology practice with cutting-edge
-            technology that delivers real, life-changing results for your
-            patients.
+            NGS is transforming oncology by offering a deeper understanding of
+            cancer at the genetic level. With NGS, specific mutations can be
+            identified which drive cancer growth, allowing for targeted
+            treatments that are potentially more effective and less invasive.
+            Choosing NGS means giving patients the best chance for success with
+            precision medicine that’s tailored to their unique genetic profile.
+            Empower your oncology practice with cutting-edge technology that
+            delivers real, life-changing results for your patients.
           </p>
         </div>
         {/* First row - full width */}

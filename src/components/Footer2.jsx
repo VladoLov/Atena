@@ -80,7 +80,7 @@ export default function Footer2() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    <span className="flex pl-1 text-platinum-800 hover:text-platinum-900">
+                    <span className="flex pl-1 text-platinum-900 hover:text-platinum-950">
                       info@atenagenomics.com
                     </span>
                   </Link>
@@ -104,7 +104,7 @@ export default function Footer2() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span className="flex pl-1 text-platinum-800 hover:text-platinum-900">
+                    <span className="flex pl-1 text-platinum-900 hover:text-platinum-950">
                       +387 **-***-***
                     </span>
                   </a>
@@ -129,7 +129,7 @@ export default function Footer2() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <address className="-mt-0.5 pl-1 not-italic text-platinum-800 hover:text-platinum-900">
+                  <address className="-mt-0.5 pl-1 not-italic text-platinum-900 hover:text-platinum-950">
                     Mostar
                   </address>
                 </li>
@@ -207,7 +207,7 @@ export default function Footer2() {
               {firstHeader.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-platinum-700 transition hover:text-platinum-800"
+                    className="text-platinum-900 hover:text-platinum-950 transition-all"
                     href={service.href}
                   >
                     {service.title}
@@ -219,7 +219,7 @@ export default function Footer2() {
               {services[0].items.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-platinum-700 transition hover:text-platinum-800"
+                    className="text-platinum-900 hover:text-platinum-950 transition-all"
                     href={service.href}
                   >
                     {service.title}
@@ -228,11 +228,11 @@ export default function Footer2() {
               ))}
             </FooterSection>
 
-            <FooterSection title="Genopathy">
+            <FooterSection title="Genetic Disorders">
               {services[1].items.map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-platinum-700 transition hover:text-platinum-800"
+                    className="text-platinum-900 hover:text-platinum-950 transition-all"
                     href={service.href}
                   >
                     {service.title}
@@ -245,7 +245,7 @@ export default function Footer2() {
               {services.slice(2).map((service) => (
                 <li key={service.href}>
                   <Link
-                    className="text-platinum-700 transition hover:text-platinum-800"
+                    className="text-platinum-900 hover:text-platinum-950 transition-all"
                     href={service.href}
                   >
                     {service.title}
@@ -258,7 +258,7 @@ export default function Footer2() {
 
         <div className="mt-12 border-t border-platinum-100 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-platinum-500">
+            <p className="text-sm text-platinum-800">
               <span className="block sm:inline">All rights reserved. </span>
               <Link
                 href="/docs/Terms_and_Conditions.pdf"
@@ -276,7 +276,7 @@ export default function Footer2() {
                 Privacy Policy
               </Link>
             </p>
-            <p className="mt-4 text-sm text-platinum-500 sm:order-first sm:mt-0">
+            <p className="mt-4 text-sm text-platinum-800 sm:order-first sm:mt-0">
               &copy; {new Date().getFullYear()} ATENA
             </p>
           </div>
