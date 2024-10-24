@@ -29,7 +29,9 @@ export default function page() {
       <div className="w-full from-blue-100 to-transparent bg-gradient-radial">
         {/*  <CircularCards /> */}
         <GridCards />
-        <ContactForm />
+        <div className="max-w-4xl w-full mx-auto">
+          <ContactForm />
+        </div>
       </div>
       <Footer2 />
     </div>

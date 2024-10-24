@@ -38,16 +38,6 @@ export default function FlipCard({
       >
         {/* Front */}
         <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
-          {/*  <Image
-            src={image}
-            alt="image"
-            height={200}
-            width={200}
-            className="h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40"
-          /> */}
-          {/*  <div className="bg-black/80 p-2 rounded-md absolute bottom-4 left-4 text-xl font-bold text-white overflow-hidden">
-            {title}
-          </div> */}
           <div className=" p-2 rounded-md flex items-center justify-center  text-3xl font-bold text-black overflow-hidden">
             {title}
           </div>
@@ -60,22 +50,17 @@ export default function FlipCard({
             self[1]
           )}
         >
-          <div className="flex min-h-full flex-col  justify-between">
+          <Link
+            className="flex min-h-full flex-col  justify-between"
+            href={href}
+          >
             <div>
               <h1 className="text-xl font-bold text-black">{subtitle}</h1>
               <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-black-100">
                 {description}
               </p>
             </div>
-            <Button className="w-full bg-crimson-400">
-              <Link
-                href={href}
-                className="w-full h-full flex items-center justify-center text-black font-semibold text-lg tracking-wider"
-              >
-                Learn more
-              </Link>
-            </Button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

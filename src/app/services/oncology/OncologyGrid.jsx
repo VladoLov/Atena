@@ -46,7 +46,7 @@ export default function OncologyGrid() {
             Next-Generation Sequencing (NGS) in Oncology - Revolutionizing
             Cancer Treatment
           </h3>
-          <p className="mb-4 lg:text-xl px-2 sm:none">
+          <p className="mb-4 lg:text-xl px-6 sm:none">
             NGS is transforming oncology by offering a deeper understanding of
             cancer at the genetic level. With NGS, specific mutations can be
             identified which drive cancer growth, allowing for targeted
@@ -62,16 +62,16 @@ export default function OncologyGrid() {
           <GridItem {...oncologyServices[0]} />
         </div>
         <div className="grid grid-cols-1">
-          <FlipCardOncology {...oncologyServices[1]} />
+          <GridItem {...oncologyServices[1]} />
         </div>
         <div className="grid grid-cols-1">
-          <FlipCardOncology2 {...oncologyServices[2]} />
+          <GridItem {...oncologyServices[2]} />
         </div>
         <div className="grid grid-cols-1 mt-16">
-          <FlipCardOncology3 {...oncologyServices[3]} />
+          <GridItem {...oncologyServices[3]} />
         </div>
         <div className="grid grid-cols-1">
-          <FlipCardOncology3 {...oncologyServices[4]} />
+          <GridItem {...oncologyServices[4]} />
         </div>
         {/* Second row - 60% / 40% split */}
         {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
