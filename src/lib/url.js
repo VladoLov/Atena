@@ -158,19 +158,19 @@ export const teamMembers = [
         Amsterdam (AMC-UVA) and Janssen Vaccines and Prevention, where she
         specialized in designing and optimizing adenoviral vectored vaccines.
         This experience shaped her focus on developing innovative vaccine
-        technologies to enhance immune response. Dr. Vujadinović’s expertise is
-        further supported by dual MSc degrees in Biomolecular Sciences Cell
-        Biology and Management, Policy Analysis & Entrepreneurship from Vrije
-        Universiteit Amsterdam. Her roots in biotechnology trace back to a BSc
-        in Life Sciences Molecular Cell Biology, providing a solid technical
-        foundation. Resulting in a blend of science and strategy that equips her
-        to translate complex research into effective healthcare solutions. At
-        Janssen Pharmaceutical Companies of Johnson & Johnson, Dr. Vujadinović
-        played a key role in advancing vaccine candidates from early development
-        to clinical application. As a Drug Substance Technical Integrator in
-        Vaccine Process and Analytical Development, she coordinated GMP
-        manufacturing and technical transfers, working closely with
-        cross-functional teams to ensure smooth project execution. Her
+        technologies to enhance immune response. Dr. Vujadinović&apos;s
+        expertise is further supported by dual MSc degrees in Biomolecular
+        Sciences Cell Biology and Management, Policy Analysis & Entrepreneurship
+        from Vrije Universiteit Amsterdam. Her roots in biotechnology trace back
+        to a BSc in Life Sciences Molecular Cell Biology, providing a solid
+        technical foundation. Resulting in a blend of science and strategy that
+        equips her to translate complex research into effective healthcare
+        solutions. At Janssen Pharmaceutical Companies of Johnson & Johnson, Dr.
+        Vujadinović played a key role in advancing vaccine candidates from early
+        development to clinical application. As a Drug Substance Technical
+        Integrator in Vaccine Process and Analytical Development, she
+        coordinated GMP manufacturing and technical transfers, working closely
+        with cross-functional teams to ensure smooth project execution. Her
         leadership facilitated successful project delivery, strategic risk
         management, and adherence to strict GMP standards. As a Scientist in
         Viral Vaccines at Janssen Vaccine and Prevention, she led a team focused
@@ -181,18 +181,18 @@ export const teamMembers = [
         has also contributed to patents and published research on HPV and
         adenoviral platforms. Prior to her work at Janssen, Dr. Vujadinović
         advanced her technical expertise as a Lab Technician at the University
-        of Utah’s Department of Pathology, conducting research on Borrelia
+        of Utah&apos;s Department of Pathology, conducting research on Borrelia
         burgdorferi. At VU University Medical Center (VUMC) in Medical
         Microbiology and Infection Control, she further developed her skills in
         molecular diagnostics and data analysis, building a strong foundation in
-        molecular research and infectious disease control. Dr. Vujadinović’s
-        expertise is supported by prestigious certifications, including Genetic
-        Testing and Sequencing Technologies and Cancer Genomics and Precision
-        Oncology from Harvard. Her work combines creativity, technical
-        precision, and a strong commitment to advancing biotechnology for
-        practical, real-world applications, continually raising standards
-        molecular biotechnology. Marija's personal mission is to transform
-        healthcare in the Balkans, one genome at a time.
+        molecular research and infectious disease control. Dr.
+        Vujadinović&apos;s expertise is supported by prestigious certifications,
+        including Genetic Testing and Sequencing Technologies and Cancer
+        Genomics and Precision Oncology from Harvard. Her work combines
+        creativity, technical precision, and a strong commitment to advancing
+        biotechnology for practical, real-world applications, continually
+        raising standards molecular biotechnology. Marija&apos;s personal
+        mission is to transform healthcare in the Balkans, one genome at a time.
       </>
     ),
     imageUrl: "/Marija.jpg",
