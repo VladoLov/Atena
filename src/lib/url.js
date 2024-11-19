@@ -99,28 +99,10 @@ export const firstHeader = [
   {
     title: "About",
     href: "/about",
-    items: [
-      {
-        title: "Team",
-      },
-      {
-        title: "Career and vacancies",
-      },
-      {
-        title: "Funded projects",
-      },
-    ],
   },
   {
     title: "FAQ",
     href: "/faq",
-    items: [
-      { title: "Company solution" },
-      { title: "Sample handover" },
-      { title: "Testing time" },
-      { title: "Testing report" },
-      { title: "Quality and policy" },
-    ],
   },
   {
     title: "Resources ",
@@ -130,28 +112,6 @@ export const firstHeader = [
       {
         title: "Policies",
         href: "/resources/policies",
-        items: [
-          {
-            title: "Terms and conditions",
-            href: "/resources/policies/terms-and-conditions",
-          },
-          {
-            title: "Privacy statement",
-            href: "/resources/policies/privacy-statement",
-          },
-          {
-            title: "Environmental policy",
-            href: "/resources/policies/environmental-policy",
-          },
-          {
-            title: "Sample policy",
-            href: "/resources/policies/sample-policy",
-          },
-          {
-            title: "Complaint policy ",
-            href: "/resources/policies/complaint-policy ",
-          },
-        ],
       },
     ],
   },
@@ -159,7 +119,7 @@ export const firstHeader = [
 ];
 
 export const teamMembers = [
-  {
+  /*   {
     id: "1",
     name: "Marija Vujadinović",
     role: "Physicist",
@@ -179,6 +139,63 @@ export const teamMembers = [
     role: "Chemist and Physicist",
     bio: "Pioneering researcher of radioactivity, discovered polonium and radium.",
     imageUrl: "/profile.svg",
+  }, */
+  {
+    id: "1",
+    name: "Marija Vujadinović",
+    bio: (
+      <>
+        Dr. Marija Vujadinović is an experienced specialist in molecular
+        biotechnology, with over 15 years of expertise in vaccine development,
+        vaccine GMP manufacturing, and molecular techniques, built on extensive
+        research experience in academia and the pharmaceutical industry. As the
+        Founder, Director, and Chief Technology Officer of ATENA Genomics, Dr.
+        Marija Vujadinović is advancing next-generation sequencing (NGS)
+        technologies to improve oncology, hereditary disease screening, prenatal
+        testing, pharmacogenomics, and infectious disease diagnostics across the
+        Balkans. Her journey into advanced biotechnology began with a PhD in
+        Vaccine Development from the Medical Faculty at the University of
+        Amsterdam (AMC-UVA) and Janssen Vaccines and Prevention, where she
+        specialized in designing and optimizing adenoviral vectored vaccines.
+        This experience shaped her focus on developing innovative vaccine
+        technologies to enhance immune response. Dr. Vujadinović’s expertise is
+        further supported by dual MSc degrees in Biomolecular Sciences Cell
+        Biology and Management, Policy Analysis & Entrepreneurship from Vrije
+        Universiteit Amsterdam. Her roots in biotechnology trace back to a BSc
+        in Life Sciences Molecular Cell Biology, providing a solid technical
+        foundation. Resulting in a blend of science and strategy that equips her
+        to translate complex research into effective healthcare solutions. At
+        Janssen Pharmaceutical Companies of Johnson & Johnson, Dr. Vujadinović
+        played a key role in advancing vaccine candidates from early development
+        to clinical application. As a Drug Substance Technical Integrator in
+        Vaccine Process and Analytical Development, she coordinated GMP
+        manufacturing and technical transfers, working closely with
+        cross-functional teams to ensure smooth project execution. Her
+        leadership facilitated successful project delivery, strategic risk
+        management, and adherence to strict GMP standards. As a Scientist in
+        Viral Vaccines at Janssen Vaccine and Prevention, she led a team focused
+        on optimizing the manufacturability and early-stage development of
+        adenoviral vectors. Her responsibilities ranged from study design to
+        data analysis, enabling vaccine candidates to transition effectively
+        from laboratory development to large-scale production. Dr. Vujadinović
+        has also contributed to patents and published research on HPV and
+        adenoviral platforms. Prior to her work at Janssen, Dr. Vujadinović
+        advanced her technical expertise as a Lab Technician at the University
+        of Utah’s Department of Pathology, conducting research on Borrelia
+        burgdorferi. At VU University Medical Center (VUMC) in Medical
+        Microbiology and Infection Control, she further developed her skills in
+        molecular diagnostics and data analysis, building a strong foundation in
+        molecular research and infectious disease control. Dr. Vujadinović’s
+        expertise is supported by prestigious certifications, including Genetic
+        Testing and Sequencing Technologies and Cancer Genomics and Precision
+        Oncology from Harvard. Her work combines creativity, technical
+        precision, and a strong commitment to advancing biotechnology for
+        practical, real-world applications, continually raising standards
+        molecular biotechnology. Marija's personal mission is to transform
+        healthcare in the Balkans, one genome at a time.
+      </>
+    ),
+    imageUrl: "/Marija.jpg",
   },
 ];
 

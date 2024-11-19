@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 export const DnaComponent = () => {
   return (
     <section className="w-full container-2xl">
-      <div className="relative w-full h-[300px] md:h-[60vh] bg-platinum-200">
-        <div className="w-full h-full overflow-hidden absolute top-0  bg-cover">
+      <div className="relative w-full h-[300px] md:h-[60vh] bg-blue-">
+        <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
           <Image
             src="/3d-render-medical-background-with-dna-strand.jpg"
             /* width={1640}
@@ -16,10 +16,16 @@ export const DnaComponent = () => {
             fill
             /*  objectFit="cover"
             className="object-cover" */
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+              opacity: "0.7",
+              background: "#271605e1",
+            }}
           />
         </div>
-        <div className="absolute w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
+        <div className="absolute top-12 w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
           <h1 className="text-2xl md:3xl lg:text-6xl font-bold">
             Advanced <span className="text-crimson-500">Genome</span> Testing
             Services

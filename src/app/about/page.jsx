@@ -4,6 +4,7 @@ import Footer2 from "@/components/Footer2";
 import AboutTeam from "@/components/component/AboutTeam";
 import ManualHeader from "@/components/component/ManualHeader";
 import AboutTextSection from "./componets/AboutTextSection";
+import AboutMarija from "./componets/AboutMarija";
 
 function page() {
   return (
@@ -11,7 +12,8 @@ function page() {
       <ManualHeader />
       <FramerMotionImage />
       <AboutTextSection />
-      <AboutTeam />
+      {/* <AboutTeam /> */}
+      <AboutMarija />
       <Footer2 />
     </div>
   );

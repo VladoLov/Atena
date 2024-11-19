@@ -11,6 +11,8 @@ import Footer2 from "@/components/Footer2";
 import React from "react";
 import GridCards from "@/components/component/GridCards";
 import ContactForm from "@/components/ContatForm";
+import Header from "@/newcomponents/Header";
+import News from "@/newcomponents/News";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -18,17 +20,19 @@ export const metadata = {
 export default function page() {
   return (
     <div>
-      <HoverNavigationMenu />
+      {/* <HoverNavigationMenu /> */}
+      <Header />
 
       <div>
         {/* <ManualHeader2 /> */}
 
         <DnaComponent />
-        <SubHeader />
+        {/* <SubHeader /> */}
       </div>
-      <div className="w-full from-blue-100 to-transparent bg-gradient-radial">
+      <div className="w-full bg-gradient-to-bl from-platinum-100 from-10% via-lightBlue-100 via-30% to-lightblue-300 to-90%  relative">
         {/*  <CircularCards /> */}
         <GridCards />
+        <News />
         <div className="max-w-4xl w-full mx-auto">
           <ContactForm />
         </div>

@@ -44,7 +44,7 @@ export default function ExpandableTeamCard() {
               </div>
               <div className="flex-grow text-center lg:text-left">
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-platinum-700 mb-2">{member.role}</p>
+                {/* <p className="text-platinum-700 mb-2">{member?.role}</p> */}
                 <p className="text-platinum-800 mb-4">{member.bio}</p>
                 <button
                   onClick={() => toggleExpand(member.id)}
@@ -64,14 +64,14 @@ export default function ExpandableTeamCard() {
                 </button>
               </div>
             </div>
-            {expandedMember === member.id && (
+            {/*    {expandedMember === member.id && (
               <div className="px-6 pb-6 lg:ml-60">
                 <h4 className="font-semibold mb-2">Education</h4>
                 <p className="text-platinum-800 mb-4">{member.education}</p>
                 <h4 className="font-semibold mb-2">Experience</h4>
                 <p className="text-platinum-800">{member.experience}</p>
               </div>
-            )}
+            )} */}
           </div>
         ))}
       </div>

@@ -156,6 +156,10 @@ export default function ContactForm() {
           </p>
         )}
       </form>
+      <p className="pt-4 px-4">
+        For any additional information or enquiries you may have you can reach
+        ATENA Genomics team at xxxx.{" "}
+      </p>
     </div>
   );
 }
