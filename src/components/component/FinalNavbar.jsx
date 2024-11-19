@@ -44,7 +44,7 @@ function FinalNavbar() {
         <li className="relative group z-20">
           <div className="relative">
             <Link
-              href="/services"
+              href="#"
               className="px-4 py-2 flex text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
               aria-haspopup="true"
               aria-expanded={isOpen ? "true" : "false"}

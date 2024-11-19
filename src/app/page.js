@@ -32,7 +32,9 @@ export default function page() {
       <div className="w-full bg-gradient-to-bl from-platinum-100 from-10% via-lightBlue-100 via-30% to-lightblue-300 to-90%  relative">
         {/*  <CircularCards /> */}
         <GridCards />
+
         <News />
+
         <div className="max-w-4xl w-full mx-auto">
           <ContactForm />
         </div>

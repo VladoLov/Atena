@@ -21,6 +21,15 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      clipPath: {
+        diagonal: "polygon(0 0, 100% 10%, 100% 100%, 0 90%)",
+        curved: "ellipse(100% 50% at 50%",
+        zigzag: "polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%)",
+        wave: "path('M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z')",
+        triangle: "polygon(0 0, 100% 0, 100% 90%, 0 100%)",
+        hexagon: "polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)",
+        asymmetric: "polygon(0 0, 100% 0, 100% 60%, 70% 100%, 0 100%))",
+      },
       colors: {
         background: "hsl(var(--hsl(30.1,100%,50%)))",
         foreground: "hsl(var(--foreground))",

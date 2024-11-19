@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function News() {
   return (
-    <section className="container mx-auto pb-24">
+    <section className="container mx-auto pb-24 ">
       <div className="flex flex-col  items-center md:flex-row   pb-12">
         <div className="flex basis-full md:basis-1/3  px-2">
           <Image
