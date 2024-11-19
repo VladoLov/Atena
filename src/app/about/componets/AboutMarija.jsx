@@ -37,8 +37,8 @@ export default function AboutMarija() {
                 where she specialized in designing and optimizing adenoviral
                 vectored vaccines. This experience shaped her focus on
                 developing innovative vaccine technologies to enhance immune
-                response. Dr. Vujadinović’s expertise is further supported by
-                dual MSc degrees in Biomolecular Sciences Cell Biology and
+                response. Dr. Vujadinović&apos;s expertise is further supported
+                by dual MSc degrees in Biomolecular Sciences Cell Biology and
                 Management, Policy Analysis & Entrepreneurship from Vrije
                 Universiteit Amsterdam. Her roots in biotechnology trace back to
                 a BSc in Life Sciences Molecular Cell Biology, providing a solid
@@ -67,15 +67,15 @@ export default function AboutMarija() {
               <p className="pb-2">
                 Prior to her work at Janssen, Dr. Vujadinović advanced her
                 technical expertise as a Lab Technician at the University of
-                Utah’s Department of Pathology, conducting research on Borrelia
-                burgdorferi. At VU University Medical Center (VUMC) in Medical
-                Microbiology and Infection Control, she further developed her
-                skills in molecular diagnostics and data analysis, building a
-                strong foundation in molecular research and infectious disease
-                control.
+                Utah&apos;s Department of Pathology, conducting research on
+                Borrelia burgdorferi. At VU University Medical Center (VUMC) in
+                Medical Microbiology and Infection Control, she further
+                developed her skills in molecular diagnostics and data analysis,
+                building a strong foundation in molecular research and
+                infectious disease control.
               </p>
               <p className="pb-2">
-                Dr. Vujadinović’s expertise is supported by prestigious
+                Dr. Vujadinović&apos;s expertise is supported by prestigious
                 certifications, including Genetic Testing and Sequencing
                 Technologies and Cancer Genomics and Precision Oncology from
                 Harvard. Her work combines creativity, technical precision, and
@@ -84,7 +84,7 @@ export default function AboutMarija() {
                 biotechnology.
               </p>
               <p className="pb-2">
-                Marija's personal mission is to transform healthcare in the
+                Marija&apos;s personal mission is to transform healthcare in the
                 Balkans, one genome at a time.
               </p>
             </div>

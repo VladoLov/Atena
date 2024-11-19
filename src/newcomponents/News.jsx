@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function News() {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto pb-24">
       <div className="flex flex-col  items-center md:flex-row   pb-12">
         <div className="flex basis-full md:basis-1/3  px-2">
           <Image
@@ -23,8 +23,8 @@ function News() {
           </h2>
         </div>
       </div>
-      <div>
-        <h2 className="font-bold pb-4 px-4">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="font-bold pb-4 pt-6 px-4 text-center text-xl">
           Join ATENA Genomics for Clinical NGS Testing Seminars!
         </h2>
         <p className="px-4 pb-4">
