@@ -13,7 +13,7 @@ export default function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState("");
-  const [acceptTerms, setAcceptTerms] = useState(false);
+  /* const [acceptTerms, setAcceptTerms] = useState(false); */
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ export default function ContactForm() {
       if (result.success) {
         setStatus("Message sent successfully!");
         setFormData({ name: "", lastName: "", email: "", message: "" });
-        setAcceptTerms(false);
+        // setAcceptTerms(false);
       } else {
         setStatus("Error sending message.");
       }
@@ -126,7 +126,7 @@ export default function ContactForm() {
             required
           ></textarea>
         </div>
-        <div className="flex items-center space-x-2">
+        {/*        <div className="flex items-center space-x-2">
           <Checkbox
             id="terms"
             checked={acceptTerms}
@@ -146,8 +146,11 @@ export default function ContactForm() {
               Terms & Conditions
             </Link>
           </label>
-        </div>
-        <Button type="submit" className="w-full" disabled={!acceptTerms}>
+        </div> */}
+        {/*  <Button type="submit" className="w-full" disabled={!acceptTerms}>
+          Send
+        </Button> */}
+        <Button type="submit" className="w-full">
           Send
         </Button>
         {status && (

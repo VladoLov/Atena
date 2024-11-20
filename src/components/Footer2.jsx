@@ -181,7 +181,7 @@ export default function Footer2() {
                   </svg>
                 </a>
               </li>
-              <li>
+              {/*  <li>
                 <a
                   href="#"
                   rel="noreferrer"
@@ -198,7 +198,7 @@ export default function Footer2() {
                     <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -220,7 +220,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>
@@ -233,7 +233,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>
@@ -246,7 +246,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>
@@ -257,8 +257,8 @@ export default function Footer2() {
         </div>
 
         <div className="mt-12 border-t border-platinum-100 pt-6">
-          <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-platinum-800">
+          <div className="text-center sm:flex sm:justify-center sm:text-left">
+            {/*  <p className="text-sm text-platinum-800">
               <span className="block sm:inline">All rights reserved. </span>
               <Link
                 href="/docs/Terms_and_Conditions.pdf"
@@ -275,7 +275,7 @@ export default function Footer2() {
               >
                 Privacy Policy
               </Link>
-            </p>
+            </p> */}
             <p className="mt-4 text-sm text-platinum-800 sm:order-first sm:mt-0">
               &copy; {new Date().getFullYear()} ATENA
             </p>

@@ -4,8 +4,8 @@ export default function AboutMarija() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <div className="relative flex justify-center items-start h-96 md:h-48">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-start">
+          {/*    <div className="relative flex justify-center items-start h-96 md:h-48">
             <Image
               src="/Marija.jpg?height=500&width=500"
               alt="Profile"
@@ -14,11 +14,24 @@ export default function AboutMarija() {
               objectFit="cover"
               className="rounded-lg shadow-lg mt-16"
             />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+          </div> */}
+          <div className="mx-auto max-w-screen-lg">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+              About Me
+            </h2>
+            <div className="justify-center items-center flex">
+              <Image
+                src="/Marija.jpg?height=200&width=200"
+                alt="Profile"
+                width={200}
+                height={200}
+                objectFit="cover"
+                className="rounded-full shadow-lg my-8  "
+              />
+            </div>
+
             <div className="prose prose-lg text-gray-500 max-h-[1100px]  pr-4">
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 Dr. Marija Vujadinović is an experienced specialist in molecular
                 biotechnology, with over 15 years of expertise in vaccine
                 development, vaccine GMP manufacturing, and molecular
@@ -30,7 +43,7 @@ export default function AboutMarija() {
                 prenatal testing, pharmacogenomics, and infectious disease
                 diagnostics across the Balkans.
               </p>
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 Her journey into advanced biotechnology began with a PhD in
                 Vaccine Development from the Medical Faculty at the University
                 of Amsterdam (AMC-UVA) and Janssen Vaccines and Prevention,
@@ -46,7 +59,7 @@ export default function AboutMarija() {
                 strategy that equips her to translate complex research into
                 effective healthcare solutions.
               </p>
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 At Janssen Pharmaceutical Companies of Johnson & Johnson, Dr.
                 Vujadinović played a key role in advancing vaccine candidates
                 from early development to clinical application. As a Drug
@@ -64,7 +77,7 @@ export default function AboutMarija() {
                 large-scale production. Dr. Vujadinović has also contributed to
                 patents and published research on HPV and adenoviral platforms.
               </p>
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 Prior to her work at Janssen, Dr. Vujadinović advanced her
                 technical expertise as a Lab Technician at the University of
                 Utah&apos;s Department of Pathology, conducting research on
@@ -74,7 +87,7 @@ export default function AboutMarija() {
                 building a strong foundation in molecular research and
                 infectious disease control.
               </p>
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 Dr. Vujadinović&apos;s expertise is supported by prestigious
                 certifications, including Genetic Testing and Sequencing
                 Technologies and Cancer Genomics and Precision Oncology from
@@ -83,7 +96,7 @@ export default function AboutMarija() {
                 real-world applications, continually raising standards molecular
                 biotechnology.
               </p>
-              <p className="pb-2">
+              <p className="pb-2 px-4">
                 Marija&apos;s personal mission is to transform healthcare in the
                 Balkans, one genome at a time.
               </p>

@@ -51,7 +51,8 @@ function FinalNavbar() {
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
-              Services
+              Services{" "}
+              <span className="text-crimson-700 pl-1">Coming Soon ☄️</span>
               {isOpen ? (
                 <ChevronUp className="ml-1" />
               ) : (
@@ -68,7 +69,7 @@ function FinalNavbar() {
               {services.map((service, index) => (
                 <li key={service.href} className="relative group">
                   <Link
-                    href={service.href}
+                    href={service.href1}
                     className="block px-4 py-2 text-platinum-700 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black transition-colors duration-300 ease-in-out"
                     onMouseEnter={(event) => handleMouseEnter(index, event)}
                   >
@@ -99,7 +100,7 @@ function FinalNavbar() {
                       {service.items.map((item) => (
                         <li key={item.href} className="relative group">
                           <Link
-                            href={item.href}
+                            href={item.href1}
                             className="block px-4 py-2 text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
                           >
                             {item.title}

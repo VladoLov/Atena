@@ -150,3 +150,12 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+.clip-triangle {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.clip-polygon {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}

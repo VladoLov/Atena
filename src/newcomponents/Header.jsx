@@ -31,7 +31,7 @@ function Header() {
               About
             </Link>
           </div>
-          <div className="flex list-none items-center justify-start z-30">
+          {/*  <div className="flex list-none items-center justify-start z-30">
             <Link
               href="/faq"
               className="px-4 py-2 flex text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
@@ -39,7 +39,7 @@ function Header() {
             >
               FAQ
             </Link>
-          </div>
+          </div> */}
           <div className="flex list-none items-center justify-start z-30">
             <Link
               href="/contact"
@@ -50,7 +50,7 @@ function Header() {
             </Link>
           </div>
 
-          <FinalNavbarRes />
+          {/* <FinalNavbarRes /> */}
 
           <Button className="bg-crimson-500 text-black font-semibold text-sm hover:bg-crimson-600">
             My Account
