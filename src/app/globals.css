@@ -159,3 +159,9 @@ body {
 .clip-polygon {
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
+.clip-custom1 {
+  clip-path: polygon(0 6%, 50% 0, 100% 6%, 100% 94%, 50% 100%, 0 94%);
+}
+.clip-custom2 {
+  clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 50% 94%, 0 100%);
+}

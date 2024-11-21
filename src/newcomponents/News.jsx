@@ -2,27 +2,7 @@ import Image from "next/image";
 
 function News() {
   return (
-    <section className="container mx-auto pb-24 clip-path-diagonal border-8 border-crimson-800 ">
-      <div className="flex flex-col  items-center md:flex-row   pb-12">
-        <div className="flex basis-full md:basis-1/3  px-2">
-          <Image
-            src="/health.png"
-            alt="Atena Genomics Healthcare"
-            height={500}
-            width={500}
-          />
-        </div>
-        <div className="flex basis md:basis-2/3 bg-crimson-200 px-4">
-          <h2>
-            <span className="font-semibold">ATENA Genomics</span> delivers
-            expert consulting and comprehensive clinical NGS testing, including
-            oncology, hereditary disease, prenatal, pharmacogenomics, and
-            infectious disease diagnostics. With tailored genomic solutions, we
-            empower healthcare providers and researchers to make informed,
-            data-driven decisions for enhanced patient outcomes.
-          </h2>
-        </div>
-      </div>
+    <section className="container mx-auto pb-24 ">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-bold pb-4 pt-6 px-4 text-center text-xl">
           Join ATENA Genomics for Clinical NGS Testing Seminars!
