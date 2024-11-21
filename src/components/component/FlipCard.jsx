@@ -39,7 +39,7 @@ export default function FlipCard({
         {/* Front */}
         <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
           <div className=" p-2 rounded-md flex items-center justify-center  text-3xl font-bold text-black overflow-hidden">
-            {title}
+            <div className="text-center">{title}</div>
           </div>
         </div>
 

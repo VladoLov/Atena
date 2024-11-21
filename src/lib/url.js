@@ -219,29 +219,29 @@ export const teamMembers = [
 export const flipCardData = [
   {
     image: "/blocks/Oncology.png",
-    title: "Oncology",
+    title: "Cancer NGS Profiling",
     /*  description: "Identifies genetic mutations and driving tumor growth.", */
     description:
       "NGS in oncology offers precise tumor profiling, hematological malignancy detection, liquid biopsy analysis, hereditary cancer screening, and cancer drug resistance monitoring for early detection, tailored therapies and enhanced patient care.",
-    subtitle: "Oncology NGS",
+    subtitle: "Cancer NGS Profiling",
     href: "/services/oncology",
   },
   {
     image: "/blocks/Genome-testing-2.jpeg",
-    title: "Genetic Disorders",
+    title: "Genetic Disorders NGS",
     /* description: "Involves genetic disorders affecting the body's functions.", */
     description:
       "NGS for early and precise detection of inherited genetic conditions, such as metabolic, neurological, developmental, and cardiovascular disorders, allowing for timely interventions and personalized treatments.",
-    subtitle: "Genetic Disorders ",
+    subtitle: "Genetic Disorders NGS",
     href: "/services/oncology",
   },
   {
     image: "/blocks/cardiolog-3.jpeg",
-    title: "Prenatal Screening",
+    title: "Prenatal Genetic Risk Analysis",
     /* description: "Refers to diseases affecting the heart's function.", */
     description:
       "Non-Invasive Prenatal Testing (NIPT) and Expanded Newborn Screening using NGS aim to detect genetic and chromosomal abnormalities early, enabling personalized treatment plans and improving long-term health outcomes for fetuses and newborns.",
-    subtitle: "Prenatal Screening",
+    subtitle: "Prenatal Genetic Risk Analysis",
     href: "/services/oncology",
   },
   /*   {
@@ -254,26 +254,26 @@ export const flipCardData = [
   }, */
   {
     image: "/blocks/Pharmacogenomics.jpeg",
-    title: "Pharmacogenomics",
+    title: "Genomic Response to Pharmacotherapy",
     description:
       "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety.",
-    subtitle: "Pharmacogenomics",
+    subtitle: "Genomic Response to Pharmacotherapy",
     href: "/services/oncology",
   },
   {
     image: "/blocks/genome-research-lab-tests.jpg",
-    title: "Infectious Disease",
+    title: "Pathogen NGS Profiling",
     description:
       "NGS offers rapid and accurate pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation, for disease surveillance and effective public health responses.",
-    subtitle: "Infectious Disease",
+    subtitle: "Pathogen NGS Profiling",
     href: "/services/oncology",
   },
   {
     image: "/blocks/2400-dna-molecule-spiral-structure-model.jpg",
-    title: "Custom NGS solutions",
+    title: "Client-specific NGS testing",
     description:
       "NGS provides rapid and precise pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation for early and accurate diagnosis.",
-    subtitle: "Custom NGS solutions",
+    subtitle: "Client-specific NGS testing",
     href: "/services/oncology",
   },
   // Add as many cards as needed

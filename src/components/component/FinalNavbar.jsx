@@ -62,7 +62,7 @@ function FinalNavbar() {
 
             {/* Dropdown for Services */}
             <ul
-              className="absolute left-0 hidden mt-[1px] w-52 bg-white shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
+              className="absolute left-0 hidden mt-[1px] w-72 bg-white shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={handleMouseLeave}
             >
@@ -89,7 +89,7 @@ function FinalNavbar() {
                   {/* Submenu */}
                   {service.items && openSubMenuIndex === index && (
                     <ul
-                      className={`absolute top-0 mt-full w-52 bg-white shadow-lg transition-all duration-300 ease-in-out transform opacity-100 ${
+                      className={`absolute top-0 mt-full w-60 bg-white shadow-lg transition-all duration-300 ease-in-out transform opacity-100 ${
                         flippedSubmenus[index]
                           ? "right-full -ml-[1px]"
                           : "left-full"
