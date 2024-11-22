@@ -20,12 +20,12 @@ function Header() {
             height={250}
           />
         </Link>
-        <div className="flex items-center">
+        <div className="flex items-center space-x-2 ">
           <FinalNavbar />
-          <div className="flex list-none items-center justify-start z-30">
+          <div className="flex list-none items-center  justify-start z-30">
             <Link
               href="/about"
-              className="px-4 py-2 flex text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
+              className="px-4 py-2 flex  text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
               aria-haspopup="true"
             >
               About
@@ -43,7 +43,7 @@ function Header() {
           <div className="flex list-none items-center justify-start z-30">
             <Link
               href="/contact"
-              className="px-4 py-2 flex text-platinum-700 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
+              className="px-4 py-2 flex text-platinum-700 space-x-4  hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
               aria-haspopup="true"
             >
               Contact

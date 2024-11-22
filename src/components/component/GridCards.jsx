@@ -49,6 +49,7 @@ function GridCards() {
             description={card.description}
             subtitle={card.subtitle}
             href={card.href}
+            icon={card.icon}
           />
         ))}
       </div>

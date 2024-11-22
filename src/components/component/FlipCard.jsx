@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { icons } from "lucide-react";
 
 export default function FlipCard({
   image,
@@ -9,6 +10,7 @@ export default function FlipCard({
   description,
   subtitle,
   href,
+  icon,
   rotate = "y",
   className,
   ...props
@@ -38,7 +40,14 @@ export default function FlipCard({
       >
         {/* Front */}
         <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
-          <div className=" p-2 rounded-md flex items-center justify-center  text-3xl font-bold text-black overflow-hidden">
+          <div className="p-2 rounded-md flex flex-col  items-center justify-center  text-3xl font-bold  text-black overflow-hidden">
+            {icon && (
+              <div
+                className="h-12 w-12 mb-2 mr-2 "
+                // Correctly structured dangerouslySetInnerHTML
+                dangerouslySetInnerHTML={{ __html: icon }}
+              />
+            )}
             <div className="text-center">{title}</div>
           </div>
         </div>
