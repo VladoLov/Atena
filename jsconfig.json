@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx", // Add this line to support the new JSX transform
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src"]
 }

@@ -10,7 +10,7 @@ export default function FlipCard({
   description,
   subtitle,
   href,
-  icon,
+  icon: Icon,
   rotate = "y",
   className,
   ...props
@@ -39,13 +39,24 @@ export default function FlipCard({
         )}
       >
         {/* Front */}
-        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
+        {/*     <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
           <div className="p-2 rounded-md flex flex-col  items-center justify-center  text-3xl font-bold  text-black overflow-hidden">
             {icon && (
               <div
                 className="h-12 w-12 mb-2 mr-2 "
                 // Correctly structured dangerouslySetInnerHTML
                 dangerouslySetInnerHTML={{ __html: icon }}
+              />
+            )}
+            <div className="text-center">{title}</div>
+          </div>
+        </div> */}
+        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
+          <div className="p-2 rounded-md flex flex-col items-center justify-center text-3xl font-bold text-foreground overflow-hidden">
+            {Icon && (
+              <Icon
+                className="h-12 w-12 mb-2 stroke-crimson-500"
+                strokeWidth={1.5}
               />
             )}
             <div className="text-center">{title}</div>
