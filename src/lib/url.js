@@ -235,6 +235,7 @@ export const flipCardData = [
     description:
       "NGS for early and precise detection of inherited genetic conditions, such as metabolic, neurological, developmental, and cardiovascular disorders, allowing for timely interventions and personalized treatments.",
     subtitle: "Genetic Disorders NGS",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna"><path d="m10 16 1.5 1.5"/><path d="m14 8-1.5-1.5"/><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"/><path d="m16.5 10.5 1 1"/><path d="m17 6-2.891-2.891"/><path d="M2 15c6.667-6 13.333 0 20-6"/><path d="m20 9 .891.891"/><path d="M3.109 14.109 4 15"/><path d="m6.5 12.5 1 1"/><path d="m7 18 2.891 2.891"/><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/></svg>',
     href: "/services/oncology",
   },
   {
@@ -244,6 +245,7 @@ export const flipCardData = [
     description:
       "Non-Invasive Prenatal Testing (NIPT) and Expanded Newborn Screening using NGS aim to detect genetic and chromosomal abnormalities early, enabling personalized treatment plans and improving long-term health outcomes for fetuses and newborns.",
     subtitle: "Prenatal Genetic Risk Analysis",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baby"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>',
     href: "/services/oncology",
   },
   /*   {
@@ -260,6 +262,7 @@ export const flipCardData = [
     description:
       "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety.",
     subtitle: "Genomic Response to Pharmacotherapy",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pill"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>',
     href: "/services/oncology",
   },
   {
@@ -268,6 +271,8 @@ export const flipCardData = [
     description:
       "NGS offers rapid and accurate pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation, for disease surveillance and effective public health responses.",
     subtitle: "Pathogen NGS Profiling",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cls-1"> <path d="M13,8.17h0A4.79,4.79,0,0,0,8.17,3.38h0A4.78,4.78,0,0,0,3.38,8.17h0A12.44,12.44,0,0,0,15.83,20.62h0a4.78,4.78,0,0,0,4.79-4.79h0A4.79,4.79,0,0,0,15.83,11h0A2.88,2.88,0,0,1,13,8.17Z" /> <circle cx="5.29" cy="9.13" r="1.92" /> <circle cx="15.83" cy="12.96" r="1.92" /> <line x1="8.17" y1="12.96" x2="10.08" y2="12.96" /> <line x1="9.13" y1="8.17" x2="11.04" y2="8.17" /> <line x1="11.04" y1="16.79" x2="12.96" y2="16.79" /> <line x1="14.88" y1="17.75" x2="16.79" y2="17.75" /> <line x1="8.17" y1="0.5" x2="8.17" y2="3.38" /> <line x1="20.63" y1="16.79" x2="23.5" y2="16.79" /> <line x1="7.21" y1="16.79" x2="4.81" y2="19.19" /> <line x1="13.92" y1="10.08" x2="16.31" y2="7.69" /> <line x1="19.67" y1="12.96" x2="12" y2="19.67" /> </svg>',
+
     href: "/services/oncology",
   },
   {
@@ -276,6 +281,7 @@ export const flipCardData = [
     description:
       "NGS provides rapid and precise pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation for early and accurate diagnosis.",
     subtitle: "Client-specific NGS testing",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-plus"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 14h6"/><path d="M12 17v-6"/></svg>',
     href: "/services/oncology",
   },
   // Add as many cards as needed
