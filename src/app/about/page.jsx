@@ -8,9 +8,9 @@ import AboutMarija from "./componets/AboutMarija";
 
 function page() {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-start">
+    <div className="flex min-h-screen w-full flex-col items-center justify-start bg-platinum-300 bg-transparent">
       <FramerMotionImage />
-      {/* <AboutTextSection /> */}
+      <AboutTextSection />
       {/* <AboutTeam /> */}
       <AboutMarija />
     </div>
