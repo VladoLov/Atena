@@ -9,12 +9,10 @@ import AboutMarija from "./componets/AboutMarija";
 function page() {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-start">
-      <ManualHeader />
       <FramerMotionImage />
-      <AboutTextSection />
+      {/* <AboutTextSection /> */}
       {/* <AboutTeam /> */}
       <AboutMarija />
-      <Footer2 />
     </div>
   );
 }

@@ -153,6 +153,10 @@ module.exports = {
           from: { transform: "rotateX(0deg)" },
           to: { transform: "rotateX(360deg)" },
         },
+        "marquee-x": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
       },
       animation: {
         "rotate-scale": "rotateScale 3s infinite linear infinite",
@@ -166,6 +170,7 @@ module.exports = {
         "rotate-z": "rotate3dZ 2s linear infinite",
         "rotate-y": "rotate3dY 2s linear infinite",
         "rotate-x": "rotate3dX 4s linear infinite",
+        "marquee-horizontal": "marquee-x var(--duration) infinite linear",
       },
     },
     colors: {

@@ -6,9 +6,7 @@ import ManualHeader from "@/components/component/ManualHeader";
 function page() {
   return (
     <div>
-      <ManualHeader />
       <Services />
-      <Footer2 />
     </div>
   );
 }

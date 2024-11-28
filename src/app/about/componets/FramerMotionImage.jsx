@@ -8,33 +8,28 @@ import FramerMainSection from "./AboutTextSection";
 
 export default function FramerMotionImage() {
   return (
-    <div className="w-full max-h-[50vh] bg-gray-100 z-[-1]">
-      <header className="relative w-full h-[50vh] overflow-hidden ">
+    <section className="w-full max-h-full bg-gray-100 z-[-1]">
+      <div className="relative w-full h-screen overflow-hidden clip-piere shadow-md bg-opacity-90 text-transparent">
+        <Image
+          src="/piere-image.png"
+          alt="Featured Image"
+          fill
+          style={{
+            objectFit: "cover",
+            opacity: "0.6",
+          }}
+          priority
+        />
+
         <motion.div
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="w-full h-full bg-black bg-opacity-50 "
-        >
-          <Image
-            src="/AdobeStock_169041837.jpeg?height=1440&width=2560"
-            alt="Featured Image"
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-            priority
-          />
-        </motion.div>
-        {/*   <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="absolute inset-0 flex items-center justify-center"
+          className="absolute inset-0 flex items-start justify-center flex-col mx-10  max-w-4xl lg:mx-24 pt-12 pb-8 "
         >
           <HeaderInFaramer />
-        </motion.div> */}
-      </header>
-    </div>
+        </motion.div>
+      </div>
+    </section>
   );
 }

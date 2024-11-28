@@ -10,11 +10,9 @@ export const metadata = {
 function page() {
   return (
     <div>
-      <HoverNavigationMenu />
       <div className="max-w-screen-md mx-auto py-8">
         <FaqAccordion />
       </div>
-      <Footer2 />
     </div>
   );
 }

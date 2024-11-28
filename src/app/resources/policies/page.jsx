@@ -5,7 +5,6 @@ import { polices } from "@/lib/url";
 function page() {
   return (
     <div>
-      <ManualHeader />
       <div className="max-w-screen-md mx-auto py-8">
         <h2 className="text-2xl md:text-3xl lg:text-6xl font-semibold py-8">
           {" "}
@@ -20,7 +19,6 @@ function page() {
           </div>
         ))}
       </div>
-      <Footer2 />
     </div>
   );
 }

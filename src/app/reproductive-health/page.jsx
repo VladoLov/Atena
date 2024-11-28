@@ -5,9 +5,7 @@ import Footer2 from "@/components/Footer2";
 function page() {
   return (
     <div>
-      <Header />
       <ArticleReproductiveHealth />
-      <Footer2 />
     </div>
   );
 }
