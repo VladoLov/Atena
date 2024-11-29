@@ -4,11 +4,11 @@ import { Button } from "./ui/button";
 
 export const DnaComponent = () => {
   return (
-    <section className="w-full container-2xl">
-      <div className="relative w-full h-[300px] md:h-[60vh] bg-blue-">
+    <section className="w-full container-2xl  bg-platinum-200">
+      <div className="relative w-full h-[300px] md:h-[60vh] clip-piere">
         <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
           <Image
-            src="/3d-render-medical-background-with-dna-strand.jpg"
+            src="/helix.png"
             /* width={1640}
             height={1024} */
             alt="dna genome"
@@ -20,8 +20,9 @@ export const DnaComponent = () => {
               objectFit: "cover",
               width: "100%",
               height: "100%",
-              opacity: "0.7",
-              background: "#271605e1",
+              opacity: "0.4",
+              background: "#001717",
+              filter: "sturate(50%)",
             }}
           />
         </div>

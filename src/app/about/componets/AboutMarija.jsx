@@ -35,9 +35,9 @@ export default function AboutMarija() {
                 Dr. Marija Vujadinović has over 15 years of experience in
                 vaccine development, GMP manufacturing, and molecular
                 biotechnology. As the Founder, Director, and Chief Technology
-                Officer of ATENA Genomics, she is working to bring
-                next-generation sequencing (NGS) technologies to improve
-                healthcare and diagnostics in the Balkans.
+                Officer of ATENA Genomics, she is focused on advancing precision
+                genetic testing to improve healthcare and diagnostics in the
+                Balkans.
               </p>
               <p className="pb-2 ">
                 Marija started her education with a BSc in Life Sciences

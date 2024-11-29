@@ -174,3 +174,6 @@ body {
 .clip-piere2 {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 30% 80%, 0 100%);
 }
+.clip-piere3 {
+  clip-path: polygon(0 0, 70% 10%, 100% 0, 100% 100%, 30% 90%, 0 100%);
+}
