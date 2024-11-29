@@ -16,6 +16,8 @@ import News from "@/newcomponents/News";
 import Info from "@/newcomponents/Info";
 import DiverseCards from "@/newcomponents/DescriptionCard";
 import MarkCards from "@/newcomponents/MarkCards";
+import PiereCard from "@/newcomponents/PiereCard";
+import { CarouselSpacing } from "@/newcomponents/CarouselBlock";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -41,6 +43,9 @@ export default function page() {
         </section>
         <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
           <MarkCards />
+        </section>
+        <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
+          <CarouselSpacing />
         </section>
 
         <section className="bg-gradient-to-b from-crimson-500/10 to-white h-fit clip-custom1">

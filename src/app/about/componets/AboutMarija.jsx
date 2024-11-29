@@ -30,8 +30,8 @@ export default function AboutMarija() {
               />
             </div>
 
-            <div className="prose prose-lg text-gray-500 max-h-[1100px]  pr-4">
-              <p className="pb-2 px-4">
+            <div className="prose prose-lg text-gray-500 max-h-fit  px-6">
+              <p className="pb-2 ">
                 Dr. Marija Vujadinović has over 15 years of experience in
                 vaccine development, GMP manufacturing, and molecular
                 biotechnology. As the Founder, Director, and Chief Technology
@@ -39,7 +39,7 @@ export default function AboutMarija() {
                 next-generation sequencing (NGS) technologies to improve
                 healthcare and diagnostics in the Balkans.
               </p>
-              <p className="pb-2 px-4">
+              <p className="pb-2 ">
                 Marija started her education with a BSc in Life Sciences
                 Molecular Cell Biology and followed this with dual MSc degrees
                 in Biomolecular Sciences Cell Biology and Management, Policy
@@ -50,7 +50,7 @@ export default function AboutMarija() {
                 Amsterdam (AMC-UvA), focusing on developing and improving
                 adenoviral vectored vaccines.
               </p>
-              <p className="pb-2 px-4">
+              <p className="pb-2 ">
                 While at Janssen Pharmaceutical Companies of Johnson & Johnson,
                 Marija played an important role in moving vaccine candidates
                 from early research stages to clinical application. In her role
@@ -64,7 +64,7 @@ export default function AboutMarija() {
                 several vaccine candidates, including the Janssen COVID-19
                 vaccine.
               </p>
-              <p className="pb-2 px-4">
+              <p className="pb-2 ">
                 Prior to her work at Janssen, Dr. Vujadinović advanced her
                 technical expertise as a Lab Technician at the University of
                 Utah&apos;s Department of Pathology, conducting research on
@@ -74,7 +74,7 @@ export default function AboutMarija() {
                 building a strong foundation in molecular research and
                 infectious disease control.
               </p>
-              <p className="pb-2 px-4">
+              <p className="pb-2 ">
                 Marija has published her research in scientific journals and
                 holds patents for her contributions to HPV, adenoviral
                 technology and vaccine innovation. Earlier roles at the
@@ -85,7 +85,7 @@ export default function AboutMarija() {
                 which have deepened her focus on precision oncology and genetic
                 analysis.
               </p>
-              <p className="pb-2 px-4">
+              <p className="pb-2 ">
                 Marija&apos;s personal mission is to transform healthcare in the
                 Balkans, one genome at a time.
               </p>
