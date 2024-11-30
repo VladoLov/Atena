@@ -12,7 +12,6 @@ import PiereCard from "@/newcomponents/PiereCard";
 import FlyonCard from "@/newcomponents/FlyonCard";
 import SubHeader from "@/newcomponents/SubHeader";
 import { flipCardData } from "@/lib/url";
-import { CarouselBlock } from "@/newcomponents/CarouselBlock";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -39,12 +38,12 @@ export default function page() {
         <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 h-fit clip-piere py-24">
           <Info />
         </section>
-        <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
+        <section className="bg-gradient-to-b h-dvh from-crimson-300 to-crimson-200  clip-custom2">
           <MarkCards />
         </section>
-        <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
-          {/* <CarouselBlock /> */}
-        </section>
+        {/* <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
+          <CarouselBlock flipCardData={flipCardData} />
+        </section> */}
         {/*     <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
           <FlyonCard />
         </section> */}

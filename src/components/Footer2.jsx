@@ -130,7 +130,7 @@ export default function Footer2() {
                     />
                   </svg>
                   <address className="-mt-0.5 pl-1 not-italic text-platinum-900 hover:text-platinum-950">
-                    Mostar
+                    Vukovarska 50 Mostar
                   </address>
                 </li>
               </ul>
@@ -139,7 +139,7 @@ export default function Footer2() {
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61569630720471&mibextid=ZbWKwL"
                   rel="noreferrer"
                   target="_blank"
                   className="text-teal-700 transition hover:text-crimson-700"
@@ -161,7 +161,7 @@ export default function Footer2() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/atena.genomics/profilecard/?igsh=MXQ3b2Z4eDVxODlyNg%3D%3D"
                   rel="noreferrer"
                   target="_blank"
                   className="text-teal-700 transition hover:text-crimson-700"
