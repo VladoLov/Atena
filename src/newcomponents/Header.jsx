@@ -1,23 +1,20 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-
 import FinalNavbar from "@/components/component/FinalNavbar";
-
-import FinalNavbarRes from "@/components/component/FinalNavbarRes";
 import DropDown from "@/components/component/DropDown";
 
 function Header() {
   return (
     <header className="w-full sticky ">
       <DropDown />
-      <div className="hidden lg:flex flex-row justify-between mt-2 mx-4 mb-2items-center">
+      <div className="hidden lg:flex flex-row justify-between mt-2 mx-4 mb-2 items-center">
         <Link href="/" className="max-w-fit  items-center flex">
           <Image
             src="/AtenaGenomicsLogo.png"
             alt="Atena Genomics"
-            width={200}
-            height={250}
+            width={256}
+            height={74}
           />
         </Link>
         <div className="flex items-center space-x-2 ">

@@ -6,15 +6,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Award } from "lucide-react";
-import { flipCardData } from "@/lib/url";
+
 import Link from "next/link";
 
-function PiereCard({ title, description, href, icon: Icon }) {
+function PiereCard({ title, description, href, icon }) {
   return (
     <Card className="w-72 flex flex-col">
       <CardHeader className="grid gap-4">
-        {Icon && <Icon className="w-24 h-24 text-primary stroke-crimson-500" />}
+        {/*  {Icon && <Icon className="w-24 h-24 text-primary stroke-crimson-500" />} */}
+        {icon}
+
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow flex flex-col">
