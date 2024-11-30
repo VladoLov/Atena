@@ -86,7 +86,7 @@ export default function Footer2() {
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="flex justify-start  gap-1.5 lg:justify-start"
                     href="#"
                   >
@@ -107,7 +107,7 @@ export default function Footer2() {
                     <span className="flex pl-1 text-platinum-900 hover:text-platinum-950">
                       +387 **-***-***
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex justify-start  gap-1.5 lg:justify-start">
                   <svg
@@ -138,7 +138,7 @@ export default function Footer2() {
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
-                <a
+                <Link
                   href="#"
                   rel="noreferrer"
                   target="_blank"
@@ -157,10 +157,10 @@ export default function Footer2() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   rel="noreferrer"
                   target="_blank"
@@ -179,7 +179,7 @@ export default function Footer2() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               {/*  <li>
                 <a

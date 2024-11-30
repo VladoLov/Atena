@@ -1,10 +1,14 @@
+import Image from "next/image";
+
 function FlyonCard() {
   return (
     <div className="card sm:max-w-sm">
       <figure>
-        <img
+        <Image
           src="https://cdn.flyonui.com/fy-assets/components/card/image-9.png"
           alt="Watch"
+          width={250}
+          height={250}
         />
       </figure>
       <div className="card-body">

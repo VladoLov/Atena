@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Rocket, Shield, Zap, User, Star, Coffee } from "lucide-react";
+import Image from "next/image";
 
 const FeatureCard = () => (
   <Card className="flex flex-col h-full">
@@ -82,10 +83,12 @@ const TeamMemberCard = () => (
 
 const ProductCard = () => (
   <Card className="flex flex-col h-full overflow-hidden">
-    <img
+    <Image
       src="/placeholder.svg?height=200&width=400"
       alt="Product"
-      className="w-full h-48 object-cover"
+      className="object-cover"
+      width={48}
+      height={48}
     />
     <CardHeader>
       <CardTitle>Premium Headphones</CardTitle>

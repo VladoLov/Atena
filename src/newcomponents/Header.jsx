@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import FinalNavbar from "@/components/component/FinalNavbar";
 
-import FinalNavbarRes from "@/components/component/FinalNavbarRes";
 import DropDown from "@/components/component/DropDown";
 
 function Header() {

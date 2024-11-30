@@ -8,9 +8,11 @@ import Info from "@/newcomponents/Info";
 import DiverseCards from "@/newcomponents/DescriptionCard";
 import MarkCards from "@/newcomponents/MarkCards";
 import PiereCard from "@/newcomponents/PiereCard";
-import { CarouselSpacing } from "@/newcomponents/CarouselBlock";
+
 import FlyonCard from "@/newcomponents/FlyonCard";
 import SubHeader from "@/newcomponents/SubHeader";
+import { flipCardData } from "@/lib/url";
+import { CarouselBlock } from "@/newcomponents/CarouselBlock";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -41,11 +43,11 @@ export default function page() {
           <MarkCards />
         </section>
         <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
-          <CarouselSpacing />
+          {/* <CarouselBlock /> */}
         </section>
-        <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
+        {/*     <section className="bg-gradient-to-b from-crimson-300 to-crimson-200 h-fit clip-custom2">
           <FlyonCard />
-        </section>
+        </section> */}
 
         <div className="bg-gradient-to-b from-crimson-500/10 to-white">
           <div className="max-w-4xl w-full mx-auto pb-12 ">
