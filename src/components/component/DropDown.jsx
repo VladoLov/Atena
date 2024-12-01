@@ -27,8 +27,8 @@ const DropDown = () => {
       <Link href="/">
         <Image
           src="/AtenaGenomicsLogo.png"
-          width={130}
-          height={20}
+          width={256}
+          height={74}
           alt="Atena logo"
         />
       </Link>
@@ -67,7 +67,7 @@ const DropDown = () => {
 
           <DropdownMenuSeparator />
           <Button className="bg-crimson-500 text-black w-9/12 ">
-            My Account
+            <label>My Account</label>
           </Button>
         </DropdownMenuContent>
       </DropdownMenu>

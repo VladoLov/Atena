@@ -26,11 +26,19 @@ export const DnaComponent = () => {
             }}
           />
         </div>
-        <div className="absolute top-12 md:w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
-          <h1 className=" relative text-5xl flex-col justify-center items-center lg:pt-40  px-10 text-center md:3xl lg:text-9xl font-bold">
+        <div className="absolute top-12 w-full flex items-left flex-row justify-center ml-4  mx-auto gap-4">
+          <h1 className="basis-2/3 min-h-[70vh] leading-snug  flex text-6xl flex-col justify-center items-center animate-in transition ease-in-out duration-700 slide-in-from-left  px-10 text-center md:text-7xl md:leading-snug lg:text-8xl font-bold">
             Advanced <span className="text-crimson-500">Genome</span> Testing
             Services
           </h1>
+          <div className="hidden basis-1/3 items-center justify-center lg:flex animate-in slide-in-from-right duration-700 ease-in-out">
+            <Image
+              src="/sova/AtenaGenomicsLogo.png"
+              alt="Atena logotip"
+              width={300}
+              height={300}
+            />
+          </div>
           {/*  <p className="text-lg text-platinum-900">
             Explore your genetic heritage{" "}
           </p>
