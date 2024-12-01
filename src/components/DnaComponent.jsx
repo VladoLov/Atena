@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 export const DnaComponent = () => {
   return (
     <section className="w-full container-2xl  bg-platinum-200">
-      <div className="relative w-full h-[300px] md:h-[60vh] clip-piere">
+      <div className="relative w-full h-dvh md:h-[100vh] clip-piere">
         <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
           <Image
             src="/helix.png"
@@ -27,7 +27,7 @@ export const DnaComponent = () => {
           />
         </div>
         <div className="absolute top-12 w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
-          <h1 className="text-2xl md:3xl lg:text-6xl font-bold">
+          <h1 className="text-2xl md:3xl lg:text-7xl font-bold">
             Advanced <span className="text-crimson-500">Genome</span> Testing
             Services
           </h1>

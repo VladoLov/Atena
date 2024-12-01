@@ -51,7 +51,7 @@ export default function FlipCard({
             <div className="text-center">{title}</div>
           </div>
         </div> */}
-        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden]">
+        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden] bg-platinum-200">
           <div className="p-2 rounded-md flex flex-col items-center justify-center text-3xl font-bold text-foreground overflow-hidden">
             {Icon && (
               <Icon

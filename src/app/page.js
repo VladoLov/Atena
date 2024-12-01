@@ -8,10 +8,11 @@ import Info from "@/newcomponents/Info";
 import DiverseCards from "@/newcomponents/DescriptionCard";
 import MarkCards from "@/newcomponents/MarkCards";
 import PiereCard from "@/newcomponents/PiereCard";
-import { CarouselSpacing } from "@/newcomponents/CarouselBlock";
+
 import FlyonCard from "@/newcomponents/FlyonCard";
 import SubHeader from "@/newcomponents/SubHeader";
 import ProcesCardCarousel from "@/newcomponents/ProcesCardCarousel";
+import { flipCardData } from "@/lib/url";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },

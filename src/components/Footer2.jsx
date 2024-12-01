@@ -86,7 +86,7 @@ export default function Footer2() {
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="flex justify-start  gap-1.5 lg:justify-start"
                     href="#"
                   >
@@ -107,7 +107,7 @@ export default function Footer2() {
                     <span className="flex pl-1 text-platinum-900 hover:text-platinum-950">
                       +387 **-***-***
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex justify-start  gap-1.5 lg:justify-start">
                   <svg
@@ -130,7 +130,7 @@ export default function Footer2() {
                     />
                   </svg>
                   <address className="-mt-0.5 pl-1 not-italic text-platinum-900 hover:text-platinum-950">
-                    Mostar
+                    Vukovarska 50 Mostar
                   </address>
                 </li>
               </ul>
@@ -138,8 +138,8 @@ export default function Footer2() {
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61569630720471&mibextid=ZbWKwL"
                   rel="noreferrer"
                   target="_blank"
                   className="text-teal-700 transition hover:text-crimson-700"
@@ -157,11 +157,11 @@ export default function Footer2() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="https://www.instagram.com/atena.genomics/profilecard/?igsh=MXQ3b2Z4eDVxODlyNg%3D%3D"
                   rel="noreferrer"
                   target="_blank"
                   className="text-teal-700 transition hover:text-crimson-700"
@@ -179,7 +179,7 @@ export default function Footer2() {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
               {/*  <li>
                 <a

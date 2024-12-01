@@ -15,7 +15,7 @@ function News() {
           disease diagnostics.
         </p>
         <p className="px-4">
-          Don’t miss this opportunity to learn more on what genomics has to
+          Don&apos;t miss this opportunity to learn more on what genomics has to
           offer. Stay tuned for dates and registration!
         </p>
       </div>
