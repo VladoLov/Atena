@@ -7,19 +7,8 @@ import Image from "next/image";
 
 function GridCards() {
   return (
-    <div className="container mx-auto py-8 lg:pt-32 lg:mb-16 relative ">
-      {/*   <div className="inset-1 z-0 absolute opacity-60 ">
-        <Image
-          src="/Genome-testing-2.jpeg"
-          alt="background DNK image"
-          fill
-          objectFit="cover"
-          objectPosition="center"
-          className="overflow-visible "
-        />
-      </div> */}
-
-      <div className=" relative z-10 hidden lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+    <div className="container mx-auto py-8 lg:pt-32 lg:mb-0 relative ">
+      <div className=" relative z-10 hidden lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-32">
         {flipCardData.map((card, index) => (
           <FlipCard
             key={index}

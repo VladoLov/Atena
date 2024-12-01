@@ -34,7 +34,7 @@ export default function FlipCard({
     >
       <div
         className={cn(
-          "relative h-full rounded-[30px] transition-all duration-500 [transform-style:preserve-3d] border border-crimson-500 ring-4 ring-crimson-300",
+          "relative h-full rounded-[30px] transition-all duration-500 [transform-style:preserve-3d] border border-crimson-500 bg-hexagon filter backdrop-brightness-120 bg-center bg-cover ring-4 ring-crimson-300",
           self[0]
         )}
       >
@@ -51,8 +51,8 @@ export default function FlipCard({
             <div className="text-center">{title}</div>
           </div>
         </div> */}
-        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden] bg-platinum-200">
-          <div className="p-2 rounded-md flex flex-col items-center justify-center text-3xl font-bold text-foreground overflow-hidden">
+        <div className="absolute h-full w-full flex items-center justify-center [backface-visibility:hidden] ">
+          <div className="p-2 rounded-md flex flex-col items-center justify-center text-3xl font-bold text-foreground overflow-hidden ">
             {Icon && (
               <Icon
                 className="h-12 w-12 mb-2 stroke-crimson-500"

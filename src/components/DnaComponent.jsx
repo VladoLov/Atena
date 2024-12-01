@@ -26,8 +26,8 @@ export const DnaComponent = () => {
             }}
           />
         </div>
-        <div className="absolute top-12 w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
-          <h1 className="text-2xl md:3xl lg:text-7xl font-bold">
+        <div className="absolute top-12 md:w-2/3 flex items-left flex-col justify-center ml-4 lg:mg-12 lg:mt-18 mt-8 mx-auto gap-4">
+          <h1 className=" relative text-5xl flex-col justify-center items-center lg:pt-40  px-10 text-center md:3xl lg:text-9xl font-bold">
             Advanced <span className="text-crimson-500">Genome</span> Testing
             Services
           </h1>

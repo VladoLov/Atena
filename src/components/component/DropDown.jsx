@@ -45,7 +45,7 @@ const DropDown = () => {
           )}
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className="bg-white max-h-[80vh] min-w-96 overflow-y-auto text-center">
+        <DropdownMenuContent className="bg-white min-h-fit w-lvw overflow-y-auto text-center">
           {firstHeader.map((item) => (
             <DropdownMenuItem key={item.href}>
               <Link href={item.href}>{item.title}</Link>
