@@ -39,7 +39,7 @@ function FooterSection({ title, children }) {
 
 export default function Footer2() {
   return (
-    <footer className="bg-platinum-50 w-full">
+    <footer className="bg-platinum-50 w-full font-poppins">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="flex flex-col items-center lg:items-start">

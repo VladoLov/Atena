@@ -4,6 +4,9 @@ import FlipCard from "./FlipCard";
 import { FlipCardSmallScreen } from "./FlipCardSmallScreen";
 import { flipCardData } from "@/lib/url";
 import Image from "next/image";
+import { FeatureCard } from "@/newcomponents/FeatureCard";
+import FlyonCard from "@/newcomponents/FlyonCard";
+import PiereCard from "@/newcomponents/PiereCard";
 
 function GridCards() {
   return (
@@ -21,11 +24,11 @@ function GridCards() {
           />
         ))}
       </div>
-      <div className="lg:hidden relative z-20 grid grid-cols-1 px-4 sm:grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="lg:hidden relative z-20 w-full pointer-events-auto  inline-flex px-4 md:grid-cols-2 gap-8 overflow-auto">
         {flipCardData.map((card, index) => (
-          <FlipCardSmallScreen
+          <PiereCard
             key={index}
-            image={card.image}
+            icon={card.icon}
             title={card.title}
             description={card.description}
             subtitle={card.subtitle}

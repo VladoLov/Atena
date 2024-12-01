@@ -23,19 +23,19 @@ const DropDown = () => {
   };
 
   return (
-    <div className="bg-white w-full flex justify-between px-4 py-1 lg:hidden shadow-md mb-1">
+    <div className="bg-white w-full flex justify-between px-4 py-1 lg:hidden shadow-md mb-1 ">
       <Link href="/">
         <Image
           src="/AtenaGenomicsLogo.png"
-          width={256}
-          height={74}
+          width={130}
+          height={50}
           alt="Atena logo"
         />
       </Link>
 
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger
-          className="bg-crimson-500 text-white px-4 py-2 rounded-md focus:ring-outline-none active:bg-crimson-500 focus:border-crimson-500 "
+          className="bg-crimson-500 font-poppins text-white px-4 py-2 rounded-md focus:ring-outline-none active:bg-crimson-500 focus:border-crimson-500 "
           onClick={toggleDropdown}
         >
           {isOpen ? (
@@ -45,7 +45,7 @@ const DropDown = () => {
           )}
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className="bg-white min-h-fit w-lvw overflow-y-auto text-center">
+        <DropdownMenuContent className="bg-white min-h-fit w-lvw overflow-y-auto text-center font-poppins">
           {firstHeader.map((item) => (
             <DropdownMenuItem key={item.href}>
               <Link href={item.href}>{item.title}</Link>

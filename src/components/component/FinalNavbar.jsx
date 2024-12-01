@@ -45,7 +45,7 @@ function FinalNavbar() {
           <div className="relative">
             <Link
               href="#"
-              className="px-4 py-2 flex text-platinum-900 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
+              className="px-4 py-2 flex text-platinum-900 hover:bg-platinum-200 duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
               aria-haspopup="true"
               aria-expanded={isOpen ? "true" : "false"}
               onMouseEnter={() => setIsOpen(true)}
@@ -62,7 +62,7 @@ function FinalNavbar() {
 
             {/* Dropdown for Services */}
             <ul
-              className="absolute left-0 hidden mt-[1px] w-72 bg-white shadow-lg group-hover:block hover:rounded-lg transition-colors duration-300 ease-in-out"
+              className="absolute left-0 hidden mt-[1px] w-72 bg-white shadow-lg group-hover:block hover:rounded-lg transition-color duration-300 ease-in-out"
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={handleMouseLeave}
             >
