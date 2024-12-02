@@ -13,7 +13,7 @@ import Link from "next/link";
 function PiereCard({ title, description, href, icon: Icon }) {
   return (
     <div className="w-72">
-      <Card className="w-72 h-full flex flex-col  font-poppins">
+      <Card className="w-72 h-full flex flex-col  font-poppins border-crimson-500 ring-inset">
         <CardHeader className="flex-row gap-4 items-center">
           {Icon && <Icon className="w-6 h-6 text-primary stroke-crimson-500" />}
           {/* {icon} */}
@@ -25,8 +25,8 @@ function PiereCard({ title, description, href, icon: Icon }) {
         </CardContent>
         <CardFooter className="mt-auto pt-0 ">
           <Button
-            variant="ghost"
-            className="w-full justify-between items-center"
+            variant="secondary"
+            className="w-fit justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500"
           >
             <Link href={href || "#"}>
               Learn more

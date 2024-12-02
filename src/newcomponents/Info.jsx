@@ -40,16 +40,21 @@ function Info() {
         </div>
 
         {/* Hidden on lg screen */}
+
         <div className="lg:hidden flex items-center justify-center pb-8">
-          <Image
-            src="/blocks/consultation.png"
-            alt="consultation"
-            width={250}
-            height={250}
-          />
+          <div className="w-fit max-w-[250px]">
+            <Image
+              src="/blocks/consultation.png"
+              alt="consultation"
+              width={250}
+              height={250}
+              className="w-full h-auto"
+              sizes="(max-width: 640px) 250px, (max-width: 768px) 250px, 250px"
+            />
+          </div>
         </div>
         <div className="lg:hidden flex flex-col justify-center items-center pt-12 pb-16">
-          <h3 className="font-bold text-xl lg:text-3xl text-center ">
+          <h3 className="font-bold text-xl lg:text-3xl text-center pb-8">
             Consulting services
           </h3>
           <p className="text-start pb-8 text-base lg:text-xl">
