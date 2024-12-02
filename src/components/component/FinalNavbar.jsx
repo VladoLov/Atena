@@ -52,7 +52,9 @@ function FinalNavbar() {
               onMouseLeave={() => setIsOpen(false)}
             >
               Services{" "}
-              <span className="text-crimson-700 pl-1">Coming Soon ☄️</span>
+              <span className="text-crimson-900 font-semibold pl-1">
+                Coming Soon ☄️
+              </span>
               {isOpen ? (
                 <ChevronUp className="ml-1" />
               ) : (

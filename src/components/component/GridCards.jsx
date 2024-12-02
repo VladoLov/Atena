@@ -24,7 +24,7 @@ function GridCards() {
           />
         ))}
       </div>
-      <div className="lg:hidden relative z-20 w-full pointer-events-auto  inline-flex px-4 md:grid-cols-2 gap-8 overflow-auto">
+      <div className="lg:hidden relative z-20 w-full pointer-events-auto   inline-flex px-4 md:grid-cols-2 gap-8 overflow-auto">
         {flipCardData.map((card, index) => (
           <PiereCard
             key={index}

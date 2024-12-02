@@ -6,8 +6,8 @@ function Info() {
     <section className="container mx-auto py-48">
       <div className=" lg:grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12 pb-24 lg:py-24 px-10 ">
         {/* Hidden on small screen because grid-col-start does'nt work*/}
-        <div className="hidden  lg:flex flex-col justify-center items-center pt-24">
-          <h3 className="font-bold text-xl lg:text-3xl text-center pb-8">
+        <div className="hidden  lg:flex flex-col justify-center items-start pt-24">
+          <h3 className="font-bold flex items-start  text-xl lg:text-3xl text-start pb-8">
             Consulting services
           </h3>
           <p className="text-start pb-8 text-base lg:text-xl">
@@ -23,7 +23,7 @@ function Info() {
           </p>
           <Button
             variant="link"
-            className="text-base lg:text-xl mb-8 font-semibold"
+            className="text-base lg:text-xl mb-8 text-start  font-semibold"
           >
             CLICK HERE TO CONNECT
           </Button>
@@ -43,18 +43,24 @@ function Info() {
 
         <div className="lg:hidden flex items-center justify-center pb-8">
           <div className="w-fit max-w-[250px]">
-            <Image
+            {/*   <Image
               src="/blocks/consultation.png"
               alt="consultation"
               width={250}
               height={250}
               className="w-full h-auto"
               sizes="(max-width: 640px) 250px, (max-width: 768px) 250px, 250px"
+            /> */}
+            <Image
+              src="/blocks/consultation.png"
+              alt="consultation"
+              width={250}
+              height={250}
             />
           </div>
         </div>
-        <div className="lg:hidden flex flex-col justify-center items-center pt-12 pb-16">
-          <h3 className="font-bold text-xl lg:text-3xl text-center pb-8">
+        <div className="lg:hidden flex flex-col justify-center items-start pt-12 pb-16">
+          <h3 className="font-bold text-xl lg:text-3xl text-start pb-8">
             Consulting services
           </h3>
           <p className="text-start pb-8 text-base lg:text-xl">
@@ -70,7 +76,7 @@ function Info() {
           </p>
           <Button
             variant="link"
-            className="text-base lg:text-xl mb-8 font-semibold"
+            className="text-base lg:text-xl mb-8 text-start font-semibold"
           >
             CLICK HERE TO CONNECT
           </Button>
@@ -88,7 +94,7 @@ function Info() {
         </div>
         {/* Second Text */}
         <div className="order-4 lg:order-4 mx-auto max-w-6xl mb-16 pb-8">
-          <h3 className="font-semibold lg:font-bold pb-8 pt-8 text-center text-xl lg:text-3xl">
+          <h3 className="font-semibold lg:font-bold pb-8 pt-8 text-start text-xl lg:text-3xl">
             Join ATENA Genomics for Clinical NGS Testing Seminars!
           </h3>
           <p className="pb-8 text-base lg:text-xl">

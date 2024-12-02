@@ -30,7 +30,7 @@ export default function AboutMarija() {
               />
             </div>
 
-            <div className="prose prose-lg text-gray-500 max-h-fit  px-6">
+            <div className="prose prose-lg text-platinum-950 max-h-fit  px-6 font-poppins">
               <p className="pb-2 ">
                 Dr. Marija Vujadinović has over 15 years of experience in
                 vaccine development, GMP manufacturing, and molecular
