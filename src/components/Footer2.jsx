@@ -88,7 +88,7 @@ export default function Footer2() {
                 <li>
                   <Link
                     className="flex justify-start  gap-1.5 lg:justify-start"
-                    href="#"
+                    href="tel:+1234567890"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function Footer2() {
                       />
                     </svg>
                     <span className="flex pl-1 text-platinum-900 hover:text-platinum-950">
-                      +387 **-***-***
+                      +38763201361
                     </span>
                   </Link>
                 </li>
