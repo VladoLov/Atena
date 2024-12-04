@@ -32,62 +32,29 @@ export default function AboutMarija() {
 
             <div className="prose prose-lg text-platinum-950 max-h-fit  px-6 font-poppins">
               <p className="pb-2 ">
-                Dr. Marija Vujadinović has over 15 years of experience in
-                vaccine development, GMP manufacturing, and molecular
-                biotechnology. As the Founder, Director, and Chief Technology
-                Officer of ATENA Genomics, she is focused on advancing precision
-                genetic testing to improve healthcare and diagnostics in the
-                Balkans.
+                Dr. Marija Vujadinović, Founder and CTO of ATENA Genomics,
+                brings over 15 years of expertise in molecular biotechnology,
+                vaccine development, and GMP manufacturing. She focuses on
+                advancing precision genetic testing to improve healthcare in the
+                Balkans. Marija holds a PhD from the University of Amsterdam,
+                where she specialized in adenoviral vectored vaccines, and dual
+                MSc degrees from Vrije Universiteit Amsterdam, combining
+                molecular sciences with leadership.
               </p>
               <p className="pb-2 ">
-                Marija started her education with a BSc in Life Sciences
-                Molecular Cell Biology and followed this with dual MSc degrees
-                in Biomolecular Sciences Cell Biology and Management, Policy
-                Analysis & Entrepreneurship from Vrije Universiteit Amsterdam,
-                combining the scientific knowledge with leadership and strategy
-                skills. Working at Janssen Vaccines and Prevention, she earned
-                her doctorate at the Medical Faculty of the University of
-                Amsterdam (AMC-UvA), focusing on developing and improving
-                adenoviral vectored vaccines.
+                At Janssen Pharmaceuticals, she played a key role in
+                transitioning vaccines, including the Janssen COVID-19 vaccine,
+                from research to clinical application. Her expertise spans
+                vaccine design, GMP manufacturing, and regulatory compliance.
+                Earlier roles at the University of Utah and VU Medical Center
+                strengthened her skills in infectious disease research and
+                molecular diagnostics.
               </p>
               <p className="pb-2 ">
-                While at Janssen Pharmaceutical Companies of Johnson & Johnson,
-                Marija played an important role in moving vaccine candidates
-                from early research stages to clinical application. In her role
-                as a Scientist in Viral Vaccines, she worked on designing vector
-                vaccines and improving their manufacturability, helping vaccines
-                move smoothly from the lab to large-scale production. As a Drug
-                Substance Technical Integrator in Vaccine Process and Analytical
-                Development, she managed GMP manufacturing, technical transfers,
-                and cross-team collaborations to keep projects on track and meet
-                regulatory requirements. Her work contributed to advancing
-                several vaccine candidates, including the Janssen COVID-19
-                vaccine.
-              </p>
-              <p className="pb-2 ">
-                Prior to her work at Janssen, Dr. Vujadinović advanced her
-                technical expertise as a Lab Technician at the University of
-                Utah&apos;s Department of Pathology, conducting research on
-                Borrelia burgdorferi. At VU University Medical Center (VUMC) in
-                Medical Microbiology and Infection Control, she further
-                developed her skills in molecular diagnostics and data analysis,
-                building a strong foundation in molecular research and
-                infectious disease control.
-              </p>
-              <p className="pb-2 ">
-                Marija has published her research in scientific journals and
-                holds patents for her contributions to HPV, adenoviral
-                technology and vaccine innovation. Earlier roles at the
-                University of Utah and VU Medical Center allowed her to build
-                expertise in infectious diseases and molecular diagnostics.
-                Further development includes certifications from Harvard in
-                Genetic Testing, Sequencing Technologies, and Cancer Genomics,
-                which have deepened her focus on precision oncology and genetic
-                analysis.
-              </p>
-              <p className="pb-2 ">
-                Marija&apos;s personal mission is to transform healthcare in the
-                Balkans, one genome at a time.
+                Marija&apos;s work includes patents and publications in HPV and
+                adenoviral technology. With additional certifications from
+                Harvard in Genetic Testing and Cancer Genomics, she is committed
+                to transforming healthcare in the Balkans, one genome at a time.
               </p>
             </div>
           </div>

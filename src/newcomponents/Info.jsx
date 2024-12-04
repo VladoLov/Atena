@@ -11,15 +11,11 @@ function Info() {
             Consulting services
           </h3>
           <p className="text-start pb-8 text-base lg:text-xl">
-            We offer expert consulting in molecular biotechnology, helping
-            organizations and individuals navigate available advanced
-            technologies. Our team provides tailored guidance to select the
-            right genetic testing solutions, ensuring personalized insights that
-            improve decision-making in healthcare, research, and diagnostics.
-            Whether implementing advanced genetic testing for clinical
-            applications or optimizing processes, our services offer strategic
-            advice, technical expertise, and innovative solutions to drive
-            better outcomes in your field.
+            We provide expert molecular biotechnology consulting, guiding
+            clients in adopting advanced genetic testing technologies. Our
+            tailored advice ensures optimal solutions for healthcare, research,
+            and diagnostics, improving decision-making and outcomes. Contact us
+            for strategic insights and technical expertise.
           </p>
           <Button
             variant="link"
@@ -64,15 +60,11 @@ function Info() {
             Consulting services
           </h3>
           <p className="text-start pb-8 text-base lg:text-xl">
-            We offer expert consulting in molecular biotechnology, helping
-            organizations and individuals navigate available advanced
-            technologies. Our team provides tailored guidance to select the
-            right genetic testing solutions, ensuring personalized insights that
-            improve decision-making in healthcare, research, and diagnostics.
-            Whether implementing advanced genetic testing for clinical
-            applications or optimizing processes, our services offer strategic
-            advice, technical expertise, and innovative solutions to drive
-            better outcomes in your field.
+            We provide expert molecular biotechnology consulting, guiding
+            clients in adopting advanced genetic testing technologies. Our
+            tailored advice ensures optimal solutions for healthcare, research,
+            and diagnostics, improving decision-making and outcomes. Contact us
+            for strategic insights and technical expertise.
           </p>
           <Button
             variant="link"
@@ -98,14 +90,10 @@ function Info() {
             Join ATENA Genomics for Clinical NGS Testing Seminars!
           </h3>
           <p className="pb-8 text-base lg:text-xl">
-            ATENA Genomics is hosting a series of expert-led seminars on
-            precision genetic testing. These sessions will explore the latest
-            advancements in genetic testing technologies for personalized
-            medicine.
-          </p>
-          <p className="text-base lg:text-xl">
-            Don&apos;t miss this opportunity to learn more on what genomics has
-            to offer. Stay tuned for dates and registration!
+            ATENA Genomics is hosting expert-led seminars on the latest
+            advancements in precision genetic testing for personalized medicine.
+            Discover how genomics can transform healthcare. Stay tuned for dates
+            and registration!
           </p>
         </div>
 
