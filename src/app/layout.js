@@ -7,6 +7,7 @@ import Header from "@/newcomponents/Header";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
+import { I18nProvider } from "@/newcomponents/I18nProvider";
 
 export const metadata = {
   title: "ATENA Genomics",
@@ -18,9 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`relative  ${oswald.className} ${poppins.className}`}>
-        <Header className0="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
-        {children}
-        <Footer2 />
+        <I18nProvider>
+          <Header className0="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
+          {children}
+          <Footer2 />
+        </I18nProvider>
       </body>
     </html>
   );

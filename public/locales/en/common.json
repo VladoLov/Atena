@@ -1,4 +1,15 @@
 {
-  "welcome": "Welcome",
-  "test_status": "Test Status"
+  "about": {
+    "header": "Precision Genetic testing for personalized Care",
+    "subheader": "  ATENA Genomics is dedicated to advancing healthcare with accessible precision genetic technologies. We provide advanced sequencing solutions to enable personalized medicine, improving patient outcomes through timely, accurate genetic insights.",
+    "leadership": "Leadership",
+    "profile": "Profile",
+    "marija": {
+      "bio": {
+        "part1": "Dr. Marija Vujadinović, Founder and CTO of ATENA Genomics, brings over 15 years of expertise in molecular biotechnology, vaccine development, and GMP manufacturing. She focuses on advancing precision genetic testing to improve healthcare in the Balkans. Marija holds a PhD from the University of Amsterdam, where she specialized in adenoviral vectored vaccines, and dual MSc degrees from Vrije Universiteit Amsterdam, combining molecular sciences with leadership.",
+        "part2": "At Janssen Pharmaceuticals, she played a key role in transitioning vaccines, including the Janssen COVID-19 vaccine, from research to clinical application. Her expertise spans vaccine design, GMP manufacturing, and regulatory compliance. Earlier roles at the University of Utah and VU Medical Center strengthened her skills in infectious disease research and molecular diagnostics.",
+        "part3": "Marija's work includes patents and publications in HPV and adenoviral technology. With additional certifications from Harvard in Genetic Testing and Cancer Genomics, she is committed to transforming healthcare in the Balkans, one genome at a time."
+      }
+    }
+  }
 }

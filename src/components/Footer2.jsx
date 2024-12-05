@@ -130,7 +130,14 @@ export default function Footer2() {
                     />
                   </svg>
                   <address className="-mt-0.5 pl-1 not-italic text-platinum-900 hover:text-platinum-950">
-                    Vukovarska 50 Mostar
+                    <Link
+                      href="https://www.google.com/maps/search/?api=1&query=Vukovarska+50+Mostar"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="-mt-0.5 pl-1 not-italic text-platinum-900 hover:text-platinum-950"
+                    >
+                      Vukovarska 50 Mostar
+                    </Link>
                   </address>
                 </li>
               </ul>

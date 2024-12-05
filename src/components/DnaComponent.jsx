@@ -35,7 +35,7 @@ export const DnaComponent = () => {
           </div>
           <div className="hidden basis-1/2 items-center justify-center lg:flex animate-in slide-in-from-right duration-700 ease-in-out">
             <Image
-              src="/sova/AtenaGenomicsLogo.png"
+              src="/sova/NewLogo.png"
               alt="Atena logotip"
               width={300}
               height={300}

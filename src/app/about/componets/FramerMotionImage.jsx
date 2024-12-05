@@ -1,10 +1,8 @@
 "use client";
 
-import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import HeaderInFaramer from "./HeaderInFaramer";
-import FramerMainSection from "./AboutTextSection";
 
 export default function FramerMotionImage() {
   return (

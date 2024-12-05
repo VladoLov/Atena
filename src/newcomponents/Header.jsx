@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FinalNavbar from "@/components/component/FinalNavbar";
 import DropDown from "@/components/component/DropDown";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 function Header() {
   return (
@@ -18,6 +19,7 @@ function Header() {
           />
         </Link>
         <div className="flex items-center space-x-2 ">
+          <LanguageSwitcher />
           <FinalNavbar />
           <div className="flex list-none items-center  justify-start z-30">
             <Link
