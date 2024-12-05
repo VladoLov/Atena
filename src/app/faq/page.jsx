@@ -1,8 +1,4 @@
-import DownalodPdf from "@/components/component/DownalodPdf";
 import FaqAccordion from "@/components/component/FaqAccordion";
-import HoverNavigationMenu from "@/components/component/ManualHeader";
-
-import Footer2 from "@/components/Footer2";
 
 export const metadata = {
   title: "faq",

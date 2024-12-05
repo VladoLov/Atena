@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+
 import ImageWithText from "./components/ImageWithText";
 import DropdownButtons from "./components/DropdownButtons";
 import SecondOptions from "./components/SecondOptions";
@@ -7,7 +7,6 @@ import SecondOptions from "./components/SecondOptions";
 const page = () => {
   return (
     <div>
-      <Navbar />
       <ImageWithText />
       <h1 className="text-center text-6xl mt-10">First Options</h1>
       <DropdownButtons />

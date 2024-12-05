@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Animations from "./Animation";
 
 export default function WholeGenomeSequencingArticle() {
   return (

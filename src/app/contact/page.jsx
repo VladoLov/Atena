@@ -1,6 +1,4 @@
-import ManualHeader from "@/components/component/ManualHeader";
 import ContactForm from "@/components/ContatForm";
-import Footer2 from "@/components/Footer2";
 
 function page() {
   return (

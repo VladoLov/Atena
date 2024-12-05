@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import FlipCardOncology from "@/components/component/FlipCardOncology";
-import FlipCardOncology2 from "@/components/component/FlipCardOncology2";
-import FlipCardOncology3 from "@/components/component/FlipCardOncology3";
 
 const oncologyServices = [
   {
