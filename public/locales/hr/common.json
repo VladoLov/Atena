@@ -11,5 +11,93 @@
         "part3": "Marija je objavila svoja istraživanja u naučnim časopisima i posjeduje patente za svoj doprinos HPV-u, adenovirusnoj tehnologiji i inovacijama u vakcinama. Ranije u svojoj karijeri, radila je na Univerzitetu Utah i VU Medicinskom centru, gdje je stekla ekspertizu u infektivnim bolestima i molekularnoj dijagnostici. Daljnje usavršavanje uključuje certifikate sa Harvarda iz genetskog testiranja, tehnologija sekvenciranja i genomike raka, što je dodatno produbilo njen fokus na preciznu onkologiju i genetsku analizu."
       }
     }
+  },
+  "services": {
+    "cancer_ngs_profiling": {
+      "title": "NGS profiliranje raka",
+      "description": "NGS u onkologiji nudi precizno profiliranje tumora, otkrivanje hematoloških malignih bolesti, analizu tekuće biopsije, probir nasljednih karcinoma i praćenje otpornosti na lijekove za rano otkrivanje, prilagođene terapije i poboljšanu skrb za pacijente."
+    },
+    "genetic_disorders_ngs": {
+      "title": "NGS genetskih poremećaja",
+      "description": "NGS za rano i precizno otkrivanje nasljednih genetskih stanja, kao što su metabolički, neurološki, razvojni i kardiovaskularni poremećaji, omogućuje pravovremene intervencije i personalizirane tretmane."
+    },
+    "prenatal_genetic_risk_analysis": {
+      "title": "Prenatalna analiza genetskog rizika",
+      "description": "Neinvazivno prenatalno testiranje (NIPT) i prošireni probir novorođenčadi korištenjem NGS-a usmjereni su na rano otkrivanje genetskih i kromosomskih abnormalnosti, omogućujući personalizirane planove liječenja i poboljšanje dugoročnog zdravlja fetusa i novorođenčadi."
+    },
+    "genomic_response_to_pharmacotherapy": {
+      "title": "Genomski odgovor na farmakoterapiju",
+      "description": "Predviđanje odgovora na lijekove i testiranje nuspojava (ADRs) korištenjem NGS-a pomaže u prilagodbi personaliziranih tretmana, smanjenju nuspojava i poboljšanju ishoda za pacijente identificiranjem genetskih varijacija koje utječu na učinkovitost i sigurnost lijekova."
+    },
+    "pathogen_ngs_profiling": {
+      "title": "NGS profiliranje patogena",
+      "description": "NGS nudi brzo i točno identificiranje patogena, otkrivanje antimikrobne otpornosti (AMR), genotipizaciju virusa i istraživanje izbijanja bolesti, za praćenje bolesti i učinkovite javnozdravstvene odgovore."
+    },
+    "client_specific_ngs_testing": {
+      "title": "NGS testiranje prilagođeno klijentima",
+      "description": "Prilagođena NGS rješenja specifična za klijente pružaju prilagođene genomske uvide kako bi se precizno i učinkovito riješili jedinstveni dijagnostički, istraživački i analitički izazovi."
+    }
+  },
+  "contact_form": {
+    "header": "Kontaktirajte nas",
+    "fName": "Ime",
+    "lName": "Prezime",
+    "email": "E-pošta",
+    "description": "Opis",
+    "send": "Pošalji",
+    "footer": "Za sve dodatne informacije ili upite možete kontaktirati tim ATENA Genomics na e-poštu: info@atenagenomics.com ili telefon:"
+  },
+  "subheader": {
+    "header": "USKORO",
+    "subheader": "ATENA Genomics nudi kliničko precizno genetsko testiranje, unapređujući personaliziranu medicinu u onkologiji, nasljednim stanjima, prenatalnom probiru, farmakogenomici i zaraznim bolestima. Usluge uključuju specijalizirano sekvenciranje nove generacije (NGS) i prilagođena rješenja za dijagnostiku i istraživanje. Za detalje ili upite, kontaktirajte tim na e-poštu:",
+    "conjunction": "ili telefon:"
+  },
+  "header": {
+    "first": "Precizno",
+    "second": "Genetsko",
+    "three": "Testiranje za Personaliziranu Njegu"
+  },
+  "info": {
+    "fHeader": "Konzultantske usluge",
+    "fText": "Pružamo stručne konzultantske usluge iz područja molekularne biotehnologije, vodeći klijente u primjeni naprednih tehnologija genetskog testiranja. Naši prilagođeni savjeti osiguravaju optimalna rješenja za zdravstvo, istraživanje i dijagnostiku, poboljšavajući donošenje odluka i ishode. Kontaktirajte nas za strateške uvide i tehničku ekspertizu.",
+    "bText": "KLIKNITE OVDJE ZA POVEZIVANJE",
+    "sHeader": "Pridružite se ATENA Genomics seminarima o kliničkom NGS testiranju!",
+    "sText": "ATENA Genomics organizira seminare pod vodstvom stručnjaka o najnovijim napretcima u preciznom genetskom testiranju za personaliziranu medicinu. Otkrijte kako genomika može transformirati zdravstvo. Pratite nas za datume i registraciju!"
+  },
+  "link": {
+    "services": {
+      "cancer_ngs_profiling": {
+        "title": "Cancer NGS Profiling",
+        "items": {
+          "tumor_profiling_ngs": "Tumorsko profiliranje NGS",
+          "hematological_malignancies_ngs": "Hematološke malignosti NGS",
+          "liquid_biopsies_ngs": "Tečajne biopsije NGS",
+          "hereditary_cancer_screening": "Genetski pregled raka",
+          "cancer_drug_resistance_monitoring": "Praćenje otpornosti na lijekove kod raka"
+        }
+      },
+      "genetic_disorders_ngs": {
+        "title": "Genetski poremećaji NGS",
+        "items": {
+          "neurological_disorders": "Neurološki i neuromuskularni poremećaji",
+          "developmental_disabilities": "Razvojne i intelektualne smetnje",
+          "metabolic_mitochondrial": "Metabolički i mitohondrijski poremećaji",
+          "immunological_disorders": "Imunološki poremećaji",
+          "rare_genetic_disorders": "Rijetki genetski poremećaji",
+          "other_genetic": "Ostalo"
+        }
+      },
+      "prenatal_genetic": "Prenatalna genetska analiza rizika",
+      "genomic_response": "Genomski odgovor na farmakoterapiju",
+      "pathogen": "Profiliranje patogena NGS",
+      "client_specific": "Klijent-specifična NGS testiranja"
+    },
+    "consulting": "Konzultantske usluge",
+    "information": {
+      "about": "O nama",
+      "contact": "Kontakt"
+    },
+    "account": "Moj račun",
+    "soon": "Dolazi uskoro"
   }
 }

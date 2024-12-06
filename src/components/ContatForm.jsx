@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ export default function ContactForm() {
   });
   const [status, setStatus] = useState("");
   /* const [acceptTerms, setAcceptTerms] = useState(false); */
+  const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,7 +54,7 @@ export default function ContactForm() {
 
   return (
     <div className="container mx-auto p-4 ">
-      <h1 className="text-2xl font-bold mb-4">Get in touch with us </h1>
+      <h1 className="text-2xl font-bold mb-4">{t("contact_form.header")}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="flex flex-col sm:flex-row gap-4 w-full">
           <div className="grow">
@@ -60,7 +62,7 @@ export default function ContactForm() {
               htmlFor="name"
               className="block text-sm font-medium text-gray-700"
             >
-              First Name
+              {t("contact_form.fName")}
             </label>
             <input
               type="text"
@@ -78,7 +80,7 @@ export default function ContactForm() {
               htmlFor="lastName"
               className="block text-sm font-medium text-gray-700"
             >
-              Last Name
+              {t("contact_form.lName")}
             </label>
             <input
               type="text"
@@ -97,7 +99,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-sm font-medium text-gray-700"
           >
-            Email
+            {t("contact_form.email")}
           </label>
           <input
             type="email"
@@ -114,7 +116,7 @@ export default function ContactForm() {
             htmlFor="message"
             className="block text-sm font-medium text-gray-700"
           >
-            Request description
+            {t("contact_form.description")}
           </label>
           <textarea
             id="message"
@@ -151,7 +153,7 @@ export default function ContactForm() {
           Send
         </Button> */}
         <Button type="submit" className="w-full">
-          Send
+          {t("contact_form.send")}
         </Button>
         {status && (
           <p className="mt-2 text-sm text-center font-medium text-gray-900">
@@ -160,8 +162,13 @@ export default function ContactForm() {
         )}
       </form>
       <p className="pt-4 px-4">
-        For any additional information or enquiries you may have you can reach
-        ATENA Genomics team at xxxx.{" "}
+        {t("contact_form.footer")}
+        <Link
+          href="tel:+38763201361"
+          className="bg-green-500 text-black px-1 py-2 rounded hover:bg-green-600"
+        >
+          +38763201361
+        </Link>
       </p>
     </div>
   );

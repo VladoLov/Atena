@@ -94,10 +94,7 @@ export const services = [
       },
     ],
   },
-  /*   {
-    title: "Cardiopathy",
-    href: "/services/cardiopathy",
-  }, */
+
   {
     title: "Prenatal Genetic Risk Analysis",
     href: "/services/prenatal-genetic-risk-analysis",
@@ -226,6 +223,7 @@ export const teamMembers = [
 
 export const flipCardData = [
   {
+    key: "cancer_ngs_profiling",
     image: "/blocks/Oncology.png",
     title: "Cancer NGS Profiling",
     /*  description: "Identifies genetic mutations and driving tumor growth.", */
@@ -237,6 +235,7 @@ export const flipCardData = [
     href: "/services/oncology",
   },
   {
+    key: "genetic_disorders_ngs",
     image: "/blocks/Genome-testing-2.jpeg",
     title: "Genetic Disorders NGS",
     /* description: "Involves genetic disorders affecting the body's functions.", */
@@ -248,6 +247,7 @@ export const flipCardData = [
     href: "/services/oncology",
   },
   {
+    key: "prenatal_genetic_risk_analysis",
     image: "/blocks/cardiolog-3.jpeg",
     title: "Prenatal Genetic Risk Analysis",
     /* description: "Refers to diseases affecting the heart's function.", */
@@ -267,6 +267,7 @@ export const flipCardData = [
     href: "/oncology",
   }, */
   {
+    key: "genomic_response_to_pharmacotherapy",
     image: "/blocks/Pharmacogenomics.jpeg",
     title: "Genomic Response to Pharmacotherapy",
     description:
@@ -277,6 +278,7 @@ export const flipCardData = [
     href: "/services/oncology",
   },
   {
+    key: "pathogen_ngs_profiling",
     image: "/blocks/genome-research-lab-tests.jpg",
     title: "Pathogen NGS Profiling",
     description:
@@ -286,6 +288,7 @@ export const flipCardData = [
     href: "/services/oncology",
   },
   {
+    key: "client_specific_ngs_testing",
     image: "/blocks/2400-dna-molecule-spiral-structure-model.jpg",
     title: "Client-specific NGS testing",
     description:

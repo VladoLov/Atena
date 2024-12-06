@@ -1,3 +1,4 @@
+import MainHeader from "@/newcomponents/MainHeader";
 import Image from "next/image";
 
 export const DnaComponent = () => {
@@ -26,10 +27,7 @@ export const DnaComponent = () => {
         </div>
         <div className="absolute top-12 w-full flex items-left flex-row justify-center  gap-4 font-oswald">
           <div className="basis-1/2 min-h-[70vh] leading-snug flex flex-col  justify-center items-start  max-w-4xl ">
-            <h1 className=" slide-in-from-left  px-10 text-start md:leading-snug lg:text-8xl  text-4xl sm:text-6xl animate-in transition ease-in-out duration-700 font-bold text-lightBlue-950  drop-shadow-lg py-1 mb-7 font-oswald">
-              Precision <span className="text-crimson-500 pr-1">Genetic</span>
-              Testing for Personalized <br /> Care
-            </h1>
+            <MainHeader />
           </div>
           <div className="hidden basis-1/2 items-center justify-center lg:flex animate-in slide-in-from-right duration-700 ease-in-out">
             <Image

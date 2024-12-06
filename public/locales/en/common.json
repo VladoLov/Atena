@@ -11,5 +11,94 @@
         "part3": "Marija's work includes patents and publications in HPV and adenoviral technology. With additional certifications from Harvard in Genetic Testing and Cancer Genomics, she is committed to transforming healthcare in the Balkans, one genome at a time."
       }
     }
+  },
+  "services": {
+    "cancer_ngs_profiling": {
+      "title": "Cancer NGS Profiling",
+      "description": "NGS in oncology offers precise tumor profiling, hematological malignancy detection, liquid biopsy analysis, hereditary cancer screening, and cancer drug resistance monitoring for early detection, tailored therapies and enhanced patient care."
+    },
+    "genetic_disorders_ngs": {
+      "title": "Genetic Disorders NGS",
+      "description": "NGS for early and precise detection of inherited genetic conditions, such as metabolic, neurological, developmental, and cardiovascular disorders, allowing for timely interventions and personalized treatments."
+    },
+    "prenatal_genetic_risk_analysis": {
+      "title": "Prenatal Genetic Risk Analysis",
+      "description": "Non-Invasive Prenatal Testing (NIPT) and Expanded Newborn Screening using NGS aim to detect genetic and chromosomal abnormalities early, enabling personalized treatment plans and improving long-term health outcomes for fetuses and newborns."
+    },
+    "genomic_response_to_pharmacotherapy": {
+      "title": "Genomic Response to Pharmacotherapy",
+      "description": "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety."
+    },
+    "pathogen_ngs_profiling": {
+      "title": "Pathogen NGS Profiling",
+      "description": "NGS offers rapid and accurate pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation, for disease surveillance and effective public health responses."
+    },
+    "client_specific_ngs_testing": {
+      "title": "Client-specific NGS Testing",
+      "description": "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency."
+    }
+  },
+  "contact_form": {
+    "header": "Get in touch with us",
+    "fName": "First Name",
+    "lName": "Last Name",
+    "email": "Email",
+    "description": "Description",
+    "send": "Send",
+    "footer": "For any additional information or enquiries you may have you can reach ATENA Genomics team at email: info@atenagenomics.com or tel:"
+  },
+  "subheader": {
+    "header": "COMING SOON",
+    "subheader": "ATENA Genomics offers clinical precision genetic testing, advancing personalized medicine in oncology, hereditary conditions, prenatal screening, pharmacogenomics, and infectious diseases. Services include specialized next-generation sequencing (NGS) and customized solutions for diagnostics and research. For details or inquiries, contact team at email:",
+    "conjunction": "or tel:"
+  },
+  "header": {
+    "first": "Precision",
+    "second": "Genetic",
+    "three": "Testing for Personalized Care"
+  },
+  "info": {
+    "fHeader": "Consulting services",
+    "fText": "We provide expert molecular biotechnology consulting, guiding clients in adopting advanced genetic testing technologies. Our tailored advice ensures optimal solutions for healthcare, research, and diagnostics, improving decision-making and outcomes. Contact us for strategic insights and technical expertise.",
+    "bText": "CLICK HERE TO CONNECT",
+    "sHeader": "Join ATENA Genomics for Clinical NGS Testing Seminars!",
+    "sText": "ATENA Genomics is hosting expert-led seminars on the latest advancements in precision genetic testing for personalized medicine. Discover how genomics can transform healthcare. Stay tuned for dates and registration!"
+  },
+  "link": {
+    "services": {
+      "cancer_ngs_profiling": {
+        "title": "Cancer NGS Profiling",
+        "items": {
+          "tumor_profiling_ngs": "Tumor Profiling NGS",
+          "hematological_malignancies_ngs": "Hematological Malignancies NGS",
+          "liquid_biopsies_ngs": "Liquid Biopsies NGS",
+          "hereditary_cancer_screening": "Hereditary-cancer-screening",
+          "cancer_drug_resistance_monitoring": "Cancer Drug Resistance Monitoring"
+        }
+      },
+      "genetic_disorders_ngs": {
+        "title": "Genetic Disorders NGS",
+        "items": {
+          "neurological_disorders": "Neurological and Neuromuscular Disorders",
+          "developmental_disabilities": "Developmental and Intellectual Disabilities",
+          "metabolic_mitochondrial": "Metabolic and Mitochondrial Disorders",
+          "immunological_disorders": "Immunological Disorders",
+          "rare_genetic_disorders": "Rare Genetic Disorders",
+          "other_genetic": "Other"
+        }
+      },
+
+      "prenatal_genetic": "Prenatal Genetic Risk Analysis",
+      "genomic_response": "Genomic Response to Pharmacotherapy",
+      "pathogen": "Pathogen NGS Profiling",
+      "client_specific": "Client-specific NGS testing"
+    },
+    "consulting": "Consulting services",
+    "information": {
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "account": "My Account",
+    "soon": "Coming Soon"
   }
 }

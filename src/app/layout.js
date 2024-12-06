@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`relative  ${oswald.className} ${poppins.className}`}>
         <I18nProvider>
-          <Header className0="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
+          <Header className="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
           {children}
           <Footer2 />
         </I18nProvider>
