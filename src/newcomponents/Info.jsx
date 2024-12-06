@@ -7,9 +7,9 @@ function Info() {
       <div className=" lg:grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12 pb-24 lg:py-24 px-10 ">
         {/* Hidden on small screen because grid-col-start does'nt work*/}
         <div className="hidden  lg:flex flex-col justify-center items-start pt-24">
-          <h3 className="font-bold flex items-start  text-xl lg:text-3xl text-start pb-8">
+          <h2 className="font-bold flex items-start  text-xl lg:text-3xl text-start pb-8">
             Consulting services
-          </h3>
+          </h2>
           <p className="text-start pb-8 text-base lg:text-xl">
             We provide expert molecular biotechnology consulting, guiding
             clients in adopting advanced genetic testing technologies. Our
@@ -56,9 +56,9 @@ function Info() {
           </div>
         </div>
         <div className="lg:hidden flex flex-col justify-center items-start pt-12 pb-16">
-          <h3 className="font-bold text-xl lg:text-3xl text-start pb-8">
+          <h2 className="font-bold text-xl lg:text-3xl text-start pb-8">
             Consulting services
-          </h3>
+          </h2>
           <p className="text-start pb-8 text-base lg:text-xl">
             We provide expert molecular biotechnology consulting, guiding
             clients in adopting advanced genetic testing technologies. Our
@@ -86,9 +86,9 @@ function Info() {
         </div>
         {/* Second Text */}
         <div className="order-4 lg:order-4 mx-auto max-w-6xl mb-16 pb-8">
-          <h3 className="font-semibold lg:font-bold pb-8 pt-8 text-start text-xl lg:text-3xl">
+          <h2 className="font-semibold lg:font-bold pb-8 pt-8 text-start text-xl lg:text-3xl">
             Join ATENA Genomics for Clinical NGS Testing Seminars!
-          </h3>
+          </h2>
           <p className="pb-8 text-base lg:text-xl">
             ATENA Genomics is hosting expert-led seminars on the latest
             advancements in precision genetic testing for personalized medicine.

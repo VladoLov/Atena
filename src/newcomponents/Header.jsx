@@ -4,6 +4,7 @@ import Link from "next/link";
 import FinalNavbar from "@/components/component/FinalNavbar";
 import DropDown from "@/components/component/DropDown";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Globe } from "lucide-react";
 
 function Header() {
   return (
@@ -16,10 +17,14 @@ function Header() {
             alt="Atena Genomics"
             width={256}
             height={74}
+            priority
           />
         </Link>
         <div className="flex items-center space-x-2 ">
-          <LanguageSwitcher />
+          <div className="flex items-center space-x-2">
+            <Globe className="h-4 w-auto text-platinum-900" />
+            <LanguageSwitcher />
+          </div>
           <FinalNavbar />
           <div className="flex list-none items-center  justify-start z-30">
             <Link
@@ -60,8 +65,11 @@ function Header() {
 
           {/* <FinalNavbarRes /> */}
 
-          <Button className="bg-crimson-600 text-black font-semibold text-sm hover:bg-crimson-600">
-            My Account <span className="text-white pl-1">Coming Soon ☄️</span>
+          <Button className="bg-crimson-500 text-black font-semibold text-sm hover:bg-crimson-600">
+            My Account{" "}
+            <span className="text-platinum-950 pl-1 text-sm font-semibold">
+              Coming Soon ☄️
+            </span>
           </Button>
         </div>
       </div>

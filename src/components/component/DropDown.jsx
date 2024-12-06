@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { X } from "lucide-react";
+import { Globe, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { firstHeader, services } from "@/lib/url";
+import { LanguageSwitcher } from "@/newcomponents/LanguageSwitcher";
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ const DropDown = () => {
           width={130}
           height={50}
           alt="Atena logo"
+          priority
         />
       </Link>
 
@@ -51,9 +53,7 @@ const DropDown = () => {
               <Link href={item.href}>{item.title}</Link>
             </DropdownMenuItem>
           ))}
-
           <DropdownMenuSeparator />
-
           <DropdownMenuLabel>
             <Link href="/services">Services</Link>
           </DropdownMenuLabel>
@@ -62,13 +62,16 @@ const DropDown = () => {
               <Link href={service.href}>{service.title}</Link>
             </DropdownMenuItem>
           ))}
-
           <DropdownMenuSeparator />
-
           <DropdownMenuSeparator />
           <Button className="bg-crimson-500 text-black w-9/12 ">
             <label>My Account</label>
           </Button>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem className="space-x-2 ">
+            Language <Globe className="w-4 h-auto ml-2 " />:{" "}
+            <LanguageSwitcher />
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
