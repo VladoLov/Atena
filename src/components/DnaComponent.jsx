@@ -27,7 +27,7 @@ export const DnaComponent = () => {
         </div>
         <div className="absolute top-12 w-full flex items-left flex-row justify-center  gap-4 font-oswald">
           <div className="basis-1/2 min-h-[70vh] leading-snug flex flex-col  justify-center items-start  lg:max-w-4xl max-w-xs">
-            <MainHeader asChild />
+            <MainHeader />
           </div>
           <div className="hidden basis-1/2 items-center justify-center lg:flex animate-in slide-in-from-right duration-700 ease-in-out">
             <Image
