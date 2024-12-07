@@ -36,7 +36,8 @@
     "client_specific_ngs_testing": {
       "title": "NGS testiranje prilagođeno klijentima",
       "description": "Prilagođena NGS rješenja specifična za klijente pružaju prilagođene genomske uvide kako bi se precizno i učinkovito riješili jedinstveni dijagnostički, istraživački i analitički izazovi."
-    }
+    },
+    "learn": "Saznajte više"
   },
   "contact_form": {
     "header": "Kontaktirajte nas",

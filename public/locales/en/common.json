@@ -36,7 +36,8 @@
     "client_specific_ngs_testing": {
       "title": "Client-specific NGS Testing",
       "description": "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency."
-    }
+    },
+    "learn": "Learn more"
   },
   "contact_form": {
     "header": "Get in touch with us",

@@ -11,26 +11,28 @@ function FooterSection({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="text-center sm:text-left">
-      <button
-        className="flex items-center justify-center w-full text-base font-medium text-platinum-900 hover:text-platinum-950 lg:hidden"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen}
-      >
-        {title}
-        <span className="lg:hidden">
-          {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-        </span>
-      </button>
+    <div className="flex flex-col w-full sm:w-auto ">
+      <div className="flex items-start justify-between h-8 lg:h-14">
+        <button
+          className="flex px-4 items-center justify-center w-full text-base font-medium text-platinum-900 hover:text-platinum-950 lg:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+        >
+          <span className="line-clamp-2">{title}</span>
+          <span className="lg:hidden ml-2 flex-shrink-0">
+            {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+          </span>
+        </button>
 
-      <p className="hidden lg:block text-lg font-medium text-platinum-900 hover:text-platinum-950">
-        {title}
-      </p>
+        <p className="hidden lg:block text-lg  font-medium text-platinum-900 hover:text-platinum-950 line-clamp-2">
+          {title}
+        </p>
+      </div>
 
       <ul
-        className={`mt-4 space-y-4 text-sm ${
+        className={`space-y-4 mx-auto md:mx-0 md:text-start md:mt-4 text-center my-2 text-sm ${
           isOpen ? "block" : "hidden"
-        } lg:block lg:mt-8`}
+        } lg:block`}
       >
         {children}
       </ul>
@@ -39,7 +41,7 @@ function FooterSection({ title, children }) {
 }
 
 export default function Footer2() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const services = [
     {
@@ -347,7 +349,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>
@@ -360,7 +362,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>
@@ -373,7 +375,7 @@ export default function Footer2() {
                 <li key={service.href}>
                   <Link
                     className="text-platinum-900 hover:text-platinum-950 transition-all"
-                    href={service.href}
+                    href={service.href1}
                   >
                     {service.title}
                   </Link>

@@ -16,6 +16,7 @@ import Image from "next/image";
 import { firstHeader, services } from "@/lib/url";
 import { LanguageSwitcher } from "@/newcomponents/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { SmallLanguageSwitcher } from "@/newcomponents/SmallLanguageSwitcher";
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const DropDown = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const services = [
     {
       title: t("link.services.cancer_ngs_profiling.title"),
@@ -176,7 +177,7 @@ const DropDown = () => {
           </DropdownMenuLabel>
           {services.map((service) => (
             <DropdownMenuItem key={service.href}>
-              <Link href={service.href}>{service.title}</Link>
+              <Link href={service.href1}>{service.title}</Link>
             </DropdownMenuItem>
           ))}
           <DropdownMenuSeparator />
@@ -185,9 +186,9 @@ const DropDown = () => {
             <label>{t("link.account")}</label> {t("link.soon")}
           </Button>
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="space-x-2 ">
+          <DropdownMenuItem className="space-x-2 flex items-center justify-center">
             {t("link.language")} <Globe className="w-4 h-auto ml-2 " />:{" "}
-            <LanguageSwitcher />
+            <SmallLanguageSwitcher />
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

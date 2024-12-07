@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 function SecondPartOfHeader() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <>
       <div className="flex list-none items-center  justify-start z-30">

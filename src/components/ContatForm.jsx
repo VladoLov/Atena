@@ -15,7 +15,7 @@ export default function ContactForm() {
   });
   const [status, setStatus] = useState("");
   /* const [acceptTerms, setAcceptTerms] = useState(false); */
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const handleSubmit = async (e) => {
     e.preventDefault();

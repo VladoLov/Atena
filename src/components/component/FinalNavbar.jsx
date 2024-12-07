@@ -15,8 +15,9 @@ function FinalNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null); // Track the open submenu
   const [flippedSubmenus, setFlippedSubmenus] = useState({}); // Track flipped state for each submenu
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  const { t } = useTranslation(); // Access the translation function
+  const { t } = useTranslation("common"); // Access the translation function
 
   const handleMouseEnter = (index, event) => {
     setIsOpen(true);
@@ -153,7 +154,13 @@ function FinalNavbar() {
       href1: "/",
     },
   ];
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
+  if (!isLoaded) {
+    return null; // or a loading spinner
+  }
   return (
     <div className="flex list-none items-center justify-start z-29">
       <ul className="flex  items-center rounded-lg mx-2">
@@ -167,7 +174,7 @@ function FinalNavbar() {
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
-              {t("link.services.services")}{" "}
+              <span>{t("link.services.services")}</span>
               <span className="text-crimson-900 font-semibold pl-1">
                 {t("link.soon")} ☄️
               </span>

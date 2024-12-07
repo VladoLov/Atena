@@ -6,11 +6,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
 
 import Link from "next/link";
 
-function PiereCard({ title, description, href, icon: Icon }) {
+function PiereCard({ title, description, href, icon: Icon, ctaText }) {
   return (
     <div className="w-72 mb-2">
       <Card className="w-72 h-full flex flex-col  font-poppins border-crimson-500 ring-inset">
@@ -29,7 +28,7 @@ function PiereCard({ title, description, href, icon: Icon }) {
             className="w-fit justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500 "
           >
             <Link href={href || "#"}>
-              Learn more
+              {ctaText}
               <span className="sr-only">about {title}</span>
             </Link>
           </Button>

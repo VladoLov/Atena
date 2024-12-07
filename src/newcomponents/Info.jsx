@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
 function Info() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <section className="container mx-auto py-48">
       <div className=" lg:grid grid-cols-1 lg:grid-cols-2 gap-8 pt-12 pb-24 lg:py-24 px-10 ">

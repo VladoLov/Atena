@@ -12,7 +12,7 @@ import {
 import { ChevronDown } from "lucide-react";
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation();
+  const { i18n } = useTranslation("common");
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const languages = [
