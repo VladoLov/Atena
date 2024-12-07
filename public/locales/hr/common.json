@@ -66,8 +66,9 @@
   },
   "link": {
     "services": {
+      "services": "Usluge",
       "cancer_ngs_profiling": {
-        "title": "Cancer NGS Profiling",
+        "title": "NGS profiliranje raka",
         "items": {
           "tumor_profiling_ngs": "Tumorsko profiliranje NGS",
           "hematological_malignancies_ngs": "Hematološke malignosti NGS",
@@ -98,6 +99,15 @@
       "contact": "Kontakt"
     },
     "account": "Moj račun",
-    "soon": "Dolazi uskoro"
+    "soon": "Dolazi uskoro",
+    "language": "Jezik"
+  },
+  "footer": {
+    "text": "Napredna genomska analiza za dijagnostiku genetskih bolesti radi omogućavanja ranog otkrivanja i personaliziranog liječenja.",
+    "contact": "Kontaktirajte nas",
+    "info": "Informacije",
+    "cancer": "NGS profiliranje raka",
+    "genetic": "NGS genetskih poremećaja",
+    "other": "Ostale usluge"
   }
 }

@@ -167,9 +167,9 @@ function FinalNavbar() {
               onMouseEnter={() => setIsOpen(true)}
               onMouseLeave={() => setIsOpen(false)}
             >
-              Services{" "}
+              {t("link.services.services")}{" "}
               <span className="text-crimson-900 font-semibold pl-1">
-                Coming Soon ☄️
+                {t("link.soon")} ☄️
               </span>
               {isOpen ? (
                 <ChevronUp className="ml-1" />

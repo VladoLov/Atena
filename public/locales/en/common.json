@@ -66,6 +66,7 @@
   },
   "link": {
     "services": {
+      "services": "Services",
       "cancer_ngs_profiling": {
         "title": "Cancer NGS Profiling",
         "items": {
@@ -99,6 +100,15 @@
       "contact": "Contact"
     },
     "account": "My Account",
-    "soon": "Coming Soon"
+    "soon": "Coming Soon",
+    "language": "Language"
+  },
+  "footer": {
+    "text": "Advanced genomic analysis for diagnosis of genetic diseases to enable early detection and personalized treatment.",
+    "contact": "Contact Us",
+    "info": "Information",
+    "cancer": "Cancer NGS Profiling",
+    "genetic": "Genetic Disorders NGS",
+    "other": "Other Services"
   }
 }

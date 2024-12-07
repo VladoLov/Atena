@@ -9,13 +9,14 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu"; // Adjust path to shadcn dropdown component
+import { ChevronDown } from "lucide-react";
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const languages = [
-    { code: "en", icon: "/sova/england.gif" },
+    { code: "en", icon: "/sova/uk.png" },
     { code: "hr", icon: "/sova/bosnia.gif" },
   ];
 
@@ -34,6 +35,7 @@ export function LanguageSwitcher() {
             width={24}
             height={24}
           />
+          <ChevronDown className="h-4 w-auto" />
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-2">
