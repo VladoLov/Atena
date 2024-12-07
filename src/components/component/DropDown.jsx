@@ -173,7 +173,7 @@ const DropDown = () => {
           ))}
           <DropdownMenuSeparator />
           <DropdownMenuLabel>
-            <Link href="/services">{t("link.services.services")}</Link>
+            <Link href="/#">{t("link.services.services")}</Link>
           </DropdownMenuLabel>
           {services.map((service) => (
             <DropdownMenuItem key={service.href}>
