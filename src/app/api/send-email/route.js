@@ -60,8 +60,9 @@ export async function POST(req) {
 
   try {
     const data = await resend.emails.send({
-      from: "Exot <derby_i@yahoo.com>", // Use a verified domain or the default Resend address
-      to: [email],
+      from: "Atena Genomics <info@atenagenomics.com>", // Use a verified domain or the default Resend address
+      to: ["info@atenagenomics.com"], // Change this line
+      replyTo: email, // Add this line
       subject: `New message from ${name}`,
       react: (
         <EmailTemplate firstName={name} message={message} lastName={lastName} />

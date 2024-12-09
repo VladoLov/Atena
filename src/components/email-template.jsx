@@ -1,10 +1,10 @@
 import React from "react";
 
-const EmailTemplate = ({ firstName, message }) => {
+const EmailTemplate = ({ name, message }) => {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.5 }}>
       <h1 style={{ color: "#333", fontSize: "24px" }}>
-        New message from {firstName}
+        New message from {name}
       </h1>
       <p style={{ color: "#666", fontSize: "16px" }}>
         Thank you for reaching out to us. Here&apos;s your message:
