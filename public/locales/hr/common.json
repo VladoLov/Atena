@@ -81,6 +81,7 @@
       "genetic_disorders_ngs": {
         "title": "Genetski poremećaji NGS",
         "items": {
+          "proactive_genomic": "Proaktivno genomsko zdravstvo",
           "neurological_disorders": "Neurološki i neuromuskularni poremećaji",
           "developmental_disabilities": "Razvojne i intelektualne smetnje",
           "metabolic_mitochondrial": "Metabolički i mitohondrijski poremećaji",

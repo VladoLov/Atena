@@ -93,6 +93,13 @@ function FinalNavbar() {
       items: [
         {
           title: t(
+            "link.services.genetic_disorders_ngs.items.proactive_genomic"
+          ),
+          href: "/services/genetic-disorders-ngs/proactive-genomic",
+          href1: "#",
+        },
+        {
+          title: t(
             "link.services.genetic_disorders_ngs.items.neurological_disorders"
           ),
           href: "/services/genetic-disorders-ngs/neurological-disorders",

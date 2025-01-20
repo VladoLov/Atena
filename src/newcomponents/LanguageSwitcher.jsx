@@ -16,6 +16,10 @@ export function LanguageSwitcher() {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const languages = [
+    { code: "en", text: "EN" },
+    { code: "hr", text: "BHS" },
+  ];
+  const languagesIcons = [
     { code: "en", icon: "/sova/uk.png" },
     { code: "hr", icon: "/sova/bosnia.gif" },
   ];
@@ -29,12 +33,15 @@ export function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button className="flex items-center p-2 rounded-md hover:shadow-md">
-          <Image
+          {/*  <Image
             src={languages.find((lang) => lang.code === selectedLanguage)?.icon}
             alt={selectedLanguage}
             width={24}
             height={24}
-          />
+          /> */}
+          <p>
+            {languages.find((lang) => lang.code === selectedLanguage)?.text}
+          </p>
           <ChevronDown className="h-4 w-auto" />
         </button>
       </DropdownMenuTrigger>
@@ -45,7 +52,8 @@ export function LanguageSwitcher() {
             onClick={() => handleLanguageChange(lang.code)}
             className="flex items-center gap-2 cursor-pointer w-fit"
           >
-            <Image src={lang.icon} alt={lang.code} width={24} height={24} />
+            <p>{lang.text}</p>
+            {/* <Image src={lang.icon} alt={lang.code} width={24} height={24} /> */}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

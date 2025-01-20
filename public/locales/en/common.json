@@ -81,6 +81,7 @@
       "genetic_disorders_ngs": {
         "title": "Genetic Disorders NGS",
         "items": {
+          "proactive_genomic": "Proactive Genomic Health Screening",
           "neurological_disorders": "Neurological and Neuromuscular Disorders",
           "developmental_disabilities": "Developmental and Intellectual Disabilities",
           "metabolic_mitochondrial": "Metabolic and Mitochondrial Disorders",

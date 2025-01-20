@@ -45,6 +45,14 @@ export const services = [
     href1: "#",
     items: [
       {
+        title: "Proactive Genomic Health Screening",
+        href: "/services/genetic-disorders-ngs/proactive-genomics",
+        href1: "#",
+        description: `
+          NGS (Next-Generation Sequencing) testing, using neurological disorder panels, whole exome sequencing (WES), or whole genome sequencing (WGS), is essential for diagnosing neurological and neuromuscular disorders. Panel testing enables the analysis of multiple genes at once, leading to quicker and more accurate diagnoses. WES and WGS provide broader and more comprehensive insights by detecting rare or novel mutations. These analyses offer an advanced understanding of neurological disorders for earlier interventions and personalized treatments.
+        `,
+      },
+      {
         title: "Neurological and Neuromuscular Disorders",
         href: "/services/genetic-disorders-ngs/neurological-disorders",
         href1: "#",
