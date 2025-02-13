@@ -57,13 +57,13 @@ export default function Footer2() {
           href: "/services/cancer-ngs-profiling/tumor-profiling-ngs",
           href1: "#",
         },
-        {
+        /*     {
           title: t(
             "link.services.cancer_ngs_profiling.items.hematological_malignancies_ngs"
           ),
           href: "/services/cancer-ngs-profiling/hematological-malignancies-ngs",
           href1: "#",
-        },
+        }, */
         {
           title: t(
             "link.services.cancer_ngs_profiling.items.liquid_biopsies_ngs"

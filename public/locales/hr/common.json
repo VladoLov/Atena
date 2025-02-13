@@ -15,7 +15,7 @@
   "services": {
     "cancer_ngs_profiling": {
       "title": "NGS Profiliranje tumora",
-      "description": "NGS u onkologiji omogućava precizno genetsko profiliranje tumora, otkrivanje hematoloških maligniteta, analizu tekuće biopsije, skrining nasljednih oblika karcinoma i praćenje rezistencije na terapije protiv raka. Također, omogućava rano otkrivanje karcinoma, personaliziranu prilagodbu terapije i poboljšanu skrb za pacijente, osiguravajući preciznije liječenje i bolje ishode."
+      "description": "NGS u onkologiji omogućava precizno genetsko profiliranje tumora, analizu tekuće biopsije, skrining nasljednih oblika karcinoma i praćenje rezistencije na terapije protiv raka. Također, omogućava rano otkrivanje karcinoma, personaliziranu prilagodbu terapije i poboljšanu skrb za pacijente, osiguravajući preciznije liječenje i bolje ishode."
     },
     "genetic_disorders_ngs": {
       "title": "NGS za Genetske poremećaje",
@@ -72,7 +72,6 @@
         "title": "NGS profilisanje karcinoma",
         "items": {
           "tumor_profiling_ngs": "NGS profilisanje tumora",
-          "hematological_malignancies_ngs": "NGS za hematološke malignitete",
           "liquid_biopsies_ngs": "NGS za tekuće biopsije",
           "hereditary_cancer_screening": "Skrining nasljednih karcinoma",
           "cancer_drug_resistance_monitoring": " Praćenje otpornosti na terapije protiv karcinoma"

@@ -15,7 +15,7 @@
   "services": {
     "cancer_ngs_profiling": {
       "title": "Cancer NGS Profiling",
-      "description": "NGS in oncology offers precise tumor profiling, hematological malignancy detection, liquid biopsy analysis, hereditary cancer screening, and cancer drug resistance monitoring for early detection, tailored therapies and enhanced patient care."
+      "description": "NGS in oncology offers precise tumor profiling, liquid biopsy analysis, hereditary cancer screening, and cancer drug resistance monitoring for early detection, tailored therapies and enhanced patient care."
     },
     "genetic_disorders_ngs": {
       "title": "Genetic Disorders NGS",
@@ -72,7 +72,6 @@
         "title": "Cancer NGS Profiling",
         "items": {
           "tumor_profiling_ngs": "Tumor Profiling NGS",
-          "hematological_malignancies_ngs": "Hematological Malignancies NGS",
           "liquid_biopsies_ngs": "Liquid Biopsies NGS",
           "hereditary_cancer_screening": "Hereditary-cancer-screening",
           "cancer_drug_resistance_monitoring": "Cancer Drug Resistance Monitoring"
