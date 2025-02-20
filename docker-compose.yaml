@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    image: atena-genomics
+    ports:
+      - "3000:3000"
+    secrets:
+      - resend_api_key
+secrets:
+  resend_api_key:
+    file: ./resend_api_key.txt

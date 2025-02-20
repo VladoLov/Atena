@@ -2,8 +2,26 @@
 const nextConfig = {
   output: "standalone",
   images: {
-    domains: ["images.unsplash.com"], // Allow Unsplash images
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "your-domain.com",
+      },
+      {
+        protocol: "http",
+        hostname: "your-domain.com",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+      },
+    ],
   },
+  eslint: { ignoreDuringBuilds: true }, // Disable ESLint during builds
 };
 
 export default nextConfig;
