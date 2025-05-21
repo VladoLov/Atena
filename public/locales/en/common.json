@@ -26,7 +26,7 @@
       "description": "Non-Invasive Prenatal Testing (NIPT) and Expanded Newborn Screening using NGS aim to detect genetic and chromosomal abnormalities early, enabling personalized treatment plans and improving long-term health outcomes for fetuses and newborns."
     },
     "genomic_response_to_pharmacotherapy": {
-      "title": "Genomic Response to Pharmacotherapy",
+      "title": "Pharmacogenomics",
       "description": "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety."
     },
     "pathogen_ngs_profiling": {
@@ -91,7 +91,7 @@
       },
 
       "prenatal_genetic": "Prenatal Genetic Risk Analysis",
-      "genomic_response": "Genomic Response to Pharmacotherapy",
+      "genomic_response": "Pharmacogenomics",
       "pathogen": "Pathogen NGS Profiling",
       "client_specific": "Client-specific NGS testing"
     },

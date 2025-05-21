@@ -2,8 +2,10 @@ import { Poppins } from "next/font/google";
 import { Oswald } from "next/font/google";
 import "./globals.css";
 
-import Footer2 from "@/components/Footer2";
-import Header from "@/newcomponents/Header";
+/* import Footer2 from "@/components/Footer2"; */
+import Footer2 from "../components/Footer2";
+/* import Header from "@/newcomponents/Header"; */
+import Header from "../newcomponents/Header";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });

@@ -2,14 +2,16 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
+
+// Adjust path to shadcn dropdown component
+// Adjust path to shadcn dropdown component
+import { ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
-  DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-} from "@/components/ui/dropdown-menu"; // Adjust path to shadcn dropdown component
-import { ChevronDown } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation("common");

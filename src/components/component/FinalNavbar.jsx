@@ -55,6 +55,7 @@ function FinalNavbar() {
           ),
           href: "/services/cancer-ngs-profiling/tumor-profiling-ngs",
           href1: "#",
+          comingSoon: true,
         },
         /*   {
           title: t(
@@ -69,6 +70,7 @@ function FinalNavbar() {
           ),
           href: "/services/cancer-ngs-profiling/liquid-biopsies-ngs",
           href1: "#",
+          comingSoon: true,
         },
         {
           title: t(
@@ -76,6 +78,7 @@ function FinalNavbar() {
           ),
           href: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
           href1: "#",
+          comingSoon: false,
         },
         {
           title: t(
@@ -83,6 +86,7 @@ function FinalNavbar() {
           ),
           href: "/services/cancer-ngs-profiling/cancer-drug-resistance-monitoring",
           href1: "#",
+          comingSoon: true,
         },
       ],
     },
@@ -134,9 +138,12 @@ function FinalNavbar() {
           href1: "#",
         },
         {
-          title: t("link.services.genetic_disorders_ngs.items.other_genetic"),
+          title: t("link.services.genetic_disorders_ngs.items.other_genetic", {
+            comingSoon: t("common.coming_soon"),
+          }),
           href: "/services/genetic-disorders-ngs/other-genetic",
           href1: "#",
+          comingSoon: true,
         },
       ],
     },
@@ -217,7 +224,6 @@ function FinalNavbar() {
                         <ChevronDown className="ml-1 inline-block" />
                       ))}
                   </Link>
-
                   {/* Submenu */}
                   {service.items && openSubMenuIndex === index && (
                     <ul
@@ -229,18 +235,33 @@ function FinalNavbar() {
                       onMouseEnter={() => setOpenSubMenuIndex(index)}
                       onMouseLeave={() => setOpenSubMenuIndex(null)}
                     >
-                      {service.items.map((item) => (
-                        <li key={item.href} className="relative group">
-                          <Link
-                            href={item.href1}
-                            className="block px-4 py-2 text-platinum-900 hover:bg-platinum-200 transition-colors duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
-                          >
-                            {item.title}
-                          </Link>
-                        </li>
-                      ))}
+                      {service.items.map((item) => {
+                        const titleParts = item.title.split("\n");
+                        return (
+                          <li key={item.href} className="relative group">
+                            <Link
+                              href={item.href1}
+                              className={`block px-4 py-2 hover:bg-platinum-200 ${
+                                item.comingSoon
+                                  ? "text-platinum-400"
+                                  : "text-platinum-900"
+                              }`}
+                            >
+                              <span className="block font-medium">
+                                {titleParts[0]}
+                              </span>
+                              {titleParts[1] && (
+                                <span className="block text-xs mt-1 italic">
+                                  {titleParts[1]}
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        );
+                      })}
                     </ul>
                   )}
+                  {/* /** Map submenu with coming soon */}
                 </li>
               ))}
             </ul>

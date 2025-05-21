@@ -76,7 +76,7 @@ export default function Footer2() {
             "link.services.cancer_ngs_profiling.items.hereditary_cancer_screening"
           ),
           href: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
-          href1: "#",
+          href1: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
         },
         {
           title: t(
@@ -97,42 +97,46 @@ export default function Footer2() {
             "link.services.genetic_disorders_ngs.items.proactive_genomic"
           ),
           href: "/services/genetic-disorders-ngs/proactive-genomic",
-          href1: "#",
+          href1:
+            "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.neurological_disorders"
           ),
           href: "/services/genetic-disorders-ngs/neurological-disorders",
-          href1: "#",
+          href1:
+            "/services/genetic-disorders-ngs/neurological-neuromuscular-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.developmental_disabilities"
           ),
           href: "/services/genetic-disorders-ngs/developmental-disabilities",
-          href1: "#",
+          href1:
+            "/services/genetic-disorders-ngs/developmental-intellectual-disabilities",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.metabolic_mitochondrial"
           ),
-          href: "/services/genetic-disorders-ngs/metabolic-mitochondrial",
-          href1: "#",
+          href: "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
+          href1:
+            "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.immunological_disorders"
           ),
           href: "/services/genetic-disorders-ngs/immunological-disorders",
-          href1: "#",
+          href1: "/services/genetic-disorders-ngs/immunological-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.rare_genetic_disorders"
           ),
           href: "/services/genetic-disorders-ngs/rare-genetic-disorders",
-          href1: "#",
+          href1: "/services/genetic-disorders-ngs/rare-genetic-disorders",
         },
         {
           title: t("link.services.genetic_disorders_ngs.items.other_genetic"),
@@ -148,8 +152,8 @@ export default function Footer2() {
     },
     {
       title: t("link.services.genomic_response"),
-      href: "/services/genomic-response-to-pharmacotherapy",
-      href1: "/",
+      href: "/services/pharmacogenomics",
+      href1: "/services/pharmacogenomics",
     },
     {
       title: t("link.services.pathogen"),

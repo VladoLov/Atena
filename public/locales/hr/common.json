@@ -26,7 +26,7 @@
       "description": "Neinvazivno prenatalno testiranje (NIPT) i prošireni skrining novorođenčadi pomoću NGS-a omogućavaju rano otkrivanje genetskih i hromosomskih abnormalnosti. Time se osigurava personalizirano planiranje njege, pravovremene intervencije i poboljšani dugoročni zdravstveni ishodi za fetuse i novorođenčad."
     },
     "genomic_response_to_pharmacotherapy": {
-      "title": "Genomski odgovor na farmakoterapiju",
+      "title": "Farmakogenomika",
       "description": "Testiranje predikcije odgovora na lijekove i neželjenih reakcija (ADRs) pomoću NGS-a omogućava personalizirano prilagođavanje terapije, smanjenje nuspojava i poboljšane ishode liječenja. Identifikacijom genetskih varijacija koje utiču na učinkovitost i sigurnost lijekova, NGS osigurava precizniju, sigurniju i učinkovitiju farmakoterapiju."
     },
     "pathogen_ngs_profiling": {
@@ -90,7 +90,7 @@
         }
       },
       "prenatal_genetic": "Analiza genetskog rizika u Trudnoć",
-      "genomic_response": "Genomski odgovor na farmakoterapiju",
+      "genomic_response": "Farmakogenomika",
       "pathogen": "NGS Profilisanje patogena",
       "client_specific": "NGS Testiranje prilagođeno klijentima"
     },

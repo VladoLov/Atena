@@ -9,8 +9,8 @@ export function SmallLanguageSwitcher() {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const languages = [
-    { code: "en", icon: "/sova/uk.png" },
-    { code: "hr", icon: "/sova/bosnia.gif" },
+    { code: "en", text: "EN" },
+    { code: "hr", text: "BHS" },
   ];
 
   const handleLanguageChange = (lang) => {

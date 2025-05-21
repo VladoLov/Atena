@@ -75,7 +75,7 @@ export default function FlipCard({
             href={href}
           >
             <div>
-              <h1 className="text-xl font-bold text-black">{subtitle}</h1>
+              <h1 className="text-xl font-bold text-black">{title}</h1>
               <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-black-100">
                 {description}
               </p>
