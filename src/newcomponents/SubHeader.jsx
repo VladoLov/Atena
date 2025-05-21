@@ -7,9 +7,9 @@ function SubHeader() {
   return (
     <section className="w-full  mx-auto px-10 pt-12 pb-16">
       <div className="container mx-auto rounded-lg  px-0 mb-12">
-        <h2 className="text-bold md:text-3xl lg:text-6xl mb-4 pb-8 text-center text-lightBlue-950 lg:text-platinum-900  lg:leading-10  lg:font-medium tracking-wide">
+        {/*   <h2 className="text-bold md:text-3xl lg:text-6xl mb-4 pb-8 text-center text-lightBlue-950 lg:text-platinum-900  lg:leading-10  lg:font-medium tracking-wide">
           {t("subheader.header")}
-        </h2>
+        </h2> */}
 
         <p className="text-base md:text-2xl lg:text-3xl text-platinum-900 lg:text-platinum-900  lg:leading-10  lg:font-medium tracking-wide pb-12">
           {t("subheader.subheader")}
