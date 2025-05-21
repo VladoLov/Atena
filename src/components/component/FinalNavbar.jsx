@@ -48,6 +48,7 @@ function FinalNavbar() {
       href: "/services/cancer-ngs-profiling",
       href1: "#",
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ribbon"><path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22"/><path d="m12 18 2.57-3.5"/><path d="M6.243 9.016a7 7 0 0 1 11.507-.009"/><path d="M9.35 14.53 12 11.22"/><path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z"/></svg>`,
+      comingSoon: false,
       items: [
         {
           title: t(
@@ -77,7 +78,7 @@ function FinalNavbar() {
             "link.services.cancer_ngs_profiling.items.hereditary_cancer_screening"
           ),
           href: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
-          href1: "#",
+          href1: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
           comingSoon: false,
         },
         {
@@ -94,48 +95,53 @@ function FinalNavbar() {
       title: t("link.services.genetic_disorders_ngs.title"),
       href: "/services/genetic-disorders-ngs",
       href1: "#",
+      comingSoon: false,
       items: [
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.proactive_genomic"
           ),
-          href: "/services/genetic-disorders-ngs/proactive-genomic",
-          href1: "#",
+          href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
+          href1:
+            "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.neurological_disorders"
           ),
-          href: "/services/genetic-disorders-ngs/neurological-disorders",
-          href1: "#",
+          href: "/services/genetic-disorders-ngs/neurological-neuromuscular-disorders",
+          href1:
+            "/services/genetic-disorders-ngs/neurological-neuromuscular-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.developmental_disabilities"
           ),
-          href: "/services/genetic-disorders-ngs/developmental-disabilities",
-          href1: "#",
+          href: "/services/genetic-disorders-ngs/developmental-intellectual-disabilities",
+          href1:
+            "/services/genetic-disorders-ngs/developmental-intellectual-disabilities",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.metabolic_mitochondrial"
           ),
-          href: "/services/genetic-disorders-ngs/metabolic-mitochondrial",
-          href1: "#",
+          href: "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
+          href1:
+            "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.immunological_disorders"
           ),
           href: "/services/genetic-disorders-ngs/immunological-disorders",
-          href1: "#",
+          href1: "/services/genetic-disorders-ngs/immunological-disorders",
         },
         {
           title: t(
             "link.services.genetic_disorders_ngs.items.rare_genetic_disorders"
           ),
           href: "/services/genetic-disorders-ngs/rare-genetic-disorders",
-          href1: "#",
+          href1: "/services/genetic-disorders-ngs/rare-genetic-disorders",
         },
         {
           title: t("link.services.genetic_disorders_ngs.items.other_genetic", {
@@ -151,21 +157,25 @@ function FinalNavbar() {
       title: t("link.services.prenatal_genetic"),
       href: "/services/prenatal-genetic-risk-analysis",
       href1: "/",
+      comingSoon: true,
     },
     {
       title: t("link.services.genomic_response"),
       href: "/services/genomic-response-to-pharmacotherapy",
-      href1: "/",
+      href1: "/services/pharmacogenomics",
+      comingSoon: false,
     },
     {
       title: t("link.services.pathogen"),
       href: "/services/pathogen-ngs-profiling",
       href1: "/",
+      comingSoon: true,
     },
     {
       title: t("link.services.client_specific"),
       href: "/services/client-specific-ngs-testing",
       href1: "/",
+      comingSoon: true,
     },
   ];
   useEffect(() => {
@@ -189,9 +199,9 @@ function FinalNavbar() {
               onMouseLeave={() => setIsOpen(false)}
             >
               <span>{t("link.services.services")}</span>
-              <span className="text-crimson-900 font-semibold pl-1">
+              {/*  <span className="text-crimson-900 font-semibold pl-1">
                 {t("link.soon")} ☄️
-              </span>
+              </span> */}
               {isOpen ? (
                 <ChevronUp className="ml-1" />
               ) : (
@@ -209,20 +219,33 @@ function FinalNavbar() {
                 <li key={service.href} className="relative group">
                   <Link
                     href={service.href1}
-                    className="block px-4 py-2 text-platinum-900 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black transition-colors duration-300 ease-in-out"
+                    className={`block  px-4 py-2 transition-colors duration-300 ${
+                      service.comingSoon
+                        ? "text-platinum-500 cursor-not-allowed"
+                        : "text-platinum-900 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
+                    }`}
                     onMouseEnter={(event) => handleMouseEnter(index, event)}
                   >
-                    {service.title}
-                    {service.items &&
-                      (openSubMenuIndex === index ? (
-                        flippedSubmenus[index] ? (
-                          <ChevronLeft className="ml-1 inline-block" />
+                    <div className="flex">
+                      <div className="flex flex-col">
+                        {service.title}
+                        {service.comingSoon && (
+                          <span className="text-xs italic mt-0.5">
+                            {t("link.soon")}
+                          </span>
+                        )}
+                      </div>
+                      {service.items &&
+                        (openSubMenuIndex === index ? (
+                          flippedSubmenus[index] ? (
+                            <ChevronLeft className="ml-1 inline-block" />
+                          ) : (
+                            <ChevronRight className="ml-1 inline-block" />
+                          )
                         ) : (
-                          <ChevronRight className="ml-1 inline-block" />
-                        )
-                      ) : (
-                        <ChevronDown className="ml-1 inline-block" />
-                      ))}
+                          <ChevronDown className="ml-1 inline-block" />
+                        ))}
+                    </div>
                   </Link>
                   {/* Submenu */}
                   {service.items && openSubMenuIndex === index && (
@@ -235,30 +258,27 @@ function FinalNavbar() {
                       onMouseEnter={() => setOpenSubMenuIndex(index)}
                       onMouseLeave={() => setOpenSubMenuIndex(null)}
                     >
-                      {service.items.map((item) => {
-                        const titleParts = item.title.split("\n");
-                        return (
-                          <li key={item.href} className="relative group">
-                            <Link
-                              href={item.href1}
-                              className={`block px-4 py-2 hover:bg-platinum-200 ${
-                                item.comingSoon
-                                  ? "text-platinum-400"
-                                  : "text-platinum-900"
-                              }`}
-                            >
-                              <span className="block font-medium">
-                                {titleParts[0]}
-                              </span>
-                              {titleParts[1] && (
-                                <span className="block text-xs mt-1 italic">
-                                  {titleParts[1]}
+                      {service.items.map((item) => (
+                        <li key={item.href} className="relative group">
+                          <Link
+                            href={item.comingSoon ? "#" : item.href}
+                            className={`block px-4 py-2 transition-colors duration-300 ${
+                              item.comingSoon
+                                ? "text-platinum-500 cursor-not-allowed"
+                                : "text-platinum-900 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
+                            }`}
+                          >
+                            <div className="flex flex-col">
+                              <span>{item.title}</span>
+                              {item.comingSoon && (
+                                <span className="text-xs italic mt-0.5">
+                                  {t("link.soon")}
                                 </span>
                               )}
-                            </Link>
-                          </li>
-                        );
-                      })}
+                            </div>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   )}
                   {/* /** Map submenu with coming soon */}
