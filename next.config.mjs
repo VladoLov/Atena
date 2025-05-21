@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  i18n: {
+    locales: ["en", "hr"],
+    defaultLocale: "en",
+    localeDetection: false, // Disable automatic detection during SSR
+  },
   images: {
     remotePatterns: [
       {

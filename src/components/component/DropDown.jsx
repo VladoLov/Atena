@@ -13,8 +13,7 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-import { firstHeader, services } from "@/lib/url";
-import { LanguageSwitcher } from "@/newcomponents/LanguageSwitcher";
+
 import { useTranslation } from "react-i18next";
 import { SmallLanguageSwitcher } from "@/newcomponents/SmallLanguageSwitcher";
 
