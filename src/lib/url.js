@@ -240,7 +240,7 @@ export const flipCardData = [
     subtitle: "Cancer NGS Profiling",
     /* icon: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ribbon"><path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22"/><path d="m12 18 2.57-3.5"/><path d="M6.243 9.016a7 7 0 0 1 11.507-.009"/><path d="M9.35 14.53 12 11.22"/><path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z"/></svg>`, */
     icon: Ribbon,
-    href: "/services/oncology",
+    href: "#",
   },
   {
     key: "genetic_disorders_ngs",
@@ -252,7 +252,7 @@ export const flipCardData = [
     subtitle: "Genetic Disorders NGS",
     /* icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna"><path d="m10 16 1.5 1.5"/><path d="m14 8-1.5-1.5"/><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"/><path d="m16.5 10.5 1 1"/><path d="m17 6-2.891-2.891"/><path d="M2 15c6.667-6 13.333 0 20-6"/><path d="m20 9 .891.891"/><path d="M3.109 14.109 4 15"/><path d="m6.5 12.5 1 1"/><path d="m7 18 2.891 2.891"/><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/></svg>', */
     icon: Dna,
-    href: "/services/oncology",
+    href: "#",
   },
   {
     key: "prenatal_genetic_risk_analysis",
@@ -264,16 +264,9 @@ export const flipCardData = [
     subtitle: "Prenatal Genetic Risk Analysis",
     /* icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baby"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>', */
     icon: Baby,
-    href: "/services/oncology",
+    href: "#",
   },
-  /*   {
-    image: "/blocks/2400-pregnant-woman.jpg",
-    title: "Pharmacogenomics",
-    description:
-      "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety.",
-    subtitle: "Pharmacogenomics",
-    href: "/oncology",
-  }, */
+
   {
     key: "genomic_response_to_pharmacotherapy",
     image: "/blocks/Pharmacogenomics.jpeg",
@@ -283,7 +276,7 @@ export const flipCardData = [
     subtitle: "Genomic Response to Pharmacotherapy",
     /*  icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pill"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>', */
     icon: Pill,
-    href: "/services/oncology",
+    href: "/services/pharmacogenomics",
   },
   {
     key: "pathogen_ngs_profiling",
@@ -293,7 +286,7 @@ export const flipCardData = [
       "NGS offers rapid and accurate pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation, for disease surveillance and effective public health responses.",
     subtitle: "Pathogen NGS Profiling",
     icon: Bacteria,
-    href: "/services/oncology",
+    href: "#",
   },
   {
     key: "client_specific_ngs_testing",
@@ -304,7 +297,7 @@ export const flipCardData = [
     subtitle: "Client-specific NGS testing",
     /* icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-plus"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 14h6"/><path d="M12 17v-6"/></svg>', */
     icon: ClipboardPlus,
-    href: "/services/oncology",
+    href: "#",
   },
   // Add as many cards as needed
 ];

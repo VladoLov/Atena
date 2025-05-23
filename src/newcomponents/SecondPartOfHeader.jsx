@@ -2,10 +2,20 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function SecondPartOfHeader() {
   const { t } = useTranslation("common");
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null; // Or a placeholder if you need some layout
+  }
   return (
     <>
       <div className="flex list-none items-center  justify-start z-30">
