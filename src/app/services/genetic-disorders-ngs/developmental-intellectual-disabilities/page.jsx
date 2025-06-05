@@ -9,7 +9,7 @@ function DevelopmentalIntellectualDisabilities() {
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/developmental-intellectual-disabilities.png?height=500&width=1000"
+            src="/developmental-intellectual-disabilities.webp?height=500&width=1000"
             alt="DNA double helix"
             layout="fill"
             objectFit="cover"

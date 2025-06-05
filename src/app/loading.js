@@ -2,7 +2,7 @@ import { LoaderCircle } from "lucide-react";
 
 function Loading() {
   return (
-    <div className="flex flex-row items-center justify-center mx-auto mt-44">
+    <div className="flex flex-row items-center justify-center mx-auto mt-44 mb-30">
       <button
         type="button"
         className="bg-crimson-500 flex flex-row rounded-sm p-2"

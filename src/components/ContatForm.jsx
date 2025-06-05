@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +13,6 @@ export default function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState("");
-  /* const [acceptTerms, setAcceptTerms] = useState(false); */
   const { t } = useTranslation("common");
 
   const handleSubmit = async (e) => {
@@ -22,26 +20,33 @@ export default function ContactForm() {
     setStatus("Sending...");
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY, // Store in .env
+          name: `${formData.name} ${formData.lastName}`,
+          email: formData.email,
+          message: formData.message,
+          // Optional: Add redirect to thank you page
+          /*   redirect: "https://yourdomain.com/thank-you", */
+        }),
       });
 
       const result = await response.json();
 
       if (result.success) {
-        setStatus("Message sent successfully!");
+        setStatus(t("contact_form.success_message"));
         setFormData({ name: "", lastName: "", email: "", message: "" });
-        // setAcceptTerms(false);
       } else {
-        setStatus("Error sending message.");
+        setStatus(t("contact_form.error_message"));
       }
     } catch (error) {
       console.error("Error:", error);
-      setStatus("Error sending message.");
+      setStatus(t("contact_form.error_message"));
     }
   };
 
@@ -53,9 +58,22 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container mx-auto p-4 ">
+    <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">{t("contact_form.header")}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Hidden Web3Forms honeypot field (recommended) */}
+        <input
+          type="hidden"
+          name="access_key"
+          value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Contact Form Submission"
+        />
+        <input type="checkbox" name="botcheck" className="hidden" />
+
         <div className="flex flex-col sm:flex-row gap-4 w-full">
           <div className="grow">
             <label
@@ -111,6 +129,7 @@ export default function ContactForm() {
             required
           />
         </div>
+
         <div>
           <label
             htmlFor="message"
@@ -128,39 +147,18 @@ export default function ContactForm() {
             required
           ></textarea>
         </div>
-        {/*        <div className="flex items-center space-x-2">
-          <Checkbox
-            id="terms"
-            checked={acceptTerms}
-            onCheckedChange={(checked) => setAcceptTerms(checked)}
-          />
-          <label
-            htmlFor="terms"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-          >
-            I accept the{" "}
-            <Link
-              href="/docs/Terms_and_Conditions.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-crimson-900 underline transition"
-            >
-              Terms & Conditions
-            </Link>
-          </label>
-        </div> */}
-        {/*  <Button type="submit" className="w-full" disabled={!acceptTerms}>
-          Send
-        </Button> */}
+
         <Button type="submit" className="w-full">
           {t("contact_form.send")}
         </Button>
+
         {status && (
           <p className="mt-2 text-sm text-center font-medium text-gray-900">
             {status}
           </p>
         )}
       </form>
+
       <p className="pt-4 px-4">
         {t("contact_form.footer")}
         <Link

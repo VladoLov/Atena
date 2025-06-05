@@ -9,7 +9,7 @@ export default function FramerMotionImage() {
     <section className="w-full max-h-full bg-platinum-300 z-[-1] ">
       <div className="relative w-full h-screen overflow-hidden clip-piere shadow-md bg-opacity-90 text-transparent">
         <Image
-          src="/piere-image.png"
+          src="/piere-image.webp"
           alt="Featured Image"
           fill
           style={{

@@ -10,7 +10,7 @@ export const DnaComponent = () => {
       <div className="relative w-full h-dvh md:h-[100vh] clip-piere">
         <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
           <Image
-            src="/helix.png"
+            src="/helix.webp"
             /* width={1640}
             height={1024} */
             alt="dna genome"

@@ -23,15 +23,28 @@ function PiereCard({ title, description, href, icon: Icon, ctaText }) {
           <p className="flex-grow">{description}</p>
         </CardContent>
         <CardFooter className="mt-auto pt-0 ">
-          <Button
-            variant="secondary"
-            className="w-fit justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500 "
-          >
-            <Link href={href || "#"}>
-              {ctaText}
-              <span className="sr-only">about {title}</span>
-            </Link>
-          </Button>
+          {href === "#" ? (
+            <Button
+              variant="secondary"
+              className="w-fit justify-between items-center border border-gray-400 ring-inset bg-white cursor-default"
+              disabled
+            >
+              <span className="text-gray-400">
+                {ctaText}
+                <span className="sr-only">about {title}</span>
+              </span>
+            </Button>
+          ) : (
+            <Button
+              variant="secondary"
+              className="w-fit justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500"
+            >
+              <Link href={href}>
+                {ctaText}
+                <span className="sr-only">about {title}</span>
+              </Link>
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </div>

@@ -1,4 +1,4 @@
-import { Resend } from "resend";
+/* import { Resend } from "resend";
 import { NextResponse } from "next/server";
 import EmailTemplate from "@/components/email-template";
 
@@ -34,3 +34,4 @@ export async function POST(req) {
     );
   }
 }
+ */

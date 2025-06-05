@@ -6,6 +6,7 @@ import SubHeader from "@/newcomponents/SubHeader";
 import Image from "next/image";
 import { Suspense } from "react";
 import Loading from "./loading";
+import PartnersCarousel from "../components/partners-carousel";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -26,7 +27,7 @@ export default function page() {
           <section className="w-full ">
             <div className="inset-0 absolute -z-20 opacity-20">
               <Image
-                src="/hexogen/hexogen5.jpg"
+                src="/hexogen/hexogen5.webp"
                 alt="background DNK image"
                 fill
                 className="object-center bg-cover"
@@ -44,6 +45,9 @@ export default function page() {
             <ContactForm />
           </div>
         </div>
+        <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 clip-piere5">
+          <PartnersCarousel />
+        </section>
       </Suspense>
     </div>
   );

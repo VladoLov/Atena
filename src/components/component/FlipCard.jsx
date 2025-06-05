@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import { Button } from "../ui/button";
+
 import Link from "next/link";
-import { icons } from "lucide-react";
 
 export default function FlipCard({
   image,
@@ -70,17 +68,28 @@ export default function FlipCard({
             self[1]
           )}
         >
-          <Link
-            className="flex min-h-full flex-col  justify-between"
-            href={href}
-          >
-            <div>
-              <h1 className="text-xl font-bold text-black">{title}</h1>
-              <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-black-100">
-                {description}
-              </p>
+          {href === "#" ? (
+            <div className="flex min-h-full flex-col justify-between cursor-default">
+              <div>
+                <h1 className="text-xl font-bold text-gray-400">{title}</h1>
+                <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-gray-400">
+                  {description}
+                </p>
+              </div>
             </div>
-          </Link>
+          ) : (
+            <Link
+              className="flex min-h-full flex-col justify-between"
+              href={href}
+            >
+              <div>
+                <h1 className="text-xl font-bold text-black">{title}</h1>
+                <p className="mt-1 border-t border-t-platinum-900 py-4 lg:text-base md:text-sm font-medium leading-normal text-black-100">
+                  {description}
+                </p>
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </div>

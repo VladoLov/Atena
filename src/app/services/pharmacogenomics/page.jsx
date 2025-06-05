@@ -9,13 +9,13 @@ function Pharmacogenomics() {
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/pharmacogenomics.png?height=500&width=1000"
+            src="/pharmacogenomics.webp?height=500&width=1000"
             alt="DNA double helix"
             layout="fill"
             objectFit="cover"
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
               Genetic Insights for Safer, Smarter Medication Choices
             </h2>

@@ -232,7 +232,7 @@ export const teamMembers = [
 export const flipCardData = [
   {
     key: "cancer_ngs_profiling",
-    image: "/blocks/Oncology.png",
+    /*  image: "/blocks/Oncology.png", */
     title: "Cancer NGS Profiling",
     /*  description: "Identifies genetic mutations and driving tumor growth.", */
     description:
@@ -240,11 +240,11 @@ export const flipCardData = [
     subtitle: "Cancer NGS Profiling",
     /* icon: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ribbon"><path d="M12 11.22C11 9.997 10 9 10 8a2 2 0 0 1 4 0c0 1-.998 2.002-2.01 3.22"/><path d="m12 18 2.57-3.5"/><path d="M6.243 9.016a7 7 0 0 1 11.507-.009"/><path d="M9.35 14.53 12 11.22"/><path d="M9.35 14.53C7.728 12.246 6 10.221 6 7a6 5 0 0 1 12 0c-.005 3.22-1.778 5.235-3.43 7.5l3.557 4.527a1 1 0 0 1-.203 1.43l-1.894 1.36a1 1 0 0 1-1.384-.215L12 18l-2.679 3.593a1 1 0 0 1-1.39.213l-1.865-1.353a1 1 0 0 1-.203-1.422z"/></svg>`, */
     icon: Ribbon,
-    href: "#",
+    href: "/services/cancer-ngs-profiling",
   },
   {
     key: "genetic_disorders_ngs",
-    image: "/blocks/Genome-testing-2.jpeg",
+    /* image: "/blocks/Genome-testing-2.jpeg", */
     title: "Genetic Disorders NGS",
     /* description: "Involves genetic disorders affecting the body's functions.", */
     description:
@@ -252,11 +252,11 @@ export const flipCardData = [
     subtitle: "Genetic Disorders NGS",
     /* icon: '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff5600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna"><path d="m10 16 1.5 1.5"/><path d="m14 8-1.5-1.5"/><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"/><path d="m16.5 10.5 1 1"/><path d="m17 6-2.891-2.891"/><path d="M2 15c6.667-6 13.333 0 20-6"/><path d="m20 9 .891.891"/><path d="M3.109 14.109 4 15"/><path d="m6.5 12.5 1 1"/><path d="m7 18 2.891 2.891"/><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/></svg>', */
     icon: Dna,
-    href: "#",
+    href: "/services/genetic-disorders-ngs",
   },
   {
     key: "prenatal_genetic_risk_analysis",
-    image: "/blocks/cardiolog-3.jpeg",
+    /* image: "/blocks/cardiolog-3.jpeg", */
     title: "Prenatal Genetic Risk Analysis",
     /* description: "Refers to diseases affecting the heart's function.", */
     description:
@@ -269,7 +269,7 @@ export const flipCardData = [
 
   {
     key: "genomic_response_to_pharmacotherapy",
-    image: "/blocks/Pharmacogenomics.jpeg",
+    /* image: "/blocks/Pharmacogenomics.jpeg", */
     title: "Genomic Response to Pharmacotherapy",
     description:
       "Drug Response Prediction and Adverse Drug Reactions (ADRs) testing using NGS helps tailor personalized treatments, reduce adverse effects, and improve patient outcomes by identifying genetic variations that influence drug efficacy and safety.",
@@ -280,7 +280,7 @@ export const flipCardData = [
   },
   {
     key: "pathogen_ngs_profiling",
-    image: "/blocks/genome-research-lab-tests.jpg",
+    /*   image: "/blocks/genome-research-lab-tests.jpg", */
     title: "Pathogen NGS Profiling",
     description:
       "NGS offers rapid and accurate pathogen identification, antimicrobial resistance (AMR) detection, viral genotyping, and outbreak investigation, for disease surveillance and effective public health responses.",
@@ -290,7 +290,7 @@ export const flipCardData = [
   },
   {
     key: "client_specific_ngs_testing",
-    image: "/blocks/2400-dna-molecule-spiral-structure-model.jpg",
+    /* image: "/blocks/2400-dna-molecule-spiral-structure-model.jpg", */
     title: "Client-specific NGS testing",
     description:
       "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency.",

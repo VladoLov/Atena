@@ -13,12 +13,12 @@ import Image from "next/image";
 
 export default function ProactiveGenomicHealthScreening() {
   return (
-    <div className="flex flex-col  justify-center items-center w-full">
+    <div className="flex flex-col justify-center items-center w-full">
       <main className="w-full ">
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/hereditary-cancer-screening.png?height=500&width=1000"
+            src="/proactive-genomic-health.webp?height=500&width=1000"
             alt="DNA double helix"
             layout="fill"
             objectFit="cover"

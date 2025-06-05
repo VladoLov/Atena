@@ -1,7 +1,7 @@
 {
   "about": {
     "header": "Precision Genetic testing for personalized Care",
-    "subheader": "  ATENA Genomics is dedicated to advancing healthcare with accessible precision genetic technologies. We provide advanced sequencing solutions to enable personalized medicine, improving patient outcomes through timely, accurate genetic insights.",
+    "subheader": "ATENA Genomics is dedicated to making high-quality genetic testing based on next-generation sequencing (NGS) technology accessible and affordable for everyone. By offering easy-to-understand test results and personalized health insights, we help individuals take control of their well-being and support the shift toward more precise, preventive, and personalized healthcare.",
     "leadership": "Leadership",
     "profile": "Profile",
     "marija": {
@@ -73,7 +73,7 @@
         "items": {
           "tumor_profiling_ngs": "Tumor Profiling NGS",
           "liquid_biopsies_ngs": "Liquid Biopsies NGS",
-          "hereditary_cancer_screening": "Hereditary-cancer-screening",
+          "hereditary_cancer_screening": "Hereditary Cancer Screening",
           "cancer_drug_resistance_monitoring": "Cancer Drug Resistance Monitoring"
         }
       },
