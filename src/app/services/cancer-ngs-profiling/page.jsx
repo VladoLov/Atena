@@ -136,7 +136,7 @@ export default function GeneticDisordersIllustrated() {
         </div>
 
         <div
-          className="absolute bottom-0 left-0 right-0 h-16 bg-white"
+          className="absolute -bottom-1 left-0 right-0 h-16 bg-white"
           style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 100%)" }}
         ></div>
       </section>
@@ -192,29 +192,57 @@ export default function GeneticDisordersIllustrated() {
               const colorClasses = getColorClasses(category.color);
               const IconComponent = category.icon;
 
-              return (
-                <Link
-                  key={index}
-                  href={category.href1 ? "#" : category.href1}
-                  className="group"
-                >
-                  <Card
-                    className={`h-full transition-all duration-300 ${category.comingSoon ? "bg-platinum-100 cursor-not-allowed" : `${colorClasses.border} ${colorClasses.hover} hover:shadow-lg cursor-pointer`} `}
-                  >
+              return category.comingSoon ? (
+                <div key={index} className="group cursor-not-allowed">
+                  <Card className="h-full bg-platinum-100 transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="space-y-4">
                         <div
-                          className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex  items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                          className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex items-center justify-center`}
                         >
                           <IconComponent
                             className={`h-6 w-6 ${colorClasses.iconColor}`}
                           />
                         </div>
-                        {category.comingSoon && (
-                          <span className="pt-4 text-sm font-medium text-platinum-900">
-                            Coming Soon
+
+                        <span className="pt-4 text-sm font-medium text-platinum-900">
+                          Coming Soon
+                        </span>
+
+                        <div className="space-y-2">
+                          <h3 className="text-xl font-semibold text-black/90">
+                            {category.title}
+                          </h3>
+                          <p className="text-platinum-900 text-sm leading-relaxed">
+                            {category.description}
+                          </p>
+                        </div>
+
+                        <div className="pt-2">
+                          <span
+                            className={`text-sm font-medium ${colorClasses.iconColor}`}
+                          >
+                            Learn more →
                           </span>
-                        )}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ) : (
+                <Link key={index} href={category.href1} className="group">
+                  <Card
+                    className={`h-full transition-all duration-300 ${colorClasses.border} ${colorClasses.hover} hover:shadow-lg cursor-pointer`}
+                  >
+                    <CardContent className="p-6">
+                      <div className="space-y-4">
+                        <div
+                          className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                        >
+                          <IconComponent
+                            className={`h-6 w-6 ${colorClasses.iconColor}`}
+                          />
+                        </div>
 
                         <div className="space-y-2">
                           <h3 className="text-xl font-semibold text-black/90 group-hover:text-black/80 transition-colors">
@@ -246,7 +274,7 @@ export default function GeneticDisordersIllustrated() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-platinum-900 mb-16">
+            <h2 className="text-3xl font-bold text-center text-platinum-950 mb-16">
               How It Works
             </h2>
 
@@ -258,7 +286,7 @@ export default function GeneticDisordersIllustrated() {
                 <h3 className="text-xl font-semibold mb-3">
                   Simple Collection
                 </h3>
-                <p className="text-platinum-800">
+                <p className="text-platinum-950">
                   Quick and painless cheek swab that can be done at home or in
                   our clinic
                 </p>
@@ -271,7 +299,7 @@ export default function GeneticDisordersIllustrated() {
                 <h3 className="text-xl font-semibold mb-3">
                   Advanced Analysis
                 </h3>
-                <p className="text-platinum-800">
+                <p className="text-platinum-950">
                   State-of-the-art NGS technology to analyze your DNA with high
                   precision
                 </p>
@@ -284,7 +312,7 @@ export default function GeneticDisordersIllustrated() {
                 <h3 className="text-xl font-semibold mb-3">
                   Personalized Results
                 </h3>
-                <p className="text-platinum-800">
+                <p className="text-platinum-950">
                   Comprehensive report with expert consultation to understand
                   your results
                 </p>
@@ -305,9 +333,11 @@ export default function GeneticDisordersIllustrated() {
               Take the first step towards personalized healthcare with our
               advanced genetic testing options.
             </p>
-            <button className="px-8 py-4 bg-white text-crimson-600 font-medium rounded-full hover:bg-crimson-50 transition-colors text-lg">
-              Contact Us
-            </button>
+            <Link href={"/contact"}>
+              <button className="px-8 py-4 bg-white text-crimson-600 font-medium rounded-full hover:bg-crimson-50 transition-colors text-lg">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </section>

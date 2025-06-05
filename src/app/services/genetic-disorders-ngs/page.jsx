@@ -18,7 +18,7 @@ const testingCategories = [
       "Comprehensive genetic screening to identify health risks before symptoms appear",
     icon: Dna,
     color: "crimson",
-    href: "/proactive-screening",
+    href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
   {
     title: "Neurological and Neuromuscular Disorders",
@@ -26,14 +26,14 @@ const testingCategories = [
       "Testing for conditions affecting the nervous and muscular systems",
     icon: Brain,
     color: "crimson",
-    href: "/neurological-disorders",
+    href: "/services/genetic-disorders-ngs/neurological-neuromuscular-disorders",
   },
   {
     title: "Developmental and Intellectual Disabilities",
     description: "Genetic insights into cognitive and developmental traits",
     icon: Baby,
     color: "crimson",
-    href: "/developmental-disabilities",
+    href: "/services/genetic-disorders-ngs/developmental-intellectual-disabilities",
   },
   {
     title: "Metabolic and Mitochondrial Disorders",
@@ -41,14 +41,14 @@ const testingCategories = [
       "Understanding genetic factors affecting metabolism and energy production",
     icon: Zap,
     color: "crimson",
-    href: "/metabolic-disorders",
+    href: "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
   },
   {
     title: "Immunological Disorders",
     description: "Genetic testing for immune system related conditions",
     icon: Shield,
     color: "crimson",
-    href: "/immunological-disorders",
+    href: "/services/genetic-disorders-ngs/immunological-disorders",
   },
   {
     title: "Rare Genetic Disorders",
@@ -56,7 +56,7 @@ const testingCategories = [
       "Comprehensive testing for rare and unexplained genetic conditions",
     icon: FileSearch,
     color: "crimson",
-    href: "/rare-disorders",
+    href: "/services/genetic-disorders-ngs/rare-genetic-disorders",
   },
   /*   {
     title: "Other",
@@ -142,7 +142,7 @@ export default function GeneticDisordersNgs() {
               </div>
 
               <div className="max-w-6xl mx-auto">
-                <p className="text-lg text-platinum-900 leading-relaxed">
+                <p className="text-lg text-platinum-950 leading-relaxed">
                   Genetic disorders can affect many different systems in the
                   body — from how we process nutrients to how our brain,
                   muscles, and immune system function. These conditions are
@@ -152,7 +152,7 @@ export default function GeneticDisordersNgs() {
                   identify these inherited risks early — using a simple,
                   non-invasive cheek swab.
                 </p>
-                <p className="text-lg text-platinum-900 leading-relaxed mt-4">
+                <p className="text-lg text-platinum-950 leading-relaxed mt-4">
                   ATENA Genomics offers a broad range of genetic NGS testing
                   options to help you better understand your health. Below,
                   you&apos;ll find an overview of the key categories — including
@@ -188,7 +188,7 @@ export default function GeneticDisordersNgs() {
                             <h3 className="text-xl font-semibold text-black/90 group-hover:text-black/80 transition-colors">
                               {category.title}
                             </h3>
-                            <p className="text-platinum-900 text-sm leading-relaxed">
+                            <p className="text-platinum-950 text-sm leading-relaxed">
                               {category.description}
                             </p>
                           </div>
@@ -220,9 +220,11 @@ export default function GeneticDisordersNgs() {
                   to guide you through the process and help you make informed
                   decisions about your health.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

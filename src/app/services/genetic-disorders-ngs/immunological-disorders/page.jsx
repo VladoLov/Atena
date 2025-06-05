@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Dna, FileSearch } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function ImmunologicalDisorders() {
   return (
@@ -128,11 +129,14 @@ function ImmunologicalDisorders() {
                 </h3>
                 <p className="text-black/90">
                   If you would like to explore this type of testing, feel free
-                  to contact us — we're here to guide you every step of the way.
+                  to contact us — we&apos;re here to guide you every step of the
+                  way.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

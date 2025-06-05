@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Dna, FileSearch } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function NeurologicalNeuromuscularDisorders() {
   return (
@@ -28,7 +29,7 @@ function NeurologicalNeuromuscularDisorders() {
           <div className="max-w-4xl mx-auto space-y-10">
             {/* Header Section */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
                 Genetic Insights into Neurological and Neuromuscular Disorders
               </h2>
               <div className="flex items-center gap-2">
@@ -36,7 +37,7 @@ function NeurologicalNeuromuscularDisorders() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-zinc-700 text-lg font-medium">
+              <p className="text-platinum-950 text-lg font-medium">
                 Understand your risk before symptoms begin
               </p>
             </div>
@@ -50,7 +51,7 @@ function NeurologicalNeuromuscularDisorders() {
                       <Dna className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Many neurological and neuromuscular disorders have a
                         genetic basis, caused by inherited changes in DNA that
                         affect nerve or muscle function. Early detection of
@@ -76,10 +77,10 @@ function NeurologicalNeuromuscularDisorders() {
                       <Brain className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Testing Process
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-900 leading-relaxed">
                         This analysis is performed using a simple and
                         non-invasive buccal swab, which collects DNA from cheek
                         cells. Depending on the specific condition, the testing
@@ -100,10 +101,10 @@ function NeurologicalNeuromuscularDisorders() {
                       <FileSearch className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Benefits of Genetic Insights
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Genetic insights can help clarify complex symptoms,
                         guide further medical evaluation, and support informed
                         decision-making for long-term care.
@@ -117,15 +118,18 @@ function NeurologicalNeuromuscularDisorders() {
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                {/* <h3 className="text-2xl font-bold">Take the Next Step</h3> */}
+                <h3 className="text-2xl font-bold">Take the Next Step</h3>
                 <p className="text-black/90">
-                  If you're interested in learning more about testing options
-                  for neurological or neuromuscular conditions, we invite you to
-                  contact us — we're here to help you take the next step.
+                  If you&apos;re interested in learning more about testing
+                  options for neurological or neuromuscular conditions, we
+                  invite you to contact us — we&apos;re here to help you take
+                  the next step.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href="/contact">
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

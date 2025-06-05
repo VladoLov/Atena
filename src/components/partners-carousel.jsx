@@ -26,14 +26,14 @@ export default function PartnersCarousel() {
           Our Trusted Partners
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
           {partners.map((partner, index) => (
             <div
               key={index}
               className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col h-full"
             >
               <div className="flex flex-col items-center text-center flex-grow">
-                <div className="relative h-20 w-48 mb-6">
+                <div className="relative h-20 w-48 ">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
@@ -41,7 +41,7 @@ export default function PartnersCarousel() {
                     className="object-contain"
                   />
                 </div>
-                <p className="text-platinum-700 mt-4 max-w-md flex-grow">
+                {/*      <p className="text-platinum-700 mt-4 max-w-md flex-grow">
                   {partner.description}
                 </p>
                 <Link
@@ -64,7 +64,7 @@ export default function PartnersCarousel() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

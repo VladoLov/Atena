@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Dna, FileQuestion } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function RareGeneticDisorders() {
   return (
@@ -28,7 +29,7 @@ function RareGeneticDisorders() {
           <div className="max-w-4xl mx-auto space-y-10">
             {/* Header Section */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
                 Find Genetic Clarity for Rare or Unexplained Conditions
               </h2>
               <div className="flex items-center gap-2">
@@ -36,7 +37,7 @@ function RareGeneticDisorders() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-zinc-700 text-lg font-medium">
+              <p className="text-platinum-950 text-lg font-medium">
                 One swab. Profound insights into rare conditions.
               </p>
             </div>
@@ -50,7 +51,7 @@ function RareGeneticDisorders() {
                       <FileQuestion className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Rare diseases are conditions that affect a small portion
                         of the population. A disease is considered rare when it
                         affects fewer than 5 in 10,000 people. Despite their
@@ -58,7 +59,7 @@ function RareGeneticDisorders() {
                         distinct rare diseases, collectively impacting between
                         27 and 36 million people in the EU.
                       </p>
-                      <p className="text-zinc-700 leading-relaxed mt-3">
+                      <p className="text-platinum-950 leading-relaxed mt-3">
                         Approximately 80% of rare diseases have a genetic
                         origin. These conditions often present complex
                         challenges due to their diverse genetic causes, which
@@ -81,17 +82,17 @@ function RareGeneticDisorders() {
                       <Dna className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Testing Process
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Genetic testing using next-generation sequencing (NGS)
                         can help identify variants associated with a broad
                         spectrum of rare conditions. This includes syndromes and
                         disorders that are difficult to pinpoint without genetic
                         insight and may otherwise remain unexplained.
                       </p>
-                      <p className="text-zinc-700 leading-relaxed mt-3">
+                      <p className="text-platinum-950 leading-relaxed mt-3">
                         A simple and non-invasive buccal swab is used to collect
                         your DNA. Testing can be performed using targeted gene
                         panels, whole exome sequencing (WES), or whole genome
@@ -110,11 +111,11 @@ function RareGeneticDisorders() {
                       <Search className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Benefits of Genetic Insights
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
-                        Whether you're exploring the cause of unexplained
+                      <p className="text-platinum-950 leading-relaxed">
+                        Whether you&apos;re exploring the cause of unexplained
                         symptoms or want to understand your genetic status, this
                         testing offers the opportunity for greater clarity and
                         informed decision-making.
@@ -132,13 +133,15 @@ function RareGeneticDisorders() {
                   Uncover Answers to Rare Conditions
                 </h3>
                 <p className="text-black/90">
-                  If you're considering this type of testing or would like more
-                  information, feel free to contact us — we're here to guide you
-                  through the next step.
+                  If you&apos;re considering this type of testing or would like
+                  more information, feel free to contact us — we&apos;re here to
+                  guide you through the next step.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

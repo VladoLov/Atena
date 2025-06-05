@@ -10,6 +10,7 @@ import {
   Pill,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProactiveGenomicHealthScreening() {
   return (
@@ -281,22 +282,26 @@ export default function ProactiveGenomicHealthScreening() {
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-platinum-950">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                {/*
-                 */}
+                <h3 className="text-2xl font-bold">
+                  Take Control of Your Genetic Health Journey
+                </h3>
                 <p className="text-teal-50">
-                  Whether you're seeking peace of mind, early awareness, or a
-                  deeper understanding of your genetic health, this screening
+                  Whether you&apos;re seeking peace of mind, early awareness, or
+                  a deeper understanding of your genetic health, this screening
                   gives you the tools to take a proactive role in your health
                   journey — with just one non-invasive test.
                 </p>
                 <p className="text-teal-50">
-                  If you're ready to take the next step or learn more about what
-                  this screening can reveal, feel free to contact us. We're here
-                  to help guide you through your personalized genomic insight.
+                  If you&apos;re ready to take the next step or learn more about
+                  what this screening can reveal, feel free to contact us.
+                  We&apos;re here to help guide you through your personalized
+                  genomic insight.
                 </p>
-                <button className="mt-4 bg-white text-rich-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-rich-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us Today
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

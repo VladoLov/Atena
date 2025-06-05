@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Dna, FlaskRoundIcon as Flask } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function MetabolicMitochondrialDisorders() {
   return (
@@ -28,7 +29,7 @@ function MetabolicMitochondrialDisorders() {
           <div className="max-w-4xl mx-auto space-y-10">
             {/* Header Section */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
                 Genetic Insights into Neurological and Neuromuscular Disorders
               </h2>
               <div className="flex items-center gap-2">
@@ -36,7 +37,7 @@ function MetabolicMitochondrialDisorders() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-zinc-700 text-lg font-medium">
+              <p className="text-platinum-950 text-lg font-medium">
                 Understand your metabolism at the genetic level
               </p>
             </div>
@@ -50,7 +51,7 @@ function MetabolicMitochondrialDisorders() {
                       <Zap className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Inherited genetic changes can disrupt how the body
                         produces energy, processes nutrients, or breaks down
                         waste — leading to metabolic or mitochondrial disorders.
@@ -70,10 +71,10 @@ function MetabolicMitochondrialDisorders() {
                       <Dna className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Testing Process
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         With genetic testing for metabolic and mitochondrial
                         disorders, your DNA is analyzed using next-generation
                         sequencing (NGS) to detect inherited variants linked to
@@ -82,7 +83,7 @@ function MetabolicMitochondrialDisorders() {
                         mitochondrial encephalopathy, fatty acid oxidation
                         disorders, amino acid metabolism defects, and others.
                       </p>
-                      <p className="text-zinc-700 leading-relaxed mt-3">
+                      <p className="text-platinum-950 leading-relaxed mt-3">
                         A simple and non-invasive buccal swab is collected to
                         obtain your DNA. Depending on your needs, testing can
                         focus on specific metabolic or mitochondrial genes
@@ -103,10 +104,10 @@ function MetabolicMitochondrialDisorders() {
                       <Flask className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Benefits of Genetic Insights
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Understanding your genetic profile can help uncover
                         whether you carry changes associated with these complex
                         conditions — even before symptoms appear — giving you
@@ -126,13 +127,15 @@ function MetabolicMitochondrialDisorders() {
                   Start Your Genetic Testing Journey
                 </h3>
                 <p className="text-black/90">
-                  If you're interested in learning more or starting the testing
-                  process, feel free to contact us — we're here to support you
-                  every step of the way.
+                  If you&apos;re interested in learning more or starting the
+                  testing process, feel free to contact us — we&apos;re here to
+                  support you every step of the way.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href="/contact">
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

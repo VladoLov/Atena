@@ -52,7 +52,7 @@ export default function ArticleHeredityScreening() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-platinum-900 text-lg font-medium">
+              <p className="text-platinum-950 text-lg font-medium">
                 Know your genetic cancer risks before symptoms appear
               </p>
             </div>
@@ -66,7 +66,7 @@ export default function ArticleHeredityScreening() {
                       <Heart className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <p className="text-platinum-900 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Certain genetic mutations, which can be inherited, can
                         significantly increase the risk of developing cancer,
                         often before any symptoms appear. Through hereditary
@@ -90,13 +90,13 @@ export default function ArticleHeredityScreening() {
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Testing Process
                       </h3>
-                      <p className="text-platinum-900 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         A simple and non-invasive buccal swab is collected. The
                         DNA from the swab is then analyzed using next-generation
                         sequencing (NGS) technology, allowing you to uncover
                         vital information about your genetic risks.
                       </p>
-                      <p className="text-platinum-900 leading-relaxed mt-3">
+                      <p className="text-platinum-950 leading-relaxed mt-3">
                         Depending on your needs, the analysis can focus on
                         specific groups of genes (targeted panels), all
                         protein-coding regions (whole exome sequencing - WES),
@@ -118,7 +118,7 @@ export default function ArticleHeredityScreening() {
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Empowering Your Health Journey
                       </h3>
-                      <p className="text-platinum-900 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Understanding your genetic profile empowers you to take
                         proactive steps for early detection, prevention, and
                         better health outcomes. Your genes are part of your
