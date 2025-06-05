@@ -48,7 +48,7 @@ const testingCategories = [
     description: "Genetic testing for immune system related conditions",
     icon: Shield,
     color: "crimson",
-    href: "/services/genetic-disorders-ngs/immunological-disorders",
+    href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
   {
     title: "Rare Genetic Disorders",
@@ -56,7 +56,7 @@ const testingCategories = [
       "Comprehensive testing for rare and unexplained genetic conditions",
     icon: FileSearch,
     color: "crimson",
-    href: "/services/genetic-disorders-ngs/rare-genetic-disorders",
+    href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
   /*   {
     title: "Other",
@@ -84,6 +84,8 @@ const getColorClasses = (color) => {
         iconColor: "text-crimson-600",
         border: "border-crimson-200",
         hover: "hover:border-crimson-300",
+        gradient: "hover:border-crimson-300",
+        hexagon: "fill-crimson-500/10",
       };
     case "purple":
       return {
@@ -104,6 +106,53 @@ const getColorClasses = (color) => {
       };
   }
 };
+// Hexagon SVG Component
+const HexagonPattern = ({ className }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full opacity-30 ${className}`}
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <pattern
+        id="hexagon-pattern"
+        x="0"
+        y="0"
+        width="40"
+        height="35"
+        patternUnits="userSpaceOnUse"
+      >
+        <polygon
+          points="20,5 35,15 35,25 20,35 5,25 5,15"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="0.5"
+          opacity="0.3"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hexagon-pattern)" />
+
+    {/* Floating hexagons */}
+    <polygon
+      points="60,20 75,30 75,40 60,50 45,40 45,30"
+      className="animate-pulse"
+      opacity="0.2"
+    />
+    <polygon
+      points="140,60 155,70 155,80 140,90 125,80 125,70"
+      className="animate-pulse"
+      style={{ animationDelay: "1s" }}
+      opacity="0.15"
+    />
+    <polygon
+      points="80,120 95,130 95,140 80,150 65,140 65,130"
+      className="animate-pulse"
+      style={{ animationDelay: "2s" }}
+      opacity="0.1"
+    />
+  </svg>
+);
 
 export default function GeneticDisordersNgs() {
   return (
@@ -172,36 +221,102 @@ export default function GeneticDisordersNgs() {
                 return (
                   <Link key={index} href={category.href} className="group">
                     <Card
-                      className={`h-full transition-all duration-300 ${colorClasses.border} ${colorClasses.hover} hover:shadow-lg cursor-pointer`}
+                      className={`h-full transition-all duration-500 ${colorClasses.border} ${colorClasses.hover} hover:shadow-2xl hover:shadow-black/10 cursor-pointer relative overflow-hidden backdrop-blur-sm`}
                     >
-                      <CardContent className="p-6">
+                      {/* Hexagon Background Pattern */}
+                      <div className="absolute inset-0 opacity-20">
+                        <HexagonPattern className={colorClasses.hexagon} />
+                      </div>
+
+                      {/* Gradient Overlay */}
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                      />
+
+                      {/* Animated Border Effect */}
+                      <div className="absolute inset-0 rounded-lg">
+                        <div
+                          className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
+                        />
+                      </div>
+
+                      <CardContent className="p-6 relative z-10">
                         <div className="space-y-4">
-                          <div
-                            className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                          >
-                            <IconComponent
-                              className={`h-6 w-6 ${colorClasses.iconColor}`}
+                          {/* Icon Container with Modern Design */}
+                          <div className="relative">
+                            <div
+                              className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
+                            >
+                              {/* Icon background hexagon */}
+                              <div className="absolute inset-0 opacity-20">
+                                <svg
+                                  viewBox="0 0 64 64"
+                                  className="w-full h-full"
+                                >
+                                  <polygon
+                                    points="32,8 48,18 48,38 32,48 16,38 16,18"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1"
+                                    opacity="0.3"
+                                  />
+                                </svg>
+                              </div>
+                              <IconComponent
+                                className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
+                              />
+                            </div>
+
+                            {/* Floating particles effect */}
+                            <div
+                              className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
+                              style={{
+                                color: colorClasses.iconColor.replace(
+                                  "text-",
+                                  ""
+                                ),
+                              }}
                             />
                           </div>
 
-                          <div className="space-y-2">
-                            <h3 className="text-xl font-semibold text-black/90 group-hover:text-black/80 transition-colors">
+                          <div className="space-y-3">
+                            <h3 className="text-xl font-bold text-black/90 group-hover:text-black transition-colors duration-300 leading-tight">
                               {category.title}
                             </h3>
-                            <p className="text-platinum-950 text-sm leading-relaxed">
+                            <p className="text-platinum-950 text-sm leading-relaxed group-hover:text-platinum-950 transition-colors duration-300">
                               {category.description}
                             </p>
                           </div>
 
-                          <div className="pt-2">
+                          {/* Modern CTA with Arrow Animation */}
+                          <div className="pt-3 flex items-center justify-between">
                             <span
-                              className={`text-sm font-medium ${colorClasses.iconColor} group-hover:underline`}
+                              className={`text-sm font-semibold text-black/90 group-hover:underline transition-all duration-300`}
                             >
-                              Learn more →
+                              Learn more
                             </span>
+                            <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                              <div
+                                className={`w-1 h-1 rounded-full ${colorClasses.iconBg}`}
+                              />
+                              <div
+                                className={`w-2 h-1 rounded-full ${colorClasses.iconBg}`}
+                              />
+                              <div
+                                className={`w-3 h-1 rounded-full ${colorClasses.iconBg}`}
+                              />
+                            </div>
                           </div>
                         </div>
                       </CardContent>
+
+                      {/* Corner Accent */}
+                      <div
+                        className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                        style={{
+                          clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)",
+                        }}
+                      />
                     </Card>
                   </Link>
                 );

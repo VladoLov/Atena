@@ -8,6 +8,54 @@ import Link from "next/link";
 
 import { useTranslation } from "react-i18next";
 
+// Hexagon SVG Component - Copied from the first component
+const HexagonPattern = ({ className }) => (
+  <svg
+    className={`absolute inset-0 w-full h-full opacity-30 ${className}`}
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <pattern
+        id="hexagon-pattern"
+        x="0"
+        y="0"
+        width="40"
+        height="35"
+        patternUnits="userSpaceOnUse"
+      >
+        <polygon
+          points="20,5 35,15 35,25 20,35 5,25 5,15"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="0.5"
+          opacity="0.4"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hexagon-pattern)" />
+
+    {/* Floating hexagons */}
+    <polygon
+      points="60,20 75,30 75,40 60,50 45,40 45,30"
+      className="animate-pulse"
+      opacity="0.2"
+    />
+    <polygon
+      points="140,60 155,70 155,80 140,90 125,80 125,70"
+      className="animate-pulse"
+      style={{ animationDelay: "1s" }}
+      opacity="0.15"
+    />
+    <polygon
+      points="80,120 95,130 95,140 80,150 65,140 65,130"
+      className="animate-pulse"
+      style={{ animationDelay: "2s" }}
+      opacity="0.1"
+    />
+  </svg>
+);
+
 const getColorClasses = (color) => {
   switch (color) {
     case "teal":
@@ -17,6 +65,7 @@ const getColorClasses = (color) => {
         iconColor: "text-teal-600",
         border: "border-teal-200",
         hover: "hover:border-teal-300",
+        gradient: "from-teal-100 to-white", // Added gradient for teal
       };
     case "crimson":
       return {
@@ -24,7 +73,8 @@ const getColorClasses = (color) => {
         iconBg: "bg-crimson-100",
         iconColor: "text-crimson-600",
         border: "border-crimson-200",
-        hover: "hover:border-crimson-300",
+        gradient: "from-crimson-300/20 to-crimson-200/20",
+        hexagon: "fill-crimson-500/10", // Added gradient for crimson
       };
     case "purple":
       return {
@@ -33,6 +83,7 @@ const getColorClasses = (color) => {
         iconColor: "text-purple-600",
         border: "border-purple-200",
         hover: "hover:border-purple-300",
+        gradient: "from-purple-100 to-white", // Added gradient for purple
       };
 
     default:
@@ -42,6 +93,7 @@ const getColorClasses = (color) => {
         iconColor: "text-crimson-600",
         border: "border-crimson-200",
         hover: "hover:border-crimson-300",
+        gradient: "from-crimson-100 to-white", // Default gradient
       };
   }
 };
@@ -114,24 +166,7 @@ export default function GeneticDisordersIllustrated() {
                 Advanced genomic analysis to unlock insights about your health
                 and empower personalized care decisions.
               </p>
-              {/* <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-3 bg-white text-crimson-900 font-medium rounded-full hover:bg-crimson-100 transition-colors">
-                  Get Started
-                </button>
-                <button className="px-8 py-3 bg-transparent text-white border border-white font-medium rounded-full hover:bg-purple-800 transition-colors">
-                  Learn More
-                </button>
-              </div> */}
             </div>
-            {/*  <div className="md:w-1/2 flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80 relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-crimson-500 to-indigo-500 rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute inset-4 bg-gradient-to-tr from-crimson-400 to-indigo-400 rounded-full opacity-40"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Dna className="w-32 h-32 text-white opacity-80" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
 
@@ -182,32 +217,80 @@ export default function GeneticDisordersIllustrated() {
           <h2 className="text-4xl font-bold text-center text-platinum-950 mb-4">
             Our Testing Categories
           </h2>
-          <p className="text-lg text-platinum-900 text-center mb-16 max-w-4xl mx-auto">
+          <p className="text-lg text-platinum-950 text-center mb-16 max-w-4xl mx-auto">
             Explore our comprehensive range of genetic testing options designed
             to provide insights into various aspects of your health
           </p>
 
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
             {geneticDisorders.map((category, index) => {
               const colorClasses = getColorClasses(category.color);
               const IconComponent = category.icon;
 
               return category.comingSoon ? (
                 <div key={index} className="group cursor-not-allowed">
-                  <Card className="h-full bg-platinum-100 transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className="space-y-4">
-                        <div
-                          className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex items-center justify-center`}
-                        >
-                          <IconComponent
-                            className={`h-6 w-6 ${colorClasses.iconColor}`}
-                          />
-                        </div>
+                  <Card
+                    className={`h-full transition-all duration-500 ${colorClasses.border} hover:shadow-2xl hover:shadow-black/10 cursor-not-allowed relative overflow-hidden backdrop-blur-sm`}
+                  >
+                    {/* Hexagon Background Pattern */}
+                    <div className="absolute inset-0 opacity-30">
+                      <HexagonPattern className={colorClasses.hexagon} />
+                    </div>
 
-                        <span className="pt-4 text-sm font-medium text-platinum-900">
-                          Coming Soon
-                        </span>
+                    {/* Gradient Overlay */}
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    />
+
+                    {/* Animated Border Effect */}
+                    <div className="absolute inset-0 rounded-lg">
+                      <div
+                        className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
+                      />
+                    </div>
+
+                    <CardContent className="p-6 relative z-10">
+                      <div className="space-y-4">
+                        {/* Icon Container with Modern Design and "Coming Soon" on same line */}
+                        <div className="relative flex items-center gap-3">
+                          {" "}
+                          {/* Added flex and items-center for horizontal alignment */}
+                          <div
+                            className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
+                          >
+                            {/* Icon background hexagon */}
+                            <div className="absolute inset-0 opacity-20">
+                              <svg
+                                viewBox="0 0 64 64"
+                                className="w-full h-full"
+                              >
+                                <polygon
+                                  points="32,8 48,18 48,38 32,48 16,38 16,18"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="1"
+                                  opacity="0.3"
+                                />
+                              </svg>
+                            </div>
+                            <IconComponent
+                              className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
+                            />
+                          </div>
+                          {/* Floating particles effect */}
+                          <div
+                            className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
+                            style={{
+                              color: colorClasses.iconColor.replace(
+                                "text-",
+                                ""
+                              ),
+                            }}
+                          />
+                          <span className="text-sm font-medium text-platinum-900">
+                            Coming Soon
+                          </span>
+                        </div>
 
                         <div className="space-y-2">
                           <h3 className="text-xl font-semibold text-black/90">
@@ -220,7 +303,7 @@ export default function GeneticDisordersIllustrated() {
 
                         <div className="pt-2">
                           <span
-                            className={`text-sm font-medium ${colorClasses.iconColor}`}
+                            className={`text-sm font-medium text-black/90 `}
                           >
                             Learn more →
                           </span>
@@ -232,15 +315,61 @@ export default function GeneticDisordersIllustrated() {
               ) : (
                 <Link key={index} href={category.href1} className="group">
                   <Card
-                    className={`h-full transition-all duration-300 ${colorClasses.border} ${colorClasses.hover} hover:shadow-lg cursor-pointer`}
+                    className={`h-full transition-all duration-500 ${colorClasses.border} ${colorClasses.hover} hover:shadow-2xl hover:shadow-black/10 cursor-pointer relative overflow-hidden backdrop-blur-sm`}
                   >
-                    <CardContent className="p-6">
+                    {/* Hexagon Background Pattern */}
+                    <div className="absolute inset-0 opacity-20">
+                      <HexagonPattern className={colorClasses.hexagon} />
+                    </div>
+
+                    {/* Gradient Overlay */}
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    />
+
+                    {/* Animated Border Effect */}
+                    <div className="absolute inset-0 rounded-lg">
+                      <div
+                        className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
+                      />
+                    </div>
+
+                    <CardContent className="p-6 relative z-10">
                       <div className="space-y-4">
-                        <div
-                          className={`w-12 h-12 ${colorClasses.iconBg} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <IconComponent
-                            className={`h-6 w-6 ${colorClasses.iconColor}`}
+                        {/* Icon Container with Modern Design */}
+                        <div className="relative">
+                          <div
+                            className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
+                          >
+                            {/* Icon background hexagon */}
+                            <div className="absolute inset-0 opacity-20">
+                              <svg
+                                viewBox="0 0 64 64"
+                                className="w-full h-full"
+                              >
+                                <polygon
+                                  points="32,8 48,18 48,38 32,48 16,38 16,18"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="1"
+                                  opacity="0.3"
+                                />
+                              </svg>
+                            </div>
+                            <IconComponent
+                              className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
+                            />
+                          </div>
+
+                          {/* Floating particles effect */}
+                          <div
+                            className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
+                            style={{
+                              color: colorClasses.iconColor.replace(
+                                "text-",
+                                ""
+                              ),
+                            }}
                           />
                         </div>
 
@@ -255,13 +384,21 @@ export default function GeneticDisordersIllustrated() {
 
                         <div className="pt-2">
                           <span
-                            className={`text-sm font-medium ${colorClasses.iconColor} group-hover:underline`}
+                            className={`text-sm font-medium text-black/90 group-hover:underline`}
                           >
                             Learn more →
                           </span>
                         </div>
                       </div>
                     </CardContent>
+
+                    {/* Corner Accent */}
+                    <div
+                      className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                      style={{
+                        clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)",
+                      }}
+                    />
                   </Card>
                 </Link>
               );
