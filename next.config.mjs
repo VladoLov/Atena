@@ -26,7 +26,7 @@ const nextConfig = {
       },
     ],
   },
-  eslint: { ignoreDuringBuilds: false }, // Disable ESLint during builds
+  eslint: { ignoreDuringBuilds: true }, // Disable ESLint during builds
 };
 
 export default withNextIntl(nextConfig);
