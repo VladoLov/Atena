@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import { SmallLanguageSwitcher } from "@/newcomponents/SmallLanguageSwitcher";
 
 const DropDown = () => {
@@ -23,7 +23,7 @@ const DropDown = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  const { t } = useTranslation("common");
+  const t = useTranslations();
   const services = [
     {
       title: t("link.services.cancer_ngs_profiling.title"),

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, ChevronUp } from "lucide-react";
 /* import { firstHeader, services } from "@/lib/url"; */
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function FooterSection({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +41,7 @@ function FooterSection({ title, children }) {
 }
 
 export default function Footer2() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
 
   const services = [
     {

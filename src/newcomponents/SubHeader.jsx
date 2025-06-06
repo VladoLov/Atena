@@ -1,9 +1,8 @@
-"use client";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function SubHeader() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
   return (
     <section className="w-full  mx-auto px-10 pt-12 pb-16">
       <div className="container mx-auto rounded-lg  px-0 mb-12">

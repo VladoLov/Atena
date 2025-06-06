@@ -3,10 +3,10 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function SecondPartOfHeader() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {

@@ -9,7 +9,7 @@ import {
 import { useState, useRef, useEffect } from "react";
 // Assuming you have the services structure here
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function FinalNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ function FinalNavbar() {
   const [flippedSubmenus, setFlippedSubmenus] = useState({}); // Track flipped state for each submenu
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const { t } = useTranslation("common"); // Access the translation function
+  const t = useTranslations(); // Access the translation function
 
   const handleMouseEnter = (index, event) => {
     setIsOpen(true);
@@ -145,7 +145,7 @@ function FinalNavbar() {
         },
         {
           title: t("link.services.genetic_disorders_ngs.items.other_genetic", {
-            comingSoon: t("common.coming_soon"),
+            comingSoon: t("link.soon"),
           }),
           href: "/services/genetic-disorders-ngs/other-genetic",
           href1: "#",

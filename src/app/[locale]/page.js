@@ -6,7 +6,7 @@ import SubHeader from "@/newcomponents/SubHeader";
 import Image from "next/image";
 import { Suspense } from "react";
 import Loading from "./loading";
-import PartnersCarousel from "../components/partners-carousel";
+import PartnersCarousel from "../../components/partners-carousel";
 
 export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },

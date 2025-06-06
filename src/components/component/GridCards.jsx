@@ -4,10 +4,10 @@ import FlipCard from "./FlipCard";
 import { flipCardData } from "@/lib/url";
 
 import PiereCard from "@/newcomponents/PiereCard";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function GridCards() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
   const localizedCardData = flipCardData.map((card) => ({
     ...card,
     title: t(`services.${card.key}.title`),

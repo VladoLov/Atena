@@ -1,10 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-
-// Adjust path to shadcn dropdown component
-// Adjust path to shadcn dropdown component
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
@@ -14,36 +11,42 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation("common");
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const switchLanguage = (newLocale) => {
+    // Create new pathname with the new locale
+    let newPathname;
+
+    // Check if current path already has a locale
+    const hasLocale = pathname.startsWith(`/${locale}`);
+
+    if (hasLocale) {
+      // Replace current locale with new one
+      newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
+    } else {
+      // Add new locale to path
+      newPathname = `/${newLocale}${pathname}`;
+    }
+
+    // Force full page reload to ensure all data refreshes
+    window.location.href = newPathname;
+  };
 
   const languages = [
     { code: "en", text: "EN" },
-    { code: "hr", text: "BHS" },
-  ];
-  const languagesIcons = [
-    { code: "en", icon: "/sova/uk.png" },
-    { code: "hr", icon: "/sova/bosnia.gif" },
+    { code: "bhs", text: "BHS" },
   ];
 
-  const handleLanguageChange = (lang) => {
-    setSelectedLanguage(lang);
-    i18n.changeLanguage(lang);
-  };
+  const currentLanguage =
+    languages.find((lang) => lang.code === locale)?.text || languages[0].text;
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <button className="flex items-center p-2 rounded-md hover:shadow-md">
-          {/*  <Image
-            src={languages.find((lang) => lang.code === selectedLanguage)?.icon}
-            alt={selectedLanguage}
-            width={24}
-            height={24}
-          /> */}
-          <p>
-            {languages.find((lang) => lang.code === selectedLanguage)?.text}
-          </p>
+          <p>{currentLanguage}</p>
           <ChevronDown className="h-4 w-auto" />
         </button>
       </DropdownMenuTrigger>
@@ -51,11 +54,10 @@ export function LanguageSwitcher() {
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => handleLanguageChange(lang.code)}
+            onClick={() => switchLanguage(lang.code)}
             className="flex items-center gap-2 cursor-pointer w-fit"
           >
             <p>{lang.text}</p>
-            {/* <Image src={lang.icon} alt={lang.code} width={24} height={24} /> */}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

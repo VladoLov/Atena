@@ -1,9 +1,7 @@
-"use client";
-
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 function HeaderInFaramer() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <>
       <h1 className="text-4xl md:text-6xl font-bold text-lightBlue-950  drop-shadow-lg py-1 mb-7">

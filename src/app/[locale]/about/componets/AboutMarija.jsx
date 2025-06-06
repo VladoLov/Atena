@@ -1,10 +1,8 @@
-"use client";
-
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function AboutMarija() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
 
   return (
     <section className="py-16 bg-gray-50">

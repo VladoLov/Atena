@@ -1,9 +1,8 @@
 "use client";
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -13,7 +12,7 @@ export default function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState("");
-  const { t } = useTranslation("common");
+  const t = useTranslations();
 
   const handleSubmit = async (e) => {
     e.preventDefault();

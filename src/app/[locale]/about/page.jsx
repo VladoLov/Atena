@@ -1,5 +1,3 @@
-"use client";
-
 import FramerMotionImage from "./componets/FramerMotionImage";
 
 import AboutMarija from "./componets/AboutMarija";

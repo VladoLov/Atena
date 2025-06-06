@@ -1,0 +1,114 @@
+{
+  "about": {
+    "header": "Precizno genetsko testiranje za personaliziranu skrb",
+    "subheader": "ATENA Genomics posvećena je unapređenju zdravstvene njege kroz napredne tehnologije precizne genetike. Pružamo inovativna rješenja za sekvenciranje, omogućavajući personaliziranu medicinu i poboljšanje ishoda pacijenata putem pravovremenih i preciznih genetskih uvida.",
+    "leadership": "Vodstvo",
+    "profile": "Profil",
+    "marija": {
+      "bio": {
+        "part1": "Dr. Marija Vujadinović, osnivačica i direktorica odjela tehnologije u ATENA Genomics, donosi više od 15 godina iskustva u molekularnoj biotehnologiji, razvoju vakcina i GMP proizvodnji. Posvećena je unapređenju preciznog genetskog testiranja radi poboljšanja zdravstvene njege u Bosni i Hercegovini i širom regije. Doktorirala je na Univerzitetu u Amsterdamu, specijalizirajući se za razvoj vakcina baziranih na adenovirusnim vektorima, te posjeduje dvije magistarske diplome sa Vrije Universiteit Amsterdam, koje spajaju molekularne nauke i poslovne vještine.",
+        "part2": "U kompaniji Janssen Pharmaceuticals odigrala je ključnu ulogu u tranziciji vakcina, uključujući Janssen COVID-19 vakcinu, iz istraživačke u kliničku fazu. Njena ekspertiza obuhvata dizajn vakcina, GMP proizvodnju i regulatornu usklađenost. Prethodne istraživačke pozicije na Univerzitetu Utah i VU Medicinskom centru dodatno su osnažile njene vještine u molekularnoj dijagnostici i istraživanju zaraznih bolesti.",
+        "part3": "Marijin rad uključuje patente i publikacije u HPV i adenovirusnoj tehnologiji. S certifikatima sa Harvarda iz genetskog testiranja i genomike karcinoma, posvećena je transformaciji zdravstvene njege u balkanskim zemljama – genom po genom."
+      }
+    }
+  },
+  "services": {
+    "cancer_ngs_profiling": {
+      "title": "NGS Profiliranje tumora",
+      "description": "NGS u onkologiji omogućava precizno genetsko profiliranje tumora, analizu tekuće biopsije, skrining nasljednih oblika karcinoma i praćenje rezistencije na terapije protiv raka. Također, omogućava rano otkrivanje karcinoma, personaliziranu prilagodbu terapije i poboljšanu skrb za pacijente, osiguravajući preciznije liječenje i bolje ishode."
+    },
+    "genetic_disorders_ngs": {
+      "title": "NGS za Genetske poremećaje",
+      "description": "NGS omogućava rano i precizno otkrivanje nasljednih genetskih stanja, uključujući metaboličke, neurološke, razvojne i kardiovaskularne poremećaje. Time se osigurava pravovremena dijagnoza, ciljane intervencije i personalizirani tretmani, poboljšavajući ishode i kvalitetu života pacijenata."
+    },
+    "prenatal_genetic_risk_analysis": {
+      "title": "Analiza rizika u trudnoći od pojave genetskih poremećaja",
+      "description": "Neinvazivno prenatalno testiranje (NIPT) i prošireni skrining novorođenčadi pomoću NGS-a omogućavaju rano otkrivanje genetskih i hromosomskih abnormalnosti. Time se osigurava personalizirano planiranje njege, pravovremene intervencije i poboljšani dugoročni zdravstveni ishodi za fetuse i novorođenčad."
+    },
+    "genomic_response_to_pharmacotherapy": {
+      "title": "Farmakogenomika",
+      "description": "Testiranje predikcije odgovora na lijekove i neželjenih reakcija (ADRs) pomoću NGS-a omogućava personalizirano prilagođavanje terapije, smanjenje nuspojava i poboljšane ishode liječenja. Identifikacijom genetskih varijacija koje utiču na učinkovitost i sigurnost lijekova, NGS osigurava precizniju, sigurniju i učinkovitiju farmakoterapiju."
+    },
+    "pathogen_ngs_profiling": {
+      "title": "NGS Profiliranje patogena",
+      "description": "NGS omogućava brzo i precizno identificiranje patogena, otkrivanje antimikrobne rezistencije (AMR), genotipizaciju virusa i istraživanje pojave bolesti. Time se unapređuje nadzor zaraznih bolesti i osiguravaju učinkoviti odgovori javnog zdravstva, poboljšavajući prevenciju i kontrolu širenja infekcija."
+    },
+    "client_specific_ngs_testing": {
+      "title": "NGS Testiranje prilagođeno klijentima",
+      "description": "Prilagođena NGS rješenja pružaju precizne genomske uvide za dijagnostiku, istraživanja i analitiku, omogućavajući točnija i optimizirana rješenja."
+    },
+    "learn": "Saznajte više"
+  },
+  "contact_form": {
+    "header": "Kontaktirajte nas",
+    "fName": "Ime",
+    "lName": "Prezime",
+    "email": "E-pošta",
+    "description": "Opis zahtijeva",
+    "send": "Pošalji",
+    "footer": "Za sve dodatne informacije ili upite možete se obratiti timu ATENA Genomics na info@atenagenomics.com ili telefonski na"
+  },
+  "subheader": {
+    "header": "USKORO",
+    "subheader": "ATENA Genomics uskoro nudi detaljna klinička genetska testiranja za personaliziranu medicinsku njegu, preciznu dijagnostiku i rano otkrivanje bolesti. Naša testiranja pružaju ključne uvide u onkologiju, nasljedne bolesti, prenatalni skrining, farmakogenomiku i zarazne bolesti, pomažući u pravovremenoj prevenciji i liječenju. Naše usluge uključuju napredno sekvenciranje nove generacije (NGS) i prilagođena genetska rješenja za visoko preciznu dijagnostiku i medicinska istraživanja. Za više detalje i Vaše upite, možete nam se obratiti na adresu e-pošte:",
+    "conjunction": "ili telefonski na"
+  },
+  "header": {
+    "first": "Precizno",
+    "second": "Genetsko",
+    "three": "Testiranje za Personaliziranu Njegu"
+  },
+  "info": {
+    "fHeader": "Konzultantske Usluge",
+    "fText": "Pružamo stručne konzultantske usluge u molekularnoj biotehnologiji, pomažući klijentima u implementaciji naprednih tehnologija genetskog testiranja. Naši prilagođeni savjeti osiguravaju optimalna rješenja za dijagnostiku, istraživanja i zdravstvenu njegu, unapređujući donošenje odluka i ishode liječenja. Kontaktirajte nas za strateške uvide i tehničku stručnost.",
+    "bText": "KLIKNITE OVDJE DA SE POVEŽETE",
+    "sHeader": "Pridružite se ATENA Genomics Seminarima o Kliničkim NGS Testiranjima!",
+    "sText": "ATENA Genomics organizira stručne seminare o najnovijim dostignućima u genetskim testiranjima i njihovoj ulozi u personaliziranoj medicini. Edukacije vode vodeći stručnjaci, pružajući uvid u to kako genomika može transformirati zdravstvenu njegu. Pratite najave i registrirajte se za sudjelovanje!"
+  },
+  "link": {
+    "services": {
+      "services": "Usluge",
+      "cancer_ngs_profiling": {
+        "title": "NGS profilisanje karcinoma",
+        "items": {
+          "tumor_profiling_ngs": "NGS profilisanje tumora",
+          "liquid_biopsies_ngs": "NGS za tekuće biopsije",
+          "hereditary_cancer_screening": "Skrining nasljednih karcinoma",
+          "cancer_drug_resistance_monitoring": " Praćenje otpornosti na terapije protiv karcinoma"
+        }
+      },
+      "genetic_disorders_ngs": {
+        "title": "NGS za genetske poremećaje",
+        "items": {
+          "proactive_genomic": "Samoinicijativni genomski zdravstveni pregled",
+          "neurological_disorders": "Neurološki i neuromišićni poremećaji",
+          "developmental_disabilities": "Razvojni poremećaji i intelektualne poteškoće",
+          "metabolic_mitochondrial": "Metabolički i mitohondrijski poremećaji",
+          "immunological_disorders": "Imunološki poremećaji",
+          "rare_genetic_disorders": "Rijetki genetski poremećaji",
+          "other_genetic": "Ostalo"
+        }
+      },
+      "prenatal_genetic": "Analiza genetskog rizika u trudnoći",
+      "genomic_response": "Farmakogenomika",
+      "pathogen": "NGS Profilisanje patogena",
+      "client_specific": "NGS Testiranje prilagođeno klijentima"
+    },
+    "consulting": "Konzultantske usluge",
+    "information": {
+      "about": "O nama",
+      "contact": "Kontakt"
+    },
+    "account": "Moj profil",
+    "soon": "Uskoro Dostupno",
+    "language": "Jezik"
+  },
+  "footer": {
+    "text": " Omogućava rano otkrivanje genetskih poremećaja i personalizirani pristup liječenju, poboljšavajući preciznost dijagnoze i ishode terapije.",
+    "contact": "Kontaktirajte nas",
+    "info": "Informacije",
+    "cancer": "NGS profiliranje raka",
+    "genetic": "NGS genetskih poremećaja",
+    "other": "Ostale usluge"
+  }
+}

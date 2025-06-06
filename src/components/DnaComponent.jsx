@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export const DnaComponent = () => {
-  const { t } = useTranslation("common");
+  const t = useTranslations("");
   return (
     <section className="w-full container-2xl  bg-platinum-200">
       <div className="relative w-full h-dvh md:h-[100vh] clip-piere">
