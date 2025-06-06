@@ -1,12 +1,9 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Microscope, Droplet, Dna, ShieldOff } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 // Hexagon SVG Component - Copied from the first component
 const HexagonPattern = ({ className }) => (
@@ -99,7 +96,7 @@ const getColorClasses = (color) => {
 };
 
 export default function GeneticDisordersIllustrated() {
-  const { t } = useTranslation("common");
+  const t = useTranslations();
   const geneticDisorders = [
     {
       title: t("link.services.cancer_ngs_profiling.items.tumor_profiling_ngs"),

@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Pill, Dna, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Pharmacogenomics() {
   return (
@@ -154,13 +155,15 @@ function Pharmacogenomics() {
                   Personalize Your Medicine with Genetic Testing
                 </h3>
                 <p className="text-black/90">
-                  If you're interested in personalized medicine guided by your
-                  DNA, feel free to contact us — we're here to help you take the
-                  next step.
+                  If you&apos;re interested in personalized medicine guided by
+                  your DNA, feel free to contact us — we&apos;re here to help
+                  you take the next step.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us Today
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

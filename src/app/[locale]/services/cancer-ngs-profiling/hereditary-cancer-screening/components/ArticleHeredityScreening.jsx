@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Dna, Shield } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -142,9 +143,11 @@ export default function ArticleHeredityScreening() {
                   toward prevention and early detection. Knowledge is power when
                   it comes to your health.
                 </p>
-                <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                  Contact Us Today
-                </button>
+                <Link href={"/contact"}>
+                  <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                    Contact Us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

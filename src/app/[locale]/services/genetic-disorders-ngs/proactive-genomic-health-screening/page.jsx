@@ -299,7 +299,7 @@ export default function ProactiveGenomicHealthScreening() {
                 </p>
                 <Link href={"/contact"}>
                   <button className="mt-4 bg-white text-rich-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Contact Us Today
+                    Contact Us
                   </button>
                 </Link>
               </div>
