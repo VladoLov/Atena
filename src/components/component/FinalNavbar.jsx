@@ -192,7 +192,7 @@ function FinalNavbar() {
           <div className="relative">
             <Link
               href="#"
-              className="px-4 py-2 flex text-platinum-900 hover:bg-platinum-200 duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
+              className="px-4 py-2 flex text-platinum-950 hover:bg-platinum-200 duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
               aria-haspopup="true"
               aria-expanded={isOpen ? "true" : "false"}
               onMouseEnter={() => setIsOpen(true)}
@@ -222,7 +222,7 @@ function FinalNavbar() {
                     className={`block  px-4 py-2 transition-colors duration-300 ${
                       service.comingSoon
                         ? "text-platinum-500 cursor-not-allowed"
-                        : "text-platinum-900 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
+                        : "text-platinum-950 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
                     }`}
                     onMouseEnter={(event) => handleMouseEnter(index, event)}
                   >

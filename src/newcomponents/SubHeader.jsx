@@ -10,7 +10,7 @@ function SubHeader() {
           {t("subheader.header")}
         </h2> */}
 
-        <p className="text-base md:text-2xl lg:text-3xl text-platinum-900 lg:text-platinum-900  lg:leading-10  lg:font-medium tracking-wide pb-12">
+        <p className="text-semibold md:text-2xl lg:text-3xl text-platinum-950 lg:text-platinum-950  lg:leading-10  tracking-tight pb-12">
           {t("subheader.subheader")}
           <span>
             {" "}

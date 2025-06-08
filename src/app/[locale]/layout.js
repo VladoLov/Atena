@@ -1,4 +1,3 @@
-import { Poppins } from "next/font/google";
 import { Oswald } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -10,7 +9,6 @@ import Footer2 from "../../components/Footer2";
 /* import Header from "@/newcomponents/Header"; */
 import Header from "../../newcomponents/Header";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata = {
@@ -27,7 +25,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang="locale" className="scroll-smooth">
       <body
-        className={`relative  ${oswald.className} ${poppins.className}`}
+        className={`relative  ${oswald.className} `}
         suppressHydrationWarning={true}
       >
         <NextIntlClientProvider>

@@ -189,3 +189,100 @@ body {
 .clip-piere5 {
   clip-path: polygon(0 10%, 80% 0, 100% 20%, 100% 100%, 0 100%, 0 29%);
 }
+.animate-hexagon-pulse {
+  animation: hexagon-pulse 1.5s infinite alternate; /* Adjust duration and iteration */
+}
+
+@keyframes hexagon-pulse {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+@layer utilities {
+  .animate-dna-rotate {
+    animation: dnaRotate 20s linear infinite;
+  }
+
+  .animate-dna-rotate-reverse {
+    animation: dnaRotateReverse 25s linear infinite;
+  }
+
+  .animate-dna-fade {
+    animation: dnaFade 3s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 5s ease-in-out infinite alternate;
+  }
+
+  .animate-molecule-float {
+    animation: moleculeFloat 8s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes dnaRotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+@keyframes dnaRotateReverse {
+  0% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+@keyframes dnaFade {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes moleculeFloat {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) translateX(10px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(5px) translateX(-10px) rotate(240deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+  }
+}
+.clip-path-polygon-\[0_0\,100\%_30\%\,100\%_100\%\,0_100\%\] {
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+}

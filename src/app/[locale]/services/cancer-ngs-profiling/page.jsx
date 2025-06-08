@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useTranslations } from "next-intl";
+import DNAHelixCards from "@/components/HelixCard";
 
 // Hexagon SVG Component - Copied from the first component
 const HexagonPattern = ({ className }) => (
@@ -101,19 +102,19 @@ export default function GeneticDisordersIllustrated() {
     {
       title: t("link.services.cancer_ngs_profiling.items.tumor_profiling_ngs"),
       description: "Comprehensive genomic analysis of tumor tissue",
-      href: "/services/cancer-ngs-profiling/tumor-profiling-ngs",
+      href: "#",
       href1: "#",
-      icon: Microscope,
-      color: "crimson",
+      icon: "Microscope",
+      color: "platinum",
       comingSoon: true,
     },
     {
       title: t("link.services.cancer_ngs_profiling.items.liquid_biopsies_ngs"),
       description: "Non-invasive cancer detection from blood samples",
-      href: "/services/cancer-ngs-profiling/liquid-biopsies-ngs",
+      href: "#",
       href1: "#",
-      icon: Droplet,
-      color: "crimson",
+      icon: "Droplet",
+      color: "platinum",
       comingSoon: true,
     },
     {
@@ -123,7 +124,7 @@ export default function GeneticDisordersIllustrated() {
       description: "Identification of inherited cancer risk factors",
       href: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
       href1: "/services/cancer-ngs-profiling/hereditary-cancer-screening",
-      icon: Dna,
+      icon: "Dna",
       color: "crimson",
       comingSoon: false,
     },
@@ -132,10 +133,10 @@ export default function GeneticDisordersIllustrated() {
         "link.services.cancer_ngs_profiling.items.cancer_drug_resistance_monitoring"
       ),
       description: "Tracking treatment response and resistance development",
-      href: "/services/cancer-ngs-profiling/cancer-drug-resistance-monitoring",
+      href: "#",
       href1: "#",
-      icon: ShieldOff,
-      color: "crimson",
+      icon: "ShieldOff",
+      color: "platinum",
       comingSoon: true,
     },
   ];
@@ -157,7 +158,7 @@ export default function GeneticDisordersIllustrated() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Genetic Disorders NGS Testing
+                Cancer NGS profiling
               </h1>
               <p className="text-xl text-platinum-100 mb-8 max-w-lg">
                 Advanced genomic analysis to unlock insights about your health
@@ -210,7 +211,7 @@ export default function GeneticDisordersIllustrated() {
 
       {/* Testing Categories */}
       <section className="py-16 bg-platinum-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <h2 className="text-4xl font-bold text-center text-platinum-950 mb-4">
             Our Testing Categories
           </h2>
@@ -218,189 +219,9 @@ export default function GeneticDisordersIllustrated() {
             Explore our comprehensive range of genetic testing options designed
             to provide insights into various aspects of your health
           </p>
-
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            {geneticDisorders.map((category, index) => {
-              const colorClasses = getColorClasses(category.color);
-              const IconComponent = category.icon;
-
-              return category.comingSoon ? (
-                <div key={index} className="group cursor-not-allowed">
-                  <Card
-                    className={`h-full transition-all duration-500 ${colorClasses.border} hover:shadow-2xl hover:shadow-black/10 cursor-not-allowed relative overflow-hidden backdrop-blur-sm`}
-                  >
-                    {/* Hexagon Background Pattern */}
-                    <div className="absolute inset-0 opacity-30">
-                      <HexagonPattern className={colorClasses.hexagon} />
-                    </div>
-
-                    {/* Gradient Overlay */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                    />
-
-                    {/* Animated Border Effect */}
-                    <div className="absolute inset-0 rounded-lg">
-                      <div
-                        className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
-                      />
-                    </div>
-
-                    <CardContent className="p-6 relative z-10">
-                      <div className="space-y-4">
-                        {/* Icon Container with Modern Design and "Coming Soon" on same line */}
-                        <div className="relative flex items-center gap-3">
-                          {" "}
-                          {/* Added flex and items-center for horizontal alignment */}
-                          <div
-                            className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
-                          >
-                            {/* Icon background hexagon */}
-                            <div className="absolute inset-0 opacity-20">
-                              <svg
-                                viewBox="0 0 64 64"
-                                className="w-full h-full"
-                              >
-                                <polygon
-                                  points="32,8 48,18 48,38 32,48 16,38 16,18"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeWidth="1"
-                                  opacity="0.3"
-                                />
-                              </svg>
-                            </div>
-                            <IconComponent
-                              className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
-                            />
-                          </div>
-                          {/* Floating particles effect */}
-                          <div
-                            className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
-                            style={{
-                              color: colorClasses.iconColor.replace(
-                                "text-",
-                                ""
-                              ),
-                            }}
-                          />
-                          <span className="text-sm font-medium text-platinum-900">
-                            Coming Soon
-                          </span>
-                        </div>
-
-                        <div className="space-y-2">
-                          <h3 className="text-xl font-semibold text-black/90">
-                            {category.title}
-                          </h3>
-                          <p className="text-platinum-900 text-sm leading-relaxed">
-                            {category.description}
-                          </p>
-                        </div>
-
-                        <div className="pt-2">
-                          <span
-                            className={`text-sm font-medium text-black/90 `}
-                          >
-                            Learn more →
-                          </span>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              ) : (
-                <Link key={index} href={category.href1} className="group">
-                  <Card
-                    className={`h-full transition-all duration-500 ${colorClasses.border} ${colorClasses.hover} hover:shadow-2xl hover:shadow-black/10 cursor-pointer relative overflow-hidden backdrop-blur-sm`}
-                  >
-                    {/* Hexagon Background Pattern */}
-                    <div className="absolute inset-0 opacity-20">
-                      <HexagonPattern className={colorClasses.hexagon} />
-                    </div>
-
-                    {/* Gradient Overlay */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                    />
-
-                    {/* Animated Border Effect */}
-                    <div className="absolute inset-0 rounded-lg">
-                      <div
-                        className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
-                      />
-                    </div>
-
-                    <CardContent className="p-6 relative z-10">
-                      <div className="space-y-4">
-                        {/* Icon Container with Modern Design */}
-                        <div className="relative">
-                          <div
-                            className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
-                          >
-                            {/* Icon background hexagon */}
-                            <div className="absolute inset-0 opacity-20">
-                              <svg
-                                viewBox="0 0 64 64"
-                                className="w-full h-full"
-                              >
-                                <polygon
-                                  points="32,8 48,18 48,38 32,48 16,38 16,18"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeWidth="1"
-                                  opacity="0.3"
-                                />
-                              </svg>
-                            </div>
-                            <IconComponent
-                              className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
-                            />
-                          </div>
-
-                          {/* Floating particles effect */}
-                          <div
-                            className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
-                            style={{
-                              color: colorClasses.iconColor.replace(
-                                "text-",
-                                ""
-                              ),
-                            }}
-                          />
-                        </div>
-
-                        <div className="space-y-2">
-                          <h3 className="text-xl font-semibold text-black/90 group-hover:text-black/80 transition-colors">
-                            {category.title}
-                          </h3>
-                          <p className="text-platinum-900 text-sm leading-relaxed">
-                            {category.description}
-                          </p>
-                        </div>
-
-                        <div className="pt-2">
-                          <span
-                            className={`text-sm font-medium text-black/90 group-hover:underline`}
-                          >
-                            Learn more →
-                          </span>
-                        </div>
-                      </div>
-                    </CardContent>
-
-                    {/* Corner Accent */}
-                    <div
-                      className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                      style={{
-                        clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)",
-                      }}
-                    />
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
+        </div>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4">
+          <DNAHelixCards categories={geneticDisorders} />
         </div>
       </section>
 

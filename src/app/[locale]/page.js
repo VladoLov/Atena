@@ -13,7 +13,7 @@ export const metadata = {
 };
 export default function page() {
   return (
-    <div className="font-poppins">
+    <div className="font-oswald">
       <Suspense fallback={<Loading />}>
         <div>
           <DnaComponent />

@@ -10,13 +10,14 @@ import {
   MoreHorizontal,
 } from "lucide-react";
 import Link from "next/link";
+import DNAHelixCards from "@/components/HelixCard";
 
 const testingCategories = [
   {
     title: "Proactive Genomic Health Screening",
     description:
       "Comprehensive genetic screening to identify health risks before symptoms appear",
-    icon: Dna,
+    icon: "Dna",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
@@ -24,14 +25,14 @@ const testingCategories = [
     title: "Neurological and Neuromuscular Disorders",
     description:
       "Testing for conditions affecting the nervous and muscular systems",
-    icon: Brain,
+    icon: "Brain",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/neurological-neuromuscular-disorders",
   },
   {
     title: "Developmental and Intellectual Disabilities",
     description: "Genetic insights into cognitive and developmental traits",
-    icon: Baby,
+    icon: "Baby",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/developmental-intellectual-disabilities",
   },
@@ -39,14 +40,14 @@ const testingCategories = [
     title: "Metabolic and Mitochondrial Disorders",
     description:
       "Understanding genetic factors affecting metabolism and energy production",
-    icon: Zap,
+    icon: "Zap",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/metabolic-mitochondrial-disorders",
   },
   {
     title: "Immunological Disorders",
     description: "Genetic testing for immune system related conditions",
-    icon: Shield,
+    icon: "Shield",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
@@ -54,7 +55,7 @@ const testingCategories = [
     title: "Rare Genetic Disorders",
     description:
       "Comprehensive testing for rare and unexplained genetic conditions",
-    icon: FileSearch,
+    icon: "FileSearch",
     color: "crimson",
     href: "/services/genetic-disorders-ngs/proactive-genomic-health-screening",
   },
@@ -214,113 +215,7 @@ export default function GeneticDisordersNgs() {
 
             {/* Testing Categories Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {testingCategories.map((category, index) => {
-                const colorClasses = getColorClasses(category.color);
-                const IconComponent = category.icon;
-
-                return (
-                  <Link key={index} href={category.href} className="group">
-                    <Card
-                      className={`h-full transition-all duration-500 ${colorClasses.border} ${colorClasses.hover} hover:shadow-2xl hover:shadow-black/10 cursor-pointer relative overflow-hidden backdrop-blur-sm`}
-                    >
-                      {/* Hexagon Background Pattern */}
-                      <div className="absolute inset-0 opacity-20">
-                        <HexagonPattern className={colorClasses.hexagon} />
-                      </div>
-
-                      {/* Gradient Overlay */}
-                      <div
-                        className={`absolute inset-0 bg-gradient-to-br ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                      />
-
-                      {/* Animated Border Effect */}
-                      <div className="absolute inset-0 rounded-lg">
-                        <div
-                          className={`absolute inset-0 rounded-lg bg-gradient-to-r ${colorClasses.gradient} opacity-0 group-hover:opacity-50 blur-sm transition-all duration-500`}
-                        />
-                      </div>
-
-                      <CardContent className="p-6 relative z-10">
-                        <div className="space-y-4">
-                          {/* Icon Container with Modern Design */}
-                          <div className="relative">
-                            <div
-                              className={`w-16 h-16 ${colorClasses.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 relative overflow-hidden`}
-                            >
-                              {/* Icon background hexagon */}
-                              <div className="absolute inset-0 opacity-20">
-                                <svg
-                                  viewBox="0 0 64 64"
-                                  className="w-full h-full"
-                                >
-                                  <polygon
-                                    points="32,8 48,18 48,38 32,48 16,38 16,18"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="1"
-                                    opacity="0.3"
-                                  />
-                                </svg>
-                              </div>
-                              <IconComponent
-                                className={`h-8 w-8 ${colorClasses.iconColor} relative z-10`}
-                              />
-                            </div>
-
-                            {/* Floating particles effect */}
-                            <div
-                              className="absolute -top-1 -right-1 w-3 h-3 bg-current rounded-full opacity-0 group-hover:opacity-30 group-hover:animate-ping"
-                              style={{
-                                color: colorClasses.iconColor.replace(
-                                  "text-",
-                                  ""
-                                ),
-                              }}
-                            />
-                          </div>
-
-                          <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-black/90 group-hover:text-black transition-colors duration-300 leading-tight">
-                              {category.title}
-                            </h3>
-                            <p className="text-platinum-950 text-sm leading-relaxed group-hover:text-platinum-950 transition-colors duration-300">
-                              {category.description}
-                            </p>
-                          </div>
-
-                          {/* Modern CTA with Arrow Animation */}
-                          <div className="pt-3 flex items-center justify-between">
-                            <span
-                              className={`text-sm font-semibold text-black/90 group-hover:underline transition-all duration-300`}
-                            >
-                              Learn more
-                            </span>
-                            <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-                              <div
-                                className={`w-1 h-1 rounded-full ${colorClasses.iconBg}`}
-                              />
-                              <div
-                                className={`w-2 h-1 rounded-full ${colorClasses.iconBg}`}
-                              />
-                              <div
-                                className={`w-3 h-1 rounded-full ${colorClasses.iconBg}`}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-
-                      {/* Corner Accent */}
-                      <div
-                        className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${colorClasses.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                        style={{
-                          clipPath: "polygon(100% 0%, 0% 0%, 100% 100%)",
-                        }}
-                      />
-                    </Card>
-                  </Link>
-                );
-              })}
+              <DNAHelixCards categories={testingCategories} />
             </div>
 
             {/* Call to Action */}

@@ -159,6 +159,50 @@ module.exports = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
         },
+        "hexagon-pulse": {
+          // This is your animation name
+          "0%, 100%": {
+            // This combines 0% and 100%
+            opacity: "0.2",
+            transform: "scale(1)",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "scale(1.2)",
+          },
+        },
+        dnaRotate: {
+          "0%": { transform: "perspective(1000px) rotateY(0deg)" },
+          "100%": { transform: "perspective(1000px) rotateY(360deg)" },
+        },
+        dnaRotateReverse: {
+          "0%": { transform: "perspective(1000px) rotateY(360deg)" },
+          "100%": { transform: "perspective(1000px) rotateY(0deg)" },
+        },
+        dnaFade: {
+          "0%, 100%": { opacity: "0.8" },
+          "50%": { opacity: "0.3" },
+        },
+        float: {
+          "0%": { transform: "translateY(0) translateX(0)" },
+          "50%": { transform: "translateY(-10px) translateX(5px)" },
+          "100%": { transform: "translateY(0) translateX(0)" },
+        },
+        moleculeFloat: {
+          "0%": { transform: "translateY(0) translateX(0) rotate(0deg)" },
+          "33%": {
+            transform: "translateY(-15px) translateX(10px) rotate(120deg)",
+          },
+          "66%": {
+            transform: "translateY(5px) translateX(-10px) rotate(240deg)",
+          },
+          "100%": { transform: "translateY(0) translateX(0) rotate(360deg)" },
+        },
+        // Add your hexagon-pulse here if you want to use it as a utility
+        "hexagon-pulse": {
+          "0%, 100%": { opacity: "0.2", transform: "scale(1)" },
+          "50%": { opacity: "0.5", transform: "scale(1.2)" },
+        },
       },
       animation: {
         "rotate-scale": "rotateScale 3s infinite linear infinite",
@@ -173,6 +217,13 @@ module.exports = {
         "rotate-y": "rotate3dY 2s linear infinite",
         "rotate-x": "rotate3dX 4s linear infinite",
         "marquee-horizontal": "marquee-x var(--duration) infinite linear",
+        "hexagon-pulse": "hexagon-pulse 1.5s infinite alternate", // Define the animation utility class
+        "dna-rotate": "dnaRotate 20s linear infinite",
+        "dna-rotate-reverse": "dnaRotateReverse 25s linear infinite",
+        "dna-fade": "dnaFade 3s ease-in-out infinite alternate",
+        float: "float 5s ease-in-out infinite alternate",
+        "molecule-float": "moleculeFloat 8s ease-in-out infinite alternate",
+        "hexagon-pulse": "hexagon-pulse 1.5s infinite alternate",
       },
     },
     colors: {

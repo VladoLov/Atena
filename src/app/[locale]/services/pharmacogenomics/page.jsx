@@ -16,20 +16,24 @@ function Pharmacogenomics() {
             objectFit="cover"
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center">
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-              Genetic Insights for Safer, Smarter Medication Choices
-            </h2>
-            <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
-              Your genes matter — even when it comes to medicine
-            </p>
+          {/* The main overlay div */}
+          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-wrap flex-col items-start justify-center">
+            {/* This is the content container for the text */}
+            <div className="text-white text-center px-4 md:text-left md:w-3/5 lg:w-2/4 xl:w-3/5 md:ml-8 lg:ml-12">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+                Genetic Insights for Safer, Smarter Medication Choices
+              </h2>
+              <p className="mt-2 text-lg md:text-xl lg:text-2xl">
+                Your genes matter — even when it comes to medicine
+              </p>
+            </div>
           </div>
         </section>
         <div className="container mx-auto py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {/* Header Section */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
                 Genetic Insights for Safer, Smarter Medication Choices
               </h2>
               <div className="flex items-center gap-2">
@@ -37,7 +41,7 @@ function Pharmacogenomics() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-zinc-700 text-lg font-medium">
+              <p className="text-platinum-950 text-lg font-medium">
                 Your genes matter — even when it comes to medicine.
               </p>
             </div>
@@ -51,7 +55,7 @@ function Pharmacogenomics() {
                       <Pill className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Not all medications work the same way for everyone. Your
                         genes play a key role in how your body processes and
                         responds to certain drugs. Pharmacogenomic testing helps
@@ -71,10 +75,10 @@ function Pharmacogenomics() {
                       <Dna className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Testing Process
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed">
+                      <p className="text-platinum-950 leading-relaxed">
                         Using a simple and non-invasive buccal swab, we collect
                         your DNA and analyze it with next-generation sequencing
                         (NGS) or targeted genotyping methods. This testing looks
@@ -96,14 +100,14 @@ function Pharmacogenomics() {
                       <CheckCircle className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-zinc-900">
+                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         Applications
                       </h3>
-                      <p className="text-zinc-700 leading-relaxed mb-4">
+                      <p className="text-platinum-950 leading-relaxed mb-4">
                         Pharmacogenomic testing is especially useful when
                         considering medications in areas like:
                       </p>
-                      <ul className="space-y-2 text-zinc-700">
+                      <ul className="space-y-2 text-platinum-950">
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
@@ -137,7 +141,7 @@ function Pharmacogenomics() {
                           <span>Gastroenterology (e.g., PPIs)</span>
                         </li>
                       </ul>
-                      <p className="text-zinc-700 leading-relaxed mt-4">
+                      <p className="text-platinum-950 leading-relaxed mt-4">
                         Whether you're just beginning a new treatment or looking
                         to optimize current medications, this test provides
                         valuable insight based on your unique genetic profile.
