@@ -4,6 +4,7 @@
 import { useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 // --- ADD THESE IMPORTS TO THIS FILE ---
 import {
@@ -522,6 +523,7 @@ const HexagonPattern = ({ className }) => (
 );
 
 export default function DNAHelixCards({ categories }) {
+  const t = useTranslations("helixCard");
   const cardRefs = useRef([]);
 
   useEffect(() => {
@@ -624,7 +626,7 @@ export default function DNAHelixCards({ categories }) {
                 {/* Modern CTA with Arrow Animation (disabled) */}
                 <div className="pt-3 flex items-center justify-between">
                   <span className={`text-sm font-semibold text-platinum-900`}>
-                    Coming soon
+                    {t("coming")}
                   </span>
                   {/* No arrow animation for disabled cards */}
                 </div>
@@ -725,7 +727,7 @@ export default function DNAHelixCards({ categories }) {
                   <span
                     className={`text-sm font-semibold text-black group-hover:underline transition-all duration-300`}
                   >
-                    Learn more
+                    {t("learn")}
                   </span>
                   <div className="flex items-center space-x-1 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                     <div

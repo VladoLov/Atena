@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import Footer2 from "../../components/Footer2";
 /* import Header from "@/newcomponents/Header"; */
 import Header from "../../newcomponents/Header";
+import { setRequestLocale } from "next-intl/server";
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
@@ -22,6 +23,7 @@ export default async function RootLayout({ children, params }) {
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+  setRequestLocale(locale);
   return (
     <html lang="locale" className="scroll-smooth">
       <body

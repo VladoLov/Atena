@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 function Info() {
   const t = useTranslations();
@@ -15,12 +16,14 @@ function Info() {
           <p className="text-start pb-8 text-base lg:text-xl">
             {t("info.fText")}
           </p>
-          <Button
-            variant="link"
-            className="text-base lg:text-xl mb-8 text-start  font-semibold"
-          >
-            {t("info.bText")}
-          </Button>
+          {/*  <Link href="/contact">
+            <Button
+              variant="link"
+              className="text-base lg:text-xl mb-8 text-start p-0  font-semibold"
+            >
+              {t("info.bText")}
+            </Button>
+          </Link> */}
         </div>
 
         {/* First Image */}
@@ -60,12 +63,12 @@ function Info() {
           <p className="text-start pb-8 text-base lg:text-xl">
             {t("info.fText")}
           </p>
-          <Button
+          {/*   <Button
             variant="link"
-            className="text-base lg:text-xl mb-8 text-start font-semibold"
+            className="text-base lg:text-xl mb-8 gap-0 text-start  p-0  font-semibold"
           >
             {t("info.bText")}
-          </Button>
+          </Button> */}
         </div>
 
         {/* First Image */}

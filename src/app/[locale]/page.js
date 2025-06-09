@@ -4,18 +4,31 @@ import ContactForm from "@/components/ContatForm";
 import Info from "@/newcomponents/Info";
 import SubHeader from "@/newcomponents/SubHeader";
 import Image from "next/image";
-import { Suspense } from "react";
+import { Suspense, use } from "react";
 import Loading from "./loading";
 import PartnersCarousel from "../../components/partners-carousel";
 
-export const metadata = {
+import { getTranslations } from "next-intl/server";
+
+/* export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
-};
+}; */
+export async function generateMetadata() {
+  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+
+  return {
+    title: {
+      template: `%s | ATENA Genomics`, // This will append " | ATENA Genomics" to other page titles
+      default: t("homePage.title"), // Default title for this specific home page
+    },
+    description: t("homePage.description"),
+  };
+}
 export default function page() {
   return (
     <div className="font-oswald">
       <Suspense fallback={<Loading />}>
-        <div>
+        <div className="bg-gradient-to-b from-white to-platinum-200">
           <DnaComponent />
         </div>
         {/* <div className="w-full bg-gradient-to-bl from-white from-10% via-white via-30% to-lightblue-300 to-90%  relative"> */}

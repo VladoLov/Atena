@@ -1,9 +1,22 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Dna, FileSearch } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+
+  return {
+    title: t("immunologicalDisordersPage.title"), // Specific title for this page
+    description: t("immunologicalDisordersPage.description"),
+    keywords: t("immunologicalDisordersPage.keywords"),
+  };
+}
+
 function ImmunologicalDisorders() {
+  const t = useTranslations("ImmunologicalDisorders");
   return (
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
@@ -18,10 +31,10 @@ function ImmunologicalDisorders() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-              Explore Your Genetic Risk for Immune System Disorders
+              {t("headline")}
             </h2>
             <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
-              Simple testing for deeper insight into immune-related conditions
+              {t("tagline")}
             </p>
           </div>
         </section>
@@ -30,7 +43,7 @@ function ImmunologicalDisorders() {
             {/* Header Section */}
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
-                Explore Your Genetic Risk for Immune System Disorders
+                {t("headline")}
               </h2>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
@@ -38,8 +51,7 @@ function ImmunologicalDisorders() {
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
               <p className="text-platinum-950 text-lg font-medium">
-                Simple testing for deeper insight into immune-related
-                conditions.
+                {t("tagline")}
               </p>
             </div>
 
@@ -53,22 +65,10 @@ function ImmunologicalDisorders() {
                     </div>
                     <div>
                       <p className="text-platinum-950 leading-relaxed">
-                        Your immune system relies on many genes working together
-                        to protect your body. When changes occur in these genes,
-                        they can lead to inherited immune conditions that affect
-                        how your body responds to infections or immune
-                        challenges.
+                        {t("paragraph1")}
                       </p>
                       <p className="text-platinum-950 leading-relaxed mt-3">
-                        Genetic testing can identify inherited variants linked
-                        to primary immunodeficiencies such as severe combined
-                        immunodeficiency (SCID), chronic granulomatous disease
-                        (CGD), common variable immunodeficiency (CVID),
-                        complement deficiencies, and others. Some of these
-                        conditions appear early in life, while others may only
-                        become noticeable later. In certain cases, you may carry
-                        genetic changes without symptoms, but still benefit from
-                        knowing your status.
+                        {t("paragraph2")}
                       </p>
                     </div>
                   </div>
@@ -83,16 +83,10 @@ function ImmunologicalDisorders() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Testing Process
+                        {t("headline2")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed">
-                        A simple and non-invasive buccal swab is collected to
-                        obtain your DNA. This sample is then analyzed using
-                        next-generation sequencing (NGS) to look for changes in
-                        genes related to immune system function. Depending on
-                        your needs, the analysis may use targeted panels, whole
-                        exome sequencing (WES), or whole genome sequencing (WGS)
-                        to provide different levels of insight.
+                        {t("paragraph3")}
                       </p>
                     </div>
                   </div>
@@ -107,13 +101,10 @@ function ImmunologicalDisorders() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Benefits of Genetic Insights
+                        {t("headline3")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed">
-                        Understanding your genetic profile can help reveal
-                        whether you carry changes that affect immune function —
-                        even before symptoms appear. This insight can support
-                        proactive, informed decisions about your health.
+                        {t("paragraph4")}
                       </p>
                     </div>
                   </div>
@@ -124,17 +115,11 @@ function ImmunologicalDisorders() {
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                <h3 className="text-2xl font-bold">
-                  Discover Your Immune System Genetics
-                </h3>
-                <p className="text-black/90">
-                  If you would like to explore this type of testing, feel free
-                  to contact us — we&apos;re here to guide you every step of the
-                  way.
-                </p>
+                <h3 className="text-2xl font-bold">{t("contactHeader")}</h3>
+                <p className="text-black/90">{t("contactText")}</p>
                 <Link href={"/contact"}>
                   <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Contact Us
+                    {t("contact")}
                   </button>
                 </Link>
               </div>

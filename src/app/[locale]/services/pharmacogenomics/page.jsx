@@ -1,9 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Pill, Dna, CheckCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+
+  return {
+    title: t("pharmacogenomicsPage.title"), // Specific title for this page
+    description: t("pharmacogenomicsPage.description"),
+    keywords: t("pharmacogenomicsPage.keywords"),
+  };
+}
 function Pharmacogenomics() {
+  const t = useTranslations("Pharmacogenomics");
   return (
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
@@ -21,10 +32,10 @@ function Pharmacogenomics() {
             {/* This is the content container for the text */}
             <div className="text-white text-center px-4 md:text-left md:w-3/5 lg:w-2/4 xl:w-3/5 md:ml-8 lg:ml-12">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-                Genetic Insights for Safer, Smarter Medication Choices
+                {t("headline")}
               </h2>
               <p className="mt-2 text-lg md:text-xl lg:text-2xl">
-                Your genes matter — even when it comes to medicine
+                {t("tagline")}
               </p>
             </div>
           </div>
@@ -34,7 +45,7 @@ function Pharmacogenomics() {
             {/* Header Section */}
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
-                Genetic Insights for Safer, Smarter Medication Choices
+                {t("headline")}
               </h2>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
@@ -42,7 +53,7 @@ function Pharmacogenomics() {
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
               <p className="text-platinum-950 text-lg font-medium">
-                Your genes matter — even when it comes to medicine.
+                {t("tagline")}
               </p>
             </div>
 
@@ -56,12 +67,7 @@ function Pharmacogenomics() {
                     </div>
                     <div>
                       <p className="text-platinum-950 leading-relaxed">
-                        Not all medications work the same way for everyone. Your
-                        genes play a key role in how your body processes and
-                        responds to certain drugs. Pharmacogenomic testing helps
-                        uncover how your DNA influences your response to
-                        medications — offering a path toward safer, more
-                        effective treatment choices.
+                        {t("paragraph1")}
                       </p>
                     </div>
                   </div>
@@ -76,17 +82,10 @@ function Pharmacogenomics() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Testing Process
+                        {t("headline2")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed">
-                        Using a simple and non-invasive buccal swab, we collect
-                        your DNA and analyze it with next-generation sequencing
-                        (NGS) or targeted genotyping methods. This testing looks
-                        at specific genes involved in drug metabolism, such as
-                        CYP2D6, CYP2C19, TPMT, and others. The results can help
-                        identify which medications may be more effective for
-                        you, which may cause side effects, or which may require
-                        dose adjustments.
+                        {t("paragraph2")}
                       </p>
                     </div>
                   </div>
@@ -101,50 +100,45 @@ function Pharmacogenomics() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Applications
+                        {t("headline3")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed mb-4">
-                        Pharmacogenomic testing is especially useful when
-                        considering medications in areas like:
+                        {t("paragraph3")}
                       </p>
                       <ul className="space-y-2 text-platinum-950">
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
                           </span>
-                          <span>
-                            Mental health (antidepressants, antipsychotics)
-                          </span>
+                          <span>{t("list.item1")}</span>
                         </li>
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
                           </span>
-                          <span>Cardiology (anticoagulants, statins)</span>
+                          <span>{t("list.item2")}</span>
                         </li>
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
                           </span>
-                          <span>Pain management (opioids)</span>
+                          <span>{t("list.item3")}</span>
                         </li>
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
                           </span>
-                          <span>Oncology (chemotherapy selection)</span>
+                          <span>{t("list.item4")}</span>
                         </li>
                         <li className="flex items-start">
                           <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-crimson-100 text-crimson-600 mr-2">
                             •
                           </span>
-                          <span>Gastroenterology (e.g., PPIs)</span>
+                          <span>{t("list.item5")}</span>
                         </li>
                       </ul>
                       <p className="text-platinum-950 leading-relaxed mt-4">
-                        Whether you're just beginning a new treatment or looking
-                        to optimize current medications, this test provides
-                        valuable insight based on your unique genetic profile.
+                        {t("paragraph4")}
                       </p>
                     </div>
                   </div>
@@ -155,17 +149,11 @@ function Pharmacogenomics() {
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                <h3 className="text-2xl font-bold">
-                  Personalize Your Medicine with Genetic Testing
-                </h3>
-                <p className="text-black/90">
-                  If you&apos;re interested in personalized medicine guided by
-                  your DNA, feel free to contact us — we&apos;re here to help
-                  you take the next step.
-                </p>
+                <h3 className="text-2xl font-bold">{t("contactHeader")}</h3>
+                <p className="text-black/90">{t("contactText")}</p>
                 <Link href={"/contact"}>
                   <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Contact Us Today
+                    {t("contact")}
                   </button>
                 </Link>
               </div>

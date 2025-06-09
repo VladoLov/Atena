@@ -1,9 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Dna, FileSearch } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+
+  return {
+    title: t("neurologicalNeuromuscularDisordersPage.title"), // Specific title for this page
+    description: t("neurologicalNeuromuscularDisordersPage.description"),
+    keywords: t("neurologicalNeuromuscularDisordersPage.keywords"),
+  };
+}
 function NeurologicalNeuromuscularDisorders() {
+  const t = useTranslations("NeurologicalNeuromuscularDisorders");
   return (
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
@@ -18,10 +30,10 @@ function NeurologicalNeuromuscularDisorders() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-              Genetic Insights into Neurological and Neuromuscular Disorders
+              {t("headline")}
             </h2>
             <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
-              Understand your risk before symptoms begin
+              {t("tagline")}
             </p>
           </div>
         </section>
@@ -30,7 +42,7 @@ function NeurologicalNeuromuscularDisorders() {
             {/* Header Section */}
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
-                Genetic Insights into Neurological and Neuromuscular Disorders
+                {t("headline")}
               </h2>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
@@ -38,7 +50,7 @@ function NeurologicalNeuromuscularDisorders() {
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
               <p className="text-platinum-950 text-lg font-medium">
-                Understand your risk before symptoms begin
+                {t("tagline")}
               </p>
             </div>
 
@@ -52,18 +64,7 @@ function NeurologicalNeuromuscularDisorders() {
                     </div>
                     <div>
                       <p className="text-platinum-950 leading-relaxed">
-                        Many neurological and neuromuscular disorders have a
-                        genetic basis, caused by inherited changes in DNA that
-                        affect nerve or muscle function. Early detection of
-                        these genetic variants can help reveal whether you carry
-                        changes linked to neurological or neuromuscular
-                        conditions — even before symptoms develop. Through
-                        advanced genetic testing, your DNA is analyzed using
-                        next-generation sequencing (NGS) technology to detect
-                        mutations associated with conditions such as muscular
-                        dystrophies, hereditary neuropathies, epilepsy
-                        syndromes, ataxias, and neurodevelopmental disorders,
-                        among others.
+                        {t("paragraph1")}
                       </p>
                     </div>
                   </div>
@@ -78,16 +79,10 @@ function NeurologicalNeuromuscularDisorders() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Testing Process
+                        {t("headline2")}
                       </h3>
                       <p className="text-platinum-900 leading-relaxed">
-                        This analysis is performed using a simple and
-                        non-invasive buccal swab, which collects DNA from cheek
-                        cells. Depending on the specific condition, the testing
-                        may focus on targeted gene panels, whole exome
-                        sequencing (WES), or whole genome sequencing (WGS),
-                        offering different levels of detail based on clinical
-                        need.
+                        {t("paragraph2")}
                       </p>
                     </div>
                   </div>
@@ -102,12 +97,10 @@ function NeurologicalNeuromuscularDisorders() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                        Benefits of Genetic Insights
+                        {t("headline3")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed">
-                        Genetic insights can help clarify complex symptoms,
-                        guide further medical evaluation, and support informed
-                        decision-making for long-term care.
+                        {t("paragraph3")}
                       </p>
                     </div>
                   </div>
@@ -118,16 +111,11 @@ function NeurologicalNeuromuscularDisorders() {
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                <h3 className="text-2xl font-bold">Take the Next Step</h3>
-                <p className="text-black/90">
-                  If you&apos;re interested in learning more about testing
-                  options for neurological or neuromuscular conditions, we
-                  invite you to contact us — we&apos;re here to help you take
-                  the next step.
-                </p>
+                <h3 className="text-2xl font-bold">{t("contactHeader")}</h3>
+                <p className="text-black/90">{t("contactText")}</p>
                 <Link href="/contact">
                   <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Contact Us
+                    {t("contact")}
                   </button>
                 </Link>
               </div>

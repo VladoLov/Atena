@@ -11,8 +11,21 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata() {
+  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+
+  return {
+    title: t("proactiveGenomicHealthScreeningPage.title"), // Specific title for this page
+    description: t("proactiveGenomicHealthScreeningPage.description"),
+    keywords: t("proactiveGenomicHealthScreeningPage.keywords"),
+  };
+}
 
 export default function ProactiveGenomicHealthScreening() {
+  const t = useTranslations("ProactiveGenomicHealthScreening");
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <main className="w-full ">
@@ -27,7 +40,7 @@ export default function ProactiveGenomicHealthScreening() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-              Proactive Genomic Health Screening
+              {t("headline")}
             </h2>
             {/*  <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
               Simple testing. Powerful knowledge. Healthier choices.
@@ -41,7 +54,7 @@ export default function ProactiveGenomicHealthScreening() {
             {/* Header Section */}
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
-                Proactive Genomic Health Screening
+                {t("headline")}
               </h2>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
@@ -49,12 +62,7 @@ export default function ProactiveGenomicHealthScreening() {
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
               <p className="text-platinum-950 text-lg leading-relaxed">
-                Your DNA carries valuable information that can help you better
-                understand your health — not only today, but for the future.
-                With Proactive Genomic Health Screening, you have the
-                opportunity to uncover hidden genetic risks before symptoms
-                arise, empowering you to make informed, preventive decisions
-                about your well-being.
+                {t("introParagraph1")}
               </p>
             </div>
 
@@ -67,15 +75,9 @@ export default function ProactiveGenomicHealthScreening() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2 text-platinum-950">
-                      How It Works
+                      {t("headline2")}
                     </h3>
-                    <p className="text-platinum-950">
-                      Using a quick, non-invasive buccal swab (cheek swab), we
-                      collect a DNA sample that is analyzed using advanced
-                      next-generation sequencing (NGS) technology. This approach
-                      allows us to detect a wide range of inherited genetic
-                      changes, offering insights into multiple areas of health.
-                    </p>
+                    <p className="text-platinum-950">{t("introParagraph2")}</p>
                   </div>
                 </div>
               </CardContent>
@@ -84,8 +86,7 @@ export default function ProactiveGenomicHealthScreening() {
             {/* Screening Areas Section */}
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-platinum-950">
-                Through a single sample, we can screen for potential risks in
-                the following areas:
+                {t("introParagraph3")}
               </h3>
 
               <Tabs defaultValue="cancer" className="w-full">
@@ -94,43 +95,43 @@ export default function ProactiveGenomicHealthScreening() {
                     value="cancer"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Cancer
+                    {t("categories.cancer")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="neuro"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Neurological
+                    {t("categories.neurological")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="developmental"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Developmental
+                    {t("categories.developmental")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="metabolic"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Metabolic
+                    {t("categories.metabolic")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="immunological"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Immunological
+                    {t("categories.immunological")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="rare"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Rare Disorders
+                    {t("categories.rare")}
                   </TabsTrigger>
                   <TabsTrigger
                     value="pharma"
                     className="data-[state=active]:bg-crimson-100 data-[state=active]:text-crimson-700"
                   >
-                    Pharmacogenomics
+                    {t("categories.pharmacogenomics")}
                   </TabsTrigger>
                 </TabsList>
 
@@ -143,12 +144,10 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Hereditary Cancer Screening
+                            {t("hereditaryCancerScreening.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Detect inherited mutations that increase the risk of
-                            cancers such as breast, ovarian, colorectal,
-                            prostate, and others — even before symptoms appear.
+                            {t("hereditaryCancerScreening.description")}
                           </p>
                         </div>
                       </CardContent>
@@ -163,12 +162,12 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Neurological and Neuromuscular Disorders
+                            {t("neurologicalNeuromuscularDisorders.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Identify genetic variants linked to conditions that
-                            affect the nervous or muscular systems, helping to
-                            uncover personal risk or carrier status.
+                            {t(
+                              "neurologicalNeuromuscularDisorders.description"
+                            )}
                           </p>
                         </div>
                       </CardContent>
@@ -183,12 +182,12 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Developmental and Intellectual Disabilities
+                            {t("developmentalIntellectualDisabilities.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Explore whether you carry genetic changes associated
-                            with neurodevelopmental challenges, including
-                            learning difficulties and related conditions.
+                            {t(
+                              "developmentalIntellectualDisabilities.description"
+                            )}
                           </p>
                         </div>
                       </CardContent>
@@ -203,12 +202,10 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Metabolic and Mitochondrial Disorders
+                            {t("metabolicMitochondrialDisorders.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Gain insight into inherited changes that may affect
-                            how your cells produce energy or process key
-                            nutrients.
+                            {t("metabolicMitochondrialDisorders.description")}
                           </p>
                         </div>
                       </CardContent>
@@ -223,12 +220,10 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Immunological Disorders
+                            {t("immunologicalDisorders.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Understand whether you carry genetic variants
-                            related to primary immunodeficiencies that impact
-                            immune function.
+                            {t("immunologicalDisorders.description")}
                           </p>
                         </div>
                       </CardContent>
@@ -243,12 +238,10 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Rare Genetic Disorders
+                            {t("rareGeneticDisorders.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Explore your genome for rare but impactful
-                            conditions that may otherwise go undetected or
-                            remain unexplained.
+                            {t("rareGeneticDisorders.description")}
                           </p>
                         </div>
                       </CardContent>
@@ -263,13 +256,10 @@ export default function ProactiveGenomicHealthScreening() {
                         </div>
                         <div>
                           <h4 className="text-xl font-semibold mb-2 text-crimson-700">
-                            Pharmacogenomics
+                            {t("pharmacogenomics.title")}
                           </h4>
                           <p className="text-platinum-950">
-                            Learn how your genes influence your response to
-                            medications and discover which treatments may be
-                            more effective or better tolerated based on your
-                            DNA.
+                            {t("pharmacogenomics.description")}
                           </p>
                         </div>
                       </CardContent>
@@ -278,28 +268,32 @@ export default function ProactiveGenomicHealthScreening() {
                 </div>
               </Tabs>
             </div>
-
+            <Card className="border-crimson-100 bg-gradient-to-br from-crimson-50 to-white">
+              <CardContent className="pt-6">
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full">
+                    <Shield className="h-10 w-10 text-crimson-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-platinum-950">
+                      {t("headline3")}
+                    </h3>
+                    <p className="text-platinum-950 leading-relaxed">
+                      {t("paragraph4")}
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-platinum-950">
               <div className="max-w-3xl mx-auto text-center space-y-4">
-                <h3 className="text-2xl font-bold">
-                  Take Control of Your Genetic Health Journey
-                </h3>
-                <p className="text-teal-50">
-                  Whether you&apos;re seeking peace of mind, early awareness, or
-                  a deeper understanding of your genetic health, this screening
-                  gives you the tools to take a proactive role in your health
-                  journey — with just one non-invasive test.
-                </p>
-                <p className="text-teal-50">
-                  If you&apos;re ready to take the next step or learn more about
-                  what this screening can reveal, feel free to contact us.
-                  We&apos;re here to help guide you through your personalized
-                  genomic insight.
-                </p>
+                <h3 className="text-2xl font-bold">{t("contactHeader")}</h3>
+
+                <p className="text-teal-50">{t("contactText")}</p>
                 <Link href={"/contact"}>
                   <button className="mt-4 bg-white text-rich-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-                    Contact Us
+                    {t("contact")}
                   </button>
                 </Link>
               </div>

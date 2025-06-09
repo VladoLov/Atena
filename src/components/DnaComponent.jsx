@@ -6,7 +6,8 @@ import { useTranslations } from "next-intl";
 export const DnaComponent = () => {
   const t = useTranslations("");
   return (
-    <section className="w-full container-2xl ">
+    <section className="w-full container-2xl  ">
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-white  z-0" /> */}
       <div className="relative w-full h-dvh md:h-[100vh] clip-piere">
         {/* Background Image */}
         <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
@@ -26,21 +27,23 @@ export const DnaComponent = () => {
         </div>
 
         {/* Content Container */}
-        <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+        <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 lg:pb-12 xl:pb-24">
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start  lg:text-left">
             <h1 className="slide-in-from-left text-oswald font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
               {/* Mobile: 2xl (24px) */}
-              <span className="block text-4xl leading-tight sm:hidden">
+              <span className="block text-5xl  leading-tight sm:hidden">
                 {t("header.first")}{" "}
-                <span className="text-crimson-500">{t("header.second")}</span>{" "}
+                <span className="text-crimson-500 pr-4">
+                  {t("header.second")}
+                </span>{" "}
                 {t("header.three")}
               </span>
 
               {/* Small: 3xl (30px) */}
               <span className="hidden sm:block md:hidden text-5xl leading-tight">
                 {t("header.first")}{" "}
-                <span className="text-crimson-500">{t("header.second")}</span>{" "}
+                <span className="text-crimson-500 ">{t("header.second")}</span>{" "}
                 {t("header.three")}
               </span>
 
@@ -52,14 +55,14 @@ export const DnaComponent = () => {
               </span>
 
               {/* Large: 6xl (60px) */}
-              <span className="hidden lg:block xl:hidden text-7xl leading-tight">
+              <span className="hidden lg:block xl:hidden text-7xl font-bold leading-120">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500">{t("header.second")}</span>{" "}
                 {t("header.three")}
               </span>
 
               {/* Extra Large: 8xl (96px) */}
-              <span className="hidden xl:block text-8xl leading-tight">
+              <span className="hidden xl:block text-8xl font-bold leading-110">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500">{t("header.second")}</span>{" "}
                 {t("header.three")}
@@ -70,7 +73,7 @@ export const DnaComponent = () => {
           {/* Logo Container */}
           <div className="w-full lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0 animate-in slide-in-from-right duration-700 ease-in-out">
             {/* Mobile Logo - Smaller */}
-            <div className="block sm:hidden">
+            {/* <div className="block sm:hidden">
               <Image
                 src="/sova/NewLogo.png"
                 alt="Atena logotip"
@@ -78,7 +81,7 @@ export const DnaComponent = () => {
                 height={180}
                 className="drop-shadow-lg"
               />
-            </div>
+            </div> */}
 
             {/* Small/Medium Logo */}
             <div className="hidden sm:block lg:hidden">

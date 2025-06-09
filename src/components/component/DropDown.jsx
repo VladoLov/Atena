@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Globe, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -114,11 +114,10 @@ const DropDown = () => {
               )}
             </DropdownMenuItem>
           ))}
-          <DropdownMenuSeparator />
-          <DropdownMenuSeparator />
-          <Button className="bg-crimson-500 text-black w-9/12 ">
+
+          {/* <Button className="bg-crimson-500 text-black w-9/12 ">
             <label>{t("link.account")}</label> {t("link.soon")}
-          </Button>
+          </Button> */}
           <DropdownMenuSeparator />
           <DropdownMenuItem className="space-x-2 flex items-center justify-center">
             {t("link.language")} <Globe className="w-4 h-auto ml-2 " />:{" "}

@@ -111,5 +111,299 @@
     "cancer": "Cancer NGS Profiling",
     "genetic": "Genetic Disorders NGS",
     "other": "Other Services"
+  },
+  "GeneticDisorders": {
+    "head1": "Genetic Disorders",
+    "head2": "Genetic Disorders NGS",
+    "sub1": "Genetic disorders can affect many different systems in the body — from how we process nutrients to how our brain, muscles, and immune system function. These conditions are often caused by changes in our DNA that are present from birth, even if no symptoms are immediately visible. With next-generation sequencing (NGS) technology, we can now identify these inherited risks early — using a simple, non-invasive cheek swab.",
+    "sub2": "ATENA Genomics offers a broad range of genetic NGS testing options to help you better understand your health. Below, you'll find an overview of the key categories — including proactive health screening, hereditary cancers, neurological and metabolic conditions, and more — all designed to support early detection, prevention, and personalized care.",
+    "bottomCardHead": "Ready to Explore Your Genetic Health?",
+    "bottomCardText": "Take the first step towards understanding your genetic profile with our comprehensive NGS testing options. Our team is here to guide you through the process and help you make informed decisions about your health.",
+    "contact": "Contact Us",
+
+    "proactiveGenomicHealthScreening": {
+      "title": "Proactive Genomic Health Screening",
+      "description": "Comprehensive genetic screening to identify health risks before symptoms appear"
+    },
+    "neurologicalNeuromuscularDisorders": {
+      "title": "Neurological and Neuromuscular Disorders",
+      "description": "Testing for conditions affecting the nervous and muscular systems"
+    },
+    "developmentalIntellectualDisabilities": {
+      "title": "Developmental and Intellectual Disabilities",
+      "description": "Genetic insights into cognitive and developmental traits"
+    },
+    "metabolicMitochondrialDisorders": {
+      "title": "Metabolic and Mitochondrial Disorders",
+      "description": "Understanding genetic factors affecting metabolism and energy production"
+    },
+    "immunologicalDisorders": {
+      "title": "Immunological Disorders",
+      "description": "Genetic testing for immune system related conditions"
+    },
+    "rareGeneticDisorders": {
+      "title": "Rare Genetic Disorders",
+      "description": "Comprehensive testing for rare and unexplained genetic conditions"
+    }
+  },
+  "CancerProfiling": {
+    "title": "Cancer NGS Profiling",
+    "description": "Advanced genomic analysis for precise insights into tumor behavior and personalized treatment strategies.",
+    "title2": "Understanding Cancer NGS Profiling",
+    "paragraph1": "Cancer is a complex disease that can develop when changes in our DNA disrupt normal cell growth and repair. These genetic changes may be inherited or acquired over time, and understanding them is key to early detection, accurate diagnosis, and effective treatment. With next-generation sequencing (NGS) technology, it's now possible to analyze both inherited and tumor-specific mutations to gain deep insights into cancer risk, tumor behavior, and potential treatment response.",
+    "paragraph2": "ATENA Genomics offers a range of advanced NGS-based cancer testing services — including hereditary cancer screening, tumor profiling, liquid biopsies, and drug resistance monitoring. Each test is designed to support personalized cancer care by providing actionable genetic information that can guide prevention, treatment decisions, and ongoing management.",
+    "description2": "Explore our specialized NGS-based cancer testing services designed to provide comprehensive insights for personalized oncology.",
+    "cancerTestingCategories": {
+      "title3": "Our Cancer Testing Categories",
+      "description2": "Explore our comprehensive range of genetic testing options designed to provide insights into various aspects of your health"
+    },
+    "tumorProfilingNGS": {
+      "title": "Tumor Profiling NGS",
+      "description": "Comprehensive genomic analysis of tumor tissue to identify key mutations."
+    },
+    "liquidBiopsiesNGS": {
+      "title": "Liquid Biopsies NGS",
+      "description": "Non-invasive cancer detection and monitoring from blood samples."
+    },
+    "hereditaryCancerScreening": {
+      "title": "Hereditary Cancer Screening",
+      "description": "Identification of inherited genetic risk factors for various cancers."
+    },
+    "cancerDrugResistanceMonitoring": {
+      "title": "Cancer Drug Resistance Monitoring",
+      "description": "Tracking treatment response and identifying resistance development over time."
+    },
+    "contact": "Contact Us",
+
+    "section3": {
+      "title": "How It Works",
+      "subtitle1": "Simple Collection",
+      "subtitle2": "Advanced Analysis",
+      "subtitle3": "Personalized Results",
+      "description1": "Quick and painless cheek swab that can be done at home or in our clinic",
+      "description2": "State-of-the-art NGS technology to analyze your DNA with high precision",
+      "description3": "Comprehensive report with expert consultation to understand your results"
+    },
+    "actionHeader": "Ready to Discover Your Genetic Profile?",
+    "actionText": "Take the first step towards personalized healthcare with our advanced genetic testing options."
+  },
+  "HereditaryCancerScreening": {
+    "headline1": "Hereditary Cancer Screening",
+    "tagline": "Simple testing. Powerful knowledge. Healthier choices.",
+    "headline2": "What is Hereditary Cancer Screening?",
+    "tagline2": "Know your genetic cancer risks before symptoms appear",
+    "paragraph1": "Certain genetic mutations, which can be inherited, can significantly increase the risk of developing cancer, often before any symptoms appear. Through hereditary cancer screening, your DNA is analyzed to identify inherited changes linked to cancers such as breast, ovarian, colorectal, prostate, pancreatic, lung, melanoma, and others.",
+    "headline3": "Testing Process",
+    "paragraph2": "A simple and non-invasive buccal swab is collected. The DNA from the swab is then analyzed using next-generation sequencing (NGS) technology, allowing you to uncover vital information about your genetic risks.",
+    "paragraph3": "Depending on your needs, the analysis can focus on specific groups of genes targeted panels, all protein-coding regions whole exome sequencing (WES), or your entire genetic code whole genome sequencing (WGS), providing different levels of detail and insight.",
+    "paragraph4": "Understanding your genetic profile empowers you to take proactive steps for early detection, prevention, and better health outcomes.",
+    "headline4": "Empowering Your Health Journey",
+    "contactHeader": "Take Control of Your Cancer Risk",
+    "contactText": "Discover your hereditary cancer risks and take proactive steps toward prevention and early detection. Knowledge is power when it comes to your health.",
+    "contact": "Contact Us"
+  },
+  "ProactiveGenomicHealthScreening": {
+    "headline": "Proactive Genomic Health Screening",
+    "introParagraph1": "Your DNA carries valuable information that can help you better understand your health — not only today, but for the future. With Proactive Genomic Health Screening, you have the opportunity to uncover hidden genetic risks before symptoms arise, empowering you to make informed, preventive decisions about your well-being.",
+    "headline2": "How It Works",
+    "introParagraph2": "Using a quick, non-invasive buccal swab (cheek swab), we collect a DNA sample that is analyzed using advanced next-generation sequencing (NGS) technology. This approach allows us to detect a wide range of inherited genetic changes, offering insights into multiple areas of health.",
+    "introParagraph3": "Through a single sample, we can screen for potential risks in the following areas:",
+    "categories": {
+      "cancer": "Cancer",
+      "neurological": "Neurological",
+      "developmental": "Developmental",
+      "metabolic": "Metabolic",
+      "immunological": "Immunological",
+      "rare": "Rare Disorders",
+      "pharmacogenomics": "Pharmacogenomics"
+    },
+    "headline3": "Empowering Your Health Journey",
+    "paragraph4": "Whether you're seeking peace of mind, early awareness, or a deeper understanding of your genetic health, this screening gives you the tools to a proactive role in your health journey — with just one non-invasive test.",
+    "contactHeader": "Take Control of Your Genetic Health Journey",
+    "contactText": "If you're ready to take the next step or learn more about what this screening can reveal, feel free to contact us. We're here to help guide you through your personalized genomic analysis.",
+    "contact": "Contact Us",
+    "hereditaryCancerScreening": {
+      "title": "Hereditary Cancer Screening",
+      "description": "Detect inherited mutations that increase the risk of cancers such as breast, ovarian, colorectal, prostate, and others — even before symptoms appear."
+    },
+    "neurologicalNeuromuscularDisorders": {
+      "title": "Neurological and Neuromuscular Disorders",
+      "description": "Identify genetic variants linked to conditions that affect the nervous or muscular systems, helping to uncover personal risk or carrier status."
+    },
+    "developmentalIntellectualDisabilities": {
+      "title": "Developmental and Intellectual Disabilities",
+      "description": "Explore whether you carry genetic changes associated with neurodevelopmental challenges, including learning difficulties and related conditions."
+    },
+    "metabolicMitochondrialDisorders": {
+      "title": "Metabolic and Mitochondrial Disorders",
+      "description": "Gain insight into inherited changes that may affect how your cells produce energy or process key nutrients."
+    },
+    "immunologicalDisorders": {
+      "title": "Immunological Disorders",
+      "description": "Understand whether your genetic variants related to primary immunodeficiencies that impact immune function."
+    },
+    "rareGeneticDisorders": {
+      "title": "Rare Genetic Disorders",
+      "description": "Explore your genome for rare but impactful conditions that may otherwise go undetected or remain unexplained."
+    },
+    "pharmacogenomics": {
+      "title": "Pharmacogenomics",
+      "description": "Learn how your genes influence your response to medications and discover which treatments may be more effective or better tolerated based on your DNA."
+    }
+  },
+  "NeurologicalNeuromuscularDisorders": {
+    "headline": "Genetic Insights into Neurological and Neuromuscular Disorders",
+    "tagline": "Understand your risk before symptoms begin",
+    "paragraph1": "Many neurological and neuromuscular disorders have a genetic basis, caused by inherited changes in DNA that affect nerve or muscle function. Early detection of these genetic variants can help reveal whether you carry changes linked to neurological or neuromuscular conditions — even before symptoms develop. Through advanced genetic testing, your DNA is analyzed using next-generation sequencing (NGS) technology to detect mutations associated with conditions such as muscular dystrophies, hereditary neuropathies, epilepsy syndromes, ataxias, and neurodevelopmental disorders, among others.",
+    "headline2": "Testing Process",
+    "paragraph2": "This analysis is performed using a simple and non-invasive buccal swab, which collects DNA from cheek cells. Depending on the specific condition, the testing may focus on targeted gene panels, whole exome sequencing (WES), or whole genome sequencing (WGS), offering different levels of detail based on clinical need.",
+    "headline3": "Benefits of Genetic Insights",
+    "paragraph3": "Genetic insights can help clarify complex symptoms, guide further medical evaluation, and support informed decision-making for long-term care.",
+    "contactHeader": "Take the Next Step",
+    "contactText": "If you're interested in learning more about testing options for neurological or neuromuscular conditions, we invite you to contact us — we're here to help you take the next step.",
+    "contact": "Contact Us"
+  },
+  "DevelopmentalIntellectualDisabilities": {
+    "headline": "Understanding Genetic Variants Linked to Cognitive and Developmental Traits",
+    "tagline": "Know more about the genes that shape your development",
+    "paragraph1": "Certain genetic changes can influence brain development, learning ability, and cognitive function. Understanding your genetic profile can help reveal whether you carry variants associated with developmental or intellectual disabilities — even if signs have not yet appeared.",
+    "paragraph2": "Using advanced next-generation sequencing (NGS), your DNA is analyzed to detect inherited changes linked to a wide range of conditions, including autism spectrum traits, global developmental delay, learning difficulties, and other neurodevelopmental challenges",
+    "headline2": "Testing Process",
+    "paragraph3": "A simple and non-invasive buccal swab is collected to obtain your DNA. Depending on your needs, the analysis may focus on specific genes (targeted panels), all protein-coding regions (whole exome sequencing, WES), or your complete genetic code (whole genome sequencing, WGS), offering different levels of insight.",
+    "headline3": "Benefits of Genetic Insights",
+    "paragraph4": "This information can bring greater clarity to your genetic status and help guide future decisions related to your well-being, learning support, or personal development.",
+    "contactHeader": "Explore Your Genetic Profile",
+    "contactText": "If you would like to explore this type of testing, feel free to contact us — we’re here to guide you through the next step.",
+    "contact": "Contact Us"
+  },
+  "MetabolicMitochondrialDisorders": {
+    "headline": "Genetic Testing for Metabolic and Mitochondrial Disorders",
+    "tagline": "Understand your metabolism at the genetic level",
+    "paragraph1": "Inherited genetic changes can disrupt how the body produces energy, processes nutrients, or breaks down waste — leading to metabolic or mitochondrial disorders. These conditions often affect multiple organs and systems, sometimes from an early age, and may progress silently before symptoms are noticeable.",
+    "paragraph2": "With genetic testing for metabolic and mitochondrial disorders, your DNA is analyzed using next-generation sequencing (NGS) to detect inherited variants linked to issues in energy production, enzyme function, or cellular metabolism. This includes conditions such as mitochondrial encephalopathy, fatty acid oxidation disorders, amino acid metabolism defects, and others.",
+    "headline2": "Testing Process",
+    "paragraph3": "A simple and non-invasive buccal swab is collected to obtain your DNA. Depending on your needs, testing can focus on specific metabolic or mitochondrial genes (targeted panels), all protein-coding genes (whole exome sequencing, WES), or your entire genome (whole genome sequencing, WGS), offering varying levels of detail and insight.",
+    "headline3": "Benefits of Genetic Insights",
+    "paragraph4": "Understanding your genetic profile can help uncover whether you carry changes associated with these complex conditions — even before symptoms appear — giving you the opportunity to make proactive, informed decisions about your health.",
+    "contactHeader": "Start Your Genetic Testing Journey",
+    "contactText": "If you're interested in learning more or starting the testing process, feel free to contact us — we’re here to support you every step of the way.",
+    "contact": "Contact Us"
+  },
+  "ImmunologicalDisorders": {
+    "headline": "Explore Your Genetic Risk for Immune System Disorders",
+    "tagline": "Simple testing for deeper insight into immune-related conditions",
+    "paragraph1": "Your immune system relies on many genes working together to protect your body. When changes occur in these genes, they can lead to inherited immune conditions that affect how your body responds to infections or immune challenges.",
+    "paragraph2": "Genetic testing can identify inherited variants linked to primary immunodeficiencies such as severe combined immunodeficiency (SCID), chronic granulomatous disease (CGD), common variable immunodeficiency (CVID), complement deficiencies, and others. Some of these conditions appear early in life, while others may only become noticeable later. In certain cases, you may carry genetic changes without symptoms, but still benefit from knowing your status.",
+    "headline2": "Testing Process",
+    "paragraph3": "A simple and non-invasive buccal swab is collected to obtain your DNA. This sample is then analyzed using next-generation sequencing (NGS) to look for changes in genes related to immune system function. Depending on your needs, the analysis may use targeted panels, whole exome sequencing (WES), or whole genome sequencing (WGS) to provide different levels of insight.",
+    "headline3": "Benefits of Genetic Insights",
+    "paragraph4": "Understanding your genetic profile can help reveal whether you carry changes that affect immune function — even before symptoms appear. This insight can support proactive, informed decisions about your health.",
+    "contactHeader": "Discover Your Immune System Genetics",
+    "contactText": "If you would like to explore this type of testing, feel free to contact us — we’re here to guide you every step of the way.",
+    "contact": "Contact Us"
+  },
+  "RareGeneticDisorders": {
+    "headline": "Find Genetic Clarity for Rare or Unexplained Conditions",
+    "tagline": "One swab. Profound insights into rare conditions",
+    "paragraph1": "Rare diseases are conditions that affect a small portion of the population. A disease is considered rare when it affects fewer than 5 in 10,000 people . Despite their individual rarity, there are an estimated 6,000 to 8,000 distinct rare diseases, collectively impacting between 27 and 36 million people in the EU.",
+    "paragraph2": "Approximately 80% of rare diseases have a genetic origin. These conditions often present complex challenges due to their diverse genetic causes, which can include single-gene mutations, structural changes in chromosomes, or mitochondrial DNA alterations. The variability in symptoms and progression among individuals with the same condition adds to the complexity, making identification and management particularly challenging",
+    "paragraph3": "Genetic testing using next-generation sequencing (NGS) can help identify variants associated with a broad spectrum of rare conditions. This includes syndromes and disorders that are difficult to pinpoint without genetic insight and may otherwise remain unexplained.",
+    "headline2": "Testing Process",
+    "paragraph4": "A simple and non-invasive buccal swab is used to collect your DNA. Testing can be performed using targeted gene panels, whole exome sequencing (WES), or whole genome sequencing (WGS), depending on the level of detail needed.",
+    "headline3": "Benefits of Genetic Insights",
+    "paragraph5": "Whether you're exploring the cause of unexplained symptoms or want to understand your genetic status, this testing offers the opportunity for greater clarity and informed decision-making.",
+    "contactHeader": "Uncover Answers to Rare Conditions",
+    "contactText": "If you're considering this type of testing or would like more information, feel free to contact us — we’re here to guide you through the next step.",
+    "contact": "Contact Us"
+  },
+  "Pharmacogenomics": {
+    "headline": "Genetic Insights for Safer, Smarter Medication Choices",
+    "tagline": "Your genes matter — even when it comes to medicine",
+    "paragraph1": "Not all medications work the same way for everyone. Your genes play a key role in how your body processes and responds to certain drugs. Pharmacogenomic testing helps uncover how your DNA influences your response to medications — offering a path toward safer, more effective treatment choices.",
+    "headline2": "Testing Process",
+    "paragraph2": "Using a simple and non-invasive buccal swab, we collect your DNA and analyze it with next-generation sequencing (NGS) or targeted genotyping methods. This testing looks at specific genes involved in drug metabolism, such as CYP2D6, CYP2C19, TPMT, and others. The results can help identify which medications may be more effective for you, which may cause side effects, or which may require dose adjustments.",
+    "headline3": "Applications",
+    "paragraph3": "Pharmacogenomic testing is especially useful when considering medications in areas like:",
+    "list": {
+      "item1": "Mental health (antidepressants, antipsychotics)",
+      "item2": "Cardiology (anticoagulants, statins)",
+      "item3": "Pain management (opioids)",
+      "item4": "Oncology (chemotherapy selection",
+      "item5": "Gastroenterology (e.g., PPIs)"
+    },
+    "paragraph4": "Whether you’re just beginning a new treatment or looking to optimize current medications, this test provides valuable insight based on your unique genetic profile.",
+    "contactHeader": "Personalize Your Medicine with Genetic Testing",
+    "contactText": "If you’re interested in personalized medicine guided by your DNA, feel free to contact us — we’re here to help you take the next step.",
+    "contact": "Contact Us"
+  },
+  "helixCard": {
+    "learn": "Learn more",
+    "coming": "Coming soon"
+  },
+  "seo": {
+    "homePage": {
+      "title": "ATENA Genomics",
+      "description": "Leading provider of advanced genetic testing services, including proactive genomic health screening, cancer profiling, and pharmacogenomics."
+    },
+    "cancerNgsProfilingPage": {
+      "title": "Cancer NGS Profiling - Advanced Genomic Analysis",
+      "description": "Advanced genomic analysis for precise insights into tumor behavior and personalized cancer treatment strategies. Unlock targeted therapies and improve outcomes.",
+      "keywords": "Cancer NGS Profiling, Tumor Genomic Analysis, Personalized Cancer Treatment, Oncology Sequencing, Cancer Genetic Testing"
+    },
+    "geneticDisordersNgsPage": {
+      "title": "Genetic Disorders NGS Testing - Comprehensive Insights",
+      "description": "Comprehensive genetic testing for inherited conditions, developmental disabilities, metabolic disorders, and more. Understand genetic risks for proactive health management.",
+      "keywords": "Genetic Disorder Testing, Inherited Conditions, Developmental Disabilities, Metabolic Disorders, NGS Genetic Testing"
+    },
+    "pharmacogenomicsPage": {
+      "title": "Pharmacogenomics Testing - Personalized Medicine",
+      "description": "Personalize your medicine with pharmacogenomics testing. Understand how your genes influence drug response for safer, more effective, and tailored treatments.",
+      "keywords": "Pharmacogenomics, Personalized Medicine, Drug Response Genes, Medication Genetics, PGx Testing"
+    },
+    "hereditaryCancerScreeningPage": {
+      "title": "Hereditary Cancer Screening - Identify Your Risk",
+      "description": "Discover your inherited cancer risks with comprehensive genetic screening. Take proactive steps towards prevention and early detection for various cancer types.",
+      "keywords": "Hereditary Cancer, Cancer Risk Screening, Inherited Cancer Genes, BRCA Testing, Cancer Prevention Genetics"
+    },
+    "proactiveGenomicHealthScreeningPage": {
+      "title": "Proactive Genomic Health Screening - Preventative Genetics",
+      "description": "Uncover hidden genetic health risks before symptoms appear with proactive genomic screening. Empower informed, preventive decisions about your well-being.",
+      "keywords": "Proactive Health Screening, Genomic Health, Preventative Genetics, Early Risk Detection, Wellness Genetic Testing"
+    },
+    "neurologicalNeuromuscularDisordersPage": {
+      "title": "Neurological & Neuromuscular Disorders - Genetic Testing",
+      "description": "Genetic insights into neurological and neuromuscular disorders. Identify genetic variants linked to conditions affecting the nervous and muscular systems.",
+      "keywords": "Neurological Disorders, Neuromuscular Genetic Testing, ALS Genetic Test, Parkinson's Genetics, Spinal Muscular Atrophy"
+    },
+    "developmentalIntellectualDisabilitiesPage": {
+      "title": "Developmental & Intellectual Disabilities - Genetic Insights",
+      "description": "Gain genetic insights into developmental and intellectual disabilities. Explore genetic changes associated with cognitive and developmental traits.",
+      "keywords": "Developmental Disabilities, Intellectual Disabilities, Cognitive Development Genetics, Autism Genetic Testing, Syndromic Disorders"
+    },
+    "metabolicMitochondrialDisordersPage": {
+      "title": "Metabolic & Mitochondrial Disorders - Genetic Analysis",
+      "description": "Understand genetic factors affecting metabolism and energy production. Comprehensive genetic analysis for metabolic and mitochondrial disorders.",
+      "keywords": "Metabolic Disorders, Mitochondrial Disorders, Metabolism Genetics, Energy Production Genes, Inborn Errors of Metabolism"
+    },
+    "immunologicalDisordersPage": {
+      "title": "Immunological Disorders - Genetic Testing",
+      "description": "Genetic testing for immune system-related conditions. Understand inherited genetic variants impacting immune function and susceptibility to disorders.",
+      "keywords": "Immunological Disorders, Immune System Genetics, Primary Immunodeficiencies, Autoimmune Genetic Testing, Inflammatory Disorders"
+    },
+    "rareGeneticDisordersPage": {
+      "title": "Rare Genetic Disorders - Uncover Answers",
+      "description": "Comprehensive testing for rare and unexplained genetic conditions. Uncover answers and gain clarity for complex, undiagnosed disorders.",
+      "keywords": "Rare Genetic Disorders, Undiagnosed Diseases, Exome Sequencing, Genetic Diagnosis, Complex Genetic Conditions"
+    },
+    "aboutPage": {
+      "title": "About Atena Genomics - Our Mission & Expertise",
+      "description": "Learn about Atena Genomics' mission to provide advanced genetic testing and personalized healthcare solutions. Discover our expertise and commitment to innovation.",
+      "keywords": "About Atena Genomics, Genetic Testing Company, Genomic Solutions, Personalized Healthcare, Our Mission"
+    },
+    "contactPage": {
+      "title": "Contact Atena Genomics - Get in Touch",
+      "description": "Contact Atena Genomics for inquiries about genetic testing services, consultations, or partnership opportunities. Reach out to our expert team.",
+      "keywords": "Contact Atena Genomics, Genetic Testing Contact, Genomics Support, Consultation, Partnership"
+    }
   }
 }

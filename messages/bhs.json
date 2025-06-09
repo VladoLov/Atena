@@ -1,7 +1,7 @@
 {
   "about": {
     "header": "Precizno genetsko testiranje za personaliziranu skrb",
-    "subheader": "ATENA Genomics posvećena je unapređenju zdravstvene njege kroz napredne tehnologije precizne genetike. Pružamo inovativna rješenja za sekvenciranje, omogućavajući personaliziranu medicinu i poboljšanje ishoda pacijenata putem pravovremenih i preciznih genetskih uvida.",
+    "subheader": "ATENA Genomics omogućava pristupačno i kvalitetno genetsko testiranje uz primjenu NGS tehnologije (sekvenciranje nove generacije). Naši testovi nude jasne i razumljive rezultate te personalizirane uvide u zdravlje, kako bi ljudi mogli preuzeti aktivnu ulogu u brizi o sebi. Naš cilj je podržati prelazak ka tačnijoj, ranijoj i personaliziranoj medicini.",
     "leadership": "Vodstvo",
     "profile": "Profil",
     "marija": {
@@ -110,5 +110,298 @@
     "cancer": "NGS profiliranje raka",
     "genetic": "NGS genetskih poremećaja",
     "other": "Ostale usluge"
+  },
+  "GeneticDisorders": {
+    "head1": "Genetski Poremećaji",
+    "head2": " NGS Za Genetske Poremećaje",
+    "sub1": "Genetski poremećaji mogu utjecati na mnoge različite sustave u tijelu — od načina na koji obrađujemo hranjive tvari do funkcije našeg mozga, mišića i imunološkog sustava. Ova stanja često su uzrokovana promjenama u našoj DNK koje su prisutne od rođenja, čak i ako simptomi nisu odmah vidljivi. S tehnologijom sekvenciranja sljedeće generacije (NGS), sada možemo rano identificirati ove naslijeđene rizike — koristeći jednostavan, neinvazivan bris obraza.",
+    "sub2": "ATENA Genomics nudi širok raspon opcija genetskog NGS testiranja kako bi vam pomogla bolje razumjeti vaše zdravlje. U nastavku ćete pronaći pregled ključnih kategorija — uključujući proaktivni zdravstveni pregled, nasljedne karcinome, neurološka i metabolička stanja, i još mnogo toga — sve osmišljeno da podrži rano otkrivanje, prevenciju i personaliziranu skrb.",
+    "bottomCardHead": "Spremni istražiti svoje genetsko zdravlje?",
+    "bottomCardText": "Učinite prvi korak prema razumijevanju svog genetskog profila s našim sveobuhvatnim opcijama NGS testiranja. Naš tim je tu da vas vodi kroz proces i pomogne vam donijeti informirane odluke o vašem zdravlju.",
+    "contact": "Kontaktirajte nas",
+
+    "proactiveGenomicHealthScreening": {
+      "title": "Samoinicijativni genomski zdravstveni pregled",
+      "description": "Sveobuhvatan genetski pregled za identifikaciju zdravstvenih rizika prije pojave simptoma"
+    },
+    "neurologicalNeuromuscularDisorders": {
+      "title": "Neurološki i Neuromišićni Poremećaji",
+      "description": "Testiranje na stanja koja utječu na živčani i mišićni sustav"
+    },
+    "developmentalIntellectualDisabilities": {
+      "title": "Razvojni poremećaji i intelektualne poteškoće",
+      "description": "Genetski uvidi u kognitivne i razvojne karakteristike"
+    },
+    "metabolicMitochondrialDisorders": {
+      "title": "Metabolički i mitohondrijski poremećaji",
+      "description": "Razumijevanje genetskih čimbenika koji utječu na metabolizam i proizvodnju energije"
+    },
+    "immunologicalDisorders": {
+      "title": "Imunološki poremećaji",
+      "description": "Genetsko testiranje na stanja povezana s imunološkim sustavom"
+    },
+    "rareGeneticDisorders": {
+      "title": "Rijetki genetski poremećaji",
+      "description": "Sveobuhvatno testiranje na rijetka i neobjašnjiva genetska stanja"
+    }
+  },
+
+  "CancerProfiling": {
+    "title": "NGS Profiliranje Raka",
+    "description": "Napredna genomska analiza za precizne uvide u ponašanje tumora i personalizirane strategije liječenja.",
+    "title2": "Razumijevanje NGS Profiliranja Raka",
+    "paragraph1": "Rak je kompleksna bolest koja može nastati kada promjene u DNK poremete normalan rast i obnavljanje ćelija. Genetske promjene koje doprinose razvoju raka mogu biti naslijeđene – prisutne u svim ćelijama od rođenja – ili nastati tokom života u određenim ćelijama, kao što su tumorske. Razumijevanje ovih promjena ključno je za rano otkrivanje, preciznu dijagnozu i odabir efikasne terapije. Zahvaljujući tehnologiji sekvenciranja nove generacije (NGS), moguće je analizirati i naslijeđene mutacije putem brisa unutrašnje strane obraza, kao i tumorske mutacije kroz uzorke tumorskog tkiva ili tekuće biopsije.",
+    "paragraph2": "ATENA Genomics nudi napredne NGS testove za rak - uključujući testiranje na nasljedni rak, genetsko profiliranje tumora, tekuće biopsije i praćenje rezistencije na terapiju. Svaki test je osmišljen da podrži personalizirani pristup liječenju raka, pružajući korisne genetske informacije za prevenciju, odabir terapije i praćenje toka bolesti.",
+    "cancerTestingCategories": {
+      "title3": "Naše Kategorije Testiranja za Karcinom",
+      "description2": "Istražite našu sveobuhvatnu ponudu opcija genetskog testiranja dizajniranih da pruže uvid u različite aspekte vašeg zdravlja."
+    },
+    "tumorProfilingNGS": {
+      "title": "NGS Profiliranje Tumora",
+      "description": "Sveobuhvatna genomska analiza tumorskog tkiva za identifikaciju ključnih mutacija."
+    },
+    "liquidBiopsiesNGS": {
+      "title": "NGS Za Tekuće Biopsije",
+      "description": "Neinvazivno otkrivanje i praćenje raka iz uzoraka krvi."
+    },
+    "hereditaryCancerScreening": {
+      "title": "Skrining Nasljednih Karcinoma",
+      "description": "Identifikacija naslijeđenih genetskih faktora rizika za različite vrste raka."
+    },
+    "cancerDrugResistanceMonitoring": {
+      "title": "Praćenje Otpornosti Na Terapije Protiiv Karcinoma",
+      "description": "Praćenje odgovora na liječenje i identifikacija razvoja otpornosti tijekom vremena."
+    },
+    "contact": "Kontaktirajte nas",
+    "section3": {
+      "title": "Kako funkcionira",
+      "subtitle1": "Jednostavno prikupljanje",
+      "subtitle2": "Napredna analiza",
+      "subtitle3": "Personalizirani rezultati",
+      "description1": "Brzo i bezbolno uzimanje brisa obraza koje se može obaviti kod kuće ili u našoj klinici",
+      "description2": "Najsuvremenija NGS tehnologija za visoko preciznu analizu vaše DNK",
+      "description3": "Sveobuhvatan izvještaj sa stručnim savjetovanjem za razumijevanje vaših rezultata"
+    },
+    "actionHeader": "Spremni otkriti svoj genetski profil?",
+    "actionText": "Učinite prvi korak prema personaliziranoj zdravstvenoj skrbi s našim naprednim opcijama genetskog testiranja."
+  },
+  "HereditaryCancerScreening": {
+    "headline1": "Skrining nasljednih karcinoma",
+    "tagline": "Jednostavan test. Pouzdano znanje. Zdraviji izbori.",
+    "headline2": "Šta je testiranje na nasljedne oblike raka?",
+    "tagline2": "Saznajte da li nosite nasljedni rizik za rak – prije nego što se pojave simptomi",
+    "paragraph1": "Određene genetske mutacije, koje se mogu naslijediti, mogu značajno povećati rizik od razvoja karcinoma – često i prije pojave bilo kakvih simptoma. Kroz testiranje na nasljedni rak analizira se vaša DNK kako bi se identifikovale mutacije povezane s nasljednim oblicima raka, poput raka dojke, jajnika, debelog crijeva, prostate, gušterače, pluća, melanoma i drugih.",
+    "headline3": "Testni Proces",
+    "paragraph2": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, a DNK iz uzorka se zatim analizira primjenom NGS tehnologije (sekvenciranje nove generacije). Ova analiza omogućava pristup ključnim informacijama o vašem genetskom riziku.",
+    "paragraph3": "Ovisno o vašim potrebama, analiza se može fokusirati na ciljne grupe gena (targeted paneli), sve kodirajuće dijelove genoma (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), pružajući različite nivoe detalja i uvida.",
+    "paragraph4": "Razumijevanje vašeg genetskog profila omogućava donošenje pravovremenih odluka u vezi s ranom detekcijom, prevencijom i unapređenjem zdravlja.",
+    "headline4": "Zaštita vašeg zdravstvenog putovanja",
+    "contactHeader": "Preuzmite kontrolu nad rizikom od karcinoma",
+    "contactText": "Otkrijte svoje nasljedne rizike od karcinoma i poduzmite proaktivne korake prema prevenciji i ranom otkrivanju. Znanje je moć kada je u pitanju vaše zdravlje.",
+    "contact": "Kontaktirajte nas"
+  },
+  "ProactiveGenomicHealthScreening": {
+    "headline": "Samoinicijativni genomski zdravstveni pregled",
+    "introParagraph1": "Vaša DNK nosi dragocjene informacije koje vam mogu pomoći da bolje razumijete svoje zdravlje – ne samo danas, nego i u budućnosti. Kroz proaktivno genomsko testiranje zdravlja imate priliku da otkrijete skrivene genetske rizike prije nego što se pojave simptomi, što vam omogućava donošenje informiranih i preventivnih odluka o vlastitom zdravlju.",
+    "headline2": "Kako radi?",
+    "introParagraph2": "Koristeći brz i neinvazivan bris unutrašnje strane obraza, uzimamo uzorak DNK koji se analizira naprednom NGS tehnologijom (sekvenciranje nove generacije). Ovaj pristup omogućava otkrivanje širokog spektra nasljednih genetskih promjena i pruža uvid u više aspekata zdravlja.",
+    "introParagraph3": "Putem samo jednog uzorka moguće je izvršiti probir potencijalnih rizika u sljedećim oblastima:",
+    "categories": {
+      "cancer": "Karcinom",
+      "neurological": "Neurološki",
+      "developmental": "Razvojni poremećaji",
+      "metabolic": "Metabolički",
+      "immunological": "Imunološki",
+      "rare": "Rijetki poremećaji",
+      "pharmacogenomics": "Farmakogenomika"
+    },
+    "headline3": "Zaštita vašeg zdravstvenog putovanja",
+    "paragraph4": "Bilo da tražite sigurnost, rano prepoznavanje rizika ili dublje razumijevanje svog genetskog zdravlja, ovo testiranje vam pruža alate da preuzmete proaktivnu ulogu na svom putu ka zdravijem životu – uz samo jedan neinvazivan test.",
+    "contactHeader": "Preuzmite kontrolu nad svojim genetskim zdravstvenim putovanjem.",
+    "contactText": "Ako ste spremni napraviti sljedeći korak ili želite saznati više o tome šta ovo testiranje može otkriti, slobodno nas kontaktirajte. Tu smo da vam pomognemo i da vas vodimo kroz vašu personaliziranu genetsku analizu.",
+    "contact": "Kontaktirajte nas",
+    "hereditaryCancerScreening": {
+      "title": "Samoinicijativni genomski zdravstveni pregled",
+      "description": "Otkrivanje nasljednih mutacija koje povećavaju rizik od karcinoma kao što su rak dojke, jajnika, debelog crijeva, prostate i drugi – čak i prije nego što se pojave simptomi."
+    },
+    "neurologicalNeuromuscularDisorders": {
+      "title": "Neurološki i Neuromišićni Poremećaji",
+      "description": "Identificirajte genetske varijante povezane sa stanjima koja zahvataju nervni ili mišićni sistem, uz mogućnost otkrivanja ličnog rizika ili statusa nosioca."
+    },
+    "developmentalIntellectualDisabilities": {
+      "title": "Razvojni poremećaji i intelektualne poteškoće",
+      "description": "Istražite nosite li genetske promjene povezane s neurorazvojnim poteškoćama, uključujući teškoće u učenju i srodna stanja."
+    },
+    "metabolicMitochondrialDisorders": {
+      "title": "Metabolički i mitohondrijski poremećaji",
+      "description": "Steknite uvid u nasljedne promjene koje mogu uticati na to kako vaše ćelije proizvode energiju ili obrađuju ključne nutrijente."
+    },
+    "immunologicalDisorders": {
+      "title": "Imunološki poremećaji",
+      "description": "Saznajte nosite li genetske varijante povezane s primarnim imunodeficijencijama koje utiču na funkciju imunog sistema."
+    },
+    "rareGeneticDisorders": {
+      "title": "Rijetki genetski poremećaji",
+      "description": "Istražite svoj genom kako biste otkrili rijetka, ali značajna genetska stanja koja bi inače mogla ostati neotkrivena ili neobjašnjena."
+    },
+    "pharmacogenomics": {
+      "title": "Farmakogenomika",
+      "description": "Saznajte kako vaši geni utiču na odgovor organizma na lijekove i otkrijte koje terapije mogu biti učinkovitije ili bolje podnošljive na osnovu vašeg genetskog profila"
+    }
+  },
+  "NeurologicalNeuromuscularDisorders": {
+    "headline": "Genetski Uvidi u Neurološke i Neuromišićne Poremećaje",
+    "tagline": "Razumite svoj rizik prije početka simptoma",
+    "paragraph1": "Određene genetske mutacije, koje se mogu naslijediti, mogu uticati na funkciju nervnog ili mišićnog sistema i dovesti do razvoja neuroloških i neuromišićnih poremećaja. Rano otkrivanje ovih mutacija može pomoći u prepoznavanju rizika ili statusa nosioca za stanja poput mišićnih distrofija, nasljednih neuropatija, epileptičkih sindroma, ataksija i neurorazvojnih poremećaja – čak i prije pojave simptoma.",
+    "headline2": "Testni Proces",
+    "paragraph2": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, a DNK iz uzorka se zatim analizira primjenom NGS tehnologije (sekvenciranje nove generacije). Ova analiza omogućava uvid u prisustvo nasljednih genetskih promjena povezanih s funkcijom nervnog i mišićnog sistema.",
+    "headline3": "Prednosti genetskih uvida",
+    "paragraph3": "Ovisno o vašim potrebama, analiza se može fokusirati na ciljne grupe gena (targeted paneli), sve kodirajuće dijelove genoma (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), pružajući različite nivoe detalja i uvida.",
+    "contactHeader": "Učinite sljedeći korak",
+    "contactText": "Razumijevanje vašeg genetskog profila može pomoći u razjašnjavanju simptoma, usmjeravanju daljnjih dijagnostičkih koraka i donošenju informisanih odluka o dugoročnoj njezi.",
+    "contact": "Kontaktirajte nas"
+  },
+  "DevelopmentalIntellectualDisabilities": {
+    "headline": "Genetske Osnove Kognitivnih i Razvojnih Osobina",
+    "tagline": "Saznajte više o genima koji oblikuju razvoj",
+    "paragraph1": "Određene genetske promjene mogu uticati na razvoj mozga, sposobnost učenja i kognitivne funkcije. Razumijevanje vašeg genetskog profila može pomoći u prepoznavanju varijanti povezanih s neurorazvojnim i intelektualnim poteškoćama – čak i ako se znakovi još nisu pojavili, ili ako ste samo nosilac određenih promjena.",
+    "paragraph2": "Vaša DNK se analizira primjenom napredne NGS tehnologije (sekvenciranje nove generacije), s ciljem otkrivanja nasljednih promjena povezanih s različitim stanjima, uključujući osobine iz autističnog spektra, globalno kašnjenje u razvoju, teškoće u učenju i druge neurorazvojne izazove.",
+    "headline2": "Testni Proces",
+    "paragraph3": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, kojim se prikuplja DNK za analizu. Ovisno o vašim potrebama, analiza se može fokusirati na ciljne grupe gena (targeted paneli), sve kodirajuće dijelove genoma (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), pružajući različite nivoe uvida.",
+    "headline3": "Prednosti genetskih uvida",
+    "paragraph4": "Ove informacije mogu donijeti jasniju sliku vašeg genetskog statusa i pomoći u donošenju odluka vezanih za buduće zdravlje, obrazovnu podršku ili lični razvoj.",
+    "contactHeader": "Istražite svoj genetski profil",
+    "contactText": "Ako želite saznati više o ovom tipu testiranja, slobodno nas kontaktirajte – tu smo da vas vodimo kroz sljedeći korak.",
+    "contact": "Kontaktirajte nas"
+  },
+  "MetabolicMitochondrialDisorders": {
+    "headline": "Genetsko Testiranje za Metaboličke i Mitohondrijske Poremećaje",
+    "tagline": "Saznajte kako vaši geni utiču na metabolizam i funkciju ćelija",
+    "paragraph1": "Nasljedne genetske promjene mogu poremetiti način na koji tijelo proizvodi energiju, obrađuje nutrijente ili razgrađuje otpadne materije – što može dovesti do metaboličkih ili mitohondrijskih poremećaja. Ova stanja često zahvataju više organa i sistema, ponekad od ranog djetinjstva, i mogu napredovati tiho, bez vidljivih simptoma.",
+    "paragraph2": "Kroz genetsko testiranje na metaboličke i mitohondrijske poremećaje, vaša DNK se analizira primjenom NGS tehnologije (sekvenciranje nove generacije) s ciljem otkrivanja nasljednih varijanti povezanih s poremećajima proizvodnje energije, funkcijom enzima ili ćelijskim metabolizmom. To uključuje stanja poput mitohondrijske encefalopatije, poremećaja oksidacije masnih kiselina, defekata u metabolizmu aminokiselina i druga slična oboljenja.",
+    "headline2": "Testni Proces",
+    "paragraph3": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, kojim se prikuplja DNK za analizu. Ovisno o vašim potrebama, testiranje se može fokusirati na ciljne grupe gena povezane s metaboličkim ili mitohondrijskim funkcijama (targeted paneli), sve kodirajuće dijelove genoma (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), pružajući različite nivoe detalja i uvida.",
+    "headline3": "Prednosti genetskih uvida",
+    "paragraph4": "Razumijevanje vašeg genetskog profila može pomoći u otkrivanju da li nosite promjene povezane s ovim kompleksnim stanjima – bilo kao osoba u riziku ili kao nosilac mutacija – čak i prije nego što se pojave simptomi, što vam daje priliku za pravovremene, informisane odluke o zdravlju.",
+    "contactHeader": "Započnite svoje putovanje genetskog testiranja",
+    "contactText": "Ako želite saznati više ili započeti proces testiranja, slobodno nas kontaktirajte – tu smo da vas podržimo na svakom koraku.",
+    "contact": "Kontaktirajte nas"
+  },
+  "ImmunologicalDisorders": {
+    "headline": "Genetski Uvid u Primarne Poremećaje Imunog Sistema",
+    "tagline": "NGS analiza koja pomaže u razumijevanju vašeg imunog sistema",
+    "paragraph1": "Imuni sistem se oslanja na veliki broj gena koji zajednički rade na zaštiti organizma. Kada dođe do promjena u tim genima, to može dovesti do nasljednih imunoloških poremećaja koji utiču na odgovor tijela na infekcije ili druge imunološke izazove.",
+    "paragraph2": "Genetsko testiranje može pomoći u identifikaciji nasljednih varijanti povezanih s primarnim imunodeficijencijama, kao što su teška kombinovana imunodeficijencija (SCID), hronična granulomatozna bolest (CGD), varijabilna imunodeficijencija (CVID), deficijencije komplementa i druga srodna stanja. Neka od ovih stanja se ispoljavaju već u ranom djetinjstvu, dok se druga mogu pojaviti tek kasnije u životu. U određenim slučajevima, osoba može biti nosilac genetskih promjena bez prisutnih simptoma, ali i dalje imati koristi od saznanja o svom statusu.",
+    "headline2": "Testni Proces",
+    "paragraph3": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, kojim se prikuplja DNK za analizu. Uzorak se zatim analizira primjenom NGS tehnologije (sekvenciranje nove generacije), s ciljem identifikacije promjena u genima koji utiču na funkciju imunog sistema. U zavisnosti od vaših potreba, analiza se može fokusirati na ciljne grupe gena (targeted paneli), sve kodirajuće dijelove genoma (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), pružajući različite nivoe detalja i uvida.",
+    "headline3": "Prednosti genetskih uvida",
+    "paragraph4": "Razumijevanje vašeg genetskog profila može pomoći u otkrivanju da li nosite promjene koje utiču na funkciju imunog sistema – čak i prije nego što se pojave simptomi. Ove informacije vam mogu pomoći da donesete pravovremene, informisane odluke o svom zdravlju.",
+    "contactHeader": "Otkrijte genetiku vašeg imunološkog sustava",
+    "contactText": "Ako želite saznati više o ovom tipu testiranja, slobodno nas kontaktirajte – tu smo da vas vodimo kroz svaki korak.",
+    "contact": "Kontaktirajte nas"
+  },
+  "RareGeneticDisorders": {
+    "headline": "Precizna Analiza za Rijetke Genetske Poremećaje",
+    "tagline": "NGS testiranje iz jednog neinvazivnog uzorka – za otkrivanje uzroka rijetkih genetskih bolesti",
+    "paragraph1": "Rijetke bolesti su stanja koja pogađaju mali broj osoba u populaciji. Bolest se smatra rijetkom kada pogađa manje od 5 osoba na 10.000 stanovnika. Iako su pojedinačno rijetke, procjenjuje se da postoji između 6.000 i 8.000 različitih rijetkih bolesti, koje zajedno utiču na oko 27 do 36 miliona ljudi unutar EU. Oko 80% rijetkih bolesti ima genetsko porijeklo.",
+    "paragraph2": "Ova stanja često predstavljaju složene dijagnostičke izazove zbog različitih genetskih uzroka, uključujući mutacije u jednom genu, strukturne promjene na hromosomima ili promjene u mitohondrijskoj DNK. Različiti simptomi i tok bolesti čak i kod osoba s istim oboljenjem dodatno otežavaju dijagnozu i upravljanje bolešću.",
+    "paragraph3": "Genetsko testiranje uz primjenu NGS tehnologije (sekvenciranje nove generacije) može pomoći u identifikaciji varijanti povezanih s velikim brojem rijetkih stanja. To uključuje sindrome i poremećaje koje je teško prepoznati bez genetske analize, a koji bi inače mogli ostati neobjašnjeni.",
+    "headline2": "Testni Proces",
+    "paragraph4": "DNK se prikuplja putem jednostavnog i neinvazivnog brisa unutrašnje strane obraza. Testiranje se može fokusirati na ciljne grupe gena (targeted paneli), cijeli egzom (WES – whole exome sequencing) ili čitav genetski kod (WGS – whole genome sequencing), u zavisnosti od nivoa uvida koji je potreban.",
+    "headline3": "Prednosti genetskih uvida",
+    "paragraph5": "Bilo da istražujete uzrok neobjašnjenih simptoma ili želite bolje razumjeti svoj genetski status, ovo testiranje pruža priliku za veću jasnoću i donošenje informisanih odluka.",
+    "contactHeader": "Otkrijte odgovore na rijetka stanja",
+    "contactText": "Ako razmišljate o ovom tipu testiranja ili želite saznati više, slobodno nas kontaktirajte – tu smo da vas podržimo kroz svaki korak.",
+    "contact": "Kontaktirajte nas"
+  },
+  "Pharmacogenomics": {
+    "headline": "Farmakogenomika Pruža Genetske Uvide Koji Omogućavaju Sigurniji i Efikasniji Odabir Terapije",
+    "tagline": "NGS testiranje otkriva kako vaša DNK utiče na razgradnju i djelovanje lijekova",
+    "paragraph1": "Nisu svi lijekovi jednako djelotvorni za svaku osobu. Vaši geni imaju ključnu ulogu u tome kako vaše tijelo razgrađuje i reaguje na određene lijekove. Farmakogenomsko testiranje pomaže otkriti kako vaša DNK utiče na način na koji vaš organizam razgrađuje i koristi lijekove — nudeći put ka sigurnijem i efikasnijem izboru terapije.",
+    "headline2": "Testni Proces",
+    "paragraph2": "Korištenjem jednostavnog i neinvazivnog brisa unutrašnje strane obraza, prikupljamo vaš DNK i analiziramo ga primjenom tehnologije sekvenciranja nove generacije (NGS) ili ciljanih metoda genotipizacije. Ovo testiranje ispituje specifične gene uključene u metabolizam lijekova, poput CYP2D6, CYP2C19, TPMT i drugih. Rezultati mogu pomoći u identifikaciji lijekova koji bi mogli biti efikasniji za vas, onih koji mogu izazvati nuspojave, ili onih kod kojih bi mogla biti potrebna prilagodba doze.",
+    "headline3": "Primjene",
+    "paragraph3": "Farmakogenomsko testiranje je posebno korisno pri razmatranju terapije u oblastima kao što su:",
+    "list": {
+      "item1": "Mentalno zdravlje (antidepresivi, antipsihotici)",
+      "item2": "Kardiologija (antikoagulansi, statini)",
+      "item3": "Kontrola biola (opiodi)",
+      "item4": "Onkologija (odabir hemoterapije)",
+      "item5": "Gastroenterologija (npr. IPP – inhibitori protonske pumpe)"
+    },
+    "paragraph4": "Bilo da tek započinjete novu terapiju ili želite optimizovati postojeću, ovaj test pruža vrijedne uvide zasnovane na vašem jedinstvenom genetskom profilu.",
+    "contactHeader": "Personalizirajte svoju medicinu genetskim testiranjem",
+    "contactText": "Ako vas zanima personalizirana medicina vođena vašom DNK, slobodno nas kontaktirajte — tu smo da vam pomognemo napraviti sljedeći korak.",
+    "contact": "Kontaktirajte nas"
+  },
+  "helixCard": {
+    "learn": "Saznajte više",
+    "coming": "Uskoro dostupno"
+  },
+  "seo": {
+    "homePage": {
+      "title": "ATENA Genomika",
+      "description": "Vodeći pružatelj naprednih usluga genetskog testiranja, uključujući proaktivni genomski zdravstveni pregled, profiliranje karcinoma i farmakogenomiku."
+    },
+    "cancerNgsProfilingPage": {
+      "title": "NGS Profiliranje Karcinoma - Napredna Genomska Analiza",
+      "description": "Napredna genomska analiza za precizne uvide u ponašanje tumora i personalizirane strategije liječenja karcinoma. Omogućite ciljane terapije i poboljšajte ishode.",
+      "keywords": "NGS Profiliranje Karcinoma, Genomska Analiza Tumora, Personalizirano Liječenje Raka, Onkološko Sekvenciranje, Genetsko Testiranje Karcinoma"
+    },
+    "geneticDisordersNgsPage": {
+      "title": "NGS Testiranje Genetskih Poremećaja - Sveobuhvatni Uvidi",
+      "description": "Sveobuhvatno genetsko testiranje za naslijeđena stanja, razvojne poteškoće, metaboličke poremećaje i drugo. Razumite genetske rizike za proaktivno upravljanje zdravljem.",
+      "keywords": "Genetsko Testiranje Poremećaja, Naslijeđena Stanja, Razvojne Poteškoće, Metabolički Poremećaji, NGS Genetsko Testiranje"
+    },
+    "pharmacogenomicsPage": {
+      "title": "Farmakogenomsko Testiranje - Personalizirana Medicina",
+      "description": "Personalizirajte svoju medicinu farmakogenomskim testiranjem. Razumijte kako vaši geni utječu na odgovor na lijekove za sigurnije, učinkovitije i prilagođenije liječenje.",
+      "keywords": "Farmakogenomika, Personalizirana Medicina, Geni Odgovora na Lijekove, Genetika Lijekova, PGx Testiranje"
+    },
+    "hereditaryCancerScreeningPage": {
+      "title": "Probir Nasljednog Karcinoma - Identificirajte svoj Rizik",
+      "description": "Otkrijte svoje naslijeđene rizike od karcinoma sveobuhvatnim genetskim pregledom. Poduzmite proaktivne korake prema prevenciji i ranom otkrivanju za različite vrste karcinoma.",
+      "keywords": "Nasljedni Karcinom, Probir Rizika od Karcinoma, Naslijeđeni Geni Karcinoma, BRCA Testiranje, Genetika Prevencije Karcinoma"
+    },
+    "proactiveGenomicHealthScreeningPage": {
+      "title": "Proaktivni Genomski Zdravstveni Pregled - Preventivna Genetika",
+      "description": "Otkrijte skrivene genetske zdravstvene rizike prije pojave simptoma proaktivnim genomskim pregledom. Omogućite informirane, preventivne odluke o svom zdravlju.",
+      "keywords": "Proaktivni Zdravstveni Pregled, Genomsko Zdravlje, Preventivna Genetika, Rano Otkrivanje Rizika, Genetsko Testiranje za Zdravlje"
+    },
+    "neurologicalNeuromuscularDisordersPage": {
+      "title": "Neurološki i Neuromuskularni Poremećaji - Genetsko Testiranje",
+      "description": "Genetski uvidi u neurološke i neuromuskularne poremećaje. Identificirajte genetske varijante povezane sa stanjima koja zahvaćaju živčani i mišićni sustav.",
+      "keywords": "Neurološki Poremećaji, Neuromuskularno Genetsko Testiranje, ALS Genetski Test, Parkinsonova Genetika, Spinalna Mišićna Atrofija"
+    },
+    "developmentalIntellectualDisabilitiesPage": {
+      "title": "Razvojne i Intelektualne Poteškoće - Genetski Uvidi",
+      "description": "Steknite genetske uvide u razvojne i intelektualne poteškoće. Istražite genetske promjene povezane s kognitivnim i razvojnim karakteristikama.",
+      "keywords": "Razvojne Poteškoće, Intelektualne Poteškoće, Genetika Kognitivnog Razvoja, Genetsko Testiranje Autizma, Sindromski Poremećaji"
+    },
+    "metabolicMitochondrialDisordersPage": {
+      "title": "Metabolički i Mitohondrijski Poremećaji - Genetska Analiza",
+      "description": "Razumijte genetske faktore koji utječu na metabolizam i proizvodnju energije. Sveobuhvatna genetska analiza za metaboličke i mitohondrijske poremećaje.",
+      "keywords": "Metabolički Poremećaji, Mitohondrijski Poremećaji, Genetika Metabolizma, Geni Proizvodnje Energije, Urođene Greške Metabolizma"
+    },
+    "immunologicalDisordersPage": {
+      "title": "Imunološki Poremećaji - Genetsko Testiranje",
+      "description": "Genetsko testiranje za stanja povezana s imunološkim sustavom. Razumijte naslijeđene genetske varijante koje utječu na imunološku funkciju i podložnost poremećajima.",
+      "keywords": "Imunološki Poremećaji, Genetika Imunološkog Sustava, Primarne Imunodeficijencije, Genetsko Testiranje Autoimunih Bolesti, Upalni Poremećaji"
+    },
+    "rareGeneticDisordersPage": {
+      "title": "Rijetki Genetski Poremećaji - Otkrijte Odgovore",
+      "description": "Sveobuhvatno testiranje za rijetka i neobjašnjiva genetska stanja. Otkrijte odgovore i steknite jasnoću za složena, nedijagnosticirana stanja.",
+      "keywords": "Rijetki Genetski Poremećaji, Nedijagnosticirane Bolesti, Sekvenciranje Egzoma, Genetska Dijagnoza, Složena Genetska Stanja"
+    },
+    "aboutPage": {
+      "title": "O Atena Genomici - Naša Misija i Stručnost",
+      "description": "Saznajte više o misiji Atena Genomike da pruži napredna genetska testiranja i personalizirana zdravstvena rješenja. Otkrijte našu stručnost i predanost inovacijama.",
+      "keywords": "O Atena Genomici, Kompanija za Genetsko Testiranje, Genomska Rješenja, Personalizirana Zdravstvena Skrb, Naša Misija"
+    },
+    "contactPage": {
+      "title": "Kontaktirajte Atena Genomiku - Javite nam se",
+      "description": "Kontaktirajte Atena Genomiku za upite o uslugama genetskog testiranja, konzultacijama ili mogućnostima partnerstva. Obratite se našem stručnom timu.",
+      "keywords": "Kontakt Atena Genomika, Kontakt za Genetsko Testiranje, Genomska Podrška, Konzultacije, Partnerstvo"
+    }
   }
 }
