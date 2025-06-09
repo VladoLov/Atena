@@ -6,44 +6,45 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
 import Link from "next/link";
 
 function PiereCard({ title, description, href, icon: Icon, ctaText }) {
   return (
     <div className="w-72 mb-2">
-      <Card className="w-72 h-full flex flex-col  font-poppins border-crimson-500 ring-inset">
+      <Card className="w-72 h-full flex flex-col border-crimson-500 ring-inset">
         <CardHeader className="flex-row gap-4 items-center">
           {Icon && <Icon className="w-6 h-6 text-primary stroke-crimson-500" />}
-          {/* {icon} */}
-
-          <CardTitle className="text-lg font-poppins">{title}</CardTitle>
+          <CardTitle className="text-lg">{title}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow flex flex-col">
           <p className="flex-grow">{description}</p>
         </CardContent>
-        <CardFooter className="mt-auto pt-0 ">
+        <CardFooter className="mt-auto pt-0">
           {href === "#" ? (
             <Button
               variant="secondary"
-              className="w-fit justify-between items-center border border-gray-400 ring-inset bg-white cursor-default"
+              className="min-h-[48px] min-w-[48px] px-4 py-3 justify-between items-center border border-platinum-900 ring-inset bg-white"
               disabled
+              aria-disabled="true"
             >
-              <span className="text-gray-400">
+              <span className="text-platinum-900">
                 {ctaText}
                 <span className="sr-only">about {title}</span>
               </span>
             </Button>
           ) : (
-            <Button
-              variant="secondary"
-              className="w-fit justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500"
-            >
-              <Link href={href}>
-                {ctaText}
-                <span className="sr-only">about {title}</span>
-              </Link>
-            </Button>
+            <Link href={href} passHref legacyBehavior>
+              <Button
+                asChild
+                variant="secondary"
+                className="min-h-[48px] min-w-[48px] px-4 py-3 justify-between items-center border border-crimson-500 ring-inset bg-white focus:bg-crimson-500 hover:bg-crimson-50 transition-colors"
+              >
+                <a>
+                  {ctaText}
+                  <span className="sr-only">about {title}</span>
+                </a>
+              </Button>
+            </Link>
           )}
         </CardFooter>
       </Card>

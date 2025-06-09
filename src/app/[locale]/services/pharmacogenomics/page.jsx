@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Pill, Dna, CheckCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,10 +22,11 @@ function Pharmacogenomics() {
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/pharmacogenomics.webp?height=500&width=1000"
+            src="/pharmacogenomics.webp"
             alt="DNA double helix"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
+            className="object-cover"
             priority
           />
           {/* The main overlay div */}

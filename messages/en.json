@@ -102,7 +102,14 @@
     },
     "account": "My Account",
     "soon": "Coming Soon",
-    "language": "Language"
+    "language": "Language",
+    "aria": {
+      "open_menu": "Open main menu",
+      "close_menu": "Close main menu",
+      "home": "Go to homepage",
+      "main_menu": "Main navigation menu",
+      "coming_soon": "Coming soon"
+    }
   },
   "footer": {
     "text": "Advanced genomic analysis for diagnosis of genetic diseases to enable early detection and personalized treatment.",

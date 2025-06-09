@@ -19,6 +19,9 @@ function Header() {
             width={256}
             height={74}
             priority
+            className="h-auto w-auto" // Maintain aspect ratio
+            quality={90} // Optimize quality (optional)
+            sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
           />
         </Link>
         <div className="flex items-center space-x-2 pr-2">

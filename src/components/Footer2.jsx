@@ -173,10 +173,13 @@ export default function Footer2() {
             <div className="flex justify-center text-crimson-600 sm:justify-start ">
               <Image
                 src="/AtenaGenomicsLogo.png"
-                width={250}
-                height={250}
-                alt="Atena logo"
+                alt="Atena Genomics"
+                width={256}
+                height={256}
                 priority
+                className="h-auto w-auto" // Maintain aspect ratio
+                quality={90} // Optimize quality (optional)
+                sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
               />
             </div>
             <p className="mt-6 max-w-md text-center leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
@@ -314,24 +317,6 @@ export default function Footer2() {
                   </svg>
                 </Link>
               </li>
-              {/*  <li>
-                <a
-                  href="#"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-teal-700 transition hover:text-crimson-700"
-                >
-                  <span className="sr-only">Tik Tok</span>
-                  <svg
-                    className="size-6  text-crimson-600 hover:scale-110 hover:text-crimson-700"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
-                  </svg>
-                </a>
-              </li> */}
             </ul>
           </div>
 

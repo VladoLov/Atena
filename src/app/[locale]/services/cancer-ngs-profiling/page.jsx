@@ -64,10 +64,11 @@ export default function GeneticDisordersIllustrated() {
       <section className="relative bg-gradient-to-b from-black to-crimson-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/genetic-disorders.webp?height=500&width=1000"
+            src="/genetic-disorders.webp"
             alt="DNA double helix"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
+            className="object-cover"
             priority
           />
         </div>

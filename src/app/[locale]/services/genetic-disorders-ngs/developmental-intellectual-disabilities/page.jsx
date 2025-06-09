@@ -18,17 +18,19 @@ export async function generateMetadata() {
 function DevelopmentalIntellectualDisabilities() {
   const t = useTranslations("DevelopmentalIntellectualDisabilities");
   return (
-    <div className="flex flex-col  justify-center items-center w-full">
+    <div className="flex flex-col justify-center items-center w-full">
       <main className="w-full ">
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/developmental-intellectual-disabilities.webp?height=500&width=1000"
+            src="/developmental-intellectual-disabilities.webp"
             alt="DNA double helix"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
+            className="object-cover"
             priority
           />
+
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
               {t("headline")}

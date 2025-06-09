@@ -101,7 +101,14 @@
     },
     "account": "Moj profil",
     "soon": "Uskoro Dostupno",
-    "language": "Jezik"
+    "language": "Jezik",
+    "aria": {
+      "open_menu": "Otvori glavni izbornik",
+      "close_menu": "Zatvori glavni izbornik",
+      "home": "Naslovna",
+      "main_menu": "Glavna navigacija",
+      "coming_soon": "Uskoro dostupno"
+    }
   },
   "footer": {
     "text": " Omogućava rano otkrivanje genetskih poremećaja i personalizirani pristup liječenju, poboljšavajući preciznost dijagnoze i ishode terapije.",

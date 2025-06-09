@@ -42,7 +42,7 @@ export function SmallLanguageSwitcher() {
             flex items-center justify-center 
             flex-col gap-2 cursor-pointer
             object-cover w-full
-            ${locale === lang.code ? "font-bold  " : ""} 
+            ${locale === lang.code ? "font-medium  " : ""} 
           `}
           variant={locale === lang.code ? "atena" : "ghost"}
           aria-pressed={locale === lang.code ? "true" : "false"}

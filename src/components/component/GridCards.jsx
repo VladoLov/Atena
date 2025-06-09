@@ -21,7 +21,6 @@ function GridCards() {
         {localizedCardData.map((card, index) => (
           <FlipCard
             key={index}
-            /* image={card.image} */
             title={card.title}
             description={card.description}
             subtitle={card.subtitle}
@@ -30,7 +29,7 @@ function GridCards() {
           />
         ))}
       </div>
-      <div className="lg:hidden relative z-20 w-full pointer-events-auto   inline-flex px-4 md:grid-cols-2 gap-8 overflow-auto">
+      <div className="lg:hidden relative z-20 w-full pointer-events-auto  inline-flex px-4 md:grid-cols-2 gap-8 overflow-auto">
         {localizedCardData.map((card, index) => (
           <PiereCard
             key={index}

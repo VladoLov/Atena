@@ -22,10 +22,11 @@ function NeurologicalNeuromuscularDisorders() {
         {/* Hero Section */}
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/neurological-neuromuscular-disorders.webp?height=500&width=1000"
+            src="/neurological-neuromuscular-disorders.webp"
             alt="DNA double helix"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
