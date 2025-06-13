@@ -9,6 +9,8 @@ import Footer2 from "../../components/Footer2";
 /* import Header from "@/newcomponents/Header"; */
 import Header from "../../newcomponents/Header";
 import { setRequestLocale } from "next-intl/server";
+import Script from "next/script";
+import { Car } from "lucide-react";
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
@@ -16,6 +18,9 @@ export const metadata = {
   title: "ATENA Genomics",
   description:
     "Discover ATENA, your trusted partner in advanced genome testing services. Our cutting-edge technology provides comprehensive genomic analysis to empower personalized medicine. Explore our range of services, including cancer genomics, pharmacogenomics, and hereditary disease testing, designed to optimize patient care and treatment outcomes. Join us in advancing healthcare through precision genomics.",
+  facebook: {
+    card: "summary_large_image",
+  },
 };
 
 export default async function RootLayout({ children, params }) {
@@ -36,6 +41,7 @@ export default async function RootLayout({ children, params }) {
           <Footer2 />
         </NextIntlClientProvider>
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }
