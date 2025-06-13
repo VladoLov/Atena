@@ -81,21 +81,21 @@ export default function GeneticDisordersNgs() {
             priority
           />
           <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
               {t("head1")}
-            </h2>
+            </h1>
             {/*
              */}
           </div>
         </section>
-        <div className="container mx-auto py-12 px-4 md:px-6">
+        <div className="container mx-auto py-12 px-4 ">
           <div className="max-w-6xl mx-auto space-y-12">
             {/* Header Section */}
             <div className="space-y-6">
               <div className="text-start space-y-4">
-                <h1 className="text-4xl font-bold tracking-tight text-platinum-950 md:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
                   {t("head2")}
-                </h1>
+                </h2>
                 <div className="flex justify-start items-center gap-2">
                   <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
                   <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
@@ -104,10 +104,10 @@ export default function GeneticDisordersNgs() {
               </div>
 
               <div className="max-w-6xl mx-auto">
-                <p className="text-lg text-platinum-950 leading-relaxed">
+                <p className="text-platinum-950 text-lg font-medium pb-2">
                   {t("sub1")}
                 </p>
-                <p className="text-lg text-platinum-950 leading-relaxed mt-4">
+                <p className="text-platinum-950 text-lg font-medium">
                   {t("sub2")}
                 </p>
               </div>

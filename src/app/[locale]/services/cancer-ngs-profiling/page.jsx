@@ -71,7 +71,7 @@ export default function GeneticDisordersIllustrated() {
         />
 
         <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+          <h1 className="text-white text-4xl md:text-6xl lg:text-6xl font-bold text-center">
             {t("CancerProfiling.title")}
           </h1>
           <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
@@ -82,17 +82,17 @@ export default function GeneticDisordersIllustrated() {
 
       {/* Content Section */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-platinum-950 mb-4 text-left">
+        <div className="container mx-auto px-4 ">
+          <div className="max-w-5xl mx-auto space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight text-platinum-950 md:text-4xl">
               {t("CancerProfiling.title2")}
             </h2>
-            <div className="flex justify-start items-center gap-1 pb-4">
+            <div className="flex justify-start items-center gap-2 ">
               <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
               <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
               <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
             </div>
-            <div className="prose prose-lg max-w-none text-lg">
+            <div className="text-platinum-950 text-lg font-medium">
               <p className="py-2">{t("CancerProfiling.paragraph1")}</p>
               <p>{t("CancerProfiling.paragraph2")}</p>
             </div>
@@ -101,15 +101,15 @@ export default function GeneticDisordersIllustrated() {
       </section>
 
       {/* Testing Categories */}
-      <section className="py-16 bg-platinum-50">
-        <div className="container mx-auto px-4 ">
+      <section className=" ">
+        {/*  <div className="container mx-auto px-4 ">
           <h2 className="text-3xl font-bold text-center text-platinum-950 mb-4">
             {t("CancerProfiling.cancerTestingCategories.title3")}
           </h2>
           <p className="text-lg text-platinum-950 text-center mb-16 max-w-6xl mx-auto">
             {t("CancerProfiling.cancerTestingCategories.description2")}
           </p>
-        </div>
+        </div> */}
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4">
           <DNAHelixCards categories={cancerProfiling} />
         </div>
@@ -165,7 +165,28 @@ export default function GeneticDisordersIllustrated() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-crimson-300 to-crimson-500 text-black">
+      <div className="container mx-auto pb-12 px-4 md:px-6">
+        <div className=" bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black ">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <h3 className="text-2xl font-bold">
+              {" "}
+              {t("CancerProfiling.actionHeader")}
+            </h3>
+            <p
+              className="text-black/90
+                "
+            >
+              {t("CancerProfiling.actionText")}
+            </p>
+            <Link href={"/contact"}>
+              <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                {t("CancerProfiling.contact")}
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/*   <section className="py-16 bg-gradient-to-r from-crimson-300 to-crimson-500 text-black">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -181,7 +202,7 @@ export default function GeneticDisordersIllustrated() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
