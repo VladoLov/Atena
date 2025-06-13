@@ -182,7 +182,7 @@ export default function Footer2() {
                 sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
               />
             </div>
-            <p className="mt-6 max-w-md text-center leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
+            <p className="mt-6 max-w-md text-center   leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
               {t("footer.text")}
             </p>
             <div className="flex flex-col gap-1.5 text-center sm:text-left mt-6">

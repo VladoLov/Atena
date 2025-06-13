@@ -22,7 +22,7 @@
       "description": "NGS omogućava rano i precizno otkrivanje nasljednih genetskih stanja, uključujući metaboličke, neurološke, razvojne i kardiovaskularne poremećaje. Time se osigurava pravovremena dijagnoza, ciljane intervencije i personalizirani tretmani, poboljšavajući ishode i kvalitetu života pacijenata."
     },
     "prenatal_genetic_risk_analysis": {
-      "title": "Analiza rizika u trudnoći od pojave genetskih poremećaja",
+      "title": "Prenatalni i novorođenački genetski skrining",
       "description": "Neinvazivno prenatalno testiranje (NIPT) i prošireni skrining novorođenčadi pomoću NGS-a omogućavaju rano otkrivanje genetskih i hromosomskih abnormalnosti. Time se osigurava personalizirano planiranje njege, pravovremene intervencije i poboljšani dugoročni zdravstveni ishodi za fetuse i novorođenčad."
     },
     "genomic_response_to_pharmacotherapy": {
@@ -46,11 +46,12 @@
     "email": "E-pošta",
     "description": "Opis zahtijeva",
     "send": "Pošalji",
-    "footer": "Za sve dodatne informacije ili upite možete se obratiti timu ATENA Genomics na info@atenagenomics.com ili telefonski na"
+    "footer": "Za sve dodatne informacije ili upite možete se obratiti timu ATENA Genomics na:",
+    "footerPhone": "ili nas kontaktirajte telefonski na"
   },
   "subheader": {
     "header": "USKORO",
-    "subheader": "ATENA Genomics uskoro nudi detaljna klinička genetska testiranja za personaliziranu medicinsku njegu, preciznu dijagnostiku i rano otkrivanje bolesti. Naša testiranja pružaju ključne uvide u onkologiju, nasljedne bolesti, prenatalni skrining, farmakogenomiku i zarazne bolesti, pomažući u pravovremenoj prevenciji i liječenju. Naše usluge uključuju napredno sekvenciranje nove generacije (NGS) i prilagođena genetska rješenja za visoko preciznu dijagnostiku i medicinska istraživanja. Za više detalje i Vaše upite, možete nam se obratiti na adresu e-pošte:",
+    "subheader": "ATENA Genomics nudi naprednu genetsku analizu pomoću sekvenciranja nove generacije (NGS). Usluge uključuju skrining nasljednih poremećaja, otkrivanje genetskih mutacija povezanih s karcinomima, procjenu genetskih faktora koji utiču na reakciju organizma na lijekove (farmakogenomika), kao i rani genetski skrining nakon rođenja. Testiranje se može prilagoditi konkretnim potrebama korisnika. Svi testovi se rade jednostavnim, neinvazivnim brisom obraza. Za više detalje i Vaše upite, možete nam se obratiti na adresu e-pošte:",
     "conjunction": "ili telefonski na"
   },
   "header": {
@@ -89,7 +90,7 @@
           "other_genetic": "Ostalo"
         }
       },
-      "prenatal_genetic": "Analiza genetskog rizika u trudnoći",
+      "prenatal_genetic": "Prenatalni i novorođenački genetski skrining",
       "genomic_response": "Farmakogenomika",
       "pathogen": "NGS Profilisanje patogena",
       "client_specific": "NGS Testiranje prilagođeno klijentima"
@@ -111,7 +112,7 @@
     }
   },
   "footer": {
-    "text": " Omogućava rano otkrivanje genetskih poremećaja i personalizirani pristup liječenju, poboljšavajući preciznost dijagnoze i ishode terapije.",
+    "text": "Vaši geni, vaše zdravlje.",
     "contact": "Kontaktirajte nas",
     "info": "Informacije",
     "cancer": "NGS profiliranje raka",
@@ -344,6 +345,9 @@
   "helixCard": {
     "learn": "Saznajte više",
     "coming": "Uskoro dostupno"
+  },
+  "partners": {
+    "title": "Naši Partneri i Dostavljači"
   },
   "seo": {
     "homePage": {

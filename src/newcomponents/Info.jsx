@@ -73,7 +73,7 @@ function Info() {
 
         {/* First Image */}
 
-        <div className="order-3 lg:order-3 flex items-center justify-center pb-8 lg:pb-0">
+        {/* <div className="order-3 lg:order-3 flex items-center justify-center pb-8 lg:pb-0">
           <Image
             src="/blocks/presentation.png"
             alt="presentation"
@@ -81,13 +81,13 @@ function Info() {
             height={250}
           />
         </div>
-        {/* Second Text */}
+        
         <div className="order-4 lg:order-4 mx-auto max-w-6xl mb-16 pb-8">
           <h2 className="font-semibold lg:font-bold pb-8 pt-8 text-start text-xl lg:text-3xl">
             {t("info.sHeader")}
           </h2>
           <p className="pb-8 text-base lg:text-xl">{t("info.sText")}</p>
-        </div>
+        </div> */}
 
         {/* Second Image */}
       </div>

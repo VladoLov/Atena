@@ -158,13 +158,49 @@ export default function ContactForm() {
         )}
       </form>
 
-      <p className="pt-4 px-4">
+      <p className="pt-4 px-4 text-platinum-900">
         {t("contact_form.footer")}
         <Link
+          href="mailto:info@atenagenomics.com"
+          className="inline-flex items-center  hover:text-black hover:underline transition-colors duration-200 ease-in-out font-medium ml-1"
+        >
+          info@atenagenomics.com
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4 ml-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
+        </Link>
+        <span> </span>
+        {t("contact_form.footerPhone")}
+        <Link
           href="tel:+38763201361"
-          className="bg-green-500 text-black px-1 py-2 rounded hover:bg-green-600"
+          className="inline-flex items-center text-platinum-900 hover:text-black hover:underline transition-colors duration-200 ease-in-out font-medium ml-1"
         >
           +38763201361
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4 ml-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
         </Link>
       </p>
     </div>

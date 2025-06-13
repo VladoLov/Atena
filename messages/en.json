@@ -22,7 +22,7 @@
       "description": "NGS for early and precise detection of inherited genetic conditions, such as metabolic, neurological, developmental, and cardiovascular disorders, allowing for timely interventions and personalized treatments."
     },
     "prenatal_genetic_risk_analysis": {
-      "title": "Prenatal Genetic Risk Analysis",
+      "title": "Prenatal and Newborn Genetic Screening",
       "description": "Non-Invasive Prenatal Testing (NIPT) and Expanded Newborn Screening using NGS aim to detect genetic and chromosomal abnormalities early, enabling personalized treatment plans and improving long-term health outcomes for fetuses and newborns."
     },
     "genomic_response_to_pharmacotherapy": {
@@ -46,11 +46,12 @@
     "email": "Email",
     "description": "Description",
     "send": "Send",
-    "footer": "For any additional information or enquiries you may have you can reach ATENA Genomics team at email: info@atenagenomics.com or tel:"
+    "footer": "For any additional information or enquiries you may have you can reach ATENA Genomics team at email:",
+    "footerPhone": "or tel:"
   },
   "subheader": {
     "header": "COMING SOON",
-    "subheader": "ATENA Genomics offers clinical precision genetic testing, advancing personalized medicine in oncology, hereditary conditions, prenatal screening, pharmacogenomics, and infectious diseases. Services include specialized next-generation sequencing (NGS) and customized solutions for diagnostics and research. For details or inquiries, contact team at email:",
+    "subheader": "ATENA Genomics offers advanced genetic analysis using next-generation sequencing (NGS). Our services include screening for inherited genetic disorders, identifying mutations linked to cancer, assessing how the body may respond to medications (pharmacogenomics), and early genetic screening after birth — with the possibility of tailored the testing based on your specific needs. All tests are performed using a simple, non-invasive buccal swab. For more information, contact our team at:",
     "conjunction": "or tel:"
   },
   "header": {
@@ -90,7 +91,7 @@
         }
       },
 
-      "prenatal_genetic": "Prenatal Genetic Risk Analysis",
+      "prenatal_genetic": "Prenatal and Newborn Genetic Screening",
       "genomic_response": "Pharmacogenomics",
       "pathogen": "Pathogen NGS Profiling",
       "client_specific": "Client-specific NGS testing"
@@ -346,6 +347,9 @@
   "helixCard": {
     "learn": "Learn more",
     "coming": "Coming soon"
+  },
+  "partners": {
+    "title": "Our Trusted Partners and Suppliers"
   },
   "seo": {
     "homePage": {

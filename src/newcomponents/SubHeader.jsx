@@ -21,7 +21,7 @@ function SubHeader() {
               info@atenagenomics.com
             </Link>
           </span>
-          <span> {t("subheader.conjunction")}</span>
+          {/*   <span> {t("subheader.conjunction")}</span>
           <span>
             {" "}
             <Link
@@ -30,7 +30,7 @@ function SubHeader() {
             >
               +38763201361
             </Link>
-          </span>
+          </span> */}
         </p>
       </div>
     </section>

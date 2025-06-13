@@ -18,7 +18,7 @@ function SecondPartOfHeader() {
   }
   return (
     <>
-      <div className="flex list-none items-center  justify-start z-30 ">
+      {/*   <div className="flex list-none items-center  justify-start z-30 ">
         <Link
           href="#"
           className="px-4 py-2 flex  text-platinum-950 hover:bg-platinum-200  duration-300 ease-in-out hover:rounded hover:ring-1 hover:ring-black"
@@ -26,7 +26,7 @@ function SecondPartOfHeader() {
         >
           {t("link.consulting")}
         </Link>
-      </div>
+      </div> */}
       <div className="flex list-none items-center  justify-start z-30">
         <Link
           href="/about"

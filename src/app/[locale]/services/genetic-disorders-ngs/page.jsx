@@ -92,11 +92,11 @@ export default function GeneticDisordersNgs() {
           <div className="max-w-6xl mx-auto space-y-12">
             {/* Header Section */}
             <div className="space-y-6">
-              <div className="text-center space-y-4">
+              <div className="text-start space-y-4">
                 <h1 className="text-4xl font-bold tracking-tight text-platinum-950 md:text-5xl">
                   {t("head2")}
                 </h1>
-                <div className="flex justify-center items-center gap-2">
+                <div className="flex justify-start items-center gap-2">
                   <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
                   <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                   <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>

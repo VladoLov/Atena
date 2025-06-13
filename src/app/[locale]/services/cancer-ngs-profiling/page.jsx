@@ -59,53 +59,41 @@ export default function GeneticDisordersIllustrated() {
     },
   ];
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-black to-crimson-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <Image
-            src="/genetic-disorders.webp"
-            alt="DNA double helix"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
-            className="object-cover"
-            priority
-          />
-        </div>
+    <div className="min-h-screen ">
+      <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
+        <Image
+          src="/genetic-disorders.webp"
+          alt="DNA double helix"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
+          className="object-cover"
+          priority
+        />
 
-        <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div className="md:w-1/2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                {t("CancerProfiling.title")}
-              </h1>
-              <p className="text-xl text-platinum-100 mb-8 max-w-lg">
-                {t("CancerProfiling.description")}
-              </p>
-            </div>
-          </div>
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+            {t("CancerProfiling.title")}
+          </h1>
+          <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
+            {t("CancerProfiling.description")}
+          </p>
         </div>
-
-        <div
-          className="absolute -bottom-1 left-0 right-0 h-16 bg-white"
-          style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 100%)" }}
-        ></div>
       </section>
 
       {/* Content Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-platinum-950 mb-4 text-center">
+            <h2 className="text-4xl font-bold text-platinum-950 mb-4 text-left">
               {t("CancerProfiling.title2")}
             </h2>
-            <div className="flex justify-center items-center gap-1 pb-4">
+            <div className="flex justify-start items-center gap-1 pb-4">
               <div className="h-1 w-20 bg-crimson-500 rounded-full"></div>
               <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
               <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
             </div>
-            <div className="prose prose-lg max-w-none">
-              <p>{t("CancerProfiling.paragraph1")}</p>
+            <div className="prose prose-lg max-w-none text-lg">
+              <p className="py-2">{t("CancerProfiling.paragraph1")}</p>
               <p>{t("CancerProfiling.paragraph2")}</p>
             </div>
           </div>
@@ -115,10 +103,10 @@ export default function GeneticDisordersIllustrated() {
       {/* Testing Categories */}
       <section className="py-16 bg-platinum-50">
         <div className="container mx-auto px-4 ">
-          <h2 className="text-4xl font-bold text-center text-platinum-950 mb-4">
+          <h2 className="text-3xl font-bold text-center text-platinum-950 mb-4">
             {t("CancerProfiling.cancerTestingCategories.title3")}
           </h2>
-          <p className="text-lg text-platinum-950 text-center mb-16 max-w-4xl mx-auto">
+          <p className="text-lg text-platinum-950 text-center mb-16 max-w-6xl mx-auto">
             {t("CancerProfiling.cancerTestingCategories.description2")}
           </p>
         </div>
