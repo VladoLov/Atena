@@ -1,10 +1,14 @@
 {
   "about": {
+    "about": "About Us",
     "header": "Precision Genetic testing for personalized Care",
+    "mission": "Our Mission",
     "subheader": "ATENA Genomics is dedicated to making high-quality genetic testing based on next-generation sequencing (NGS) technology accessible and affordable for everyone. By offering easy-to-understand test results and personalized health insights, we help individuals take control of their well-being and support the shift toward more precise, preventive, and personalized healthcare.",
     "leadership": "Leadership",
-    "profile": "Profile",
+
     "marija": {
+      "name": "Dr. Marija Vujadinović",
+      "title": "Founder and CTO of ATENA Genomics",
       "bio": {
         "part1": "Dr. Marija Vujadinović, Founder and CTO of ATENA Genomics, brings over 15 years of expertise in molecular biotechnology, vaccine development, and GMP manufacturing. She focuses on advancing precision genetic testing to improve healthcare in the Balkans. Marija holds a PhD from the University of Amsterdam, where she specialized in adenoviral vectored vaccines, and dual MSc degrees from Vrije Universiteit Amsterdam, combining molecular sciences with leadership.",
         "part2": "At Janssen Pharmaceuticals, she played a key role in transitioning vaccines, including the Janssen COVID-19 vaccine, from research to clinical application. Her expertise spans vaccine design, GMP manufacturing, and regulatory compliance. Earlier roles at the University of Utah and VU Medical Center strengthened her skills in infectious disease research and molecular diagnostics.",
@@ -60,11 +64,15 @@
     "three": "Testing for Personalized Care"
   },
   "info": {
-    "fHeader": "Consulting services",
-    "fText": "We provide expert molecular biotechnology consulting, guiding clients in adopting advanced genetic testing technologies. Our tailored advice ensures optimal solutions for healthcare, research, and diagnostics, improving decision-making and outcomes. Contact us for strategic insights and technical expertise.",
-    "bText": "CLICK HERE TO CONNECT",
-    "sHeader": "Join ATENA Genomics for Clinical NGS Testing Seminars!",
-    "sText": "ATENA Genomics is hosting expert-led seminars on the latest advancements in precision genetic testing for personalized medicine. Discover how genomics can transform healthcare. Stay tuned for dates and registration!"
+    "section3": {
+      "title": "How It Works",
+      "subtitle1": "Simple Collection",
+      "subtitle2": "Advanced Analysis",
+      "subtitle3": "Personalized Results",
+      "description1": "Quick and painless cheek swab that can be done in our clinic",
+      "description2": "State-of-the-art NGS technology to analyze your DNA with high precision",
+      "description3": "Comprehensive report with expert consultation to understand your results"
+    }
   },
   "link": {
     "services": {
@@ -113,7 +121,7 @@
     }
   },
   "footer": {
-    "text": "Advanced genomic analysis for diagnosis of genetic diseases to enable early detection and personalized treatment.",
+    "text": "Your genes, your health.",
     "contact": "Contact Us",
     "info": "Information",
     "cancer": "Cancer NGS Profiling",
@@ -183,15 +191,6 @@
     },
     "contact": "Contact Us",
 
-    "section3": {
-      "title": "How It Works",
-      "subtitle1": "Simple Collection",
-      "subtitle2": "Advanced Analysis",
-      "subtitle3": "Personalized Results",
-      "description1": "Quick and painless cheek swab that can be done at home or in our clinic",
-      "description2": "State-of-the-art NGS technology to analyze your DNA with high precision",
-      "description3": "Comprehensive report with expert consultation to understand your results"
-    },
     "actionHeader": "Ready to Discover Your Genetic Profile?",
     "actionText": "Take the first step towards personalized healthcare with our advanced genetic testing options."
   },

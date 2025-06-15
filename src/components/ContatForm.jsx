@@ -57,7 +57,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container  mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">{t("contact_form.header")}</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Hidden Web3Forms honeypot field (recommended) */}
@@ -77,7 +77,7 @@ export default function ContactForm() {
           <div className="grow">
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-platinum-950"
             >
               {t("contact_form.fName")}
             </label>
@@ -87,7 +87,7 @@ export default function ContactForm() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-platinum-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               required
             />
           </div>
@@ -95,7 +95,7 @@ export default function ContactForm() {
           <div className="grow">
             <label
               htmlFor="lastName"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-platinum-950"
             >
               {t("contact_form.lName")}
             </label>
@@ -105,7 +105,7 @@ export default function ContactForm() {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-platinum-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               required
             />
           </div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-platinum-950"
           >
             {t("contact_form.email")}
           </label>
@@ -124,7 +124,7 @@ export default function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full border border-platinum-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             required
           />
         </div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-platinum-950"
           >
             {t("contact_form.description")}
           </label>
@@ -142,7 +142,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            className="mt-1 block w-full border border-platinum-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             required
           ></textarea>
         </div>
@@ -152,7 +152,7 @@ export default function ContactForm() {
         </Button>
 
         {status && (
-          <p className="mt-2 text-sm text-center font-medium text-gray-900">
+          <p className="mt-2 text-sm text-center font-medium text-platinum-900">
             {status}
           </p>
         )}

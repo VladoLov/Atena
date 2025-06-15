@@ -22,7 +22,7 @@ export default function PartnersCarousel() {
   const t = useTranslations("partners");
   return (
     <div className=" py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl font-bold text-center text-platinum-950 mb-12">
           {t("title")}
         </h2>

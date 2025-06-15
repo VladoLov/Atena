@@ -1,10 +1,14 @@
 {
   "about": {
+    "about": "O nama",
     "header": "Precizno genetsko testiranje za personaliziranu skrb",
+    "mission": "Naša misija",
     "subheader": "ATENA Genomics omogućava pristupačno i kvalitetno genetsko testiranje uz primjenu NGS tehnologije (sekvenciranje nove generacije). Naši testovi nude jasne i razumljive rezultate te personalizirane uvide u zdravlje, kako bi ljudi mogli preuzeti aktivnu ulogu u brizi o sebi. Naš cilj je podržati prelazak ka tačnijoj, ranijoj i personaliziranoj medicini.",
     "leadership": "Vodstvo",
-    "profile": "Profil",
+
     "marija": {
+      "name": "Dr. Marija Vujadinović",
+      "title": "Osnivačica i direktorica odjela tehnologije",
       "bio": {
         "part1": "Dr. Marija Vujadinović, osnivačica i direktorica odjela tehnologije u ATENA Genomics, donosi više od 15 godina iskustva u molekularnoj biotehnologiji, razvoju vakcina i GMP proizvodnji. Posvećena je unapređenju preciznog genetskog testiranja radi poboljšanja zdravstvene njege u Bosni i Hercegovini i širom regije. Doktorirala je na Univerzitetu u Amsterdamu, specijalizirajući se za razvoj vakcina baziranih na adenovirusnim vektorima, te posjeduje dvije magistarske diplome sa Vrije Universiteit Amsterdam, koje spajaju molekularne nauke i poslovne vještine.",
         "part2": "U kompaniji Janssen Pharmaceuticals odigrala je ključnu ulogu u tranziciji vakcina, uključujući Janssen COVID-19 vakcinu, iz istraživačke u kliničku fazu. Njena ekspertiza obuhvata dizajn vakcina, GMP proizvodnju i regulatornu usklađenost. Prethodne istraživačke pozicije na Univerzitetu Utah i VU Medicinskom centru dodatno su osnažile njene vještine u molekularnoj dijagnostici i istraživanju zaraznih bolesti.",
@@ -60,11 +64,15 @@
     "three": "Testiranje za Personaliziranu Njegu"
   },
   "info": {
-    "fHeader": "Konzultantske Usluge",
-    "fText": "Pružamo stručne konzultantske usluge u molekularnoj biotehnologiji, pomažući klijentima u implementaciji naprednih tehnologija genetskog testiranja. Naši prilagođeni savjeti osiguravaju optimalna rješenja za dijagnostiku, istraživanja i zdravstvenu njegu, unapređujući donošenje odluka i ishode liječenja. Kontaktirajte nas za strateške uvide i tehničku stručnost.",
-    "bText": "KLIKNITE OVDJE DA SE POVEŽETE",
-    "sHeader": "Pridružite se ATENA Genomics Seminarima o Kliničkim NGS Testiranjima!",
-    "sText": "ATENA Genomics organizira stručne seminare o najnovijim dostignućima u genetskim testiranjima i njihovoj ulozi u personaliziranoj medicini. Edukacije vode vodeći stručnjaci, pružajući uvid u to kako genomika može transformirati zdravstvenu njegu. Pratite najave i registrirajte se za sudjelovanje!"
+    "section3": {
+      "title": "Kako funkcionira",
+      "subtitle1": "Jednostavno prikupljanje",
+      "subtitle2": "Napredna analiza",
+      "subtitle3": "Personalizirani rezultati",
+      "description1": "Brzo i bezbolno uzimanje brisa obraza koje se može obaviti u našoj klinici",
+      "description2": "Najsuvremenija NGS tehnologija za visoko preciznu analizu vaše DNK",
+      "description3": "Sveobuhvatan izvještaj sa stručnim savjetovanjem za razumijevanje vaših rezultata"
+    }
   },
   "link": {
     "services": {
@@ -181,15 +189,7 @@
       "description": "Praćenje odgovora na liječenje i identifikacija razvoja otpornosti tijekom vremena."
     },
     "contact": "Kontaktirajte nas",
-    "section3": {
-      "title": "Kako funkcionira",
-      "subtitle1": "Jednostavno prikupljanje",
-      "subtitle2": "Napredna analiza",
-      "subtitle3": "Personalizirani rezultati",
-      "description1": "Brzo i bezbolno uzimanje brisa obraza koje se može obaviti kod kuće ili u našoj klinici",
-      "description2": "Najsuvremenija NGS tehnologija za visoko preciznu analizu vaše DNK",
-      "description3": "Sveobuhvatan izvještaj sa stručnim savjetovanjem za razumijevanje vaših rezultata"
-    },
+
     "actionHeader": "Spremni otkriti svoj genetski profil?",
     "actionText": "Učinite prvi korak prema personaliziranoj zdravstvenoj skrbi s našim naprednim opcijama genetskog testiranja."
   },

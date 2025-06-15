@@ -30,9 +30,9 @@ export const DnaComponent = () => {
         <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 lg:pb-12 xl:pb-24">
           {/* Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start  lg:text-left">
-            <h1 className="slide-in-from-left text-oswald font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
+            <h1 className="slide-in-from-left tracking-tight font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
               {/* Mobile: 2xl (24px) */}
-              <span className="block text-5xl  leading-tight sm:hidden">
+              <span className="block text-5xl   sm:hidden">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500 pr-4">
                   {t("header.second")}
@@ -41,28 +41,28 @@ export const DnaComponent = () => {
               </span>
 
               {/* Small: 3xl (30px) */}
-              <span className="hidden sm:block md:hidden text-5xl leading-tight">
+              <span className="hidden sm:block md:hidden text-5xl ">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500 ">{t("header.second")}</span>{" "}
                 {t("header.three")}
               </span>
 
               {/* Medium: 5xl (48px) */}
-              <span className="hidden md:block lg:hidden text-6xl leading-tight">
+              <span className="hidden md:block lg:hidden text-6xl ">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500">{t("header.second")}</span>{" "}
                 {t("header.three")}
               </span>
 
               {/* Large: 6xl (60px) */}
-              <span className="hidden lg:block xl:hidden text-7xl font-bold leading-120">
+              <span className="hidden lg:block xl:hidden text-7xl font-bold ">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500">{t("header.second")}</span>{" "}
                 {t("header.three")}
               </span>
 
               {/* Extra Large: 8xl (96px) */}
-              <span className="hidden xl:block text-8xl font-bold leading-110">
+              <span className="hidden xl:block text-8xl font-bold ">
                 {t("header.first")}{" "}
                 <span className="text-crimson-500">{t("header.second")}</span>{" "}
                 {t("header.three")}

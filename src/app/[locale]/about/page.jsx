@@ -1,5 +1,3 @@
-import FramerMotionImage from "./componets/FramerMotionImage";
-
 import AboutMarija from "./componets/AboutMarija";
 import { getTranslations } from "next-intl/server";
 
@@ -17,7 +15,7 @@ export async function generateMetadata({ params: { locale } }) {
 function page() {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-start bg-platinum-300 bg-transparent">
-      <FramerMotionImage />
+      {/* <FramerMotionImage /> */}
       {/*  <AboutTextSection /> */}
 
       <AboutMarija />

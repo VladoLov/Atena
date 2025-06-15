@@ -26,7 +26,7 @@ export async function generateMetadata() {
 }
 export default function page() {
   return (
-    <div className="font-oswald">
+    <div className="">
       <Suspense fallback={<Loading />}>
         <div className="bg-gradient-to-b from-white to-platinum-200">
           <DnaComponent />
@@ -49,12 +49,12 @@ export default function page() {
             <GridCards />
           </section>
         </div>
-        <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 h-fit clip-piere4 py-24">
+        <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 h-fit clip-piere4 py-8">
           <Info />
         </section>
 
         <div className="w-full bg-gradient-to-b from-white to-white relative ">
-          <div className="max-w-4xl w-full mx-auto pb-12 ">
+          <div className="max-w-5xl w-full mx-auto py-12 ">
             <ContactForm />
           </div>
         </div>

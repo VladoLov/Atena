@@ -115,57 +115,8 @@ export default function GeneticDisordersIllustrated() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-platinum-950 mb-16">
-              {t("CancerProfiling.section3.title")}
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-crimson-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-crimson-600">1</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("CancerProfiling.section3.subtitle1")}
-                </h3>
-                <p className="text-platinum-950">
-                  {t("CancerProfiling.section3.description1")}
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-20 h-20 bg-crimson-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-crimson-600">2</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("CancerProfiling.section3.subtitle2")}
-                </h3>
-                <p className="text-platinum-950">
-                  {t("CancerProfiling.section3.description2")}
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-20 h-20 bg-crimson-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-crimson-600">3</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">
-                  {t("CancerProfiling.section3.subtitle3")}
-                </h3>
-                <p className="text-platinum-950">
-                  {t("CancerProfiling.section3.description3")}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <div className="container mx-auto pb-12 px-4 md:px-6">
+      <div className="container max-w-5xl mx-auto py-12 px-4 md:px-6">
         <div className=" bg-gradient-to-r from-crimson-300 to-crimson-400 rounded-xl p-8 text-black ">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <h3 className="text-2xl font-bold">
@@ -186,23 +137,6 @@ export default function GeneticDisordersIllustrated() {
           </div>
         </div>
       </div>
-      {/*   <section className="py-16 bg-gradient-to-r from-crimson-300 to-crimson-500 text-black">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t("CancerProfiling.actionHeader")}
-            </h2>
-            <p className="text-xl text-black/80 mb-8">
-              {t("CancerProfiling.actionText")}
-            </p>
-            <Link href={"/contact"}>
-              <button className="px-8 py-4 bg-white text-crimson-600 font-medium rounded-full hover:bg-crimson-50 transition-colors text-lg">
-                {t("CancerProfiling.contact")}
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

@@ -19,14 +19,14 @@ export default function FramerMotionImage() {
           priority
         />
 
-        <motion.div
+        {/*     <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
           className="absolute inset-0 flex items-start justify-center flex-col mx-10  max-w-4xl lg:mx-24  pb-8 "
         >
           <HeaderInFaramer />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
