@@ -137,7 +137,7 @@
     "contact": "Kontaktirajte nas",
 
     "proactiveGenomicHealthScreening": {
-      "title": "Samoinicijativni genomski zdravstveni pregled",
+      "title": "Samoinicijativni Genomski Zdravstveni Pregled",
       "description": "Sveobuhvatan genetski pregled za identifikaciju zdravstvenih rizika prije pojave simptoma"
     },
     "neurologicalNeuromuscularDisorders": {
@@ -145,19 +145,19 @@
       "description": "Testiranje na stanja koja utječu na živčani i mišićni sustav"
     },
     "developmentalIntellectualDisabilities": {
-      "title": "Razvojni poremećaji i intelektualne poteškoće",
+      "title": "Razvojni Poremećaji i Intelektualne Poteškoće",
       "description": "Genetski uvidi u kognitivne i razvojne karakteristike"
     },
     "metabolicMitochondrialDisorders": {
-      "title": "Metabolički i mitohondrijski poremećaji",
+      "title": "Metabolički i Mitohondrijski Poremećaji",
       "description": "Razumijevanje genetskih čimbenika koji utječu na metabolizam i proizvodnju energije"
     },
     "immunologicalDisorders": {
-      "title": "Imunološki poremećaji",
+      "title": "Imunološki Poremećaji",
       "description": "Genetsko testiranje na stanja povezana s imunološkim sustavom"
     },
     "rareGeneticDisorders": {
-      "title": "Rijetki genetski poremećaji",
+      "title": "Rijetki Genetski Poremećaji",
       "description": "Sveobuhvatno testiranje na rijetka i neobjašnjiva genetska stanja"
     }
   },
@@ -194,7 +194,7 @@
     "actionText": "Učinite prvi korak prema personaliziranoj zdravstvenoj skrbi s našim naprednim opcijama genetskog testiranja."
   },
   "HereditaryCancerScreening": {
-    "headline1": "Skrining nasljednih karcinoma",
+    "headline1": "Skrining Nasljednih Karcinoma",
     "tagline": "Jednostavan test. Pouzdano znanje. Zdraviji izbori.",
     "headline2": "Šta je testiranje na nasljedne oblike raka?",
     "tagline2": "Saznajte da li nosite nasljedni rizik za rak – prije nego što se pojave simptomi",
@@ -209,7 +209,7 @@
     "contact": "Kontaktirajte nas"
   },
   "ProactiveGenomicHealthScreening": {
-    "headline": "Samoinicijativni genomski zdravstveni pregled",
+    "headline": "Samoinicijativni Genomski Zdravstveni Pregled",
     "introParagraph1": "Vaša DNK nosi dragocjene informacije koje vam mogu pomoći da bolje razumijete svoje zdravlje – ne samo danas, nego i u budućnosti. Kroz proaktivno genomsko testiranje zdravlja imate priliku da otkrijete skrivene genetske rizike prije nego što se pojave simptomi, što vam omogućava donošenje informiranih i preventivnih odluka o vlastitom zdravlju.",
     "headline2": "Kako radi?",
     "introParagraph2": "Koristeći brz i neinvazivan bris unutrašnje strane obraza, uzimamo uzorak DNK koji se analizira naprednom NGS tehnologijom (sekvenciranje nove generacije). Ovaj pristup omogućava otkrivanje širokog spektra nasljednih genetskih promjena i pruža uvid u više aspekata zdravlja.",

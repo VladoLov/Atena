@@ -10,7 +10,6 @@ import Footer2 from "../../components/Footer2";
 import Header from "../../newcomponents/Header";
 import { setRequestLocale } from "next-intl/server";
 import Script from "next/script";
-import { Car } from "lucide-react";
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 

@@ -94,6 +94,7 @@ const DropDown = () => {
         <DropdownMenuContent
           className="bg-white min-h-fit w-lvw overflow-y-auto text-center "
           aria-label={t("aria.main_menu")}
+          onClick={toggleDropdown}
         >
           {info.map((item) => (
             <DropdownMenuItem key={item.href}>

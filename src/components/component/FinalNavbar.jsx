@@ -265,7 +265,7 @@ function FinalNavbar() {
                             className={`block px-4 py-2 transition-colors duration-300 ${
                               item.comingSoon
                                 ? "text-platinum-500 cursor-not-allowed"
-                                : "text-platinum-900 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
+                                : "text-platinum-950 hover:bg-platinum-200 hover:rounded hover:ring-1 hover:ring-black"
                             }`}
                           >
                             <div className="flex flex-col">

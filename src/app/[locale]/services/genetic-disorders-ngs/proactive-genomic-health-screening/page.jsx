@@ -70,7 +70,7 @@ export default function ProactiveGenomicHealthScreening() {
             {/* Process Section */}
             <Card className="border-crimson-100 bg-gradient-to-br from-crimson-50 to-white">
               <CardContent className="pt-6">
-                <div className="flex flex-col md:flex-row gap-6 items-center">
+                <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
                   <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full">
                     <Dna className="h-10 w-10 text-crimson-600" />
                   </div>
