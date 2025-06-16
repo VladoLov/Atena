@@ -4,7 +4,7 @@ function page() {
   return (
     <div>
       <div className="max-w-screen-md mx-auto py-8">
-        <DownalodPdf />
+        {/*   <DownalodPdf /> */}
       </div>
     </div>
   );
