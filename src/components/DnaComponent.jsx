@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export const DnaComponent = () => {
-  const t = useTranslations("");
+  const t = useTranslations("header");
   return (
     <section className="w-full container-2xl  ">
       {/* <div className="absolute inset-0 bg-gradient-to-b from-white  z-0" /> */}
@@ -33,39 +33,37 @@ export const DnaComponent = () => {
             <h1 className="slide-in-from-left tracking-tight font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
               {/* Mobile: 2xl (24px) */}
               <span className="block text-5xl   sm:hidden">
-                {t("header.first")}{" "}
-                <span className="text-crimson-500 pr-4">
-                  {t("header.second")}
-                </span>{" "}
-                {t("header.three")}
+                {t("first")}{" "}
+                <span className="text-crimson-500 pr-4">{t("second")}</span>{" "}
+                {t("three")}
               </span>
 
               {/* Small: 3xl (30px) */}
               <span className="hidden sm:block md:hidden text-5xl ">
-                {t("header.first")}{" "}
-                <span className="text-crimson-500 ">{t("header.second")}</span>{" "}
-                {t("header.three")}
+                {t("first")}{" "}
+                <span className="text-crimson-500 ">{t("second")}</span>{" "}
+                {t("three")}
               </span>
 
               {/* Medium: 5xl (48px) */}
               <span className="hidden md:block lg:hidden text-6xl ">
-                {t("header.first")}{" "}
-                <span className="text-crimson-500">{t("header.second")}</span>{" "}
-                {t("header.three")}
+                {t("first")}{" "}
+                <span className="text-crimson-500">{t("second")}</span>{" "}
+                {t("three")}
               </span>
 
               {/* Large: 6xl (60px) */}
               <span className="hidden lg:block xl:hidden text-7xl font-bold ">
-                {t("header.first")}{" "}
-                <span className="text-crimson-500">{t("header.second")}</span>{" "}
-                {t("header.three")}
+                {t("first")}{" "}
+                <span className="text-crimson-500">{t("second")}</span>{" "}
+                {t("three")}
               </span>
 
               {/* Extra Large: 8xl (96px) */}
               <span className="hidden xl:block text-8xl font-bold ">
-                {t("header.first")}{" "}
-                <span className="text-crimson-500">{t("header.second")}</span>{" "}
-                {t("header.three")}
+                {t("first")}{" "}
+                <span className="text-crimson-500">{t("second")}</span>{" "}
+                {t("three")}
               </span>
             </h1>
           </div>

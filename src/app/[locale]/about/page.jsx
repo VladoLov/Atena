@@ -15,9 +15,6 @@ export async function generateMetadata({ params: { locale } }) {
 function page() {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-start bg-platinum-300 bg-transparent">
-      {/* <FramerMotionImage /> */}
-      {/*  <AboutTextSection /> */}
-
       <AboutMarija />
     </div>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 function SubHeader() {
-  const t = useTranslations();
+  const t = useTranslations("subheader");
   return (
     <section className="w-full  mx-auto px-10 pt-12 pb-16">
       <div className="container mx-auto rounded-lg  px-0 mb-12">
@@ -11,7 +11,7 @@ function SubHeader() {
         </h2> */}
 
         <p className="text-lg md:text-2xl lg:text-2xl text-platinum-950 lg:text-platinum-950  lg:leading-10  tracking-tight pb-12">
-          {t("subheader.subheader")}
+          {t("subheader")}
           <span>
             {" "}
             <Link

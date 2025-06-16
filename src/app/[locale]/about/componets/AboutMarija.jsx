@@ -7,25 +7,6 @@ export default function AboutMarija() {
   const t = useTranslations("about");
 
   return (
-    /*  <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-start">
-          <div className="mx-auto max-w-screen-lg">
-            <h2 className="text-4xl md:text-6xl font-bold text-lightBlue-950 text-center drop-shadow-lg my-8">
-              {t("about.leadership")}
-            
-            </h2>
-           
-
-            <div className="prose prose-lg text-platinum-950 max-h-fit px-6 font-poppins">
-              <p className="pb-2">{t("about.marija.bio.part1")}</p>
-              <p className="pb-2">{t("about.marija.bio.part2")}</p>
-              <p className="pb-2">{t("about.marija.bio.part3")}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
         <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
@@ -116,45 +97,7 @@ export default function AboutMarija() {
                   </div>
                 </CardContent>
               </Card>
-
-              {/*           <Card className="border-crimson-100">
-            <CardContent className="pt-6">
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full">
-                  <Award className="h-10 w-10 text-crimson-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-zinc-900">
-                    Our Commitment
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed">
-                    We are committed to advancing precision medicine through
-                    cutting-edge genetic testing technology, making personalized
-                    healthcare accessible to communities across the Balkans and
-                    beyond. Our dedication to quality, innovation, and patient
-                    care drives everything we do.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>*/}
             </div>
-
-            {/* <div className="bg-gradient-to-r from-crimson-500 to-crimson-600 rounded-xl p-8 text-white">
-          <div className="max-w-3xl mx-auto text-center space-y-4">
-            <h3 className="text-2xl font-bold">
-              Join Us in Transforming Healthcare
-            </h3>
-            <p className="text-crimson-50">
-              Discover how ATENA Genomics is revolutionizing personalized
-              medicine through precision genetic testing. Together, we're
-              building a healthier future, one genome at a time.
-            </p>
-            <button className="mt-4 bg-white text-crimson-600 hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
-              Contact Us Today
-            </button>
-          </div>
-        </div>  */}
           </div>
         </div>
       </main>
