@@ -10,6 +10,8 @@ import Footer2 from "../../components/Footer2";
 import Header from "../../newcomponents/Header";
 import { setRequestLocale } from "next-intl/server";
 import Script from "next/script";
+import { Suspense } from "react";
+import Loading from "./about/loading";
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
@@ -35,9 +37,11 @@ export default async function RootLayout({ children, params }) {
         suppressHydrationWarning={true}
       >
         <NextIntlClientProvider>
-          <Header className="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
-          {children}
-          <Footer2 />
+          <Suspense fallback={<Loading />}>
+            <Header className="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
+            {children}
+            <Footer2 />
+          </Suspense>
         </NextIntlClientProvider>
       </body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />

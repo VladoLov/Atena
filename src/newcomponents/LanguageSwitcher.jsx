@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import {
@@ -9,11 +9,29 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useEffect, useState } from "react";
+import HeaderLoading from "@/components/HeaderLoading";
 
 export function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
+
   const pathname = usePathname();
+  const [isLoading, setIsLoading] = useState(true); // Example for internal loading
+
+  useEffect(() => {
+    // Simulate some async operation that might cause suspension
+    // If your header truly does something async *on the client side* that suspends
+    // (e.g., fetching user data for a profile icon in the header)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    // This is where Suspense would catch it if this component is rendered within Suspense
+    return <HeaderLoading />;
+  }
 
   const switchLanguage = (newLocale) => {
     // Create new pathname with the new locale

@@ -162,7 +162,7 @@ export default function ContactForm() {
         {t("contact_form.footer")}
         <Link
           href="mailto:info@atenagenomics.com"
-          className="inline-flex items-center  hover:text-black hover:underline transition-colors duration-200 ease-in-out font-medium ml-1"
+          className="inline-flex items-center  hover:text-black underline transition-colors duration-200 ease-in-out font-medium"
         >
           info@atenagenomics.com
           <svg
@@ -184,7 +184,7 @@ export default function ContactForm() {
         {t("contact_form.footerPhone")}
         <Link
           href="tel:+38763201361"
-          className="inline-flex items-center text-platinum-900 hover:text-black hover:underline transition-colors duration-200 ease-in-out font-medium ml-1"
+          className="inline-flex items-center text-platinum-900 hover:text-black underline transition-colors duration-200 ease-in-out font-medium ml-1"
         >
           +38763201361
           <svg

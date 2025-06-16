@@ -166,7 +166,7 @@ export default function Footer2() {
   ];
 
   return (
-    <footer className="bg-platinum-50 w-full font-poppins">
+    <footer className="bg-platinum-50 w-full">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="flex flex-col items-center lg:items-start">
@@ -182,7 +182,7 @@ export default function Footer2() {
                 sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
               />
             </div>
-            <p className="mt-6 max-w-md text-center   leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
+            <p className="mt-6 max-w-md text-center lg:   leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
               {t("footer.text")}
             </p>
             <div className="flex flex-col gap-1.5 text-center sm:text-left mt-6">
