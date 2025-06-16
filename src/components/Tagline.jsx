@@ -10,12 +10,12 @@ function Tagline() {
           {t("subheader.header")}
         </h2> */}
 
-        <p className="text-semibold md:text-2xl lg:text-2xl text-platinum-950 lg:text-platinum-950  lg:leading-10  tracking-tight pb-12">
+        <p className="text-semibold md:text-2xl lg:text-3xl text-platinum-950 lg:text-platinum-950  lg:leading-10  tracking-tight pb-12">
           {t("subheader")}
           <span>
             {" "}
             <Link
-              className="space-x-1 w-fit text-platinum-950 hover:underline underline-offset-4"
+              className="space-x-1 w-fit text-platinum-950 underline underline-offset-4"
               href="/contact"
             >
               info@atenagenomics.com
