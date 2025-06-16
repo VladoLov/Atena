@@ -31,7 +31,7 @@ export default async function RootLayout({ children, params }) {
   }
   setRequestLocale(locale);
   return (
-    <html lang="locale" className="scroll-smooth">
+    <html lang={params.locale} className="scroll-smooth">
       <body
         className={`relative  ${oswald.className} `}
         suppressHydrationWarning={true}

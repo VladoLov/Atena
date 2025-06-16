@@ -175,11 +175,16 @@ export default function Footer2() {
                 src="/AtenaGenomicsLogo.png"
                 alt="Atena Genomics"
                 width={256}
-                height={256}
+                height={75}
                 priority
-                className="h-auto w-auto" // Maintain aspect ratio
-                quality={90} // Optimize quality (optional)
-                sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
+                quality={90}
+                sizes="(max-width: 768px) 180px, 256px"
+                style={{
+                  objectFit: "contain",
+                  width: "auto",
+                  height: "auto",
+                  maxWidth: "256px", // Control the maximum size
+                }}
               />
             </div>
             <p className="mt-6 max-w-md text-center lg:   leading-relaxed text-platinum-900 sm:max-w-xs sm:text-left">
@@ -337,7 +342,7 @@ export default function Footer2() {
               {services[0].items.map((service) => (
                 <li key={service.href}>
                   {service.href1 === "#" ? (
-                    <span className="text-platinum-400 cursor-not-allowed">
+                    <span className="text-platinum-600 cursor-not-allowed">
                       {service.title}
                     </span>
                   ) : (
@@ -356,7 +361,7 @@ export default function Footer2() {
               {services[1].items.map((service) => (
                 <li key={service.href}>
                   {service.href1 === "#" ? (
-                    <span className="text-platinum-400 cursor-not-allowed">
+                    <span className="text-platinum-600 cursor-not-allowed">
                       {service.title}
                     </span>
                   ) : (
@@ -375,7 +380,7 @@ export default function Footer2() {
               {services.slice(2).map((service) => (
                 <li key={service.href}>
                   {service.href1 === "#" ? (
-                    <span className="text-platinum-400 cursor-not-allowed">
+                    <span className="text-platinum-600 cursor-not-allowed">
                       {service.title}
                     </span>
                   ) : (

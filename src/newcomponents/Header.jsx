@@ -17,11 +17,16 @@ function Header() {
             src="/AtenaGenomicsLogo.png"
             alt="Atena Genomics"
             width={256}
-            height={74}
+            height={75}
             priority
-            className="h-auto w-auto" // Maintain aspect ratio
-            quality={90} // Optimize quality (optional)
-            sizes="(max-width: 768px) 180px, 256px" // Responsive sizing
+            quality={90}
+            sizes="(max-width: 768px) 180px, 256px"
+            style={{
+              objectFit: "contain",
+              width: "auto",
+              height: "auto",
+              maxWidth: "256px", // Control the maximum size
+            }}
           />
         </Link>
         <div className="flex items-center space-x-2 pr-2">

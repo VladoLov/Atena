@@ -26,7 +26,7 @@ export async function generateMetadata() {
 }
 export default function page() {
   return (
-    <div className="">
+    <main className="">
       <div className="bg-gradient-to-b from-white to-platinum-200">
         <DnaComponent />
       </div>
@@ -60,6 +60,6 @@ export default function page() {
       <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 clip-piere5">
         <PartnersCarousel />
       </section>
-    </div>
+    </main>
   );
 }

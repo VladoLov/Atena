@@ -40,6 +40,12 @@ export default function PartnersCarousel() {
                     alt={partner.name}
                     fill
                     className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{
+                      objectFit: "contain",
+                      width: "100%",
+                      height: "100%",
+                    }}
                   />
                 </div>
               </div>

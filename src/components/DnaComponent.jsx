@@ -90,7 +90,14 @@ export const DnaComponent = () => {
                 alt="Atena logotip"
                 width={220}
                 height={220}
-                className="drop-shadow-lg"
+                priority
+                className="drop-shadow-lg "
+                style={{
+                  objectFit: "contain",
+                  width: "auto",
+                  height: "auto",
+                  maxWidth: "300px", // Control the maximum size
+                }}
               />
             </div>
 
@@ -100,8 +107,16 @@ export const DnaComponent = () => {
                 src="/sova/NewLogo.png"
                 alt="Atena logotip"
                 width={300}
-                height={300}
-                className="drop-shadow-lg"
+                height={321}
+                priority
+                className="drop-shadow-lg "
+                style={{
+                  objectFit: "contain",
+                  width: "auto",
+                  height: "auto",
+                  maxWidth: "300px",
+                  maxHeight: "321px",
+                }}
               />
             </div>
           </div>
