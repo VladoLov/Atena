@@ -9,6 +9,7 @@ import Loading from "./loading";
 import PartnersCarousel from "../../components/partners-carousel";
 
 import { getTranslations } from "next-intl/server";
+import Tagline from "@/components/Tagline";
 
 /* export const metadata = {
   title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
@@ -32,8 +33,8 @@ export default function page() {
       </div>
       {/* <div className="w-full bg-gradient-to-bl from-white from-10% via-white via-30% to-lightblue-300 to-90%  relative"> */}
       <div className="w-full  relative">
-        <section className="bg-gradient-to-b from-platinum-200 to-platinum-300 clip-piere2 ">
-          <SubHeader />
+        <section className="w-full bg-gradient-to-b from-platinum-200 to-platinum-300 clip-piere2 ">
+          <Tagline />
         </section>
         {/*  <CircularCards /> */}
         <section className="w-full ">

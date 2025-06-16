@@ -36,15 +36,6 @@ function SecondPartOfHeader() {
           {t("contact")}
         </Link>
       </div>
-
-      {/* <FinalNavbarRes /> */}
-
-      {/* <Button className="bg-crimson-500 text-black font-semibold text-sm hover:bg-crimson-600">
-        {t("link.account")}{" "}
-        <span className="text-platinum-950 pl-1 text-sm font-semibold">
-          {t("link.soon")} ☄️
-        </span>
-      </Button> */}
     </>
   );
 }

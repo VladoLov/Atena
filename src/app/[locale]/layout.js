@@ -38,7 +38,7 @@ export default async function RootLayout({ children, params }) {
       >
         <NextIntlClientProvider>
           <Suspense fallback={<Loading />}>
-            <Header className="w-full sticky top-0 left-0 z-50 bg-[#fff]" />
+            <Header className="w-full  sticky top-0 left-0 z-50 bg-[#fff]" />
             {children}
             <Footer2 />
           </Suspense>

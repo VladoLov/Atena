@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-function SubHeader() {
-  const t = useTranslations();
+function Tagline() {
+  const t = useTranslations("subheader");
   return (
     <section className="w-full  mx-auto px-10 pt-12 pb-16">
       <div className="container mx-auto rounded-lg  px-0 mb-12">
@@ -11,7 +11,7 @@ function SubHeader() {
         </h2> */}
 
         <p className="text-semibold md:text-2xl lg:text-2xl text-platinum-950 lg:text-platinum-950  lg:leading-10  tracking-tight pb-12">
-          {t("subheader.subheader")}
+          {t("subheader")}
           <span>
             {" "}
             <Link
@@ -21,20 +21,10 @@ function SubHeader() {
               info@atenagenomics.com
             </Link>
           </span>
-          <span> {t("subheader.conjunction")}</span>
-          <span>
-            {" "}
-            <Link
-              href="tel:+38763201361"
-              className="bg-green-500 text-platinum-950 px-1 py-2 rounded hover:bg-green-600 hover:underline underline-offset-4"
-            >
-              +38763201361
-            </Link>
-          </span>
         </p>
       </div>
     </section>
   );
 }
 
-export default SubHeader;
+export default Tagline;
