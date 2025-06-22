@@ -55,7 +55,7 @@
   },
   "subheader": {
     "header": "COMING SOON",
-    "subheader": "ATENA Genomics offers advanced genetic analysis using next-generation sequencing (NGS). Our services include screening for inherited genetic disorders, identifying mutations linked to cancer, assessing how the body may respond to medications (pharmacogenomics), and early genetic screening after birth — with the possibility of tailored the testing based on your specific needs. All tests are performed using a simple, non-invasive buccal swab. For more information, contact our team at:",
+    "subheader": "ATENA Genomics offers advanced genetic analysis using next-generation sequencing (NGS). Our services include screening for inherited genetic disorders, identifying mutations linked to cancer, assessing how the body may respond to medications (pharmacogenomics), and early genetic screening after birth — with the possibility of tailoring the testing to your specific needs. All tests are performed using a simple, non-invasive buccal swab. For more information, contact our team at:",
     "conjunction": "or tel:"
   },
   "header": {
@@ -132,7 +132,7 @@
     "head1": "Genetic Disorders",
     "head2": "Genetic Disorders NGS",
     "sub1": "Genetic disorders can affect many different systems in the body — from how we process nutrients to how our brain, muscles, and immune system function. These conditions are often caused by changes in our DNA that are present from birth, even if no symptoms are immediately visible. With next-generation sequencing (NGS) technology, we can now identify these inherited risks early — using a simple, non-invasive cheek swab.",
-    "sub2": "ATENA Genomics offers a broad range of genetic NGS testing options to help you better understand your health. Below, you'll find an overview of the key categories — including proactive health screening, hereditary cancers, neurological and metabolic conditions, and more — all designed to support early detection, prevention, and personalized care.",
+    "sub2": "ATENA Genomics offers a broad range of genetic NGS testing options to help you better understand your health. Below, you'll find an overview of the key categories — including proactive health screening, neurological and metabolic conditions, and more — all designed to support early detection, prevention, and personalized care.",
     "bottomCardHead": "Ready to Explore Your Genetic Health?",
     "bottomCardText": "Take the first step towards understanding your genetic profile with our comprehensive NGS testing options. Our team is here to guide you through the process and help you make informed decisions about your health.",
     "contact": "Contact Us",
@@ -202,7 +202,7 @@
     "paragraph1": "Certain genetic mutations, which can be inherited, can significantly increase the risk of developing cancer, often before any symptoms appear. Through hereditary cancer screening, your DNA is analyzed to identify inherited changes linked to cancers such as breast, ovarian, colorectal, prostate, pancreatic, lung, melanoma, and others.",
     "headline3": "Testing Process",
     "paragraph2": "A simple and non-invasive buccal swab is collected. The DNA from the swab is then analyzed using next-generation sequencing (NGS) technology, allowing you to uncover vital information about your genetic risks.",
-    "paragraph3": "Depending on your needs, the analysis can focus on specific groups of genes targeted panels, all protein-coding regions whole exome sequencing (WES), or your entire genetic code whole genome sequencing (WGS), providing different levels of detail and insight.",
+    "paragraph3": "Depending on your needs, the analysis can focus on specific groups of genes through targeted panels, all protein-coding regions using whole exome sequencing (WES), or your entire genetic code via whole genome sequencing (WGS), each offering different levels of detail and insight.",
     "paragraph4": "Understanding your genetic profile empowers you to take proactive steps for early detection, prevention, and better health outcomes.",
     "headline4": "Empowering Your Health Journey",
     "contactHeader": "Take Control of Your Cancer Risk",
@@ -214,6 +214,7 @@
     "introParagraph1": "Your DNA carries valuable information that can help you better understand your health — not only today, but for the future. With Proactive Genomic Health Screening, you have the opportunity to uncover hidden genetic risks before symptoms arise, empowering you to make informed, preventive decisions about your well-being.",
     "headline2": "How It Works",
     "introParagraph2": "Using a quick, non-invasive buccal swab (cheek swab), we collect a DNA sample that is analyzed using advanced next-generation sequencing (NGS) technology. This approach allows us to detect a wide range of inherited genetic changes, offering insights into multiple areas of health.",
+    "introParagraph4": "Depending on your needs for Proactive Genomic Health Screening, the analysis can be performed to provide different levels of detail and insight — from whole exome sequencing (WES), which covers all protein-coding regions, to whole genome sequencing (WGS), which analyzes your entire genetic code, or focused analysis of specific groups of genes (targeted panels), as indicated in the breakdown below.",
     "introParagraph3": "Through a single sample, we can screen for potential risks in the following areas:",
     "categories": {
       "cancer": "Cancer",

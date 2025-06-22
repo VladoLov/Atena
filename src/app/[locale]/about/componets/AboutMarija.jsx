@@ -9,7 +9,7 @@ export default function AboutMarija() {
   return (
     <div className="flex flex-col  justify-center items-center w-full">
       <main className="w-full ">
-        <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
+        {/* <section className="min-w-max z-[-1] relative h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
             src="/piere-image.webp"
             alt="DNA double helix"
@@ -22,11 +22,11 @@ export default function AboutMarija() {
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
               {t("about")}
             </h2>
-            {/* <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
+             <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
             {t("tagline")}
-          </p> */}
+          </p> 
           </div>
-        </section>
+        </section>*/}
         <div className="container mx-auto py-12 px-4 md:px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             {/* Header Section */}
@@ -53,7 +53,7 @@ export default function AboutMarija() {
                       <Target className="h-10 w-10 text-crimson-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-platinum-950">
+                      <h3 className="text-3xl font-semibold mb-2 text-platinum-950">
                         {t("mission")}
                       </h3>
                       <p className="text-platinum-950 leading-relaxed">
@@ -67,9 +67,10 @@ export default function AboutMarija() {
               <Card className="border-crimson-100 bg-gradient-to-br from-crimson-50 to-white">
                 <CardContent className="pt-6">
                   <div className="flex flex-col md:flex-row gap-6 items-start">
-                    <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full">
+                    {/*  <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full">
                       <Users className="h-10 w-10 text-crimson-600" />
-                    </div>
+                    </div> */}
+                    <div className="md:h-16 md:w-16 md:m-3 md:p-4"></div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                         {t("leadership")}

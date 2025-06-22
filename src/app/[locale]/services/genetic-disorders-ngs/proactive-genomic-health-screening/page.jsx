@@ -78,7 +78,10 @@ export default function ProactiveGenomicHealthScreening() {
                     <h3 className="text-xl font-semibold mb-2 text-platinum-950">
                       {t("headline2")}
                     </h3>
-                    <p className="text-platinum-950">{t("introParagraph2")}</p>
+                    <p className="text-platinum-950 pb-2">
+                      {t("introParagraph2")}
+                    </p>
+                    <p className="text-platinum-950">{t("introParagraph4")}</p>
                   </div>
                 </div>
               </CardContent>

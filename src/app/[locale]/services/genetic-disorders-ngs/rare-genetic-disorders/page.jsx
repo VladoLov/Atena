@@ -71,9 +71,9 @@ function RareGeneticDisorders() {
                       <p className="text-platinum-950 leading-relaxed mt-3">
                         {t("paragraph2")}
                       </p>
-                      <p className="text-platinum-950 leading-relaxed mt-3">
+                      {/*    <p className="text-platinum-950 leading-relaxed mt-3">
                         {t("paragraph4")}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </CardContent>
