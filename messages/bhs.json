@@ -130,6 +130,7 @@
   "GeneticDisorders": {
     "head1": "Genetski Poremećaji",
     "head2": " NGS Za Genetske Poremećaje",
+    "subheader": "Napredna genomska analiza za otkrivanje molekularne osnove genetskih poremećaja.",
     "sub1": "Genetski poremećaji mogu utjecati na mnoge različite sustave u tijelu — od načina na koji obrađujemo hranjive tvari do funkcije našeg mozga, mišića i imunološkog sustava. Ova stanja često su uzrokovana promjenama u našoj DNK koje su prisutne od rođenja, čak i ako simptomi nisu odmah vidljivi. S tehnologijom sekvenciranja sljedeće generacije (NGS), sada možemo rano identificirati ove naslijeđene rizike — koristeći jednostavan, neinvazivan bris obraza.",
     "sub2": "ATENA Genomics nudi širok raspon opcija genetskog NGS testiranja kako bi vam pomogla bolje razumjeti vaše zdravlje. U nastavku ćete pronaći pregled ključnih kategorija — uključujući proaktivni zdravstveni pregled, nasljedne karcinome, neurološka i metabolička stanja, i još mnogo toga — sve osmišljeno da podrži rano otkrivanje, prevenciju i personaliziranu skrb.",
     "bottomCardHead": "Spremni istražiti svoje genetsko zdravlje?",
@@ -197,7 +198,6 @@
     "headline1": "Skrining Nasljednih Karcinoma",
     "tagline": "Jednostavan test. Pouzdano znanje. Zdraviji izbori.",
     "headline2": "Šta je testiranje na nasljedne oblike raka?",
-    "tagline2": "Saznajte da li nosite nasljedni rizik za rak – prije nego što se pojave simptomi",
     "paragraph1": "Određene genetske mutacije, koje se mogu naslijediti, mogu značajno povećati rizik od razvoja karcinoma – često i prije pojave bilo kakvih simptoma. Kroz testiranje na nasljedni rak analizira se vaša DNK kako bi se identifikovale mutacije povezane s nasljednim oblicima raka, poput raka dojke, jajnika, debelog crijeva, prostate, gušterače, pluća, melanoma i drugih.",
     "headline3": "Testni Proces",
     "paragraph2": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, a DNK iz uzorka se zatim analizira primjenom NGS tehnologije (sekvenciranje nove generacije). Ova analiza omogućava pristup ključnim informacijama o vašem genetskom riziku.",
@@ -210,6 +210,7 @@
   },
   "ProactiveGenomicHealthScreening": {
     "headline": "Samoinicijativni Genomski Zdravstveni Pregled",
+    "subheading": "Dublji uvid u vaš genom za pametnije odluke o zdravlju.",
     "introParagraph1": "Vaša DNK nosi dragocjene informacije koje vam mogu pomoći da bolje razumijete svoje zdravlje – ne samo danas, nego i u budućnosti. Kroz proaktivno genomsko testiranje zdravlja imate priliku da otkrijete skrivene genetske rizike prije nego što se pojave simptomi, što vam omogućava donošenje informiranih i preventivnih odluka o vlastitom zdravlju.",
     "headline2": "Kako radi?",
     "introParagraph2": "Koristeći brz i neinvazivan bris unutrašnje strane obraza, uzimamo uzorak DNK koji se analizira naprednom NGS tehnologijom (sekvenciranje nove generacije). Ovaj pristup omogućava otkrivanje širokog spektra nasljednih genetskih promjena i pruža uvid u više aspekata zdravlja.",
@@ -259,8 +260,9 @@
     }
   },
   "NeurologicalNeuromuscularDisorders": {
+    "imageHeadline": "Neurološki i Neuromišićni Poremećaji",
     "headline": "Genetski Uvidi u Neurološke i Neuromišićne Poremećaje",
-    "tagline": "Razumite svoj rizik prije početka simptoma",
+    "tagline": "Genetski uvid u poremećaje nervnog i mišićnog sistema.",
     "paragraph1": "Određene genetske mutacije, koje se mogu naslijediti, mogu uticati na funkciju nervnog ili mišićnog sistema i dovesti do razvoja neuroloških i neuromišićnih poremećaja. Rano otkrivanje ovih mutacija može pomoći u prepoznavanju rizika ili statusa nosioca za stanja poput mišićnih distrofija, nasljednih neuropatija, epileptičkih sindroma, ataksija i neurorazvojnih poremećaja – čak i prije pojave simptoma.",
     "headline2": "Testni Proces",
     "paragraph2": "Uzima se jednostavan i neinvazivan bris unutrašnje strane obraza, a DNK iz uzorka se zatim analizira primjenom NGS tehnologije (sekvenciranje nove generacije). Ova analiza omogućava uvid u prisustvo nasljednih genetskih promjena povezanih s funkcijom nervnog i mišićnog sistema.",
@@ -271,8 +273,9 @@
     "contact": "Kontaktirajte nas"
   },
   "DevelopmentalIntellectualDisabilities": {
+    "imageHeadline": "Razvojni Poremećaji i Intelektualne Poteškoće",
     "headline": "Genetske Osnove Kognitivnih i Razvojnih Osobina",
-    "tagline": "Saznajte više o genima koji oblikuju razvoj",
+    "tagline": "Saznajte više o genima koji oblikuju razvoj.",
     "paragraph1": "Određene genetske promjene mogu uticati na razvoj mozga, sposobnost učenja i kognitivne funkcije. Razumijevanje vašeg genetskog profila može pomoći u prepoznavanju varijanti povezanih s neurorazvojnim i intelektualnim poteškoćama – čak i ako se znakovi još nisu pojavili, ili ako ste samo nosilac određenih promjena.",
     "paragraph2": "Vaša DNK se analizira primjenom napredne NGS tehnologije (sekvenciranje nove generacije), s ciljem otkrivanja nasljednih promjena povezanih s različitim stanjima, uključujući osobine iz autističnog spektra, globalno kašnjenje u razvoju, teškoće u učenju i druge neurorazvojne izazove.",
     "headline2": "Testni Proces",
@@ -284,8 +287,9 @@
     "contact": "Kontaktirajte nas"
   },
   "MetabolicMitochondrialDisorders": {
+    "imageHeadline": "Metabolički i Mitohondrijski Poremećaji",
     "headline": "Genetsko Testiranje za Metaboličke i Mitohondrijske Poremećaje",
-    "tagline": "Saznajte kako vaši geni utiču na metabolizam i funkciju ćelija",
+    "tagline": "Saznajte kako vaši geni utiču na metabolizam i funkciju ćelija.",
     "paragraph1": "Nasljedne genetske promjene mogu poremetiti način na koji tijelo proizvodi energiju, obrađuje nutrijente ili razgrađuje otpadne materije – što može dovesti do metaboličkih ili mitohondrijskih poremećaja. Ova stanja često zahvataju više organa i sistema, ponekad od ranog djetinjstva, i mogu napredovati tiho, bez vidljivih simptoma.",
     "paragraph2": "Kroz genetsko testiranje na metaboličke i mitohondrijske poremećaje, vaša DNK se analizira primjenom NGS tehnologije (sekvenciranje nove generacije) s ciljem otkrivanja nasljednih varijanti povezanih s poremećajima proizvodnje energije, funkcijom enzima ili ćelijskim metabolizmom. To uključuje stanja poput mitohondrijske encefalopatije, poremećaja oksidacije masnih kiselina, defekata u metabolizmu aminokiselina i druga slična oboljenja.",
     "headline2": "Testni Proces",
@@ -297,8 +301,9 @@
     "contact": "Kontaktirajte nas"
   },
   "ImmunologicalDisorders": {
+    "imageHeadline": "Imunološki Poremećaji",
     "headline": "Genetski Uvid u Primarne Poremećaje Imunog Sistema",
-    "tagline": "NGS analiza koja pomaže u razumijevanju vašeg imunog sistema",
+    "tagline": "NGS analiza koja pomaže u razumijevanju vašeg imunog sistema.",
     "paragraph1": "Imuni sistem se oslanja na veliki broj gena koji zajednički rade na zaštiti organizma. Kada dođe do promjena u tim genima, to može dovesti do nasljednih imunoloških poremećaja koji utiču na odgovor tijela na infekcije ili druge imunološke izazove.",
     "paragraph2": "Genetsko testiranje može pomoći u identifikaciji nasljednih varijanti povezanih s primarnim imunodeficijencijama, kao što su teška kombinovana imunodeficijencija (SCID), hronična granulomatozna bolest (CGD), varijabilna imunodeficijencija (CVID), deficijencije komplementa i druga srodna stanja. Neka od ovih stanja se ispoljavaju već u ranom djetinjstvu, dok se druga mogu pojaviti tek kasnije u životu. U određenim slučajevima, osoba može biti nosilac genetskih promjena bez prisutnih simptoma, ali i dalje imati koristi od saznanja o svom statusu.",
     "headline2": "Testni Proces",
@@ -310,8 +315,9 @@
     "contact": "Kontaktirajte nas"
   },
   "RareGeneticDisorders": {
+    "imageHeadline": "Rijetki Genetski Poremećaji",
     "headline": "Precizna Analiza za Rijetke Genetske Poremećaje",
-    "tagline": "NGS testiranje iz jednog neinvazivnog uzorka – za otkrivanje uzroka rijetkih genetskih bolesti",
+    "tagline": "NGS testiranje iz jednog neinvazivnog uzorka – za otkrivanje uzroka rijetkih genetskih bolesti.",
     "paragraph1": "Rijetke bolesti su stanja koja pogađaju mali broj osoba u populaciji. Bolest se smatra rijetkom kada pogađa manje od 5 osoba na 10.000 stanovnika. Iako su pojedinačno rijetke, procjenjuje se da postoji između 6.000 i 8.000 različitih rijetkih bolesti, koje zajedno utiču na oko 27 do 36 miliona ljudi unutar EU. Oko 80% rijetkih bolesti ima genetsko porijeklo.",
     "paragraph2": "Ova stanja često predstavljaju složene dijagnostičke izazove zbog različitih genetskih uzroka, uključujući mutacije u jednom genu, strukturne promjene na hromosomima ili promjene u mitohondrijskoj DNK. Različiti simptomi i tok bolesti čak i kod osoba s istim oboljenjem dodatno otežavaju dijagnozu i upravljanje bolešću.",
     "paragraph3": "Genetsko testiranje uz primjenu NGS tehnologije (sekvenciranje nove generacije) može pomoći u identifikaciji varijanti povezanih s velikim brojem rijetkih stanja. To uključuje sindrome i poremećaje koje je teško prepoznati bez genetske analize, a koji bi inače mogli ostati neobjašnjeni.",
@@ -324,8 +330,9 @@
     "contact": "Kontaktirajte nas"
   },
   "Pharmacogenomics": {
+    "imageHeadline": "Farmakogenomika",
     "headline": "Farmakogenomika Pruža Genetske Uvide Koji Omogućavaju Sigurniji i Efikasniji Odabir Terapije",
-    "tagline": "NGS testiranje otkriva kako vaša DNK utiče na razgradnju i djelovanje lijekova",
+    "tagline": "NGS testiranje otkriva kako vaša DNK utiče na razgradnju i djelovanje lijekova.",
     "paragraph1": "Nisu svi lijekovi jednako djelotvorni za svaku osobu. Vaši geni imaju ključnu ulogu u tome kako vaše tijelo razgrađuje i reaguje na određene lijekove. Farmakogenomsko testiranje pomaže otkriti kako vaša DNK utiče na način na koji vaš organizam razgrađuje i koristi lijekove — nudeći put ka sigurnijem i efikasnijem izboru terapije.",
     "headline2": "Testni Proces",
     "paragraph2": "Korištenjem jednostavnog i neinvazivnog brisa unutrašnje strane obraza, prikupljamo vaš DNK i analiziramo ga primjenom tehnologije sekvenciranja nove generacije (NGS) ili ciljanih metoda genotipizacije. Ovo testiranje ispituje specifične gene uključene u metabolizam lijekova, poput CYP2D6, CYP2C19, TPMT i drugih. Rezultati mogu pomoći u identifikaciji lijekova koji bi mogli biti efikasniji za vas, onih koji mogu izazvati nuspojave, ili onih kod kojih bi mogla biti potrebna prilagodba doze.",

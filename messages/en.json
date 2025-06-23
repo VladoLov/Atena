@@ -131,6 +131,7 @@
   "GeneticDisorders": {
     "head1": "Genetic Disorders",
     "head2": "Genetic Disorders NGS",
+    "subheader": "Advanced genomic analysis to uncover the molecular basis of genetic disorders.",
     "sub1": "Genetic disorders can affect many different systems in the body — from how we process nutrients to how our brain, muscles, and immune system function. These conditions are often caused by changes in our DNA that are present from birth, even if no symptoms are immediately visible. With next-generation sequencing (NGS) technology, we can now identify these inherited risks early — using a simple, non-invasive cheek swab.",
     "sub2": "ATENA Genomics offers a broad range of genetic NGS testing options to help you better understand your health. Below, you'll find an overview of the key categories — including proactive health screening, neurological and metabolic conditions, and more — all designed to support early detection, prevention, and personalized care.",
     "bottomCardHead": "Ready to Explore Your Genetic Health?",
@@ -198,7 +199,7 @@
     "headline1": "Hereditary Cancer Screening",
     "tagline": "Simple testing. Powerful knowledge. Healthier choices.",
     "headline2": "What is Hereditary Cancer Screening?",
-    "tagline2": "Know your genetic cancer risks before symptoms appear",
+
     "paragraph1": "Certain genetic mutations, which can be inherited, can significantly increase the risk of developing cancer, often before any symptoms appear. Through hereditary cancer screening, your DNA is analyzed to identify inherited changes linked to cancers such as breast, ovarian, colorectal, prostate, pancreatic, lung, melanoma, and others.",
     "headline3": "Testing Process",
     "paragraph2": "A simple and non-invasive buccal swab is collected. The DNA from the swab is then analyzed using next-generation sequencing (NGS) technology, allowing you to uncover vital information about your genetic risks.",
@@ -211,6 +212,7 @@
   },
   "ProactiveGenomicHealthScreening": {
     "headline": "Proactive Genomic Health Screening",
+    "subheading": "A deeper look into your genome for smarter health decisions.",
     "introParagraph1": "Your DNA carries valuable information that can help you better understand your health — not only today, but for the future. With Proactive Genomic Health Screening, you have the opportunity to uncover hidden genetic risks before symptoms arise, empowering you to make informed, preventive decisions about your well-being.",
     "headline2": "How It Works",
     "introParagraph2": "Using a quick, non-invasive buccal swab (cheek swab), we collect a DNA sample that is analyzed using advanced next-generation sequencing (NGS) technology. This approach allows us to detect a wide range of inherited genetic changes, offering insights into multiple areas of health.",
@@ -260,8 +262,9 @@
     }
   },
   "NeurologicalNeuromuscularDisorders": {
-    "headline": "Genetic Insights into Neurological and Neuromuscular Disorders",
-    "tagline": "Understand your risk before symptoms begin",
+    "imageHeadline": "Neurological and Neuromuscular Disorders",
+    "headline": " Genetic Insights into Neurological and Neuromuscular Disorders",
+    "tagline": "Understanding the genetic foundations of neurological and neuromuscular conditions.",
     "paragraph1": "Many neurological and neuromuscular disorders have a genetic basis, caused by inherited changes in DNA that affect nerve or muscle function. Early detection of these genetic variants can help reveal whether you carry changes linked to neurological or neuromuscular conditions — even before symptoms develop. Through advanced genetic testing, your DNA is analyzed using next-generation sequencing (NGS) technology to detect mutations associated with conditions such as muscular dystrophies, hereditary neuropathies, epilepsy syndromes, ataxias, and neurodevelopmental disorders, among others.",
     "headline2": "Testing Process",
     "paragraph2": "This analysis is performed using a simple and non-invasive buccal swab, which collects DNA from cheek cells. Depending on the specific condition, the testing may focus on targeted gene panels, whole exome sequencing (WES), or whole genome sequencing (WGS), offering different levels of detail based on clinical need.",
@@ -272,8 +275,9 @@
     "contact": "Contact Us"
   },
   "DevelopmentalIntellectualDisabilities": {
+    "imageHeadline": "Developmental and Intellectual Disabilities",
     "headline": "Understanding Genetic Variants Linked to Cognitive and Developmental Traits",
-    "tagline": "Know more about the genes that shape your development",
+    "tagline": "Know more about the genes that shape your development.",
     "paragraph1": "Certain genetic changes can influence brain development, learning ability, and cognitive function. Understanding your genetic profile can help reveal whether you carry variants associated with developmental or intellectual disabilities — even if signs have not yet appeared.",
     "paragraph2": "Using advanced next-generation sequencing (NGS), your DNA is analyzed to detect inherited changes linked to a wide range of conditions, including autism spectrum traits, global developmental delay, learning difficulties, and other neurodevelopmental challenges",
     "headline2": "Testing Process",
@@ -285,8 +289,9 @@
     "contact": "Contact Us"
   },
   "MetabolicMitochondrialDisorders": {
+    "imageHeadline": "Developmental and Intellectual Disabilities",
     "headline": "Genetic Testing for Metabolic and Mitochondrial Disorders",
-    "tagline": "Understand your metabolism at the genetic level",
+    "tagline": "Understand your metabolism at the genetic level.",
     "paragraph1": "Inherited genetic changes can disrupt how the body produces energy, processes nutrients, or breaks down waste — leading to metabolic or mitochondrial disorders. These conditions often affect multiple organs and systems, sometimes from an early age, and may progress silently before symptoms are noticeable.",
     "paragraph2": "With genetic testing for metabolic and mitochondrial disorders, your DNA is analyzed using next-generation sequencing (NGS) to detect inherited variants linked to issues in energy production, enzyme function, or cellular metabolism. This includes conditions such as mitochondrial encephalopathy, fatty acid oxidation disorders, amino acid metabolism defects, and others.",
     "headline2": "Testing Process",
@@ -298,8 +303,9 @@
     "contact": "Contact Us"
   },
   "ImmunologicalDisorders": {
+    "imageHeadline": "Immunological Disorders",
     "headline": "Explore Your Genetic Risk for Immune System Disorders",
-    "tagline": "Simple testing for deeper insight into immune-related conditions",
+    "tagline": "Simple testing for deeper insight into immune-related conditions.",
     "paragraph1": "Your immune system relies on many genes working together to protect your body. When changes occur in these genes, they can lead to inherited immune conditions that affect how your body responds to infections or immune challenges.",
     "paragraph2": "Genetic testing can identify inherited variants linked to primary immunodeficiencies such as severe combined immunodeficiency (SCID), chronic granulomatous disease (CGD), common variable immunodeficiency (CVID), complement deficiencies, and others. Some of these conditions appear early in life, while others may only become noticeable later. In certain cases, you may carry genetic changes without symptoms, but still benefit from knowing your status.",
     "headline2": "Testing Process",
@@ -311,8 +317,9 @@
     "contact": "Contact Us"
   },
   "RareGeneticDisorders": {
+    "imageHeadline": "Rare Genetic Disorders",
     "headline": "Find Genetic Clarity for Rare or Unexplained Conditions",
-    "tagline": "One swab. Profound insights into rare conditions",
+    "tagline": "One swab. Profound insights into rare conditions.",
     "paragraph1": "Rare diseases are conditions that affect a small portion of the population. A disease is considered rare when it affects fewer than 5 in 10,000 people . Despite their individual rarity, there are an estimated 6,000 to 8,000 distinct rare diseases, collectively impacting between 27 and 36 million people in the EU.",
     "paragraph2": "Approximately 80% of rare diseases have a genetic origin. These conditions often present complex challenges due to their diverse genetic causes, which can include single-gene mutations, structural changes in chromosomes, or mitochondrial DNA alterations. The variability in symptoms and progression among individuals with the same condition adds to the complexity, making identification and management particularly challenging",
     "paragraph3": "Genetic testing using next-generation sequencing (NGS) can help identify variants associated with a broad spectrum of rare conditions. This includes syndromes and disorders that are difficult to pinpoint without genetic insight and may otherwise remain unexplained.",
@@ -325,8 +332,9 @@
     "contact": "Contact Us"
   },
   "Pharmacogenomics": {
+    "imageHeadline": "Pharmacogenomics",
     "headline": "Genetic Insights for Safer, Smarter Medication Choices",
-    "tagline": "Your genes matter — even when it comes to medicine",
+    "tagline": "Your genes matter — even when it comes to medicine.",
     "paragraph1": "Not all medications work the same way for everyone. Your genes play a key role in how your body processes and responds to certain drugs. Pharmacogenomic testing helps uncover how your DNA influences your response to medications — offering a path toward safer, more effective treatment choices.",
     "headline2": "Testing Process",
     "paragraph2": "Using a simple and non-invasive buccal swab, we collect your DNA and analyze it with next-generation sequencing (NGS) or targeted genotyping methods. This testing looks at specific genes involved in drug metabolism, such as CYP2D6, CYP2C19, TPMT, and others. The results can help identify which medications may be more effective for you, which may cause side effects, or which may require dose adjustments.",

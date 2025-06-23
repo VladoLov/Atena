@@ -26,9 +26,9 @@ export default function ArticleHeredityScreening() {
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
               {t("headline1")}
             </h2>
-            <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
+            {/*  <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
               {t("tagline")}
-            </p>
+            </p> */}
           </div>
         </section>
 
@@ -45,9 +45,9 @@ export default function ArticleHeredityScreening() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-platinum-950 text-lg font-medium">
-                {t("tagline2")}
-              </p>
+              <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
+                {t("tagline")}
+              </h4>
             </div>
 
             {/* Main Content Section */}

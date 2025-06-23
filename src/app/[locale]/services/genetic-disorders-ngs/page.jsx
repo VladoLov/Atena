@@ -101,6 +101,9 @@ export default function GeneticDisordersNgs() {
                   <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                   <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
                 </div>
+                <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
+                  {t("subheader")}
+                </h4>
               </div>
 
               <div className="max-w-6xl mx-auto">

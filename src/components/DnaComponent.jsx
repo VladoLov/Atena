@@ -6,8 +6,7 @@ import { useTranslations } from "next-intl";
 export const DnaComponent = () => {
   const t = useTranslations("header");
   return (
-    <section className="w-full container-2xl  ">
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-white  z-0" /> */}
+    <section className="w-full container-2xl ">
       <div className="relative w-full h-dvh md:h-[100vh] clip-piere">
         {/* Background Image */}
         <div className="w-full h-full overflow-hidden absolute top-0 bg-cover">
@@ -27,7 +26,8 @@ export const DnaComponent = () => {
         </div>
 
         {/* Content Container */}
-        <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 lg:pb-12 xl:pb-24">
+        {/* <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:pl-16 xl:pl-20 lg:pb-12 xl:pb-24"> */}
+        <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center mx-auto container lg:pb-12 xl:pb-24">
           {/* Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start  lg:text-left">
             <h1 className="slide-in-from-left tracking-tight font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
@@ -120,6 +120,8 @@ export const DnaComponent = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-white  z-0" /> */}
     </section>
   );
 };

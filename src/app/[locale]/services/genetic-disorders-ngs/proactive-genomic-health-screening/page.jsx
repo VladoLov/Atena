@@ -62,6 +62,9 @@ export default function ProactiveGenomicHealthScreening() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
+              <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
+                {t("subheading")}
+              </h4>
               <p className="text-platinum-950 text-lg leading-relaxed">
                 {t("introParagraph1")}
               </p>

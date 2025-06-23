@@ -30,16 +30,15 @@ function Pharmacogenomics() {
             priority
           />
           {/* The main overlay div */}
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-wrap flex-col items-start justify-center">
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
             {/* This is the content container for the text */}
-            <div className="text-white text-center px-4 md:text-left md:w-3/5 lg:w-2/4 xl:w-3/5 md:ml-8 lg:ml-12">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-                {t("headline")}
-              </h2>
-              <p className="mt-2 text-lg md:text-xl lg:text-2xl">
+
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              {t("imageHeadline")}
+            </h2>
+            {/* <p className="mt-2 text-lg md:text-xl lg:text-2xl">
                 {t("tagline")}
-              </p>
-            </div>
+              </p> */}
           </div>
         </section>
         <div className="container mx-auto py-12 px-4 md:px-6">
@@ -54,9 +53,9 @@ function Pharmacogenomics() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-platinum-950 text-lg font-medium">
+              <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
                 {t("tagline")}
-              </p>
+              </h4>
             </div>
 
             {/* Main Content Section */}

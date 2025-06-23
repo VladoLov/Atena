@@ -30,13 +30,13 @@ function RareGeneticDisorders() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-              {t("headline")}
+              {t("imageHeadline")}
             </h2>
-            <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
+            {/*  <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
               {t("tagline")}
-            </p>
+            </p> */}
           </div>
         </section>
         <div className="container mx-auto py-12 px-4 md:px-6">
@@ -51,9 +51,9 @@ function RareGeneticDisorders() {
                 <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
                 <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
               </div>
-              <p className="text-platinum-950 text-lg font-medium">
+              <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
                 {t("tagline")}
-              </p>
+              </h4>
             </div>
 
             {/* Main Content Section */}

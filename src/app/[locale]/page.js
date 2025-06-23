@@ -2,10 +2,9 @@ import { DnaComponent } from "@/components/DnaComponent";
 import GridCards from "@/components/component/GridCards";
 import ContactForm from "@/components/ContatForm";
 import Info from "@/newcomponents/Info";
-import SubHeader from "@/newcomponents/SubHeader";
+
 import Image from "next/image";
-import { Suspense, use } from "react";
-import Loading from "./loading";
+
 import PartnersCarousel from "../../components/partners-carousel";
 
 import { getTranslations } from "next-intl/server";

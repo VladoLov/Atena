@@ -74,9 +74,9 @@ export default function GeneticDisordersIllustrated() {
           <h1 className="text-white text-4xl md:text-6xl lg:text-6xl font-bold text-center">
             {t("CancerProfiling.title")}
           </h1>
-          <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
+          {/* <p className="text-white mt-2 text-center text-lg md:text-xl lg:text-2xl">
             {t("CancerProfiling.description")}
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -92,6 +92,10 @@ export default function GeneticDisordersIllustrated() {
               <div className="h-1 w-10 bg-crimson-300 rounded-full"></div>
               <div className="h-1 w-5 bg-crimson-200 rounded-full"></div>
             </div>
+            <h4 className="text-lg font-semibold tracking-tight text-platinum-950 md:text-xl">
+              {" "}
+              {t("CancerProfiling.description")}
+            </h4>
             <div className="text-platinum-950 text-lg font-medium">
               <p className="py-2">{t("CancerProfiling.paragraph1")}</p>
               <p>{t("CancerProfiling.paragraph2")}</p>
