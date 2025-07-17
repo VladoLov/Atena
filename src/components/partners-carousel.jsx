@@ -27,7 +27,8 @@ export default function PartnersCarousel() {
           {t("title")}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-12">
+        <div className="grid grid-cols-1 gap-2 md:gap-12">
+          {/** back this when we find more partners in div above  md:grid-cols-2  */}
           {partners.map((partner, index) => (
             <div
               key={index}
