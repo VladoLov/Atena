@@ -9,13 +9,13 @@ const partners = [
     url: "https://ibio.hu",
     description: "Specialized in advanced NGS sequencing technologies",
   },
-  {
+  /* {
     name: "BioDiagnostics Inc.",
     logo: "/dna-genotek.png",
     url: "https://www.dnagenotek.com/",
     description:
       "Global leader eader in tools for collecting, preserving, and preparing biological samples.",
-  },
+  }, */
 ];
 
 export default function PartnersCarousel() {
