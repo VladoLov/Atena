@@ -1,20 +1,17 @@
-// App locale ključevI (app-ugovor, npr. imena fajlova)
-export const APP_LOCALES = ["en", "bhs", "hr", "sr"];
+// App-lokale (URL segmenti / poruke)
+export const APP_LOCALES = ["en", "bhs"];
 
-// BCP-47 za <html lang> i alternates.languages
+// Default fallback (mora postojati!)
+export const DEFAULT_APP_LOCALE = "en"; // ili "bhs" ako ti je to primarni
+
+// BCP-47 za <html lang> i hreflang
 export const BCP47_MAP = {
   en: "en",
-  bhs: "bs", // "bhs" u app-u mapiramo na "bs" za SEO
-  hr: "hr",
-  sr: "sr",
+  bhs: "bs", // SEO/lang izlaz za bhs
 };
 
 // Open Graph locale (Facebook format)
 export const OG_LOCALE_MAP = {
   en: "en_US",
   bhs: "bs_BA",
-  hr: "hr_HR",
-  sr: "sr_RS",
 };
-
-// Ako budeš širio jezike kasnije, samo proširi ove mape.

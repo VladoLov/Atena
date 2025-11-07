@@ -13,43 +13,49 @@ import Script from "next/script";
 import { Suspense } from "react";
 import Loading from "./about/loading";
 import { getTranslations } from "next-intl/server";
+import { loadMessages } from "@/lib/messages";
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 import { APP_LOCALES, BCP47_MAP, OG_LOCALE_MAP } from "@/lib/locale";
 
 export async function generateMetadata({ params }) {
-  const appLocale = APP_LOCALES.includes(params?.locale)
-    ? params.locale
+  const rawLocale = params?.locale;
+  const appLocale = APP_LOCALES.includes(rawLocale)
+    ? rawLocale
     : DEFAULT_APP_LOCALE;
-  const lang = BCP47_MAP[appLocale];
-  const ogLocale = OG_LOCALE_MAP[appLocale];
   const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
+  const title = t("homePage.title");
+  const description = t("homePage.description");
 
+  const ogLocale = OG_LOCALE_MAP[appLocale];
   return {
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+    ),
+
     title: {
-      template: `%s | ATENA Genomics`, // This will append " | ATENA Genomics" to other page titles
-      default: t("homePage.title"), // Default title for this specific home page
+      template: "%s | ATENA Genomics",
+      default: title,
     },
-    description: t("homePage.description"),
+    description,
     icons: {
       icon: "/favicon.ico",
       apple: "/apple-touch-icon.png",
     },
+    // Hreflang (ključevi su BCP-47, vrijednosti su tvoje rute)
     alternates: {
-      canonical: `/${appLocale}`, // ili "/" ako želiš kanonski na root za default
+      canonical: `/${appLocale}`,
       languages: {
         en: "/en",
-        bs: "/bhs", // iako je URL /bhs, hreflang vrijednost je "bs"
-        hr: "/hr",
-        sr: "/sr",
+        bs: "/bhs",
       },
     },
     openGraph: {
       type: "website",
       siteName: "ATENA Genomics",
-      title: t("homePage.title"),
-      description: t("homePage.description"),
+      title,
+      description,
       locale: ogLocale,
       localeAlternate: Object.values(OG_LOCALE_MAP).filter(
         (l) => l !== ogLocale
@@ -65,24 +71,27 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("homePage.title"),
-      description: t("homePage.description"),
+      title,
+      description,
       images: ["/AtenaGenomicsLogo.png"],
     },
   };
 }
 
 export default async function RootLayout({ children, params }) {
-  /*  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
+  const rawLocale = params?.locale;
+
+  // ✅ VALIDACIJA (vrati što je CodeRabbit tražio)
+  if (!hasLocale(routing.locales, rawLocale)) {
     notFound();
   }
-  setRequestLocale(locale); */
-  const appLocale = APP_LOCALES.includes(params?.locale)
-    ? params.locale
-    : DEFAULT_APP_LOCALE;
-  const lang = BCP47_MAP[appLocale];
-  //  <html lang={params.locale} className="scroll-smooth">
+
+  // Sada je sigurno validno:
+  const appLocale = rawLocale;
+  setRequestLocale(appLocale);
+
+  const lang = BCP47_MAP[appLocale]; // "en" ili "bs"
+  const messages = await loadMessages(appLocale);
   return (
     <html lang={lang} className="scroll-smooth">
       <body
