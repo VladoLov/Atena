@@ -7,23 +7,9 @@ import Image from "next/image";
 
 import PartnersCarousel from "../../components/partners-carousel";
 
-import { getTranslations } from "next-intl/server";
+
 import Tagline from "@/components/Tagline";
 
-/* export const metadata = {
-  title: { template: "%s Atena Genomics", default: "ATENA Genomics" },
-}; */
-export async function generateMetadata() {
-  const t = await getTranslations("seo"); // Load translations for the 'seo' namespace
-
-  return {
-    title: {
-      template: `%s | ATENA Genomics`, // This will append " | ATENA Genomics" to other page titles
-      default: t("homePage.title"), // Default title for this specific home page
-    },
-    description: t("homePage.description"),
-  };
-}
 export default function page() {
   return (
     <main className="">

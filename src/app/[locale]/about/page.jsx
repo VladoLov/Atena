@@ -1,5 +1,5 @@
 import AboutMarija from "./componets/AboutMarija";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params: { locale } }) {
   // Use getTranslations directly, as the 'keywords' value is now a string
@@ -12,7 +12,8 @@ export async function generateMetadata({ params: { locale } }) {
     // ... other metadata properties (openGraph, twitter, etc.)
   };
 }
-function page() {
+function page({ params: { locale } }) {
+  setRequestLocale(locale);
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-start bg-platinum-300 bg-transparent">
       <AboutMarija />
