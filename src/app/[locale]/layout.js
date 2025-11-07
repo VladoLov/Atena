@@ -31,7 +31,9 @@ export async function generateMetadata({ params }) {
   const ogLocale = OG_LOCALE_MAP[appLocale];
   return {
     metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+      process.env.NEXT_PUBLIC_SITE_URL ||
+        process.env.NEXT_PUBLIC_ALT_SITE_URL ||
+        "http://localhost:3000"
     ),
 
     title: {
