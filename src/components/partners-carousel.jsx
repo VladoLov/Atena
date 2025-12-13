@@ -3,19 +3,19 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 // Placeholder partner data - replace with your actual partner information
 const partners = [
-  {
+  /*  {
     name: "GenomeTech Labs",
     logo: "/iBio.png",
     url: "https://ibio.hu",
     description: "Specialized in advanced NGS sequencing technologies",
-  },
-  /* {
+  }, */
+  {
     name: "BioDiagnostics Inc.",
     logo: "/dna-genotek.png",
     url: "https://www.dnagenotek.com/",
     description:
       "Global leader eader in tools for collecting, preserving, and preparing biological samples.",
-  }, */
+  },
 ];
 
 export default function PartnersCarousel() {

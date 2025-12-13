@@ -158,6 +158,11 @@ export default function Footer2() {
       href: "/services/client-specific-ngs-testing",
       href1: "#",
     },
+    {
+      title: t("link.services.family_relationship_testing"),
+      href: "/services/client-specific-ngs-testing",
+      href1: "/services/family-relationship-testing",
+    },
   ];
 
   const info = [

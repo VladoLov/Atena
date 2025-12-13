@@ -41,6 +41,10 @@
       "title": "Client-specific NGS Testing",
       "description": "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency."
     },
+    "family_relationship_testing": {
+      "title": "Family Relationship Testing",
+      "description": "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency."
+    },
     "learn": "Learn more"
   },
   "contact_form": {
@@ -102,7 +106,8 @@
       "prenatal_genetic": "Prenatal and Newborn Genetic Screening",
       "genomic_response": "Pharmacogenomics",
       "pathogen": "Pathogen NGS Profiling",
-      "client_specific": "Client-specific NGS testing"
+      "client_specific": "Client-specific NGS testing",
+      "family_relationship_testing": "Family Relationship Testing"
     },
     "consulting": "Consulting services",
     "information": {
@@ -350,6 +355,28 @@
     "paragraph4": "Whether you’re just beginning a new treatment or looking to optimize current medications, this test provides valuable insight based on your unique genetic profile.",
     "contactHeader": "Personalize Your Medicine with Genetic Testing",
     "contactText": "If you’re interested in personalized medicine guided by your DNA, feel free to contact us — we’re here to help you take the next step.",
+    "contact": "Contact Us"
+  },
+  "familyRelationship": {
+    "imageHeadline": "Family Relationship Testing  ",
+    "headline": "Family Relationship Testing ",
+    "tagline": "Your genes matter — even when it comes to medicine.",
+    "paragraph1a": "ATENA Genomics provides family relationship testing using Next-Generation Sequencing (NGS) to determine biological relationships such as paternity, maternity, grandparent–grandchild, and full- or half-sibling status.",
+    "paragraph1b": "Our test uses high-resolution genetic markers to deliver accurate, modern DNA relationship analysis that goes beyond standard STR-based methods.",
+    "headline2": "Why Choose NGS for DNA Relationship Testing?",
+    "paragraph2": "Traditional paternity tests look at only a small set of DNA markers. NGS testing looks at hundreds to thousands of markers, which makes the result much clearer, more accurate, and more reliable",
+    "paragraph2a": "NGS technology offers significant advantages over traditional STR DNA tests:",
+    "list": {
+      "item1": "Higher accuracy and stronger statistical power",
+      "item2": "Improved detection of complex relationships",
+      "item3": "Reliable results when limited family members are available or importantly when previous STR tests were inconclusive",
+      "item4": "Modern, high-throughput technology using a simple buccal swab"
+    },
+    "paragraph2b": "NGS provides a clearer and more robust assessment of whether individuals are biologically related.",
+
+    "contactHeader": "How to Request a Biological Relationship Test ",
+    "contactText": "Contact us via email or the contact form and indicate which relationship you want to clarify (paternity, maternity, siblingship, grandparentage, or other).",
+    "contactNote": "Note: This service is intended for informational and is not a court-admissible legal paternity test.",
     "contact": "Contact Us"
   },
   "helixCard": {

@@ -41,6 +41,10 @@
       "title": "NGS Testiranje prilagođeno klijentima",
       "description": "Prilagođena NGS rješenja pružaju precizne genomske uvide za dijagnostiku, istraživanja i analitiku, omogućavajući točnija i optimizirana rješenja."
     },
+    "family_relationship_testing": {
+      "title": "Testiranje Srodstva",
+      "description": "Custom client-specific NGS solutions provide tailored genomic insights to address unique diagnostic, research, and analytical challenges with precision and efficiency."
+    },
     "learn": "Saznajte više"
   },
   "contact_form": {
@@ -101,7 +105,8 @@
       "prenatal_genetic": "Prenatalni i novorođenački genetski skrining",
       "genomic_response": "Farmakogenomika",
       "pathogen": "NGS Profilisanje patogena",
-      "client_specific": "NGS Testiranje prilagođeno klijentima"
+      "client_specific": "NGS Testiranje prilagođeno klijentima",
+      "family_relationship_testing": "Testiranje Srodstva"
     },
     "consulting": "Konzultantske usluge",
     "information": {
@@ -348,6 +353,27 @@
     "paragraph4": "Bilo da tek započinjete novu terapiju ili želite optimizovati postojeću, ovaj test pruža vrijedne uvide zasnovane na vašem jedinstvenom genetskom profilu.",
     "contactHeader": "Personalizirajte svoju medicinu genetskim testiranjem",
     "contactText": "Ako vas zanima personalizirana medicina vođena vašom DNK, slobodno nas kontaktirajte — tu smo da vam pomognemo napraviti sljedeći korak.",
+    "contact": "Kontaktirajte nas"
+  },
+  "familyRelationship": {
+    "imageHeadline": "Testiranje Srodstva ",
+    "headline": "Testiranje Srodstva ",
+    "paragraph1a": "ATENA Genomics nudi testiranje srodstva pomocu sekvenciranje nove generacije (NGS) za utvrđivanje genetskih veza kao što su očinstvo, majčinstvo, odnos baka/djed – unuka/unuke te status punih ili polubraće/sestara.",
+    "paragraph1b": "Naš test koristi visokorezolucijske genetske markere kako bi pružio preciznu i savremenu analizu DNK, koja prevazilazi mogućnosti standardnih STR metoda.",
+    "headline2": "Zašto odabrati NGS za testiranje srodstva?",
+    "paragraph2": "Tradicionalni testovi očinstva analiziraju samo mali broj DNK markera. NGS testiranje analizira stotine do hiljade markera, što čini rezultat mnogo jasnijim, tačnijim i pouzdanijim. ",
+    "paragraph2a": "NGS tehnologija nudi značajne prednosti u odnosu na klasične STR DNK testove: ",
+    "list": {
+      "item1": "Veća tačnost i snažnija statistička pouzdanost",
+      "item2": "Bolje prepoznavanje složenijih odnosa srodstva",
+      "item3": "Pouzdani rezultati kada je dostupno malo članova porodice ili kada su prethodni STR testovi bili neuvjerljivi",
+      "item4": "Moderna tehnologija visokog kapaciteta uz jednostavan bris unutrašnje strane obraza"
+    },
+    "paragraph2b": "NGS pruža jasniju i snažniju procjenu genetske povezanosti između osoba.",
+
+    "contactHeader": "Kako zatražiti test srodstva",
+    "contactText": "Kontaktirajte nas putem e-maila ili kontakt forme i navedite koju vrstu srodstva želite razjasniti (očinstvo, majčinstvo, brat/sestra, odnos baka/djed – unuka/unuke ili drugo).",
+    "contactNote": "Napomena: Ova usluga je namijenjena informativnoj i nije pravno validan test za sudske postupke. ",
     "contact": "Kontaktirajte nas"
   },
   "helixCard": {

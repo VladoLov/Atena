@@ -29,7 +29,9 @@ RUN apk add --no-cache libc6-compat
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/messages ./messages
 
+RUN mkdir -p /app/.next/cache && chown -R node:node /app
 # Optional: run as non-root
 USER node
 
