@@ -152,14 +152,14 @@ function Pharmacogenomics() {
               <div className="max-w-3xl mx-auto text-center space-y-4">
                 <h3 className="text-2xl font-bold">{t("contactHeader")}</h3>
                 <p className="text-black/90">{t("contactText")}</p>
-                <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full flex-col  ">
-                  <p className="text-black/70 items-center lg:justify-center flex">
+                {/*  <div className="flex-shrink-0 bg-crimson-100 p-4 rounded-full flex-col  ">
+                   <p className="text-black/70 items-center lg:justify-center flex">
                     <span className="inline-flex mr-2">
                       <TriangleAlert className="h-10 w-10 text-crimson-600" />
                     </span>
                     <span className="">{t("contactNote")}</span>
-                  </p>
-                </div>
+                  </p> 
+                </div>*/}
                 <Link href={"/contact"}>
                   <button className="mt-4 bg-white text-black hover:bg-crimson-50 px-6 py-3 rounded-lg font-medium transition-colors">
                     {t("contact")}
