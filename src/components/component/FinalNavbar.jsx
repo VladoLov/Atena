@@ -166,16 +166,16 @@ function FinalNavbar() {
       comingSoon: true,
     },
     {
+      title: t("services.family_relationship_testing"),
+      href: "/services/family-relationship-testing",
+      href1: "/services/family-relationship-testing",
+      comingSoon: false,
+    },
+    {
       title: t("services.client_specific"),
       href: "/services/client-specific-ngs-testing",
       href1: "/",
       comingSoon: true,
-    },
-    {
-      title: t("services.family_relationship_testing"),
-      href: "/services/client-specific-ngs-testing",
-      href1: "/services/family-relationship-testing",
-      comingSoon: false,
     },
   ];
   useEffect(() => {

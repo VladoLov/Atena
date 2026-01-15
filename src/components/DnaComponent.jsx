@@ -29,8 +29,8 @@ export const DnaComponent = () => {
         {/* <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:pl-16 xl:pl-20 lg:pb-12 xl:pb-24"> */}
         <div className="absolute inset-0 w-full flex flex-col lg:flex-row items-center justify-center mx-auto container lg:pb-12 xl:pb-24">
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start  lg:text-left">
-            <h1 className="slide-in-from-left tracking-tight font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start  lg:text-left ">
+            <h1 className="slide-in-from-left tracking-tight text-7xl font-bold text-lightBlue-950 drop-shadow-lg animate-in transition ease-in-out duration-700 mb-6 lg:mb-8">
               {/* Mobile: 2xl (24px) */}
               <span className="block text-5xl   sm:hidden">
                 {t("first")}{" "}
@@ -60,7 +60,7 @@ export const DnaComponent = () => {
               </span>
 
               {/* Extra Large: 8xl (96px) */}
-              <span className="hidden xl:block text-8xl font-bold ">
+              <span className="hidden xl:block text-7xl font-bold ">
                 {t("first")}{" "}
                 <span className="text-crimson-500">{t("second")}</span>{" "}
                 {t("three")}

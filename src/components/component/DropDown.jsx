@@ -52,6 +52,11 @@ const DropDown = () => {
       href1: "#",
     },
     {
+      title: t("services.family_relationship_testing"),
+      href: "/services/family-relationship-testing",
+      href1: "/services/family-relationship-testing",
+    },
+    {
       title: t("services.client_specific"),
       href: "/services/client-specific-ngs-testing",
       href1: "#",
